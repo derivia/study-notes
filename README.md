@@ -1,13 +1,13 @@
-#### For this study plan, i'm using mostly Java.
+## A collection of study-related README.md's with my notes
 
-~ Licenses related to the files that aren't initially made by me [licenses](./licenses)
+- Licenses related to the files that aren't initially made by me: [licenses](./licenses)
 
-~ The license used in this project: [study-notes](./licenses/study-notes.lorrito)
+- The license used in this project: [study-notes](./licenses/study-notes.lorrito)
 
-~ Table of Contents:
+- To the original creators, I tried to add acknowledges and licenses the best way i could.
 
-- [Some (random) personal notes (in portuguese)](GENERAL-JAVA.md)
-- [Web development (in english)](./study-notes/WEB-GENERAL.md)
-- [System design (in english)](./study-notes/SYSTEM-DESIGN.md)
-- [Computer science (in english)](./study-notes/COMPUTER-SCIENCE.md)
-- [Other learning resources, some of them i use/used](./extras/RESOURCES.md)
+- Table of Resources:
+  * [My personal notes](./notes/PERSONAL-NOTES.md)
+  * [Web development](./notes/WEB-GENERAL.md)
+  * [System design](./notes/SYSTEM-DESIGN.md)
+  * [Computer science](./notes/COMPUTER-SCIENCE.md)
