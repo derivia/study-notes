@@ -185,7 +185,7 @@
     - Containers are instances of Docker images that run in memory, for example, you can isolate three different APIs, all managed by an Nginx web server, and they all share the same database. Each of these components can run in its own Docker container. To manage the configuration of these containers, docker compose can be used, which defines the relationships and configurations between containers in a single file.
     - Also, i think docker is good for testing the application under "low-resource conditions", like setting up on docker compose that each API should have only 275mb of ram and 1 CPU.
 
-### CI/CD
+### Code Review, merge, ci/cd
 - @TODO
 
 ### Tests
@@ -239,6 +239,8 @@
 
 ### Some random notes
 
+- Microsservices @TODO
+- Message Queuing @TODO
 - Syscalls @TODO
 - Sockets @TODO
 - HATEOAS (Hypertext as the Engine of Application State)
