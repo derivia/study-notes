@@ -4,13 +4,18 @@
 - [Algorithms](#algorithms)
 - [Operating Systems](#operating-systems)
 - [Networking](#networking)
+- [Software Architecture](#software-architecture)
 - [Frameworks](#frameworks)
-- [Side notes](#side-notes)
+- [Organize these in some category](#organize-these-in-some-category)
 
 ## Data Structures
 
 - [ ] Arrays
+    - Implementation: a struct, fixed size n, fixed type t with size s. The size of the array is basically n * s. Each element has a index. To get an element, go to the start of the array and multiply the index by s, some simple pointer arithmetic.
+    - Constant time access O(1).
 - [ ] Linked Lists
+    - Implementation: a struct, not necessarily fixed size or type.
+    - Better insertion and removal compared to arrays. Just change/add pointers to other elements.
 - [ ] Stacks
 - [ ] Queues
 - [ ] Hash tables
@@ -19,6 +24,7 @@
 
 ## Algorithms
 
+- [ ] Complexity (Big-O)
 - [ ] Sorting
   - [ ] Bubble sort
   - [ ] Insertion sort
@@ -60,7 +66,39 @@
   - [ ] Trie data structure
   - [ ] Segment Tree
 
+## Software Architecture
+
+### Clean Architecture
+
+- Divided into layers to ensure the protection of business rules.
+- Entities: The innermost layer, representing the simplest classes that reflect business concepts.
+- Use Cases: Responsible for implementing business rules.
+- Interface: Acts as a bridge for use cases (business rules) to interact with entities.
+- Framework and Drivers: This is where third-party components reside, such as Spring Web, Spring JPA, and MySQL/PostgreSQL drivers.
+
+### Model View Controller (MVC)
+
+- Model
+    - The business logic, operation management, and rules.
+- Controller
+    - The interface between the visual elements and the model.
+- View
+    - The visual representation of the application.
+
 ## Operating Systems
+
+### Memory Allocation
+
+- Memory layout
+    - A process runs within it's own separated memory space. Usually formed in 5 parts.
+    - Text section: Binary instructions
+    - Data section: Non-zero static data
+    - BSS (Block Started by Symbol): Zero static data
+    - Heap: Dinamically allocated data
+    - Stack: Implicit variables created, function arguments, copies of pointers, etc.
+    - The stack and the heap grows in opposite directions, the heap has a pointer called brk, which is the end of the heap, on the top.
+    - As more memory is allocated for a process using something like new or malloc, the heap grows as brk goes up.
+    - This layout applies to a single process memory, not the entire computer memory.
 
 ### Linux Kernel
 
@@ -90,10 +128,32 @@
 
 ## Networking
 
-- Network is the interconnection two different computers in order to make them communicate (exchange data), they are able to do that while following some kind of protocol.
-- When connected to the internet, a computer speaks TCP/IP, which is a protocol consisting of four layers: application, transport, internet and network access.
-    - TCP/IP can be compared to the OSI Model, which is a model consisting of seven layers: application, presentation, session, transport, network, data link and physical.
-    - The benefits of having a layered structure, is that each layer only does what it has to do, and, while every layer is a client to another layer, it's also a server to other, as data can goes in and out.
+- Basics
+    - Network is the interconnection two different computers in order to make them communicate (exchange data), they are able to do that while following some kind of protocol.
+- TCP/IP
+    - When connected to the internet, a computer speaks TCP/IP, which is a protocol consisting of four layers: application, transport, internet and network access.
+        - TCP/IP can be compared to the OSI Model, which is a model consisting of seven layers: application, presentation, session, transport, network, data link and physical.
+        - The benefits of having a layered structure, is that each layer only does what it has to do, and, while every layer is a client to another layer, it's also a server to other, as data can goes in and out.
+- Firewall
+    - Firewall is a set of algorithms used to block incoming requests that could harm the system.
+- Proxy
+    - A proxy is a man-in-the-middle, it's useful when you are connected behind a lot of proxies (aka: proxychain), to hide your own identity.
+- Load balancing
+    - A technique used to manage requests coming to a server, balancing the load on separated processes that are isolated from each other, preventing overloading a single process.
+    - Nginx is generally used as a load balancer between before two or more servers.
+
+## Databases
+
+- ORM (Object Relational Mapping)
+    - The concept of associating a language object with an SQL table in a one-to-one relationship, enabling the use of an object-oriented paradigm to interact with a database.
+- ACID (Atomicity, Consistency, Isolation, and Durability)
+    - A set of transactional standards implemented by DBMS to maintain data integrity.
+- Transactions
+    - A sequence of various operations performed on a specific database. The goal is to adhere to the "A" in ACID (Atomicity), ensuring that when these operations occur, they happen in their entirety.
+- N + 1
+    - A problem in which multiple queries are executed to retrieve data that could have been fetched in fewer queries.
+- Normalization
+    - Reducing redundancy by dividing tables and establishing relationships between them. From a design perspective, this may seem advantageous, but as I understand it, it can affect performance (resulting in a significant increase in the number of joins).
 
 ## Frameworks
 
@@ -114,35 +174,7 @@
     - The default username is user and the password should be random generated and printed on the console.
     - If not configured, all routes end up asking for the authentication, even routes that doesn't exist should redirect the user to /login.
 
-## Software Architecture
-
-### Clean Architecture
-
-- Divided into layers to ensure the protection of business rules.
-- Entities: The innermost layer, representing the simplest classes that reflect business concepts.
-- Use Cases: Responsible for implementing business rules.
-- Interface: Acts as a bridge for use cases (business rules) to interact with entities.
-- Framework and Drivers: This is where third-party components reside, such as Spring Web, Spring JPA, and MySQL/PostgreSQL drivers.
-
-### Model View Controller (MVC)
-
-- Model
-    - The business logic, operation management, and rules.
-- Controller
-    - The interface between the visual elements and the model.
-- View
-    - The visual representation of the application.
-
-## Side notes
-
-### Firewall
-- **TODO:**
-
-### Proxy
-- **TODO:**
-
-### Load Balancer
-- **TODO:**
+## Organize these in some category
 
 ### Docker
 
@@ -154,7 +186,7 @@
     - Also, i think docker is good for testing the application under "low-resource conditions", like setting up on docker compose that each API should have only 275mb of ram and 1 CPU.
 
 ### CI/CD
-- **TODO:**
+- @TODO
 
 ### Tests
 
@@ -175,21 +207,9 @@
     - Generally used in legacy applications and private APIs.
     - Independent of the transport protocol.
 
-### Databases
+### GoF Patterns 
 
-- ORM (Object Relational Mapping)
-    - The concept of associating a language object with an SQL table in a one-to-one relationship, enabling the use of an object-oriented paradigm to interact with a database.
-- ACID (Atomicity, Consistency, Isolation, and Durability)
-    - A set of transactional standards implemented by DBMS to maintain data integrity.
-- Transactions
-    - A sequence of various operations performed on a specific database. The goal is to adhere to the "A" in ACID (Atomicity), ensuring that when these operations occur, they happen in their entirety.
-- N + 1
-    - A problem in which multiple queries are executed to retrieve data that could have been fetched in fewer queries.
-- Normalization
-    - Reducing redundancy by dividing tables and establishing relationships between them. From a design perspective, this may seem advantageous, but as I understand it, it can affect performance (resulting in a significant increase in the number of joins).
-
-### GoF Patterns
-
+- @TODO
 - Creational Design Patterns
     - Abstract Factory
     - Builder
@@ -219,6 +239,8 @@
 
 ### Some random notes
 
+- Syscalls @TODO
+- Sockets @TODO
 - HATEOAS (Hypertext as the Engine of Application State)
     - A principle in RESTful APIs that makes the API's usage self-explanatory by providing links to related operations.
     - It allows the API consumer, typically a developer, to easily navigate operations, as the average client doesn't interact with the API JSON "directly" but rather perceives it in the formatting provided by the front-end developer.
@@ -239,5 +261,3 @@
     - It acts as an intermediary between different parts of an application or between different applications in a queued manner.
     - Imagine that in a few days, a new Marvel movie is set to be released. Many users visit a hypothetical website, "https://movietickets.com," to reserve their tickets for the movie. However, the system does not use a queue to handle the high demand, resulting in failures.
     - Implementing a queue ensures that even under heavy loads, the application continues to respond, albeit at a slower pace.
-- Nginx
-    - Generally it's used for load balancing and proxies.
