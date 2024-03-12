@@ -24,66 +24,52 @@
 
 ## Algorithms
 
-- [ ] Complexity (Big-O)
+- [-] Complexity (Big-O)
+    - [-] Add notes @TODO 
 - [ ] Sorting
-  - [ ] Bubble sort
-  - [ ] Insertion sort
-  - [ ] Selection sort
-  - [ ] Merge sort
-  - [ ] Quick sort
+    - [ ] Bubble sort
+    - [ ] Insertion sort
+    - [ ] Selection sort
+    - [ ] Merge sort
+    - [ ] Quick sort
 - [ ] Searching
-  - [ ] Linear search
-  - [ ] Binary search
+    - [ ] Linear search
+    - [ ] Binary search
 - [ ] Dynamic Programming
-  - [ ] Fibonacci series
-  - [ ] Longest Common Subsequence
-  - [ ] Knapsack problem
+    - [ ] Fibonacci series
+    - [ ] Longest Common Subsequence
+    - [ ] Knapsack problem
 - [ ] Greedy Algorithms
-  - [ ] Activity selection problem
-  - [ ] Huffman coding
+    - [ ] Activity selection problem
+    - [ ] Huffman coding
 - [ ] Graph Algorithms
-  - [ ] Breadth-First Search (BFS)
-  - [ ] Depth-First Search (DFS)
-  - [ ] Shortest path algorithms (Dijkstra's, Bellman-Ford)
-  - [ ] Minimum Spanning Tree (Prim's, Kruskal's)
+    - [ ] Breadth-First Search (BFS)
+    - [ ] Depth-First Search (DFS)
+    - [ ] Shortest path algorithms (Dijkstra's, Bellman-Ford)
+    - [ ] Minimum Spanning Tree (Prim's, Kruskal's)
 - [ ] String Algorithms
-  - [ ] Pattern matching (Naive, KMP, Rabin-Karp)
-  - [ ] Longest Common Substring
+    - [ ] Pattern matching (Naive, KMP, Rabin-Karp)
+    - [ ] Longest Common Substring
 - [ ] Advanced Topics
-  - [ ] Divide and Conquer
-  - [ ] Backtracking
-  - [ ] Randomized Algorithms
-  - [ ] NP-completeness and P vs NP
+    - [ ] Sliding Window
+    - [ ] Divide and Conquer
+    - [ ] Backtracking
+    - [ ] Randomized Algorithms
+    - [ ] NP-completeness and P vs NP
 - [ ] Machine Learning Algorithms
-  - [ ] Linear Regression
-  - [ ] Decision Trees
-  - [ ] k-Nearest Neighbors (kNN)
-  - [ ] Support Vector Machines (SVM)
-  - [ ] Neural Networks
+    - [ ] Linear Regression
+    - [ ] Decision Trees
+    - [ ] k-Nearest Neighbors (kNN)
+    - [ ] Support Vector Machines (SVM)
+    - [ ] Neural Networks
 - [ ] Miscellaneous
-  - [ ] Bit manipulation
-  - [ ] Topological sorting
-  - [ ] Trie data structure
-  - [ ] Segment Tree
+    - [ ] Bit manipulation
+    - [ ] Topological sorting
+    - [ ] Trie data structure
+    - [ ] Segment Tree
 
 ## Software Architecture
-
-### Clean Architecture
-
-- Divided into layers to ensure the protection of business rules.
-- Entities: The innermost layer, representing the simplest classes that reflect business concepts.
-- Use Cases: Responsible for implementing business rules.
-- Interface: Acts as a bridge for use cases (business rules) to interact with entities.
-- Framework and Drivers: This is where third-party components reside, such as Spring Web, Spring JPA, and MySQL/PostgreSQL drivers.
-
-### Model View Controller (MVC)
-
-- Model
-    - The business logic, operation management, and rules.
-- Controller
-    - The interface between the visual elements and the model.
-- View
-    - The visual representation of the application.
+@TODO
 
 ## Operating Systems
 

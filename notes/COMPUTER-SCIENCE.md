@@ -120,54 +120,7 @@
 
 You'll need to choose a programming language for the coding interviews you do,
 but you'll also need to find a language that you can use to study computer science concepts.
-
 Preferably the language would be the same, so that you only need to be proficient in one.
-
-### For this Study Plan
-
-When I did the study plan, I used 2 languages for most of it: C and Python
-
-* C: Very low level. Allows you to deal with pointers and memory allocation/deallocation, so you feel the data structures
-    and algorithms in your bones. In higher-level languages like Python or Java, these are hidden from you. In day-to-day work, that's terrific,
-    but when you're learning how these low-level data structures are built, it's great to feel close to the metal.
-    - C is everywhere. You'll see examples in books, lectures, videos, *everywhere* while you're studying.
-    - [The C Programming Language, 2nd Edition](https://www.amazon.com/Programming-Language-Brian-W-Kernighan/dp/0131103628)
-        - This is a short book, but it will give you a great handle on the C language and if you practice it a little
-            you'll quickly get proficient. Understanding C helps you understand how programs and memory work.
-        - You don't need to go super deep in the book (or even finish it). Just get to where you're comfortable reading and writing in C.
-* Python: Modern and very expressive, I learned it because it's just super useful and also allows me to write less code in an interview.
-
-This is my preference. You do what you like, of course.
-
-You may not need it, but here are some sites for learning a new language:
-- [Exercism](https://exercism.org/tracks)
-- [Codewars](http://www.codewars.com)
-- [HackerEarth](https://www.hackerearth.com/for-developers/)
-- [Scaler Topics (Java, C++)](https://www.scaler.com/topics/)
-
-### For your Coding Interview
-
-You can use a language you are comfortable in to do the coding part of the interview, but for large companies, these are solid choices:
-
-- C++
-- Java
-- Python
-
-You could also use these, but read around first. There may be caveats:
-
-- JavaScript
-- Ruby
-
-Here is an article I wrote about choosing a language for the interview:
-[Pick One Language for the Coding Interview](https://startupnextdoor.com/important-pick-one-language-for-the-coding-interview/).
-This is the original article my post was based on: [Choosing a Programming Language for Interviews](https://web.archive.org/web/20210516054124/http://blog.codingforinterviews.com/best-programming-language-jobs/)
-
-You need to be very comfortable in the language and be knowledgeable.
-
-Read more about choices:
-- [Choose the Right Language for Your Coding Interview](http://www.byte-by-byte.com/choose-the-right-language-for-your-coding-interview/)
-
-[See language-specific resources here](programming-language-resources.md)
 
 ## Interview Prep Books
 
@@ -200,19 +153,9 @@ Here are some mistakes I made so you'll have a better experience. And you'll sav
 
 ### 1. You Won't Remember it All
 
-I watched hours of videos and took copious notes, and months later there was much I didn't remember. I spent 3 days going
-through my notes and making flashcards, so I could review. I didn't need all of that knowledge.
-
-Please, read so you won't make my mistakes:
-
 [Retaining Computer Science Knowledge](https://startupnextdoor.com/retaining-computer-science-knowledge/).
 
 ### 2. Use Flashcards
-
-To solve the problem, I made a little flashcard site where I could add flashcards of 2 types: general and code.
-Each card has a different formatting. I made a mobile-first website, so I could review on my phone or tablet, wherever I am.
-
-Make your own for free:
 
 - [Flashcards site repo](https://github.com/jwasham/computer-science-flash-cards)
 
@@ -345,22 +288,11 @@ But don't forget to do coding problems from above while you learn!
 ## Algorithmic complexity and Big-O
 
 - Understand how to express the complexity of an algorithm in terms of Big-O.
-- [ ] [Harvard CS50 - Asymptotic Notation (video)](https://www.youtube.com/watch?v=iOq5kSKqeR4)
-- [ ] [Big O Notations (general quick tutorial) (video)](https://www.youtube.com/watch?v=V6mKVRU1evU)
+- [X] [Harvard CS50 - Asymptotic Notation (video)](https://www.youtube.com/watch?v=iOq5kSKqeR4)
+- [X] [Big O Notations (general quick tutorial) (video)](https://www.youtube.com/watch?v=V6mKVRU1evU)
 - [ ] [Big O Notation (and Omega and Theta) - best mathematical explanation (video)](https://www.youtube.com/watch?v=ei-A_wy5Yxw&index=2&list=PL1BaGV1cIH4UhkL8a9bJGG356covJ76qN)
-- [ ] [Skiena (video)](https://www.youtube.com/watch?v=z1mkCe3kVUA)
-- [ ] [UC Berkeley Big O (video)](https://archive.org/details/ucberkeley_webcast_VIS4YDpuP98)
-- [ ] [Amortized Analysis (video)](https://www.youtube.com/watch?v=B3SpQZaAZP4&index=10&list=PL1BaGV1cIH4UhkL8a9bJGG356covJ76qN)
-- [ ] TopCoder (includes recurrence relations and master theorem):
-    - [Computational Complexity: Section 1](https://www.topcoder.com/thrive/articles/Computational%20Complexity%20part%20one)
-    - [Computational Complexity: Section 2](https://www.topcoder.com/thrive/articles/Computational%20Complexity%20part%20two)
 - [ ] [Cheat sheet](http://bigocheatsheet.com/)
 - [ ] [[Review] Big-O notation in 5 minutes (video)](https://youtu.be/__vX2sjlpXU)
-
-Well, that's about enough of that.
-
-When you go through "Cracking the Coding Interview", there is a chapter on this, and at the end there is a quiz to see
-if you can identify the runtime complexity of different algorithms. It's a super review and test.
 
 ## Data Structures
 
