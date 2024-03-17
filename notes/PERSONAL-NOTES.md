@@ -12,7 +12,7 @@
 
 - [ ] Arrays
     - Implementation: a struct, fixed size n, fixed type t with size s. The size of the array is basically n * s. Each element has a index. To get an element, go to the start of the array and multiply the index by s, some simple pointer arithmetic.
-    - Constant time access O(1).
+    - Constant access O(1).
 - [ ] Linked Lists
     - Implementation: a struct, not necessarily fixed size or type.
     - Better insertion and removal compared to arrays. Just change/add pointers to other elements.
@@ -24,14 +24,19 @@
 
 ## Algorithms
 
-- [-] Complexity (Big-O)
-    - [-] Add notes @TODO 
-- [ ] Sorting
-    - [ ] Bubble sort
-    - [ ] Insertion sort
-    - [ ] Selection sort
-    - [ ] Merge sort
-    - [ ] Quick sort
+- [X] Complexity (Big-O)
+    - To avoid the difference between CPUs runtimes in seconds/minutes, Big-O notation works based on the limit concept, as n grows towards infinity, how does the algorithm behaves.
+    - The most common O notations, in increasing order: O(1) < O(log n) < O(n log n) < O(n) < O(n^2) < O(2^n) < O(n!)
+    - Add mathematical explanation @TODO
+    - [Big-O Cheat sheet](http://bigocheatsheet.com/)
+- [-] Sorting (common sorting algorithms)
+    - Not going to implement since they are horrible:
+        - Bubble sort
+        - Insertion sort
+        - Selection sort
+    - Those two i think are the best ones:
+        - [ ] Merge sort
+        - [ ] Quick sort
 - [ ] Searching
     - [ ] Linear search
     - [ ] Binary search
