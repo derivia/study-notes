@@ -11,11 +11,11 @@
 ## Data Structures
 
 - [ ] Arrays
-    - Implementation: a struct, fixed size n, fixed type t with size s. The size of the array is basically n * s. Each element has a index. To get an element, go to the start of the array and multiply the index by s, some simple pointer arithmetic.
+    - Fixed size n, fixed type t with size s. The size of the array is basically n * s. Each element has a index. To get an element, go to the start of the array and multiply the index by s, some simple pointer arithmetic.
     - Constant access O(1).
 - [ ] Linked Lists
-    - Implementation: a struct, not necessarily fixed size or type.
     - Better insertion and removal compared to arrays. Just change/add pointers to other elements.
+    - Not constant access, because each element points to the next, which isn't in the "same memory location".
 - [ ] Stacks
 - [ ] Queues
 - [ ] Hash tables
@@ -34,7 +34,7 @@
         - Bubble sort
         - Insertion sort
         - Selection sort
-    - Those two i think are the best ones:
+    - These two i think are the best ones:
         - [ ] Merge sort
         - [ ] Quick sort
 - [ ] Searching
