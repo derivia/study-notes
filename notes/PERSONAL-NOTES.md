@@ -9,6 +9,7 @@
 - [Organize these in some category](#organize-these-in-some-category)
 
 ## Data Structures
+> Implementations: [Here](https://github.com/lorrito/algorithms/tree/main/code/data-structures)
 
 - [ ] Arrays
     - Fixed size n, fixed type t with size s. The size of the array is basically n * s. Each element has a index. To get an element, go to the start of the array and multiply the index by s, some simple pointer arithmetic.
@@ -23,6 +24,7 @@
 - [ ] Graphs
 
 ## Algorithms
+> Implementations: [Here](https://github.com/lorrito/algorithms/tree/main/code/algorithms)
 
 - [X] Complexity (Big-O)
     - To avoid the difference between CPUs runtimes in seconds/minutes, Big-O notation works based on the limit concept, as n grows towards infinity, how does the algorithm behaves.
@@ -74,8 +76,10 @@
     - [ ] Segment Tree
 
 ## Software Architecture
-@TODO
 
+- Microsservices @TODO
+- Message Queuing @TODO
+ 
 ## Operating Systems
 
 ### Memory Allocation
@@ -132,6 +136,9 @@
 - Load balancing
     - A technique used to manage requests coming to a server, balancing the load on separated processes that are isolated from each other, preventing overloading a single process.
     - Nginx is generally used as a load balancer between before two or more servers.
+- TCP or UDP
+    - TCP is used when the content that is being shared shouldn't have problems, which means there are verifications and a slower transmission in order to have properly received data.
+    - UDP is an alternative to TCP, which doesn't care too much about the data integrity, being used commonly on games and audio/video real time transmission.
 
 ## Databases
 
@@ -177,6 +184,7 @@
     - Also, i think docker is good for testing the application under "low-resource conditions", like setting up on docker compose that each API should have only 275mb of ram and 1 CPU.
 
 ### Code Review, merge, ci/cd
+
 - @TODO
 
 ### Tests
@@ -198,7 +206,7 @@
     - Generally used in legacy applications and private APIs.
     - Independent of the transport protocol.
 
-### GoF Patterns 
+### GoF Patterns
 
 - @TODO
 - Creational Design Patterns
@@ -230,10 +238,13 @@
 
 ### Some random notes
 
-- Microsservices @TODO
-- Message Queuing @TODO
-- Syscalls @TODO
-- Sockets @TODO
+- Syscalls
+    - Low-level interfaces provided by an operating system for accessing its services. They allow programs to interact with the underlying hardware resources, such as file systems, input/output operations, process management, etc. Syscalls are generally implemented through specific function invocations from the user space to the kernel space, and they provide a standardized way for programs to request system resources and services.
+- Sockets
+    - Communication endpoints in computer networks that enable data exchange between applications on different devices or systems.
+    - The communication endpoint consists of ip + port: 127.0.0.1:12345
+    - The socket is binded at the port and listen, accepts/refuses connections, etc.
+    - Websites HTTP requests works based on sockets between the local browser and the remote server.
 - HATEOAS (Hypertext as the Engine of Application State)
     - A principle in RESTful APIs that makes the API's usage self-explanatory by providing links to related operations.
     - It allows the API consumer, typically a developer, to easily navigate operations, as the average client doesn't interact with the API JSON "directly" but rather perceives it in the formatting provided by the front-end developer.
