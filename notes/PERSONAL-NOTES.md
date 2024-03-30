@@ -11,15 +11,26 @@
 ## Data Structures
 > Implementations: [Here](https://github.com/lorrito/algorithms/tree/main/code/data-structures)
 
-- [ ] Arrays
+- [X] Arrays
     - Fixed size n, fixed type t with size s. The size of the array is basically n * s. Each element has a index. To get an element, go to the start of the array and multiply the index by s, some simple pointer arithmetic.
     - Constant access O(1).
-- [ ] Linked Lists
+- [X] Linked Lists
     - Better insertion and removal compared to arrays. Just change/add pointers to other elements.
     - Not constant access, because each element points to the next, which isn't in the "same memory location".
-- [ ] Stacks
-- [ ] Queues
-- [ ] Hash tables
+- [X] Stacks
+    - Can be either implemented with an array or queue.
+    - LIFO (last-in, first-out), which is basically "stacking" management of the elements.
+    - Used in undo/redo and some implementations have priority.
+- [X] Queues
+    - Can be either implemented with an array or queue.
+    - FIFO (first-in, first-out), a queue, useful when many things come at the same time.
+    - Good for resource management in servers, managing the requests on queues.
+- [X] Hash tables
+    - Combines some of the best things between arrays and linked-lists.
+    - Basically an array of linked-lists with hashing function, good for having near constant access.
+    - The linked-lists shouldn't be too big (which means the hashing function is good and the hash table array is big enough).
+    - Some of the simplest and most common hashing functions uses some prime number, and at the end makes the modulo of the 
+      hash table size to insert the element on a linked list based on the hash function output as index.
 - [ ] Trees
 - [ ] Graphs
 
@@ -31,7 +42,7 @@
     - The most common O notations, in increasing order: O(1) < O(log n) < O(n log n) < O(n) < O(n^2) < O(2^n) < O(n!)
     - Add mathematical explanation @TODO
     - [Big-O Cheat sheet](http://bigocheatsheet.com/)
-- [-] Sorting (common sorting algorithms)
+- [ ] Sorting (common sorting algorithms)
     - Not going to implement since they are horrible:
         - Bubble sort
         - Insertion sort
@@ -39,9 +50,13 @@
     - These two i think are the best ones:
         - [ ] Merge sort
         - [ ] Quick sort
-- [ ] Searching
-    - [ ] Linear search
-    - [ ] Binary search
+- [X] Searching
+    - [X] Linear search
+        - Works on non-ordered elements.
+        - It is O(n).
+    - [X] Binary search
+        - Works only on ordered elements.
+        - It is O(log n). 
 - [ ] Dynamic Programming
     - [ ] Fibonacci series
     - [ ] Longest Common Subsequence
