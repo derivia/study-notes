@@ -9,7 +9,7 @@
 - [Organize these in some category](#organize-these-in-some-category)
 
 ## Data Structures
-> Implementations: [Here](https://github.com/lorrito/algorithms/tree/main/code/data-structures)
+> Implementations: [Here](https://github.com/lorrito/algorithms/data-structures-algorithms)
 
 - [X] Arrays
     - Fixed size n, fixed type t with size s. The size of the array is basically n * s. Each element has a index. To get an element, go to the start of the array and multiply the index by s, some simple pointer arithmetic.
@@ -35,7 +35,7 @@
 - [ ] Graphs
 
 ## Algorithms
-> Implementations: [Here](https://github.com/lorrito/algorithms/tree/main/code/algorithms)
+> Implementations: [Here](https://github.com/lorrito/algorithms/data-structures-algorithms)
 
 - [X] Complexity (Big-O)
     - To avoid the difference between CPUs runtimes in seconds/minutes, Big-O notation works based on the limit concept, as n grows towards infinity, how does the algorithm behaves.
