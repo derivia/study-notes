@@ -200,7 +200,25 @@ console.log(max(4, 1, 9, -2));
 ```
 
 ## Databases
+> Aside from the first note, databases here usually mean "relational databases".
+> And DB or db means "database".
 
+- Databases aren't all relational, some are noSQL: MongoDB, Redis, etc.
+- SQL is the most commonly used language to speak with dbs.
+- Databases are made of tables, made of rows and columns.
+- Tables are unique and are used to represent separated objects/activities on the same database. 
+    - For example, a dvd store database could have tables called: actor, category, film, etc.
+- The "relational" part comes from the fact that there are relationships created based on keys from different tables.
+- Databases exists in order to have systems with large data sets that still are fast, using techniques to reach ACID in most cases.
+    - Sometimes ACID concepts are dropped in order to maintain performance.
+- When learning about dbs, it's useful to work with both self-created and samples.
+- Subsets of SQL:
+    - DDL (definition) - manages tables structures (creating, altering and dropping).
+    - DML (manipulation) - manages tables columns and rows (insertion, deletion and updating).
+    - DQL (query) - selects data based on specified criteria (clauses like WHERE)
+    - DCL (control) - manages db users access rights and permissions
+    - DTL (transaction) - ensures data integrity on dbs
+ 
 - ORM (Object Relational Mapping)
     - The concept of associating a language object with an SQL table in a one-to-one relationship, enabling the use of an object-oriented paradigm to interact with a database.
 - ACID (Atomicity, Consistency, Isolation, and Durability)
