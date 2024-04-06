@@ -2,9 +2,11 @@
 
 - [Data Structures](#data-structures)
 - [Algorithms](#algorithms)
+- [Software Architecture](#software-architecture)
 - [Operating Systems](#operating-systems)
 - [Networking](#networking)
-- [Software Architecture](#software-architecture)
+- [Programming Languages](#programming-languages)
+- [Databases](#databases)
 - [Frameworks](#frameworks)
 - [Organize these in some category](#organize-these-in-some-category)
 
@@ -151,9 +153,51 @@
 - Load balancing
     - A technique used to manage requests coming to a server, balancing the load on separated processes that are isolated from each other, preventing overloading a single process.
     - Nginx is generally used as a load balancer between before two or more servers.
-- TCP or UDP
+- IP
+    - An IP address is an identifier assigned to an device on a local network that has a unique sequence of numbers, typically in the format of four sets of numbers separated by periods, such as 192.168.1.1.
+- TCP/UDP
     - TCP is used when the content that is being shared shouldn't have problems, which means there are verifications and a slower transmission in order to have properly received data.
     - UDP is an alternative to TCP, which doesn't care too much about the data integrity, being used commonly on games and audio/video real time transmission.
+    - Ports
+        - Used to identify applications that speaks and/or listen for connections, an application that needs a TCP connection have an assigned port.
+        - Like HTTP is normally 80 and HTTPS 443.
+    - Sockets
+        - Communication endpoints in computer networks that enable data exchange between applications on different devices or systems.
+        - The communication endpoint consists of ip + port: 127.0.0.1:12345
+        - The socket is binded at the port and listen, accepts/refuses connections, etc.
+        - Websites HTTP requests works based on sockets between the local browser and the remote server.
+- Internet
+    - The giant connection of computers from around the globe, it is a network of networks basically.
+- HTTP
+    - A protocol used to transfer data between a server and a client based on requests and responses.
+    - HTTP + SSL/TLS = HTTPS
+        - An encrypted version that gives more security on the communication between the server and client.
+        - SSL/TLS (Secure Socket Layer / Transport Layer Security)
+            - Both are certificate-based security protocols designed to establish a trust contract between client and server.
+            - SSL is the older version, while TLS is the newer and more secure one.
+- Packet
+    - A unit of a bigger data, that goes along with others packets.
+- Router
+    - A device that routes packets between networks.
+
+## Programming Languages
+> these are basically notes about some languages.
+
+### Javascript
+
+- Cool thing i didn't knew about javascript function arguments:
+```javascript
+// ... makes it receive as many arguments as possible
+function max(...numbers) {
+  let result = -Infinity;
+  for (let number of numbers) {
+    if (number > result) result = number;
+  }
+  return result;
+}
+console.log(max(4, 1, 9, -2));
+// → 9
+```
 
 ## Databases
 
@@ -255,11 +299,6 @@
 
 - Syscalls
     - Low-level interfaces provided by an operating system for accessing its services. They allow programs to interact with the underlying hardware resources, such as file systems, input/output operations, process management, etc. Syscalls are generally implemented through specific function invocations from the user space to the kernel space, and they provide a standardized way for programs to request system resources and services.
-- Sockets
-    - Communication endpoints in computer networks that enable data exchange between applications on different devices or systems.
-    - The communication endpoint consists of ip + port: 127.0.0.1:12345
-    - The socket is binded at the port and listen, accepts/refuses connections, etc.
-    - Websites HTTP requests works based on sockets between the local browser and the remote server.
 - HATEOAS (Hypertext as the Engine of Application State)
     - A principle in RESTful APIs that makes the API's usage self-explanatory by providing links to related operations.
     - It allows the API consumer, typically a developer, to easily navigate operations, as the average client doesn't interact with the API JSON "directly" but rather perceives it in the formatting provided by the front-end developer.
@@ -272,9 +311,6 @@
 - CORS (Cross-origin Resource Sharing)
     - A security mechanism that helps prevent cross-origin attacks. A server defines rules determining which external origins have access to a domain's resources.
     - This is why executing JavaScript functions that fetch data from an external API, imported by an open HTML file in the browser, may fail if CORS is not configured properly.
-- SSL/TLS (Secure Socket Layer / Transport Layer Security)
-    - Both are certificate-based security protocols designed to establish a trust contract between client and server.
-    - SSL is the older version, while TLS is the newer and more secure one.
 - RabbitMQ
     - A message queuing service, also known as a message broker or queue manager.
     - It acts as an intermediary between different parts of an application or between different applications in a queued manner.
