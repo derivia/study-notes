@@ -215,9 +215,10 @@ console.log(max(4, 1, 9, -2));
 - Subsets of SQL:
     - DDL (definition) - manages tables structures (creating, altering and dropping).
     - DML (manipulation) - manages tables columns and rows (insertion, deletion and updating).
-    - DQL (query) - selects data based on specified criteria (clauses like WHERE)
-    - DCL (control) - manages db users access rights and permissions
-    - DTL (transaction) - ensures data integrity on dbs
+    - DQL (query) - selects data based on specified criteria (clauses like WHERE).
+    - DCL (control) - manages db users access rights and permissions.
+    - DTL (transaction) - ensures data integrity on dbs.
+- Each db has different data types, but, they usually share in common (with different names): numbers, strings, booleans and dates.
  
 - ORM (Object Relational Mapping)
     - The concept of associating a language object with an SQL table in a one-to-one relationship, enabling the use of an object-oriented paradigm to interact with a database.
