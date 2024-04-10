@@ -31,7 +31,7 @@
     - Combines some of the best things between arrays and linked-lists.
     - Basically an array of linked-lists with hashing function, good for having near constant access.
     - The linked-lists shouldn't be too big (which means the hashing function is good and the hash table array is big enough).
-    - Some of the simplest and most common hashing functions uses some prime number, and at the end makes the modulo of the 
+    - Some of the simplest and most common hashing functions uses some prime number, and at the end makes the modulo of the
       hash table size to insert the element on a linked list based on the hash function output as index.
 - [ ] Trees
 - [ ] Graphs
@@ -58,7 +58,7 @@
         - It is O(n).
     - [X] Binary search
         - Works only on ordered elements.
-        - It is O(log n). 
+        - It is O(log n).
 - [ ] Dynamic Programming
     - [ ] Fibonacci series
     - [ ] Longest Common Subsequence
@@ -96,7 +96,7 @@
 
 - Microsservices @TODO
 - Message Queuing @TODO
- 
+
 ## Operating Systems
 
 ### Memory Allocation
@@ -185,9 +185,38 @@
 
 ### Javascript
 
-- Cool thing i didn't knew about javascript function arguments:
+- Differents types of functions:
 ```javascript
-// ... makes it receive as many arguments as possible
+// Expression
+const returnSum = function (a, b) {
+    return a + b;
+}
+
+// Declaration
+function returnSum(a, b) {
+    return a + b;
+}
+
+// Arrow
+const returnSum = (a, b) => a + b;
+```
+
+- Some array methods:
+```javascript
+const numbers = [3, 6, 9, 12, 15];
+numbers.length; // 5
+numbers.shift(); // [6, 9, 12, 15]
+numbers.pop(); // [6, 9, 12]
+numbers.unshift(3); // [3, 6, 9, 12]
+numbers.push(15); // [3, 6, 9, 12, 15]
+numbers.indexOf(9); // 2
+numbers.indexOf(18); // -1
+numbers.includes(9); // true
+numbers.includes(18); // false
+```
+
+- Dynamic function parameter, creating an internal array from the parameters:
+```javascript
 function max(...numbers) {
   let result = -Infinity;
   for (let number of numbers) {
@@ -199,6 +228,21 @@ console.log(max(4, 1, 9, -2));
 // → 9
 ```
 
+- For in & For of:
+```javascript
+const obj = { a: 1, b: 2, c: 3 };
+
+for (let key in obj) { // iterates over properties
+  console.log(key, obj[key]);
+}
+
+const arr = [1, 2, 3];
+for (let value of arr) { // iterates over values
+
+  console.log(value);
+}
+```
+
 ## Databases
 > Aside from the first note, databases here usually mean "relational databases".
 > And DB or db means "database".
@@ -206,7 +250,7 @@ console.log(max(4, 1, 9, -2));
 - Databases aren't all relational, some are noSQL: MongoDB, Redis, etc.
 - SQL is the most commonly used language to speak with dbs.
 - Databases are made of tables, made of rows and columns.
-- Tables are unique and are used to represent separated objects/activities on the same database. 
+- Tables are unique and are used to represent separated objects/activities on the same database.
     - For example, a dvd store database could have tables called: actor, category, film, etc.
 - The "relational" part comes from the fact that there are relationships created based on keys from different tables.
 - Databases exists in order to have systems with large data sets that still are fast, using techniques to reach ACID in most cases.
@@ -219,7 +263,7 @@ console.log(max(4, 1, 9, -2));
     - DCL (control) - manages db users access rights and permissions.
     - DTL (transaction) - ensures data integrity on dbs.
 - Each db has different data types, but, they usually share in common (with different names): numbers, strings, booleans and dates.
- 
+
 - ORM (Object Relational Mapping)
     - The concept of associating a language object with an SQL table in a one-to-one relationship, enabling the use of an object-oriented paradigm to interact with a database.
 - ACID (Atomicity, Consistency, Isolation, and Durability)
@@ -247,7 +291,7 @@ console.log(max(4, 1, 9, -2));
 
 ### React (JavaScript)
 
-- SPA 
+- SPA
 - States
 - Events
 - Props
