@@ -222,14 +222,22 @@ console.log(max(4, 1, 9, -2));
 
 - Array destructuring:
 ```javascript
+const names = ["maria", "lucas", "pedro", "gabriel"];
+for (let [i, j] of names.entries()) console.log(`${i + 1}: ${j}`);
+/*
+ * 1: maria
+ * 2: lucas
+ * 3: pedro
+ * 4: gabriel
+*/
+
 const restaurant = {
   categories: ["Vegetarian", "Italian", "Pizzeria"],
   mainMenu: ["Pizza", "Pasta", "Risotto"],
   starterMenu: ["Bruschetta", "Garlic Bread", "Caprese Salad", ["Extra-Virgin Olive Oil", "Balsamic Vinegar", "Parmesan Cheese"]],
 };
-
 const [, mainMenuFavorite] = restaurant.mainMenu; // Pasta
-const [, , startMenuFavorite, [startMenuFavoriteCondiment]] = restaurant.starterMenu; // Caprese Salad & Extra-Virgin Olive Oil
+const [, , starterMenuFavorite, [starterMenuFavoriteCondiment]] = restaurant.starterMenu; // Caprese Salad & Extra-Virgin Olive Oil
 ```
 
 - For in & For of:
