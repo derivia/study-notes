@@ -179,9 +179,15 @@
     - A unit of a bigger data, that goes along with others packets.
 - Router
     - A device that routes packets between networks.
+- A client/server interaction example:
+    - Client Request (as example, HTTP GET) -> Server IP + Port (SVIP+P) -> Socket bound to SVIP+P -> Process bound to the socket -> Back-end generates a response and gives it back.
+    - This means that both, client (CL) and server (SV), are, at the same time, a client and a server.
+        - Which means they receive and respond to interactions from the other, using a set of protocols.
+    - The server HTTP socket usually binds to port 80, preventing another process from using the same port.
+    - Scalability in client/server systems is achieved through techniques like load balancing and horizontal scaling.
 
 ## Programming Languages
-> these are basically notes about some languages.
+> these are just some notes about some languages.
 
 ### Javascript
 
