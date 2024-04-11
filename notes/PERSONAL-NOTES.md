@@ -207,20 +207,6 @@ function returnSum(a, b) {
 const returnSum = (a, b) => a + b;
 ```
 
-- Some array methods:
-```javascript
-const numbers = [3, 6, 9, 12, 15];
-numbers.length; // 5
-numbers.shift(); // [6, 9, 12, 15]
-numbers.pop(); // [6, 9, 12]
-numbers.unshift(3); // [3, 6, 9, 12]
-numbers.push(15); // [3, 6, 9, 12, 15]
-numbers.indexOf(9); // 2
-numbers.indexOf(18); // -1
-numbers.includes(9); // true
-numbers.includes(18); // false
-```
-
 - Dynamic function parameter, creating an internal array from the parameters:
 ```javascript
 function max(...numbers) {
@@ -234,17 +220,27 @@ console.log(max(4, 1, 9, -2));
 // → 9
 ```
 
+- Array destructuring:
+```javascript
+const restaurant = {
+  categories: ["Vegetarian", "Italian", "Pizzeria"],
+  mainMenu: ["Pizza", "Pasta", "Risotto"],
+  starterMenu: ["Bruschetta", "Garlic Bread", "Caprese Salad", ["Extra-Virgin Olive Oil", "Balsamic Vinegar", "Parmesan Cheese"]],
+};
+
+const [, mainMenuFavorite] = restaurant.mainMenu; // Pasta
+const [, , startMenuFavorite, [startMenuFavoriteCondiment]] = restaurant.starterMenu; // Caprese Salad & Extra-Virgin Olive Oil
+```
+
 - For in & For of:
 ```javascript
 const obj = { a: 1, b: 2, c: 3 };
-
 for (let key in obj) { // iterates over properties
   console.log(key, obj[key]);
 }
 
 const arr = [1, 2, 3];
 for (let value of arr) { // iterates over values
-
   console.log(value);
 }
 ```
