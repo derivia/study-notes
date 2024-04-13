@@ -191,6 +191,24 @@
 
 ### Javascript
 
+- Closure example:
+```javascript
+let exampleFunction;
+
+const closureCreateFunction = () => {
+  let numberFromInside = 25;
+  exampleFunction = () => {
+    numberFromInside *= 2;
+    console.log(numberFromInside);
+  }
+}
+
+closureCreateFunction();
+exampleFunction(); // 50
+exampleFunction(); // 100
+exampleFunction(); // 200
+```
+
 - Differents types of functions:
 ```javascript
 // Expression
