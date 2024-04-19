@@ -319,17 +319,48 @@ for (let value of arr) { // iterates over values
 
 ### React (JavaScript)
 
-- SPA
-- States
-- Events
+- Components
+    - Reusable pieces of UI used to create a tree of components.
+- JSX
+    - Declarative syntax based on JavaScript, HTML & CSS that components return.
+    - Makes it easier to create components instead of writing React.createElement().
+    - Transpiled by things like Babel so it can be executed.
 - Props
+    - Used to share data between parent and children components.
+    - Range from strings to React components or JavaScript objects.
+- States
+    - A good way to abstract from the developer the need to keep HTML elements and JavaScript code in sync using dom manipulation.
+    - The elements are rendered by React every time a state is changed, updating the DOM.
+- Events
 - Forms
 - Hooks
-- JSX
 - Redux
 - Router
 
 ## Organize these in some category
+
+### Analyzing different web-projects stacks
+
+- A stack is just the set of main components from the project backend/frontend.
+- Stack acronyms are commonly used on posts by people who use JavaScript, i don't know why.
+- Common ones i found on the internet:
+    - These first three are JavaScript based.
+    - MERN (MongoDB, Express, React & NodeJS).
+    - MEAN (MongoDB, Express, Angular & NodeJS).
+    - MEVN (MongoDB, Express, VueJS & NodeJS).
+        - MongoDB can be changed for something like PostgreSQL if it suits better.
+        - Express is commonly used, but, fastify is also good.
+        - React, angular and vue all are related to the visuals of the website and they are all in javascript/typescript.
+        - NodeJS is just the engine that executes the javascript code.
+    - LAMP (Linux (?), Apache, MySQL & PHP).
+        - This appears like something a bit older than the other ones before.
+        - I don't understand why linux is listed here, maybe just to have four letters.
+        - Linux is commonly used as a server-side operating system, the same for MERN, MEAN, MEVN, etc.
+        - Apache/Nginx is also commonly used.
+- I find it strange that MongoDB appears on the three most common ones.
+    - Maybe because new programmers usually think it is "the best" database.
+    - I guess if you are making small websites, you don't need to choose the best, just choose one.
+    - I would use MongoDB or some other NoSQL based database when ACID is not a requirement and horizontal scalability is necessary.
 
 ### Docker
 
