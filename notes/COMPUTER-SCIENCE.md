@@ -66,7 +66,7 @@
 - [Have questions for the interviewer](#have-questions-for-the-interviewer)
 - [Once You've Got The Job](#once-youve-got-the-job)
 
-**---------------- Everything below this point is optional ----------------**
+---------------- Everything below this point is optional ----------------
 
 ### Optional Extra Topics & Resources
 
@@ -159,7 +159,7 @@ Here are some mistakes I made so you'll have a better experience. And you'll sav
 
 - [Flashcards site repo](https://github.com/jwasham/computer-science-flash-cards)
 
-**I DON'T RECOMMEND using my flashcards.** There are too many and most of them are trivia that you don't need.
+I DON'T RECOMMEND using my flashcards. There are too many and most of them are trivia that you don't need.
 
 But if you don't want to listen to me, here you go:
 - [My flash cards database (1200 cards)](https://github.com/jwasham/computer-science-flash-cards/blob/main/cards-jwasham.db):
@@ -168,7 +168,7 @@ But if you don't want to listen to me, here you go:
 Keep in mind I went overboard and have cards covering everything from assembly language and Python trivia to machine learning and statistics.
 It's way too much for what's required.
 
-**Note on flashcards:** The first time you recognize you know the answer, don't mark it as known. You have to see the
+Note on flashcards: The first time you recognize you know the answer, don't mark it as known. You have to see the
 same card and answer it several times correctly before you really know it. Repetition will put that knowledge deeper in
 your brain.
 
@@ -188,14 +188,14 @@ Start doing coding interview questions while you're learning data structures and
 
 You need to apply what you're learning to solve problems, or you'll forget. I made this mistake.
 
-Once you've learned a topic, and feel somewhat comfortable with it, for example, **linked lists**:
+Once you've learned a topic, and feel somewhat comfortable with it, for example, linked lists:
 1. Open one of the [coding interview books](#interview-prep-books) (or coding problem websites, listed below)
 1. Do 2 or 3 questions regarding linked lists.
 1. Move on to the next learning topic.
 1. Later, go back and do another 2 or 3 linked list problems.
 1. Do this with each new topic you learn.
 
-**Keep doing problems while you're learning all this stuff, not after.**
+Keep doing problems while you're learning all this stuff, not after.
 
 You're not being hired for knowledge, but how you apply the knowledge.
 
@@ -242,11 +242,11 @@ Write code on a whiteboard or paper, not a computer. Test with some sample input
 
 If you don't have a whiteboard at home, pick up a large drawing pad from an art store. You can sit on the couch and practice.
 This is my "sofa whiteboard". I added the pen in the photo just for scale. If you use a pen, you'll wish you could erase.
-Gets messy quickly. **I use a pencil and eraser.**
+Gets messy quickly. I use a pencil and eraser.
 
 ![my sofa whiteboard](https://d3j2pkmjtin6ou.cloudfront.net/art_board_sm_2.jpg)
 
-**Coding question practice is not about memorizing answers to programming problems.**
+Coding question practice is not about memorizing answers to programming problems.
 
 ## Coding Problems
 
@@ -303,31 +303,6 @@ But don't forget to do coding problems from above while you learn!
         - [UC Berkeley CS61B - Linear and Multi-Dim Arrays (video)](https://archive.org/details/ucberkeley_webcast_Wp8oiO_CZZE) (Start watching from 15m 32s)
         - [Dynamic Arrays (video)](https://www.coursera.org/lecture/data-structures/dynamic-arrays-EwbnV)
         - [Jagged Arrays (video)](https://www.youtube.com/watch?v=1jtrQqYpt7g)
-    - [ ] Implement a vector (mutable array with automatic resizing):
-        - [ ] Practice coding using arrays and pointers, and pointer math to jump to an index instead of using indexing.
-        - [ ] New raw data array with allocated memory
-            - can allocate int array under the hood, just not use its features
-            - start with 16, or if the starting number is greater, use power of 2 - 16, 32, 64, 128
-        - [ ] size() - number of items
-        - [ ] capacity() - number of items it can hold
-        - [ ] is_empty()
-        - [ ] at(index) - returns the item at a given index, blows up if index out of bounds
-        - [ ] push(item)
-        - [ ] insert(index, item) - inserts item at index, shifts that index's value and trailing elements to the right
-        - [ ] prepend(item) - can use insert above at index 0
-        - [ ] pop() - remove from end, return value
-        - [ ] delete(index) - delete item at index, shifting all trailing elements left
-        - [ ] remove(item) - looks for value and removes index holding it (even if in multiple places)
-        - [ ] find(item) - looks for value and returns first index with that value, -1 if not found
-        - [ ] resize(new_capacity) // private function
-            - when you reach capacity, resize to double the size
-            - when popping an item, if the size is 1/4 of capacity, resize to half
-    - [ ] Time
-        - O(1) to add/remove at end (amortized for allocations for more space), index, or update
-        - O(n) to insert/remove elsewhere
-    - [ ] Space
-        - contiguous in memory, so proximity helps performance
-        - space needed = (array capacity, which is >= n) * size of item, but even if 2n, still O(n)
 
 - ### Linked Lists
     - [X] Description:
@@ -400,7 +375,6 @@ But don't forget to do coding problems from above while you learn!
         - [ ] [(Advanced) Randomization: Universal & Perfect Hashing (video)](https://www.youtube.com/watch?v=z0lJ2k0sl1g&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&index=11)
         - [ ] [(Advanced) Perfect hashing (video)](https://www.youtube.com/watch?v=N0COwN14gt0&list=PL2B4EEwhKD-NbwZ4ezj7gyc_3yNrojKM9&index=4)
         - [ ] [[Review] Hash tables in 4 minutes (video)](https://youtu.be/knV86FlSXJ8)
-
     - [ ] Online Courses:
         - [ ] [Core Hash Tables (video)](https://www.coursera.org/lecture/data-structures-optimizing-performance/core-hash-tables-m7UuP)
         - [ ] [Data Structures (video)](https://www.coursera.org/learn/data-structures/home/week/4)
@@ -408,13 +382,6 @@ But don't forget to do coding problems from above while you learn!
         - [ ] distributed hash tables:
             - [Instant Uploads And Storage Optimization In Dropbox (video)](https://www.coursera.org/lecture/data-structures/instant-uploads-and-storage-optimization-in-dropbox-DvaIb)
             - [Distributed Hash Tables (video)](https://www.coursera.org/lecture/data-structures/distributed-hash-tables-tvH8H)
-
-    - [ ] Implement with array using linear probing
-        - hash(k, m) - m is the size of the hash table
-        - add(key, value) - if the key already exists, update value
-        - exists(key)
-        - get(key)
-        - remove(key)
 
 ## More Knowledge
 
@@ -892,7 +859,7 @@ Graphs can be used to represent many problems in computer science, so this secti
         - The first half is enough.
 
 - ### Networking
-    - **If you have networking experience or want to be a reliability engineer or operations engineer, expect questions**
+    - If you have networking experience or want to be a reliability engineer or operations engineer, expect questions
     - Otherwise, this is just good to know
     - [ ] [Khan Academy](https://www.khanacademy.org/computing/code-org/computers-and-the-internet)
     - [ ] [UDP and TCP: Comparison of Transport Protocols (video)](https://www.youtube.com/watch?v=Vdc8TCESIg8)
@@ -1047,14 +1014,12 @@ Some of mine (I already may know the answers, but want their opinion or team per
         - Chapter 10 - Instruction Set Architecture
         - Chapter 11 - Memory Architecture and Organization
 - [Introduction to Algorithms](https://www.amazon.com/Introduction-Algorithms-fourth-Thomas-Cormen/dp/026204630X)
-    - **Important:** Reading this book will only have limited value. This book is a great review of algorithms and data structures, but won't teach you how to write good code. You have to be able to code a decent solution efficiently
+    - Important: Reading this book will only have limited value. This book is a great review of algorithms and data structures, but won't teach you how to write good code. You have to be able to code a decent solution efficiently
     - AKA CLR, sometimes CLRS, because Stein was late to the game
 - [Computer Architecture, Sixth Edition: A Quantitative Approach](https://www.amazon.com/dp/0128119055)
     - For a richer, more up-to-date (2017), but longer treatment
 
 ## System Design, Scalability, Data Handling
-
-**You can expect system design questions if you have 4+ years of experience.**
 
 - Scalability and System Design are very large topics with many topics and resources, since
       there is a lot to consider when designing a software/hardware system that can scale.
@@ -1072,7 +1037,7 @@ Some of mine (I already may know the answers, but want their opinion or team per
         - simplicity and robustness
         - tradeoffs
         - performance analysis and optimization
-- [ ] **START HERE**: [The System Design Primer](https://github.com/donnemartin/system-design-primer)
+- [ ] START HERE: [The System Design Primer](https://github.com/donnemartin/system-design-primer)
 - [ ] [System Design from HiredInTech](http://www.hiredintech.com/system-design/)
 - [ ] [How Do I Prepare To Answer Design Questions In A Technical Interview?](https://www.quora.com/How-do-I-prepare-to-answer-design-questions-in-a-technical-interview?redirected_qid=1500023)
 - [ ] [8 steps guide to ace your system design interview](https://javascript.plainenglish.io/8-steps-guide-to-ace-a-system-design-interview-7a5a797f4d7d)
@@ -1340,7 +1305,7 @@ Some of mine (I already may know the answers, but want their opinion or team per
         - Search and insertion functions, skipping delete
     - I want to learn more about B-Tree since it's used so widely with very large data sets
     - [Self-balancing binary search tree](https://en.wikipedia.org/wiki/Self-balancing_binary_search_tree)
-    - **AVL trees**
+    - AVL trees
         - In practice:
             From what I can tell, these aren't used much in practice, but I could see where they would be:
             The AVL tree is another structure supporting O(log n) search, insertion, and removal. It is more rigidly
@@ -1352,7 +1317,7 @@ Some of mine (I already may know the answers, but want their opinion or team per
         - [AVL Tree Implementation (video)](https://www.coursera.org/learn/data-structures/lecture/PKEBC/avl-tree-implementation)
         - [Split And Merge](https://www.coursera.org/learn/data-structures/lecture/22BgE/split-and-merge)
         - [[Review] AVL Trees (playlist) in 19 minutes (video)](https://www.youtube.com/playlist?list=PL9xmBV_5YoZOUFgdIeOPuH6cfSnNRMau-)
-    - **Splay trees**
+    - Splay trees
         - In practice:
             Splay trees are typically used in the implementation of caches, memory allocators, routers, garbage collectors,
             data compression, ropes (replacement of string used for long text strings), in Windows NT (in the virtual memory,
@@ -1361,7 +1326,7 @@ Some of mine (I already may know the answers, but want their opinion or team per
         - MIT Lecture: Splay Trees:
             - Gets very mathy, but watch the last 10 minutes for sure.
             - [Video](https://www.youtube.com/watch?v=QnPl_Y6EqMo)
-    - **Red/black trees**
+    - Red/black trees
         - These are a translation of a 2-3 tree (see below).
         - In practice:
             Red–black trees offer worst-case guarantees for insertion time, deletion time, and search time.
@@ -1376,28 +1341,28 @@ Some of mine (I already may know the answers, but want their opinion or team per
         - [Red-Black Tree](https://en.wikipedia.org/wiki/Red%E2%80%93black_tree)
         - [An Introduction To Binary Search And Red Black Tree](https://www.topcoder.com/thrive/articles/An%20Introduction%20to%20Binary%20Search%20and%20Red-Black%20Trees)
         - [[Review] Red-Black Trees (playlist) in 30 minutes (video)](https://www.youtube.com/playlist?list=PL9xmBV_5YoZNqDI8qfOZgzbqahCUmUEin)
-    - **2-3 search trees**
+    - 2-3 search trees
         - In practice:
             2-3 trees have faster inserts at the expense of slower searches (since height is more compared to AVL trees).
         - You would use 2-3 trees very rarely because its implementation involves different types of nodes. Instead, people use Red-Black trees.
         - [23-Tree Intuition and Definition (video)](https://www.youtube.com/watch?v=C3SsdUqasD4&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6&index=2)
         - [Binary View of 23-Tree](https://www.youtube.com/watch?v=iYvBtGKsqSg&index=3&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6)
         - [2-3 Trees (student recitation) (video)](https://www.youtube.com/watch?v=TOb1tuEZ2X4&index=5&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp)
-    - **2-3-4 Trees (aka 2-4 trees)**
+    - 2-3-4 Trees (aka 2-4 trees)
         - In practice:
             For every 2-4 trees, there are corresponding red–black trees with data elements in the same order. The insertion and deletion
             operations on 2-4 trees are also equivalent to color-flipping and rotations in red–black trees. This makes 2-4 trees an
             important tool for understanding the logic behind red-black trees, and this is why many introductory algorithm texts introduce
-            2-4 trees just before red–black trees, even though **2-4 trees are not often used in practice**.
+            2-4 trees just before red–black trees, even though 2-4 trees are not often used in practice.
         - [CS 61B Lecture 26: Balanced Search Trees (video)](https://archive.org/details/ucberkeley_webcast_zqrqYXkth6Q)
         - [Bottom Up 234-Trees (video)](https://www.youtube.com/watch?v=DQdMYevEyE4&index=4&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6)
         - [Top Down 234-Trees (video)](https://www.youtube.com/watch?v=2679VQ26Fp4&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6&index=5)
-    - **N-ary (K-ary, M-ary) trees**
+    - N-ary (K-ary, M-ary) trees
         - note: the N or K is the branching factor (max branches)
         - binary trees are a 2-ary tree, with branching factor = 2
         - 2-3 trees are 3-ary
         - [K-Ary Tree](https://en.wikipedia.org/wiki/K-ary_tree)
-    - **B-Trees**
+    - B-Trees
         - Fun fact: it's a mystery, but the B could stand for Boeing, Balanced, or Bayer (co-inventor).
         - In Practice:
             B-trees are widely used in databases. Most modern filesystems use B-trees (or Variants). In addition to
@@ -1415,54 +1380,54 @@ Some of mine (I already may know the answers, but want their opinion or team per
         - [[Review] B-Trees (playlist) in 26 minutes (video)](https://www.youtube.com/playlist?list=PL9xmBV_5YoZNFPPv98DjTdD9X6UI9KMHz)
 
 
-- ### k-D Trees
+- k-D Trees
     - Great for finding a number of points in a rectangle or higher-dimensional object
     - A good fit for k-nearest neighbors
     - [kNN K-d tree algorithm (video)](https://www.youtube.com/watch?v=Y4ZgLlDfKDg)
 
-- ### Skip lists
+- Skip lists
     - "These are somewhat of a cult data structure" - Skiena
     - [Randomization: Skip Lists (video)](https://www.youtube.com/watch?v=2g9OSRKJuzM&index=10&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp)
     - [For animations and a little more detail](https://en.wikipedia.org/wiki/Skip_list)
 
-- ### Network Flows
+- Network Flows
     - [Ford-Fulkerson in 5 minutes — Step by step example (video)](https://www.youtube.com/watch?v=Tl90tNtKvxs)
     - [Ford-Fulkerson Algorithm (video)](https://www.youtube.com/watch?v=v1VgJmkEJW0)
     - [Network Flows (video)](https://www.youtube.com/watch?v=2vhN4Ice5jI)
 
-- ### Disjoint Sets & Union Find
+- Disjoint Sets & Union Find
     - [UCB 61B - Disjoint Sets; Sorting & selection (video)](https://archive.org/details/ucberkeley_webcast_MAEGXTwmUsI)
     - [Sedgewick Algorithms - Union-Find (6 videos)](https://www.coursera.org/learn/algorithms-part1/home/week/1)
 
-- ### Math for Fast Processing
+- Math for Fast Processing
     - [Integer Arithmetic, Karatsuba Multiplication (video)](https://www.youtube.com/watch?v=eCaXlAaN2uE&index=11&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
     - [The Chinese Remainder Theorem (used in cryptography) (video)](https://www.youtube.com/watch?v=ru7mWZJlRQg)
 
-- ### Treap
+- Treap
     - Combination of a binary search tree and a heap
     - [Treap](https://en.wikipedia.org/wiki/Treap)
     - [Data Structures: Treaps explained (video)](https://www.youtube.com/watch?v=6podLUYinH8)
     - [Applications in set operations](https://www.cs.cmu.edu/~scandal/papers/treaps-spaa98.pdf)
 
-- ### Linear Programming (videos)
+- Linear Programming (videos)
     - [Linear Programming](https://www.youtube.com/watch?v=M4K6HYLHREQ)
     - [Finding minimum cost](https://www.youtube.com/watch?v=2ACJ9ewUC6U)
     - [Finding maximum value](https://www.youtube.com/watch?v=8AA_81xI3ik)
     - [Solve Linear Equations with Python - Simplex Algorithm](https://www.youtube.com/watch?v=44pAWI7v5Zk)
 
-- ### Geometry, Convex hull (videos)
+- Geometry, Convex hull (videos)
     - [Graph Alg. IV: Intro to geometric algorithms - Lecture 9](https://youtu.be/XIAQRlNkJAw?list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&t=3164)
     - [Geometric Algorithms: Graham & Jarvis - Lecture 10](https://www.youtube.com/watch?v=J5aJEcOr6Eo&index=10&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm)
     - [Divide & Conquer: Convex Hull, Median Finding](https://www.youtube.com/watch?v=EzeYI7p9MjU&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&index=2)
 
-- ### Discrete math
+- Discrete math
     - [Computer Science 70, 001 - Spring 2015 - Discrete Mathematics and Probability Theory](http://www.infocobuild.com/education/audio-video-courses/computer-science/cs70-spring2015-berkeley.html)
     - [Discrete Mathematics by Shai Simonson (19 videos)](https://www.youtube.com/playlist?list=PLWX710qNZo_sNlSWRMVIh6kfTjolNaZ8t)
     - [Discrete Mathematics By IIT Ropar NPTEL](https://nptel.ac.in/courses/106/106/106106183/)
 
 ## Additional Detail on Some Subjects
 
-- **SOLID**
+- SOLID
     - [ ] [Bob Martin SOLID Principles of Object Oriented and Agile Design (video)](https://www.youtube.com/watch?v=TMuno5RZNeE)
     - [ ] S - [Single Responsibility Principle](http://www.oodesign.com/single-responsibility-principle.html) | [Single responsibility to each Object](http://www.javacodegeeks.com/2011/11/solid-single-responsibility-principle.html)
         - [more flavor](https://docs.google.com/open?id=0ByOwmqah_nuGNHEtcU5OekdDMkk)
@@ -1478,7 +1443,7 @@ Some of mine (I already may know the answers, but want their opinion or team per
         - [more flavor](http://docs.google.com/a/cleancoder.com/viewer?a=v&pid=explorer&chrome=true&srcid=0BwhCYaYDn8EgMjdlMWIzNGUtZTQ0NC00ZjQ5LTkwYzQtZjRhMDRlNTQ3ZGMz&hl=en)
 
 
-- **Union-Find**
+- Union-Find
     - [Overview](https://www.coursera.org/learn/data-structures/lecture/JssSY/overview)
     - [Naive Implementation](https://www.coursera.org/learn/data-structures/lecture/EM5D0/naive-implementations)
     - [Trees](https://www.coursera.org/learn/data-structures/lecture/Mxu0w/trees)
@@ -1486,7 +1451,7 @@ Some of mine (I already may know the answers, but want their opinion or team per
     - [Path Compression](https://www.coursera.org/learn/data-structures/lecture/Q9CVI/path-compression)
     - [Analysis Options](https://www.coursera.org/learn/data-structures/lecture/GQQLN/analysis-optional)
 
-- **More Dynamic Programming** (videos)
+- More Dynamic Programming (videos)
     - [6.006: Dynamic Programming I: Fibonacci, Shortest Paths](https://www.youtube.com/watch?v=r4-cftqTcdI&ab_channel=MITOpenCourseWare)
     - [6.006: Dynamic Programming II: Text Justification, Blackjack](https://www.youtube.com/watch?v=KLBCUx1is2c&ab_channel=MITOpenCourseWare)
     - [6.006: DP III: Parenthesization, Edit Distance, Knapsack](https://www.youtube.com/watch?v=TDo3r5M1LNo&ab_channel=MITOpenCourseWare)
@@ -1495,11 +1460,11 @@ Some of mine (I already may know the answers, but want their opinion or team per
     - [6.046: Dynamic Programming: All-Pairs Shortest Paths](https://www.youtube.com/watch?v=NzgFUwOaoIw&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&index=15)
     - [6.046: Dynamic Programming (student recitation)](https://www.youtube.com/watch?v=krZI60lKPek&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&index=12)
 
-- **Advanced Graph Processing** (videos)
+- Advanced Graph Processing (videos)
     - [Synchronous Distributed Algorithms: Symmetry-Breaking. Shortest-Paths Spanning Trees](https://www.youtube.com/watch?v=mUBmcbbJNf4&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&index=27)
     - [Asynchronous Distributed Algorithms: Shortest-Paths Spanning Trees](https://www.youtube.com/watch?v=kQ-UQAzcnzA&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&index=28)
 
-- MIT **Probability** (mathy, and go slowly, which is good for mathy things) (videos):
+- MIT Probability (mathy, and go slowly, which is good for mathy things) (videos):
     - [MIT 6.042J - Probability Introduction](https://www.youtube.com/watch?v=SmFwFdESMHI&index=18&list=PLB7540DEDD482705B)
     - [MIT 6.042J - Conditional Probability](https://www.youtube.com/watch?v=E6FbvM-FGZ8&index=19&list=PLB7540DEDD482705B)
     - [MIT 6.042J - Independence](https://www.youtube.com/watch?v=l1BCv3qqW4A&index=20&list=PLB7540DEDD482705B)
@@ -1511,7 +1476,7 @@ Some of mine (I already may know the answers, but want their opinion or team per
 
 - [Simonson: Approximation Algorithms (video)](https://www.youtube.com/watch?v=oDniZCmNmNw&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&index=19)
 
-- **String Matching**
+- String Matching
     - Rabin-Karp (videos):
         - [Rabin Karps Algorithm](https://www.coursera.org/lecture/data-structures/rabin-karps-algorithm-c0Qkw)
         - [Precomputing](https://www.coursera.org/learn/data-structures/lecture/nYrc8/optimization-precomputation)
@@ -1528,7 +1493,7 @@ Some of mine (I already may know the answers, but want their opinion or team per
         - nice explanation of tries
         - can be skipped
 
-- **Sorting**
+- Sorting
     - Stanford lectures on sorting:
         - [Lecture 15 | Programming Abstractions (video)](https://www.youtube.com/watch?v=ENp00xylP7c&index=15&list=PLFE6E58F856038C69)
         - [Lecture 16 | Programming Abstractions (video)](https://www.youtube.com/watch?v=y4M9IVgrVKo&index=16&list=PLFE6E58F856038C69)

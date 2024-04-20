@@ -185,6 +185,27 @@
         - Which means they receive and respond to interactions from the other, using a set of protocols.
     - The server HTTP socket usually binds to port 80, preventing another process from using the same port.
     - Scalability in client/server systems is achieved through techniques like load balancing and horizontal scaling.
+- Topologies
+    - Point-to-point
+        - A direct conection between two points.
+        - Something like a tin can telephone.
+    - Bus
+        - A dedicated central "bus", commonly referred as backbone.
+        - All nodes are connected to the backbone.
+    - Ring
+        - A loop made of point-to-points.
+    - Star
+        - A switch/hub based topology, where all nodes are connected to a central node.
+        - The central node acts as a repeater of the message received from one peripheral and sends to another.
+    - Mesh
+        - A complete graph, where all nodes points to all other nodes.
+- Domain names
+    - Human-readable addresses of web servers.
+    - Consists of "levels", separated by dots.
+    - Levels:
+        - Subdomain: www, dev, etc.
+        - SDL: google, youtube, twitch, etc.
+        - TLD: com, org, net, us, br, etc.
 
 ## Programming Languages
 > these are just some notes about some languages.
@@ -426,6 +447,8 @@ for (let value of arr) { // iterates over values
 
 ### Some random notes
 
+- Inter-process Communication (IPC)
+    - Mechanisms which allows data exchanges between threads of one or different processes.
 - Syscalls
     - Low-level interfaces provided by an operating system for accessing its services. They allow programs to interact with the underlying hardware resources, such as file systems, input/output operations, process management, etc. Syscalls are generally implemented through specific function invocations from the user space to the kernel space, and they provide a standardized way for programs to request system resources and services.
 - HATEOAS (Hypertext as the Engine of Application State)
