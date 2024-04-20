@@ -1166,9 +1166,6 @@ Some of mine (I already may know the answers, but want their opinion or team per
 
 ## Additional Learning
 
-    I added them to help you become a well-rounded software engineer and to be aware of certain
-    technologies and algorithms, so you'll have a bigger toolbox.
-
 - ### Compilers
     - [How a Compiler Works in ~1 minute (video)](https://www.youtube.com/watch?v=IhC7sdYe-Jg)
     - [Harvard CS50 - Compilers (video)](https://www.youtube.com/watch?v=CSZLNYF4Klo)
@@ -1343,7 +1340,6 @@ Some of mine (I already may know the answers, but want their opinion or team per
         - Search and insertion functions, skipping delete
     - I want to learn more about B-Tree since it's used so widely with very large data sets
     - [Self-balancing binary search tree](https://en.wikipedia.org/wiki/Self-balancing_binary_search_tree)
-
     - **AVL trees**
         - In practice:
             From what I can tell, these aren't used much in practice, but I could see where they would be:
@@ -1356,7 +1352,6 @@ Some of mine (I already may know the answers, but want their opinion or team per
         - [AVL Tree Implementation (video)](https://www.coursera.org/learn/data-structures/lecture/PKEBC/avl-tree-implementation)
         - [Split And Merge](https://www.coursera.org/learn/data-structures/lecture/22BgE/split-and-merge)
         - [[Review] AVL Trees (playlist) in 19 minutes (video)](https://www.youtube.com/playlist?list=PL9xmBV_5YoZOUFgdIeOPuH6cfSnNRMau-)
-
     - **Splay trees**
         - In practice:
             Splay trees are typically used in the implementation of caches, memory allocators, routers, garbage collectors,
@@ -1366,7 +1361,6 @@ Some of mine (I already may know the answers, but want their opinion or team per
         - MIT Lecture: Splay Trees:
             - Gets very mathy, but watch the last 10 minutes for sure.
             - [Video](https://www.youtube.com/watch?v=QnPl_Y6EqMo)
-
     - **Red/black trees**
         - These are a translation of a 2-3 tree (see below).
         - In practice:
@@ -1382,7 +1376,6 @@ Some of mine (I already may know the answers, but want their opinion or team per
         - [Red-Black Tree](https://en.wikipedia.org/wiki/Red%E2%80%93black_tree)
         - [An Introduction To Binary Search And Red Black Tree](https://www.topcoder.com/thrive/articles/An%20Introduction%20to%20Binary%20Search%20and%20Red-Black%20Trees)
         - [[Review] Red-Black Trees (playlist) in 30 minutes (video)](https://www.youtube.com/playlist?list=PL9xmBV_5YoZNqDI8qfOZgzbqahCUmUEin)
-
     - **2-3 search trees**
         - In practice:
             2-3 trees have faster inserts at the expense of slower searches (since height is more compared to AVL trees).
@@ -1390,7 +1383,6 @@ Some of mine (I already may know the answers, but want their opinion or team per
         - [23-Tree Intuition and Definition (video)](https://www.youtube.com/watch?v=C3SsdUqasD4&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6&index=2)
         - [Binary View of 23-Tree](https://www.youtube.com/watch?v=iYvBtGKsqSg&index=3&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6)
         - [2-3 Trees (student recitation) (video)](https://www.youtube.com/watch?v=TOb1tuEZ2X4&index=5&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp)
-
     - **2-3-4 Trees (aka 2-4 trees)**
         - In practice:
             For every 2-4 trees, there are corresponding red–black trees with data elements in the same order. The insertion and deletion
@@ -1400,13 +1392,11 @@ Some of mine (I already may know the answers, but want their opinion or team per
         - [CS 61B Lecture 26: Balanced Search Trees (video)](https://archive.org/details/ucberkeley_webcast_zqrqYXkth6Q)
         - [Bottom Up 234-Trees (video)](https://www.youtube.com/watch?v=DQdMYevEyE4&index=4&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6)
         - [Top Down 234-Trees (video)](https://www.youtube.com/watch?v=2679VQ26Fp4&list=PLA5Lqm4uh9Bbq-E0ZnqTIa8LRaL77ica6&index=5)
-
     - **N-ary (K-ary, M-ary) trees**
         - note: the N or K is the branching factor (max branches)
         - binary trees are a 2-ary tree, with branching factor = 2
         - 2-3 trees are 3-ary
         - [K-Ary Tree](https://en.wikipedia.org/wiki/K-ary_tree)
-
     - **B-Trees**
         - Fun fact: it's a mystery, but the B could stand for Boeing, Balanced, or Bayer (co-inventor).
         - In Practice:
@@ -1470,13 +1460,7 @@ Some of mine (I already may know the answers, but want their opinion or team per
     - [Discrete Mathematics by Shai Simonson (19 videos)](https://www.youtube.com/playlist?list=PLWX710qNZo_sNlSWRMVIh6kfTjolNaZ8t)
     - [Discrete Mathematics By IIT Ropar NPTEL](https://nptel.ac.in/courses/106/106/106106183/)
 
----
-
 ## Additional Detail on Some Subjects
-
-    I added these to reinforce some ideas already presented above, but didn't want to include them
-    above because it's just too much. It's easy to overdo it on a subject.
-    You want to get hired in this century, right?
 
 - **SOLID**
     - [ ] [Bob Martin SOLID Principles of Object Oriented and Agile Design (video)](https://www.youtube.com/watch?v=TMuno5RZNeE)
@@ -1545,7 +1529,6 @@ Some of mine (I already may know the answers, but want their opinion or team per
         - can be skipped
 
 - **Sorting**
-
     - Stanford lectures on sorting:
         - [Lecture 15 | Programming Abstractions (video)](https://www.youtube.com/watch?v=ENp00xylP7c&index=15&list=PLFE6E58F856038C69)
         - [Lecture 16 | Programming Abstractions (video)](https://www.youtube.com/watch?v=y4M9IVgrVKo&index=16&list=PLFE6E58F856038C69)
@@ -1621,7 +1604,6 @@ Sit back and enjoy.
 ## Algorithms implementation
 
 - [Multiple Algorithms implementation by Princeton University](https://algs4.cs.princeton.edu/code)
-
 
 ## Papers
 
