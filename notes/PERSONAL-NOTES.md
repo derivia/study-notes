@@ -142,6 +142,25 @@
 
 - Basics
     - Network is the interconnection two different computers in order to make them communicate (exchange data), they are able to do that while following some kind of protocol.
+- OSI Model
+    - Divided into 7 layers, each one responsible for a specific function.
+    - On a communication between computers, requests/responses don't stricly follow the layers.
+    - 1 - Physical (RJ45, DSL, etc)
+        - Bits are encoded into physical signals (current, light, radio waves) and transmitted further by wire or wirelessly.
+    - 2 - Data link (MAC, HDLC, etc)
+        - Physical signals are decoded back into ones and zeros, errors are corrected.
+    - 3 - Network (IP, ICMP, etc)
+        - Traffic routing, DNS queries and IP packet generation.
+    - 4 - Transport (TCP, UDP, etc)
+        - Data transfer based on TCP or UDP (explained later).
+    - 5 - Session (APIs sockets, etc)
+        - Responsible for opening/closing sessions.
+    - 6 - Presentation (SSH, IMAP, etc)
+        - Encryption/decryption and data compression. 
+    - 7 - Application (HTTP, FTP, etc)
+        - Allows applications to access network services such as email forwarding.
+    - The model is a general concept of the connection between different devices, that uses different protocols.
+- TCP Model
 - TCP/IP
     - When connected to the internet, a computer speaks TCP/IP, which is a protocol consisting of four layers: application, transport, internet and network access.
         - TCP/IP can be compared to the OSI Model, which is a model consisting of seven layers: application, presentation, session, transport, network, data link and physical.
