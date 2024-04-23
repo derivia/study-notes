@@ -156,7 +156,7 @@
     - 5 - Session (APIs sockets, etc)
         - Responsible for opening/closing sessions.
     - 6 - Presentation (SSH, IMAP, etc)
-        - Encryption/decryption and data compression. 
+        - Encryption/decryption and data compression.
     - 7 - Application (HTTP, FTP, etc)
         - Allows applications to access network services such as email forwarding.
     - The model is a general concept of the connection between different devices, that uses different protocols.
@@ -370,12 +370,26 @@ for (let value of arr) { // iterates over values
     - Range from strings to React components or JavaScript objects.
 - States
     - A good way to abstract from the developer the need to keep HTML elements and JavaScript code in sync using dom manipulation.
-    - The elements are rendered by React every time a state is changed, updating the DOM.
+    - The element is rendered by React every time a state is changed, updating the DOM.
+- Hooks
+    - Apparently all react functions that starts with "use" are hooks.
 - Events
 - Forms
-- Hooks
 - Redux
 - Router
+
+- A good way to render elements from a list is this syntax, using the map method
+```javascriptreact
+function App() {
+  return (
+    <>
+      {array.map((element, index) => (
+        <span key={index}>{element.body}</span>
+      ))}
+    </>
+  );
+}
+```
 
 ## Organize these in some category
 
