@@ -379,7 +379,7 @@ for (let value of arr) { // iterates over values
 - Router
 
 - A good way to render elements from a list is this syntax, using the map method
-```javascriptreact
+```javascript
 function App() {
   return (
     <>
