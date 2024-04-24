@@ -416,6 +416,16 @@ function App() {
     - I guess if you are making small websites, you don't need to choose the best, just choose one.
     - I would use MongoDB or some other NoSQL based database when ACID is not a requirement and horizontal scalability is necessary.
 
+### Encryption
+
+- Symmetric
+    - Bad, basically a password-based protection (encrypt/decrypt [lock/unlock] with the same key), if someone has the password, every other content that is locked by the same password can be decrypted.
+- Asymmetric
+    - Better, a key-pair is generated based on some algorithm, one public and one private.
+        - Something like RSA.
+    - The public key encrypts, the private key decrypts.
+    - Like on WhatsApp, i encrypt my message with the public key of some contact of mine. Them, they receive it encrypted, and only their private key can decrypt the message.
+
 ### Docker
 
 - What is docker
