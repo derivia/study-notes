@@ -311,6 +311,25 @@ for (let value of arr) { // iterates over values
 }
 ```
 
+- Array methods:
+> when to use each array method
+
+- reduce()
+    - perform a function on every element and accumulate the result on a single value.
+    - useful for transforming arrays into different data structures.
+- slice()
+    - extract a portion of the array without modifying it.
+    - create shallow copy or work with a subset of the array.
+- filter()
+    - create a new array based on another array + conditions.
+    - filtering unwanted elements.
+- sort()
+    - modifies the array by sorting it based on some comparison function.
+    - useful to sort elements. 
+- map()
+    - return an array of same length based on some function.
+    - useful when making some mathematics.
+
 ## Databases
 > Aside from the first note, databases here usually mean "relational databases".
 > And DB or db means "database".
