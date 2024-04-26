@@ -229,6 +229,32 @@
 ## Programming Languages
 > these are just some notes about some languages.
 
+### Ruby
+
+- Ranges:
+```ruby
+(1..16)     # inclusive range -> 1, 2, ..., 16
+(1...16)    # exclusive range -> 1, 2, ..., 15
+('a'..'g')  # letters range -> a, b, ..., g
+```
+
+- Times:
+```ruby
+3.times do
+  puts "hello, world!"
+end
+
+3.times do |iteration|   # starts from 0
+  puts "iteration: #{iteration}"
+end
+```
+
+- Downto & upto:
+```ruby
+3.upto(6) { |number| print "#{number} " }    # 3 4 5 6
+6.downto(3) { |number| print "#{number} " }  # 6 5 4 3
+```
+
 ### Javascript
 
 - Closure example:
@@ -325,7 +351,7 @@ for (let value of arr) { // iterates over values
     - filtering unwanted elements.
 - sort()
     - modifies the array by sorting it based on some comparison function.
-    - useful to sort elements. 
+    - useful to sort elements.
 - map()
     - return an array of same length based on some function.
     - useful when making some mathematics.
