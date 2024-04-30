@@ -233,18 +233,18 @@
 
 - Enumerable common methods:
 
-- reduce
+- inject/reduce
     - perform a function on every element and accumulate the result on a single value.
     - useful for transforming arrays into different data structures.
-- select
+- select/find_all
     - loop over objects and return an array for which a expression returns true
     - filtering unwanted elements.
-- sort
-    - modifies the array by sorting it based on some comparison function.
-    - useful to sort elements.
 - collect/map
     - loop over objects and add the return value to an array
     - useful when making some mathematics.
+- sort
+    - modifies the array by sorting it based on some comparison function.
+    - useful to sort elements.
 
 - Ranges:
 ```ruby
