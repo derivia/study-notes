@@ -246,6 +246,11 @@
     - modifies the array by sorting it based on some comparison function.
     - useful to sort elements.
 
+- About to_s & puts
+> from launchscool.com
+- "puts method calls to_s for any argument that is not an array.
+    - for an array, it writes on separate lines the result of calling to_s on each element of the array."
+
 - Ranges:
 ```ruby
 (1..16)     # inclusive range -> 1, 2, ..., 16
@@ -391,7 +396,6 @@ for (let value of arr) { // iterates over values
     - DCL (control) - manages db users access rights and permissions.
     - DTL (transaction) - ensures data integrity on dbs.
 - Each db has different data types, but, they usually share in common (with different names): numbers, strings, booleans and dates.
-
 - ORM (Object Relational Mapping)
     - The concept of associating a language object with an SQL table in a one-to-one relationship, enabling the use of an object-oriented paradigm to interact with a database.
 - ACID (Atomicity, Consistency, Isolation, and Durability)
@@ -452,6 +456,19 @@ function App() {
 ```
 
 ## Organize these in some category
+
+### About SOLID
+
+- Single Responsibility
+    - A class should have only one job.
+- Open-Closed
+    - A class/module should be open for extension but closed for modification.
+- Liskov Substitution
+    - Superclasses should be replaceable by its subclasses.
+- Interface Segregation
+    - Interfaces should be specific, avoiding the need to have unnecessary functions.
+- Dependency Inversion
+    - Decouple classes from implementations, using abstractions.
 
 ### Analyzing different web-projects stacks
 
