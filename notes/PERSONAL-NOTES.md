@@ -405,7 +405,31 @@ for (let value of arr) { // iterates over values
 - N + 1
     - A problem in which multiple queries are executed to retrieve data that could have been fetched in fewer queries.
 - Normalization
-    - Reducing redundancy by dividing tables and establishing relationships between them. From a design perspective, this may seem advantageous, but as I understand it, it can affect performance (resulting in a significant increase in the number of joins).
+    - Reducing redundancy by dividing tables and establishing relationships between them.
+    - Splitting up data to remove duplication and improve data integrity.
+- Keys
+    - Primary
+        - A unique identifier for a row.
+        - Tipically an id, generally of type serial or uuid.
+        - Each table tipically has only one.
+    - Foreign
+        - Used to associate a row in some table to some row on another table.
+        - Makes so values are only accepted when they can reference some primary key from the other table.
+        - FOREIGN KEY (fk_column_name) REFERENCES another_table_with_pk (pk_column_name)
+- Relationships
+    - One-to-one
+        - Primary key from some table is used as both primary key and foreign key of another table.
+        - e.g.: one person (from the table persons) is unique and can only have one passport (from the table passports).
+    - One-to-many
+        - Primary and foreign are different columns (e.g: id and book_id on a table called reviews).
+            - As they are different, the foreign key is not unique.
+        - The foreign key still references the primary key on the table books.
+        - e.g.: one book (from the table books) is unique but can have many reviews (from the table reviews).
+    - Many-to-many
+        - Requires an intermediate table to establish the relationship between two other tables.
+        - Primary keys from both tables involved in the relationship are stored as foreign keys in the intermediate table.
+        - e.g.: an intermediate table named "user_groups" could store pairs of user IDs and group IDs to signify which users are members of which groups.
+            - a user can be part of many groups and a group can have many users.
 
 ## Frameworks
 
