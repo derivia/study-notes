@@ -42,7 +42,7 @@
 - [X] Complexity (Big-O)
     - To avoid the difference between CPUs runtimes in seconds/minutes, Big-O notation works based on the limit concept, as n grows towards infinity, how does the algorithm behaves.
     - The most common O notations, in increasing order: O(1) < O(log n) < O(n log n) < O(n) < O(n^2) < O(2^n) < O(n!)
-    - Add mathematical explanation @TODO
+    - @TODO: Add mathematical explanation about Big-O
     - [Big-O Cheat sheet](http://bigocheatsheet.com/)
 - [-] Sorting (common sorting algorithms)
     - Not going to implement since they are horrible:
@@ -94,8 +94,24 @@
 
 ## Software Architecture
 
-- Microsservices @TODO
-- Message Queuing @TODO
+- "Evolution" of architectures
+    - Monolithic
+        - Tightly coupled within a single codebase.
+        - Source code for different purposes on the same files.
+        - Challenges: Complexity of updating and deployment.
+    - Multitier
+        - Separated source code by purpose.
+        - e.g.: presentation, logic and data layers.
+        - Challenges: Fault isolation and scalability
+    - Microservices
+        - Applications are composed of smaller deployable services.
+        - Each service focuses on a specific business and communicates with others using APIs, typically over HTTP or messaging protocols.
+        - Challenges: Data consistency and communication.
+- Message Queuing
+    - Uses a message broker to pass messages between processes/systems.
+    - The system that uses message queuing doesn't require an immediate response to continue working.
+    - Achieves asynchronous communication between different components
+    - Instead of communicating directly with each other, components send messages to the message broker, which delivers them to the intended recipients.
 
 ## Operating Systems
 
@@ -538,7 +554,7 @@ function App() {
 
 ### Code Review, Merge & CI/CD
 
-- @TODO
+- @TODO: Add notes about Code Review, Merge & CI/CD
 
 ### Tests
 
@@ -561,7 +577,7 @@ function App() {
 
 ### GoF Patterns
 
-- @TODO
+- @TODO: Explain GoF patterns & add code examples
 - Creational Design Patterns
     - Abstract Factory
     - Builder
@@ -591,6 +607,7 @@ function App() {
 
 ### Some random notes
 
+- @TODO: Organize random notes somewhere
 - Inter-process Communication (IPC)
     - Mechanisms which allows data exchanges between threads of one or different processes.
 - Syscalls
