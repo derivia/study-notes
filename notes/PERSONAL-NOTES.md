@@ -8,6 +8,7 @@
 - [Programming Languages](#programming-languages)
 - [Databases](#databases)
 - [Frameworks](#frameworks)
+- [Math](#math)
 - [Organize these in some category](#organize-these-in-some-category)
 
 ## Data Structures
@@ -42,7 +43,9 @@
 - [X] Complexity (Big-O)
     - To avoid the difference between CPUs runtimes in seconds/minutes, Big-O notation works based on the limit concept, as n grows towards infinity, how does the algorithm behaves.
     - The most common O notations, in increasing order: O(1) < O(log n) < O(n log n) < O(n) < O(n^2) < O(2^n) < O(n!)
-    - @TODO: Add mathematical explanation about Big-O
+    - Dropping the less significant terms and constants, we use asymptotic notation.
+        - As in: an^2 + bn + c
+        - There will always be a moment where bn + c (starts being) < an^2.
     - [Big-O Cheat sheet](http://bigocheatsheet.com/)
 - [-] Sorting (common sorting algorithms)
     - Not going to implement since they are horrible:
@@ -604,6 +607,25 @@ function App() {
     - Strategy
     - Template Method
     - Visitor
+
+### Math
+
+- @TODO: Maybe work on these
+    - Calculus 1-3
+    - Linear Algebra
+    - Probability
+    - Statistics
+    - Differential Equations
+        - Maybe maybe maybe these:
+        - Numerical Analysis
+        - Game Theory
+        - Combinatorics
+        - Set Theory
+        - Number Theory
+        - Topology
+        - Optimization Theory
+        - Mathematical Modeling
+        - Complex Analysis
 
 ### Some random notes
 

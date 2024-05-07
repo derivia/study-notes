@@ -1,6 +1,6 @@
-~ This file was cloned and adapted from the project [awesome-scalability](https://github.com/andreasbm/web-skills/) which is licensed under [awesome-scalability-license](../licenses/awesome-scalability.binhnguyennus)
+~ This file was cloned and adapted from the project [awesome-scalability](https://github.com/binhnguyennus/awesome-scalability) which is licensed under [awesome-scalability-license](../licenses/awesome-scalability.binhnguyennus)
 
-## Content
+## Table of Contents
 - [Principle](#principle)
 - [Scalability](#scalability)
 - [Availability](#availability)
@@ -11,7 +11,6 @@
 - [Interview](#interview)
 - [Organization](#organization)
 - [Talk](#talk)
-- [Book](#book)
 
 ## Principle
 * [ ] [Lessons from Giant-Scale Services - Eric Brewer, UC Berkeley & Google](https://people.eecs.berkeley.edu/~brewer/papers/GiantScale-IEEE.pdf)

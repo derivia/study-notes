@@ -1,545 +1,22 @@
 ~ This file was cloned and adapted from the project [web-skills](https://github.com/andreasbm/web-skills/) which is licensed under [web-skills-license](../licenses/web-skills.andreasbm)
 
-<details>
-<summary>📖 Table of Content</summary>
-
-* [➤ Fundamentals](#-fundamentals)
-	* [Forms](#forms)
-	* [SEO](#seo)
-		* [Discoverable Content](#discoverable-content)
-	* [Best Practices](#best-practices)
-	* [Objects](#objects)
-		* [Prototype](#prototype)
-			* [Classes](#classes)
-	* [Regex](#regex)
-	* [Template Literals](#template-literals)
-	* [Promises](#promises)
-		* [Callbacks](#callbacks)
-		* [Async/await](#asyncawait)
-		* [Fetch](#fetch)
-	* [Modules](#modules)
-	* [Intl](#intl)
-	* [Documentation](#documentation)
-	* [Best Practices](#best-practices-2)
-	* [The Browser](#the-browser)
-	* [Standardization](#standardization)
-		* [W3C](#w3c)
-		* [TC39](#tc39)
-		* [WHATWG](#whatwg)
-		* [Specifications](#specifications)
-	* [Browser Engines](#browser-engines)
-		* [Webkit](#webkit)
-		* [Blink](#blink)
-		* [Gecko](#gecko)
-	* [HTTP](#http)
-	* [The Internet](#the-internet)
-	* [Polyfills](#polyfills)
-	* [Debugging](#debugging)
-		* [Developer console](#developer-console)
-* [➤ Accessibility](#-accessibility)
-	* [The why](#the-why)
-	* [Screen Readers](#screen-readers)
-	* [Accessibility tree](#accessibility-tree)
-		* [ARIA](#aria)
-		* [Accessible HTML](#accessible-html)
-			* [Alt text](#alt-text)
-		* [Accessible CSS](#accessible-css)
-	* [Accessible forms](#accessible-forms)
-	* [UI States](#ui-states)
-	* [Keyboard Accessibility](#keyboard-accessibility)
-		* [Focus](#focus)
-	* [Accessible Colors](#accessible-colors)
-	* [Laws & Policies](#laws--policies)
-		* [Audits](#audits)
-* [➤ Progressive Webapps](#-progressive-webapps)
-	* [API's](#apis)
-	* [Storage](#storage)
-	* [Routing](#routing)
-		* [History API](#history-api)
-	* [Service Workers](#service-workers)
-		* [Offline first](#offline-first)
-		* [Push notifications](#push-notifications)
-	* [Web App manifest](#web-app-manifest)
-	* [Add to homescreen](#add-to-homescreen)
-	* [Pointer Events](#pointer-events)
-	* [Loading Performance](#loading-performance)
-	* [App shell](#app-shell)
-	* [Render-Blocking Resources](#render-blocking-resources)
-	* [Compression](#compression)
-	* [Performance metrics](#performance-metrics)
-		* [Largest Contentful Paint](#largest-contentful-paint)
-		* [Total Blocking Time](#total-blocking-time)
-		* [Time to Interactive](#time-to-interactive)
-	* [Lazy Loading](#lazy-loading)
-		* [Dynamic Import](#dynamic-import)
-		* [Offscreen images](#offscreen-images)
-	* [Critical Request Chains](#critical-request-chains)
-	* [Tree shaking](#tree-shaking)
-	* [Codesplitting](#codesplitting)
-	* [PRPL Pattern](#prpl-pattern)
-	* [Resource Prioritization](#resource-prioritization)
-	* [Caching](#caching)
-	* [Rendering Performance](#rendering-performance)
-	* [Rendering](#rendering)
-	* [Event loop](#event-loop)
-		* [Microtask](#microtask)
-		* [Stack](#stack)
-		* [Heap](#heap)
-	* [RAIL Model](#rail-model)
-		* [requestAnimationFrame](#requestanimationframe)
-		* [requestIdleCallback](#requestidlecallback)
-	* [Critical Rendering Path](#critical-rendering-path)
-	* [The Pixel Pipeline](#the-pixel-pipeline)
-		* [Style calculations](#style-calculations)
-		* [Transforms](#transforms-1)
-		* [Paint areas](#paint-areas)
-		* [Layout Trashing](#layout-trashing)
-		* [Layers](#layers)
-		* [Debounce](#debounce)
-	* [CSS Containment](#css-containment)
-	* [Web Workers](#web-workers)
-	* [Security](#security)
-	* [HTTPS](#https)
-	* [Browser Sandbox](#browser-sandbox)
-	* [OWASP](#owasp)
-		* [Cross-Site Scripting](#cross-site-scripting)
-		* [Clickjacking](#clickjacking)
-	* [Content Security Policy](#content-security-policy)
-	* [Audits](#audits-1)
-	* [Performance budgets](#performance-budgets)
-	* [Lighthouse](#lighthouse)
-	* [Chrome DevTools](#chrome-devtools)
-* [➤ Testing](#-testing)
-	* [Testing Methodologies](#testing-methodologies)
-		* [Unit Testing](#unit-testing)
-		* [Integration Testing](#integration-testing)
-		* [System Testing](#system-testing)
-		* [Acceptance Testing](#acceptance-testing)
-		* [Smoke Testing](#smoke-testing)
-		* [Performance Testing](#performance-testing)
-		* [Usability Testing](#usability-testing)
-		* [White Box Testing](#white-box-testing)
-		* [Black Box Testing](#black-box-testing)
-		* [Automated Testing](#automated-testing)
-		* [Manual Testing](#manual-testing)
-	* [Continuous integration](#continuous-integration)
-	* [A/B Testing](#ab-testing)
-	* [Best Practices](#best-practices-3)
-* [➤ Architecture & paradigms](#-architecture--paradigms)
-	* [Paradigms](#paradigms)
-	* [Programming Paradigms](#programming-paradigms)
-	* [Object Oriented Programming](#object-oriented-programming)
-		* [S.O.L.I.D](#solid)
-	* [Functional programming](#functional-programming)
-		* [Recursion](#recursion)
-		* [Higher-Order Functions](#higher-order-functions)
-		* [Currying](#currying)
-		* [Monads](#monads)
-	* [Architecture](#architecture)
-	* [Design Patterns](#design-patterns)
-		* [Singleton](#singleton)
-		* [Observer](#observer)
-		* [Prototype](#prototype-1)
-		* [Bridge](#bridge)
-		* [Proxy](#proxy)
-		* [Chain of responsibility](#chain-of-responsibility)
-		* [Constructor](#constructor)
-	* [CSS Methodologies](#css-methodologies)
-		* [BEM](#bem)
-		* [SMACSS](#smacss)
-		* [OOCSS](#oocss)
-* [➤ Team Collaboration](#-team-collaboration)
-	* [Version Control](#version-control)
-	* [Git](#git)
-		* [Github](#github)
-		* [Bitbucket](#bitbucket)
-	* [Management](#management)
-	* [Agile Development](#agile-development)
-		* [Scrum](#scrum)
-		* [Kanban](#kanban)
-	* [Waterfall Development](#waterfall-development)
-	* [Test Driven Development](#test-driven-development)
-* [➤ Design & UX](#-design--ux)
-	* [Color Theory](#color-theory)
-		* [Color Wheel](#color-wheel)
-	* [Typography](#typography)
-		* [Font Size](#font-size)
-		* [Line Spacing](#line-spacing)
-	* [C.R.A.P](#crap)
-		* [Contrast](#contrast)
-		* [Repetition](#repetition)
-		* [Alignment](#alignment)
-		* [Proximity](#proximity)
-	* [Consistency](#consistency)
-	* [Spacing](#spacing)
-	* [Error Handling](#error-handling)
-	* [Loading](#loading)
-	* [The Golden Ratio](#the-golden-ratio)
-	* [Mobile First](#mobile-first)
-		* [Hit Targets](#hit-targets)
-	* [Design Systems](#design-systems)
-		* [Material Design](#material-design)
-		* [Fluent Design](#fluent-design)
-	* [Accessibility](#accessibility)
-	* [Best Practices](#best-practices-4)
-* [➤ The Modern Web](#-the-modern-web)
-	* [Streams](#streams)
-		* [Media Streams](#media-streams)
-		* [Media Recorder](#media-recorder)
-		* [Web RTC](#web-rtc)
-		* [Screen Capture](#screen-capture)
-		* [Generators](#generators)
-	* [Speech Synthesis](#speech-synthesis)
-	* [Web Sockets](#web-sockets)
-	* [Geolocation](#geolocation)
-	* [Device orientation & motion](#device-orientation--motion)
-	* [Fullscreen](#fullscreen)
-	* [Variable Fonts](#variable-fonts)
-	* [HTTP/2](#http2)
-	* [Payment Request API](#payment-request-api)
-	* [Web Audio](#web-audio)
-	* [Observers](#observers)
-		* [Mutation Observer](#mutation-observer)
-		* [Intersection Observer](#intersection-observer)
-		* [Resize Observer](#resize-observer)
-		* [Performance Observer](#performance-observer)
-	* [Scrollsnapping](#scrollsnapping)
-	* [Web Assembly](#web-assembly)
-	* [Beacon](#beacon)
-	* [Clipboard](#clipboard)
-	* [Share](#share)
-	* [Performance API](#performance-api)
-	* [Gamepad API](#gamepad-api)
-	* [Speech Recognition](#speech-recognition)
-	* [Interaction Media Queries](#interaction-media-queries)
-	* [Browser Extensions](#browser-extensions)
-	* [Pointer Lock API](#pointer-lock-api)
-	* [Picture In Picture](#picture-in-picture)
-	* [Proxies](#proxies)
-	* [Houdini](#houdini)
-	* [Project Fugu](#project-fugu)
-	* [Web Authentication API](#web-authentication-api)
-		* [Credentials Manager API](#credentials-manager-api)
-	* [Native File System](#native-file-system)
-	* [Shape Detection](#shape-detection)
-	* [Web Bluetooth](#web-bluetooth)
-	* [Web USB](#web-usb)
-	* [Web XR](#web-xr)
-	* [Presentation](#presentation)
-	* [Network Information API](#network-information-api)
-* [➤ Algorithms & Data structures](#-algorithms--data-structures)
-	* [Data structures](#data-structures)
-	* [Arrays](#arrays)
-	* [Queues & Stacks](#queues--stacks)
-	* [Trees](#trees)
-		* [Binary Indexed Tree](#binary-indexed-tree)
-		* [Heap](#heap-1)
-		* [Red-black Tree](#red-black-tree)
-		* [Trie](#trie)
-		* [K-D Tree](#k-d-tree)
-	* [Hash Tables](#hash-tables)
-	* [Linked Lists](#linked-lists)
-	* [Graphs](#graphs)
-	* [Analysis](#analysis)
-	* [Time complexity](#time-complexity)
-		* [Cost model](#cost-model)
-		* [Order of Growth](#order-of-growth)
-		* [Big O notation](#big-o-notation)
-	* [Space Complexity](#space-complexity)
-	* [Algorithms](#algorithms)
-	* [Sorting](#sorting)
-		* [Insertion Sort](#insertion-sort)
-		* [Quicksort](#quicksort)
-		* [Mergesort](#mergesort)
-		* [Heapsort](#heapsort)
-	* [Searching](#searching)
-		* [Binary Search](#binary-search)
-		* [Breadth First Search](#breadth-first-search)
-		* [Depth First Search](#depth-first-search)
-		* [Dijkstra's Algorithm](#dijkstras-algorithm)
-		* [String Search](#string-search)
-	* [Hashing](#hashing)
-* [➤ Databases & Servers](#-databases--servers)
-	* [Databases](#databases)
-	* [Relational Databases](#relational-databases)
-		* [SQL](#sql)
-		* [MySQL](#mysql)
-		* [PostgreSQL](#postgresql)
-	* [Non-relational Databases](#non-relational-databases)
-		* [Redis](#redis)
-		* [MongoDB](#mongodb)
-	* [Data Modelling](#data-modelling)
-		* [ER Diagram](#er-diagram)
-		* [Keys](#keys)
-	* [Indexing](#indexing)
-	* [Data Integrity](#data-integrity)
-	* [Normalization](#normalization)
-		* [Functional Dependencies](#functional-dependencies)
-		* [Normal Forms](#normal-forms)
-	* [Transactions](#transactions)
-		* [ACID](#acid)
-		* [Serializability](#serializability)
-		* [Locks](#locks)
-			* [Deadlocks](#deadlocks)
-		* [Precedence graph](#precedence-graph)
-	* [Servers](#servers)
-	* [Architectural Models](#architectural-models)
-		* [Client-Server](#client-server)
-		* [Proxy Server](#proxy-server)
-		* [Peer-To-Peer](#peer-to-peer)
-	* [Middleware](#middleware)
-	* [Request-Reply Protocol](#request-reply-protocol)
-		* [UDP](#udp)
-		* [TCP](#tcp)
-	* [REST API](#rest-api)
-		* [CRUD](#crud)
-	* [Express](#express)
-	* [GraphQL](#graphql)
-	* [GNU/Linux](#gnulinux)
-	* [Docker](#docker)
-	* [SSH](#ssh)
-</details>
-
-
-## ➤ Fundamentals
-
-### HTML
-
-### Syntax
-
-* [x] [MDN - HTML Basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics)
-* [x] [MDN - Introduction to HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML)
-* [x] [Codecademy - Learn HTML](https://www.codecademy.com/learn/learn-html)
-
-#### Basic Tags
-
-Get familiar with the basic HTML tags
-
-* [x] [MDN - HTML elements reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
-* [x] [Tutorialspoint - Basic HTML tags](https://www.tutorialspoint.com/html/html_basic_tags.htm)
-* [x] [Elated - First 10 HTML tags](https://www.elated.com/first-10-html-tags/)
-* [x] [W3Schools - HTML tags](https://www.w3schools.com/tags/ref_byfunc.asp)
-
-### Forms
-
-Learn how to design efficient forms, validating them effectively and keeping the user informed along the way.
-
-* [x] [MDN - HTML forms](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms)
-* [x] [Google Web - Forms](https://developers.google.com/web/fundamentals/design-and-ux/input/forms/)
-* [x] [W3Schools - Forms](https://www.w3schools.com/html/html_forms.asp)
-
-### SEO
-
-Learn how to make your content search-friendly.
-
-* [x] [web.dev - Discoverable](https://web.dev/discoverable)
-* [x] [Google Search - Get Started](https://developers.google.com/search/docs/guides/get-started)
-* [x] [Google Search - SEO basics](https://developers.google.com/search/docs/guides/javascript-seo-basics)
-* [x] [web.dev - SEO audits](https://web.dev/lighthouse-seo)
-
-#### Discoverable Content
-
-Learn how to structure your HTML in a way that provides a rich experience when sharing it online.
-
-* [ ] [Google Web - Social Discovery](https://developers.google.com/web/fundamentals/discovery/social-discovery)
-* [ ] [Google Search - Search Features](https://developers.google.com/search/docs/guides/search-features)
-* [ ] [Google Search - Structured Data](https://developers.google.com/search/docs/guides/intro-structured-data)
-* [ ] [web.dev - Easily discoverable](https://web.dev/discoverable)
-
-### Svg
-
-Learn how to work with SVG files to make graphics look crisp across all screen resolutions.
-
-* [x] [MDN - Adding vector graphics to the Web](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Adding_vector_graphics_to_the_Web)
-* [x] [SVG on the web](https://svgontheweb.com/)
-
-### Best Practices
-
-Learn the best practices of writing HTML.
-
-* [x] [MDN - HTML guidelines](https://developer.mozilla.org/en-US/docs/MDN/Contribute/Guidelines/Code_guidelines/HTML)
-* [x] [W3Schools - HTML Coding Conventions](https://www.w3schools.com/html/html5_syntax.asp)
-
-
-### CSS
-
-### Syntax
-
-Learn the basics of CSS and get comfortable with it's syntax and main concepts.
-
-* [x] [MDN - CSS Basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics)
-* [x] [W3Schools - CSS Tutorial](https://www.w3schools.com/css/default.asp)
-* [x] [Supercharged - CSS Selectors](https://www.youtube.com/watch?v=IKho_xDKaLw)
-* [x] [MDN - CSS first steps](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps)
-* [x] [MDN - CSS building blocks](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks)
-* [x] [MDN - CSS values and units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units)
-* [x] [MDN - CSS Syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax)
-
-### Selectors
-
-Learn about CSS selectors and how to effeciently target DOM elements.
-
-* [x] [MDN - CSS selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors)
-* [x] [MDN - All selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)
-* [x] [CSS Tricks - Child and Sibling Selectors](https://css-tricks.com/child-and-sibling-selectors/)
-* [x] [CSS Tricks - All Selectors](https://css-tricks.com/almanac/selectors/)
-* [x] [W3Schools - CSS Combinators](https://www.w3schools.com/css/css_combinators.asp)
-
-#### Specificity
-
-Learn what specificity means and how to use it when writing CSS.
-
-* [x] [MDN - Specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
-* [x] [MDN - Cascade and inheritance](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance)
-* [x] [dev.to - CSS Specificity](https://dev.to/emmawedekind/css-specificity-1kca)
-* [x] [Specificity Calculator](https://specificity.keegan.st/)
-* [x] [W3Schools - CSS Specificity](https://www.w3schools.com/css/css_specificity.asp)
-
-#### Pseudo Selectors
-
-Learn how to use pseudo selectors.
-
-* [x] [MDN - Pseudo-classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes)
-* [x] [CSS Tricks - Meet the Pseudo Class Selectors](https://css-tricks.com/pseudo-class-selectors/)
-* [x] [When do the :hover, :focus, and :active pseudo-classes apply?](https://bitsofco.de/when-do-the-hover-focus-and-active-pseudo-classes-apply/)
-* [x] [W3Schools - CSS Pseudo-elements](https://www.w3schools.com/css/css_pseudo_elements.asp)
-* [x] [W3Schools - CSS Pseudo-classes](https://www.w3schools.com/css/css_pseudo_classes.asp)
-
-### Box Model
-
-Learn what the CSS box model means.
-
-* [x] [MDN - Introduction to the CSS basic box model](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)
-* [x] [MDN - The box model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model)
-* [x] [CSS Tricks - Inheriting box-sizing](https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/)
-
-#### Margin Collapsing
-
-Learn about margin collapsing.
-
-* [x] [MDN - Mastering margin collapsing](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing)
-* [x] [Margin Collapse in CSS: What, Why, and How](https://medium.com/@joseph0crick/margin-collapse-in-css-what-why-and-how-328c10e37ca0)
-* [x] [CSS Tricks - What You Should Know About Collapsing Margins](https://css-tricks.com/what-you-should-know-about-collapsing-margins/)
-* [x] [What's the Deal with Collapsible Margins?](https://bitsofco.de/collapsible-margins/)
-* [x] [What’s the Deal with Margin Collapse?](https://jonathan-harrell.com/whats-the-deal-with-margin-collapse/)
-
-#### Colors
-
-Learn the different ways you can define colors in CSS.
-
-* [x] [MDN - Color](https://developer.mozilla.org/en-US/docs/Web/CSS/color)
-* [x] [MDN - <color>](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value)
-* [x] [W3Schools - CSS Colors](https://www.w3schools.com/css/css_colors.asp)
-
-#### Calc
-
-Learn how to use the CSS calc function.
-
-* [ ] [MDN - Calc](https://developer.mozilla.org/en-US/docs/Web/CSS/calc)
-* [ ] [CSS Tricks - A Couple of Use Cases for Calc()](https://css-tricks.com/a-couple-of-use-cases-for-calc/)
-
-#### Layout
-
-Learn the different layout types for web.
-
-* [x] [Chrome Dev - Basic Layout](https://developers.google.com/training/certification/mobile-web-specialist/study-guide/basic-layout)
-* [x] [W3Schools - CSS Website Layout](https://www.w3schools.com/css/css_website_layout.asp)
-* [x] [MDN - Document and website structure](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure)
-* [x] [MDN - CSS layout](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout)
-
-#### Flex
-
-Learn how to create layouts using flexbox.
-
-* [x] [MDN - Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
-* [x] [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-* [x] [MDN - Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)
-* [x] [Flexbox Froggy](https://flexboxfroggy.com/)
-* [x] [Flexbox Defense](http://flexboxdefense.com)
-
-#### Grid
-
-Learn how to create layouts using CSS Grid.
-
-* [x] [MDN - Grids](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids)
-* [x] [A Complete Guide to CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
-* [x] [MDN - CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
-* [x] [CSS Grid Garden](https://cssgridgarden.com/)
-* [x] [Supercharged - CSS Grids](https://www.youtube.com/watch?v=AqwPrR7hklE)
-
-#### Transforms
-
-Learn the different ways to transform elements through CSS.
-
-* [x] [MDN - transform](https://developer.mozilla.org/en-US/docs/Web/CSS/transform)
-* [x] [CSS Tricks - Transform](https://css-tricks.com/almanac/properties/t/transform/)
-
-#### Animations
-
-Learn how to animate elements through CSS using keyframes.
-
-* [x] [MDN - Using CSS animations](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations)
-* [x] [CSS Tricks - Animation](https://css-tricks.com/almanac/properties/a/animation/)
-
-#### Responsive Design
-
-Learn how to make your website responsive so it works across different screen sizes.
-
-* [x] [MDN - Responsive design](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)
-* [x] [Responsive Web Design Fundamentals by Google](https://www.udacity.com/course/responsive-web-design-fundamentals--ud893)
-* [x] [Google Dev - Responsive Design](https://developers.google.com/web/fundamentals/design-and-ux/responsive)
-* [x] [Google Dev - UX Patterns](https://developers.google.com/web/fundamentals/design-and-ux/responsive/patterns)
-* [x] [Google Dev - Responsive Content](https://developers.google.com/web/fundamentals/design-and-ux/responsive/content)
-* [x] [Codelabs - Responsive Design](https://codelabs.developers.google.com/codelabs/pwa-responsive-design/index.html?index=..%2F..dev-pwa-training#0)
-
-#### Media Queries
-
-Learn how use media queries to build responsive layout.
-
-* [x] [CSS Tricks - CSS Media Queries & Using Available Space](https://css-tricks.com/css-media-queries/)
-* [x] [MDN - Using media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)
-* [x] [MDN - Using Media Queries for Accessibility](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_Media_Queries_for_Accessibility)
-
-#### Relative Units
-
-Learn how to use relative units for properties such as font sizes and spacing.
-
-* [x] [MDN - Sizing items in CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Sizing_items_in_CSS)
-* [x] [MDN - CSS values and units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units)
-* [x] [The CSS Workshop - Relative Units](https://thecssworkshop.com/lessons/relative-units)
-* [x] [CSS Tricks - Fun with Viewport Units](https://css-tricks.com/fun-viewport-units/)
-* [x] [dev.to - 15 CSS Relative units](https://dev.to/bytegasm/15-css-relative-units-how-many-do-you-know-em-rem-ex-cap-ch-ic-6m)
-
-#### Images
-
-Learn how to make images responsive, always showing the best possible version for the screen size.
-
-* [x] [Google Devs - Responsive Images](https://developers.google.com/web/fundamentals/design-and-ux/responsive/images)
-* [x] [MDN - Responsive Images](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)
-
-#### CSS Variables
-
-Learn how to define and use CSS variables.
-
-* [x] [MDN - Using CSS custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
-* [x] [Google Devs - CSS Variables: Why Should You Care?](https://developers.google.com/web/updates/2016/02/css-variables-why-should-you-care)
-* [x] [dev.to - CSS Quickies: CSS Variables](https://dev.to/lampewebdev/css-quickies-css-variables-or-how-you-create-a-white-dark-theme-easily-1i0i)
-* [x] [CSS Variables explained with 5 examples](https://codeburst.io/css-variables-explained-with-5-examples-84adaffaa5bd)
-
-#### Best Practices
-
-Learn the best practices of writing CSS.
-
-* [x] [MDN - CSS guidelines](https://developer.mozilla.org/en-US/docs/MDN/Contribute/Guidelines/Code_guidelines/CSS)
-* [x] [MDN - Organizing your CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Organizing)
-* [x] [Speckyboy - Good and bad CSS practices](https://speckyboy.com/good-bad-css-practices/)
-
+## Table of Contents
+- [Fundamentals](#fundamentals)
+- [Accessibility](#accessibility)
+- [Web Components](#web-components)
+- [Progressive Webapps](#progressive-webapps)
+- [Build tools](#build-tools)
+- [Frameworks & Libraries](#frameworks-libraries)
+- [Testing](#testing)
+- [Architecture & paradigms](#architecture-paradigms)
+- [Team Collaboration](#team-collaboration)
+- [Design & UX](#design-ux)
+
+## Fundamentals
 
 ### Javascript
 
 #### Spread
-
-Learn how the spread syntax can help you when working with arrays.
 
 * [x] [MDN - Spread syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
 * [x] [Freecodecamp - An introduction to Spread syntax](https://www.freecodecamp.org/news/an-introduction-to-spread-syntax-in-javascript-fba39595922c/)
@@ -547,15 +24,11 @@ Learn how the spread syntax can help you when working with arrays.
 
 #### Destructuring
 
-Learn how destructuring can help you when working with objects.
-
 * [x] [MDN - Destructuring assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
 * [x] [MDN - ES6 In Depth: Destructuring](https://hacks.mozilla.org/2015/05/es6-in-depth-destructuring/)
 * [x] [javascript.info - Destructuring assignment](https://javascript.info/destructuring-assignment)
 
 ### DOM
-
-Learn how the HTML is represented as objects that comprise the structure and content of a document.
 
 * [x] [MDN - DOM Introduction](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
 * [x] [Freecodecamp - What's the DOM](https://www.freecodecamp.org/news/whats-the-document-object-model-and-why-you-should-know-how-to-use-it-1a2d0bc5429d/)
@@ -564,14 +37,10 @@ Learn how the HTML is represented as objects that comprise the structure and con
 
 #### DOM Manipulation
 
-Learn how to query HTML elements through Javascript and manipulate them.
-
 * [x] [MDN - Locating DOM elements using selectors](https://developer.mozilla.org/en-US/docs/Web/API/Document_object_model/Locating_DOM_elements_using_selectors)
 * [x] [Supercharged - querySelector](https://www.youtube.com/watch?v=s0vg_H9hBuU)
 
 ### Events
-
-Learn how to dispatch and listen for events.
 
 * [x] [MDN - Introduction to events](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events)
 * [x] [MDN - Creating and triggering events](https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Creating_and_triggering_events)
@@ -583,8 +52,6 @@ Learn how to dispatch and listen for events.
 * [x] [Event order](https://www.quirksmode.org/js/events_order.html)
 
 ### Objects
-
-Learn how to create and use objects.
 
 * [x] [MDN - Introducing JavaScript objects](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects)
 * [x] [MDN - Working with objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects)
@@ -598,15 +65,11 @@ Learn how to create and use objects.
 
 #### Prototype
 
-Learn how to extend objects and functions through its prototype.
-
 * [x] [The prototype chain](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
 * [x] [Prototypes in JavaScript](https://medium.com/better-programming/prototypes-in-javascript-5bba2990e04b)
 * [x] [dev.to - JavaScript Visualized: Prototypal Inheritance](https://dev.to/lydiahallie/javascript-visualized-prototypal-inheritance-47co)
 
 ##### Classes
-
-Learn how to define and use classes. Get somewhat comfortable with some of the object oriented concepts such as inheritence and encapsulation.
 
 * [x] [MDN - Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
 * [x] [Medium - ES6 Classes](https://medium.com/@luke_smaki/javascript-es6-classes-8a34b0a6720a)
@@ -616,15 +79,11 @@ Learn how to define and use classes. Get somewhat comfortable with some of the o
 
 ### Regex
 
-Learn how to use regex to extract information from strings.
-
 * [x] [MDN - Regular Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
 * [x] [javascript.info - Regular expressions](https://javascript.info/regular-expressions)
 * [x] [MDN - RegExp](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp)
 
 ### Template Literals
-
-Learn how template literals and tagged templates and help you manipulate strings.
 
 * [x] [MDN - Template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
 * [x] [MDN - ES6 In Depth: Template strings](https://hacks.mozilla.org/2015/05/es6-in-depth-template-strings-2/)
@@ -632,15 +91,11 @@ Learn how template literals and tagged templates and help you manipulate strings
 
 ### Promises
 
-Learn how to use promises and what asynchronous code means.
-
 * [x] [Google Devs - JavaScript Promises: an Introduction](https://developers.google.com/web/fundamentals/primers/promises)
 * [x] [MDN - Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 * [x] [Master the JavaScript Interview: What is a Promise?](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-promise-27fc71e77261)
 
 #### Callbacks
-
-Learn how to use callbacks and why they are not always a good idea.
 
 * [x] [MDN - Callback function](https://developer.mozilla.org/en-US/docs/Glossary/Callback_function)
 * [x] [JavaScript: What the heck is a Callback?](https://codeburst.io/javascript-what-the-heck-is-a-callback-aba4da2deced)
@@ -648,15 +103,11 @@ Learn how to use callbacks and why they are not always a good idea.
 
 #### Async/await
 
-Learn how to use the async and await keywords to make it easier to write asynchronous code.
-
 * [x] [MDN - async function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function)
 * [x] [Google Devs - Async functions](https://developers.google.com/web/fundamentals/primers/async-functions)
 * [x] [javascript.info - Async/await](https://javascript.info/async-await)
 
 #### Fetch
-
-Learn how to use the fetch API to fetch data.
 
 * [x] [Google Devs - Introduction to fetch](https://developers.google.com/web/updates/2015/03/introduction-to-fetch)
 * [x] [Google Devs - Networking](https://developers.google.com/training/certification/mobile-web-specialist/study-guide/networking)
@@ -668,15 +119,11 @@ Learn how to use the fetch API to fetch data.
 
 ### Web Animations
 
-Learn how to use web animations to animate elements in the DOM.
-
 * [x] [Google Devs - Animations](https://developers.google.com/web/fundamentals/design-and-ux/animations)
 * [x] [MDN - Using The Web Animations API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API/Using_the_Web_Animations_API)
 * [x] [CSS Tricks - CSS Animations vs Web Animations API](https://css-tricks.com/css-animations-vs-web-animations-api/)
 
 ### Modules
-
-Learn how to modularize your code into ES6 modules using the export and import keywords.
 
 * [x] [MDN - Export](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export)
 * [x] [MDN - Import](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
@@ -685,23 +132,17 @@ Learn how to modularize your code into ES6 modules using the export and import k
 
 ### Intl
 
-Learn how to localize your website using the Intl API.
-
 * [ ] [MDN - Intl](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl)
 * [ ] [MDN - Date Time Format](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat)
 * [ ] [New Intl APIs in JavaScript](https://blog.bitsrc.io/new-intl-apis-in-javascript-c50dc89d2cf3)
 
 ### Canvas
 
-Learn how to paint graphics onto a canvas.
-
 * [ ] [MDN - Canvas tutorial](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial)
 * [ ] [MDN - Canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)
 * [ ] [CSS Tricks - Manipulating Pixels Using Canvas](https://css-tricks.com/manipulating-pixels-using-canvas/)
 
 ### Documentation
-
-Learn how to create good documentation and why it is important.
 
 * [ ] [Getting Started with JSDoc](https://jsdoc.app/about-getting-started.html)
 * [ ] [A beginner’s guide to writing documentation](https://www.writethedocs.org/guide/writing/beginners-guide-to-docs/)
@@ -710,8 +151,6 @@ Learn how to create good documentation and why it is important.
 * [ ] [Document your Javascript code with JSDoc](https://dev.to/paulasantamaria/document-your-javascript-code-with-jsdoc-2fbf)
 
 ### Best Practices
-
-Learn the best practices of writing Javascript.
 
 * [ ] [MDN - JavaScript guidelines](https://developer.mozilla.org/en-US/docs/MDN/Contribute/Guidelines/Code_guidelines/JavaScript)
 * [ ] [Airbnb - JavaScript Style Guide](https://github.com/airbnb/javascript)
@@ -724,15 +163,11 @@ Learn the best practices of writing Javascript.
 
 ### Standardization
 
-Learn why web standards are important and how new specifications are standardised.
-
 * [ ] [Wikipedia - Web Standards](https://en.wikipedia.org/wiki/Web_standards)
 * [ ] [What Are Web Standards?](https://www.elcom.com.au/resources/blog/web-standards)
 * [ ] [A Comprehensive Explanation of Web Standards](https://robertnyman.com/2007/05/21/what-are-web-standards-a-comprehensive-explanation-of-what-is-comprised-in-the-term/)
 
 #### W3C
-
-Learn what W3C are doing and how they are moving the web forward.
 
 * [ ] [W3C - About](https://www.w3.org/standards/about.html)
 * [ ] [W3C - Standards](https://www.w3.org/standards/)
@@ -743,16 +178,12 @@ Learn what W3C are doing and how they are moving the web forward.
 
 #### TC39
 
-Learn what TC39 are doing and how they are moving the web forward.
-
 * [ ] [The TC39 process for ECMAScript features](https://2ality.com/2015/11/tc39-process.html)
 * [ ] [Github - TC39](https://github.com/tc39)
 * [ ] [Ecma International - Programme of work](https://www.ecma-international.org/memento/tc39.htm)
 * [ ] [Wikipedia - Ecma International](https://en.wikipedia.org/wiki/Ecma_International)
 
 #### WHATWG
-
-Learn what WHATWG are doing and how they are moving the web forward.
 
 * [ ] [WHATWG - FAQ](https://whatwg.org/faq)
 * [ ] [WHATWG - Standards](https://spec.whatwg.org/)
@@ -763,16 +194,12 @@ Learn what WHATWG are doing and how they are moving the web forward.
 
 #### Specifications
 
-Learn how to read specifications developed by the standards committees.
-
 * [ ] [How to Read the ECMAScript Specification](https://timothygu.me/es-howto/)
 * [ ] [How to Read W3C Specs](https://alistapart.com/article/readspec/)
 * [ ] [Learning CSS by reading specs](https://www.chenhuijing.com/blog/learning-css-by-reading-specifications/)
 * [ ] [Understanding the CSS Specifications](https://www.w3.org/Style/CSS/read.en.html)
 
 ### Browser Engines
-
-Learn what a browser engine is and get an overview of the browser landscape and market share.
 
 * [ ] [Medium - Browser Engines](https://medium.com/@jonbiro/browser-engines-chromium-v8-blink-gecko-webkit-98d6b0490968)
 * [ ] [Wikipedia - Comparison](https://en.wikipedia.org/wiki/Comparison_of_browser_engines)
@@ -781,25 +208,17 @@ Learn what a browser engine is and get an overview of the browser landscape and 
 
 #### Webkit
 
-Learn about the Webkit browser engine.
-
 * [ ] [Webkit](https://webkit.org/)
 
 #### Blink
-
-Learn about the Blink browser engine.
 
 * [ ] [Blink](https://en.wikipedia.org/wiki/Blink_(browser_engine))
 
 #### Gecko
 
-Learn about the Gecko browser engine.
-
 * [ ] [Gecko](https://en.wikipedia.org/wiki/Gecko_(software))
 
 ### HTTP
-
-Learn how data is distributed through the HTTP protocol.
 
 * [x] [MDN - HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP)
 * [x] [MDN - HTTP Glossary](https://developer.mozilla.org/en-US/docs/Glossary/HTTP)
@@ -807,8 +226,6 @@ Learn how data is distributed through the HTTP protocol.
 * [x] [Wikipedia - Hypertext Transfer Protocol](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol)
 
 ### The Internet
-
-Learn the basics of how the internet works.
 
 * [x] [MDN - How does the Internet work?](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work)
 * [x] [Youtube - How the Internet Works in 5 Minutes](https://www.youtube.com/watch?v=7_LPdttKXPc)
@@ -818,8 +235,6 @@ Learn the basics of how the internet works.
 
 ### Polyfills
 
-Learn how it is possible to use polyfills to increase the browser support for your website.
-
 * [ ] [MDN - Polyfill](https://developer.mozilla.org/en-US/docs/Glossary/Polyfill)
 * [ ] [Introduction To Polyfills & Their Usage](https://medium.com/beginners-guide-to-mobile-web-development/introduction-to-polyfills-their-usage-9cd6db4b1923)
 * [ ] [W3C - Polyfills and the evolution of the Web](https://www.w3.org/2001/tag/doc/polyfills/)
@@ -827,15 +242,11 @@ Learn how it is possible to use polyfills to increase the browser support for yo
 
 ### Debugging
 
-Learn about the basics concepts of debugging.
-
 * [x] [Google Devs - Inspect and Edit Pages and Styles](https://developers.google.com/web/tools/chrome-devtools/inspect-styles/)
 * [x] [MDN - Cross browser testing](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing)
 * [x] [5 things to remember for better debugging of your code](https://medium.com/dev-bits/5-things-to-remember-for-better-debugging-of-your-code-94b9bc3fb3df)
 
 #### Developer console
-
-Learn how to use the developer console to debug your code.
 
 * [x] [MDN - Console](https://developer.mozilla.org/en-US/docs/Web/API/Console)
 * [x] [Google Devs - Console API Reference](https://developers.google.com/web/tools/chrome-devtools/console/api)
@@ -850,15 +261,9 @@ Learn how to use the developer console to debug your code.
 * [x] [Chrome Devs - Quickly monitor events](https://developers.google.com/web/updates/2015/05/quickly-monitor-events-from-the-console-panel)
 * [x] [Youtube - 14 Must Know Chrome Dev Tools Tricks](https://www.youtube.com/watch?v=xkzDaKwinA8)
 
-
-
-
-
-## ➤ Accessibility
+## Accessibility
 
 ### The why
-
-Learn what accessibility is and why it is important.
 
 * [x] [Google Devs - Accessibility Fundamentals](https://developers.google.com/web/fundamentals/accessibility/)
 * [x] [A11ycasts with Rob Dodson](https://www.youtube.com/playlist?list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g)
@@ -870,8 +275,6 @@ Learn what accessibility is and why it is important.
 
 ### Screen Readers
 
-Learn about assistive technology such as screen readers that reads sections of the page aloud based on the current focus.
-
 * [ ] [The A11Y Project - Screen Reader Myths](https://a11yproject.com/posts/people-who-use-screen-readers-dont-use-javascript/)
 * [ ] [The A11Y Project - NVDA Screen Reader](https://a11yproject.com/posts/getting-started-with-nvda/)
 * [ ] [The A11Y Project - OS X Voiceover](https://a11yproject.com/posts/getting-started-with-voiceover/)
@@ -879,13 +282,9 @@ Learn about assistive technology such as screen readers that reads sections of t
 
 ### Accessibility tree
 
-Learn about the accessibility tree and how assistive technology uses it.
-
 * [ ] [Google Devs - The Accessibility Tree](https://developers.google.com/web/fundamentals/accessibility/semantics-builtin/the-accessibility-tree)
 
 #### ARIA
-
-Learn how to use ARIA descriptions an labels to help assistive technology understanding your website.
 
 * [ ] [Google Devs - ARIA Labels](https://developers.google.com/web/fundamentals/accessibility/semantics-aria/aria-labels-and-relationships)
 * [ ] [Google Devs - Hiding and updating content](https://developers.google.com/web/fundamentals/accessibility/semantics-aria/hiding-and-updating-content)
@@ -893,8 +292,6 @@ Learn how to use ARIA descriptions an labels to help assistive technology unders
 * [ ] [The A11Y Project - ARIA Properties](https://a11yproject.com/posts/ARIA-properties/)
 
 #### Accessible HTML
-
-Learn how to write HTML in such as way that assistive technology better understands it.
 
 * [ ] [Google Devs - Introduction to Semantics](https://developers.google.com/web/fundamentals/accessibility/semantics-builtin/)
 * [ ] [MDN - Accessibility HTML](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML)
@@ -904,41 +301,29 @@ Learn how to write HTML in such as way that assistive technology better understa
 
 ##### Alt text
 
-Learn how to use the alt attribute to provide a useful text alternative to this image.
-
 * [x] [Google Devs - Text Alternatives for Images](https://developers.google.com/web/fundamentals/accessibility/semantics-builtin/text-alternatives-for-images)
 * [x] [Webaim - Accessible Images](https://webaim.org/techniques/images/)
 * [x] [Webaim - Alternative text](https://webaim.org/techniques/alttext/)
 
 #### Accessible CSS
 
-Learn how to write CSS in such as way that assistive technology better understands it.
-
 * [ ] [Webaim - CSS](https://webaim.org/techniques/css/)
 
 ### Accessible forms
-
-Learn how to build accessible forms that makes it usable to as many people as possible.
 
 * [ ] [Webaim - Forms](https://webaim.org/techniques/forms/)
 * [ ] [Itnext - Form Accessibility Gudie](https://itnext.io/form-accessibility-a-practical-guide-4062b7e2dd14)
 
 ### UI States
 
-Learn how to make the state of each UI element clear.
-
 * [ ] [Google Devs - Accessible Styles](https://developers.google.com/web/fundamentals/accessibility/accessible-styles)
 
 ### Keyboard Accessibility
-
-Learn how to make it easy for keyboard users to navigate your site.
 
 * [ ] [Webaim - Keyboard](https://webaim.org/techniques/keyboard/)
 * [ ] [Smashing Magazine - Web with just a keyboard](https://www.smashingmagazine.com/2018/07/web-with-just-a-keyboard/)
 
 #### Focus
-
-Learn how to create a sensible tab order and how to make it easy for the users to locate the currently focused element.
 
 * [ ] [web.dev - Control focus with tabindex](https://web.dev/control-focus-with-tabindex/)
 * [ ] [Google Devs - Focus](https://developers.google.com/web/fundamentals/accessibility/focus/)
@@ -950,16 +335,12 @@ Learn how to create a sensible tab order and how to make it easy for the users t
 
 ### Accessible Colors
 
-Learn how to select colors in such a way that users, including those with visual disabilities, can perceive the content on the page.
-
 * [ ] [Webaim - Contrast and Color](https://webaim.org/articles/contrast/)
 * [ ] [The A11Y Project - Check contrast](https://a11yproject.com/posts/check-contrast-with-mobile-device/)
 * [ ] [The A11Y Project - What is color contrast?](https://a11yproject.com/posts/what-is-color-contrast/)
 * [ ] [Designing accessible color systems](https://stripe.com/en-dk/blog/accessible-color-systems)
 
 ### Laws & Policies
-
-Learn about the governmental policies related to web accessibility.
 
 * [ ] [W3C - Laws & Policies](https://www.w3.org/WAI/policies/)
 * [ ] [Webaim - Laws around the world](https://webaim.org/articles/laws/world/)
@@ -968,8 +349,6 @@ Learn about the governmental policies related to web accessibility.
 * [ ] [A11Y.dev - Lawsuits](https://a11y.dev/470-digital-accessibility-cases-were-filed-in-q3-2018/)
 
 #### Audits
-
-Learn how to conduct an accessibility review to improve the overall experience of using your site. Remember, good accessibility equals good UX!
 
 * [ ] [web.dev - Accessibility audits](https://web.dev/lighthouse-accessibility)
 * [ ] [Google Devs - How to review](https://developers.google.com/web/fundamentals/accessibility/how-to-review)
@@ -982,12 +361,9 @@ Learn how to conduct an accessibility review to improve the overall experience o
 * [ ] [WCAG 2.0 checklists](https://www.wuhcag.com/wcag-checklist/)
 * [ ] [How to Meet WCAG (Quick Reference)](https://www.w3.org/WAI/WCAG21/quickref/)
 
-
-## ➤ Web Components
+## Web Components
 
 ### Custom Elements
-
-Learn how to create new HTML tags with Custom Elements.
 
 * [ ] [Google Devs - Custom Elements](https://developers.google.com/web/fundamentals/web-components/customelements)
 * [ ] [MDN - Using Custom Elements](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements)
@@ -999,15 +375,11 @@ Learn how to create new HTML tags with Custom Elements.
 
 ### HTML Templates
 
-Learn how to use HTML templates to create flexible templates that can then be used to populate the Shadow DOM.
-
 * [ ] [MDN - Using Templates & Slots](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_templates_and_slots)
 * [ ] [Javascript.info - Template Element](https://javascript.info/template-element)
 * [ ] [MDN - The Content Template element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template)
 
 ### Shadow DOM
-
-Learn how to encapsulate your CSS using Shadow DOM.
 
 * [ ] [Google Devs - Shadow DOM](https://developers.google.com/web/fundamentals/web-components/shadowdom)
 * [ ] [MDN - Using Shadow DOM](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM)
@@ -1018,8 +390,6 @@ Learn how to encapsulate your CSS using Shadow DOM.
 
 #### Shadow Parts
 
-Learn how to style the inside of a shadow tree from outside of that Shadow Tree by using Shadow Parts.
-
 * [ ] [Fergald - CSS Shadow ::part and ::theme](https://github.com/fergald/docs/blob/master/explainers/css-shadow-parts-1.md)
 * [ ] [MDN - ::part](https://developer.mozilla.org/en-US/docs/Web/CSS/::part)
 * [ ] [W3C - CSS Shadow Parts](https://www.w3.org/TR/css-shadow-parts-1/)
@@ -1028,8 +398,6 @@ Learn how to style the inside of a shadow tree from outside of that Shadow Tree 
 * [ ] [Chrome Status - ::part and ::theme](https://www.chromestatus.com/features/5763933658939392)
 
 #### Slots
-
-Learn how to compose Custom Elements by using slots.
 
 * [ ] [Alligator.io - Composing Custom Elements](https://alligator.io/web-components/composing-slots-named-slots/)
 * [ ] [Javascript.info - Slots Composition](https://javascript.info/slots-composition)
@@ -1047,8 +415,6 @@ Get familiar with best practices when it comes to building Web Components.
 
 ### Constructible Stylesheets
 
-Learn how the Constructible Stylesheets proposal enables reusable styles when using shadow dom.
-
 * [ ] [Google Devs - Constructable Stylesheets](https://developers.google.com/web/updates/2019/02/constructable-stylesheets)
 * [ ] [W3C - Constructable Stylesheet Objects](https://wicg.github.io/construct-stylesheets/)
 * [ ] [dev.to - Why Would Anyone Use Constructible Stylesheets](https://dev.to/westbrook/why-would-anyone-use-constructible-stylesheets-anyways-19ng)
@@ -1058,8 +424,6 @@ Learn how the Constructible Stylesheets proposal enables reusable styles when us
 
 ### Form Participation
 
-Learn how the Form Participation API proposal enables elements, other than built-in form control elements, to participate in form submission and validation.
-
 * [ ] [Form Participation API Explained](https://docs.google.com/document/d/1JO8puctCSpW-ZYGU8lF-h4FWRIDQNDVexzHoOQ2iQmY/edit)
 * [ ] [Chrome Status - Form-associated custom elements](https://www.chromestatus.com/features/4708990554472448)
 * [ ] [web-platform-tests - Form Participation](https://github.com/web-platform-tests/wpt/tree/master/custom-elements/form-associated)
@@ -1067,17 +431,11 @@ Learn how the Form Participation API proposal enables elements, other than built
 * [ ] [web.dev - More capable form controls](https://web.dev/more-capable-form-controls/)
 * [ ] [W3C - Creating a form-associated custom element](https://html.spec.whatwg.org/multipage/custom-elements.html#custom-elements-face-example)
 
-
-
-
-
-## ➤ Progressive Webapps
+## Progressive Webapps
 
 ### API's
 
 ### Storage
-
-Learn how to store data for your web app.
 
 * [ ] [MDN - Storage](https://developer.mozilla.org/en-US/docs/Web/API/Storage_API)
 * [ ] [MDN - Web Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API)
@@ -1088,15 +446,11 @@ Learn how to store data for your web app.
 
 ### Routing
 
-Learn what routing means in single page applications.
-
 * [ ] [How Single-Page Applications Work](https://blog.pshrmn.com/how-single-page-applications-work/)
 * [ ] [Static Apps - Routing URLs in Static Web Apps](https://staticapps.org/articles/routing-urls-in-static-apps/)
 * [ ] [Routing With Single Page Applications or Client Side Routing](https://pennyforyourcode.com/tldr-routing-with-single-page-applications-or-client-side-routing-327626cdc5dd)
 
 #### History API
-
-Learn how to use the history API to add single page applicaiton routing to your web app.
 
 * [ ] [MDN - Working with the History API](https://developer.mozilla.org/en-US/docs/Web/API/History_API/Working_with_the_History_API)
 * [ ] [MDN - History API](https://developer.mozilla.org/en-US/docs/Web/API/History_API)
@@ -1107,8 +461,6 @@ Learn how to use the history API to add single page applicaiton routing to your 
 * [ ] [MDN - The Document Base URL element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base)
 
 ### Service Workers
-
-Learn how to register a service worker to provide a rich native-like experience.
 
 * [ ] [Google Devs - Service Workers: an Introduction](https://developers.google.com/web/fundamentals/primers/service-workers)
 * [ ] [Google Devs - The Service Worker Lifecycle](https://developers.google.com/web/fundamentals/primers/service-workers/lifecycle)
@@ -1123,8 +475,6 @@ Learn how to register a service worker to provide a rich native-like experience.
 
 #### Offline first
 
-Learn how to make your web app working offline with an offline first approach.
-
 * [ ] [Google Devs - The Offline Cookbook](https://developers.google.com/web/fundamentals/instant-and-offline/offline-cookbook)
 * [ ] [Udacity - Offline Web Applications](https://www.udacity.com/course/offline-web-applications--ud899)
 * [ ] [Offline First](http://offlinefirst.org/)
@@ -1138,15 +488,11 @@ Learn how to make your web app working offline with an offline first approach.
 
 #### Push notifications
 
-Learn how to add push notifications to your web app.
-
 * [ ] [Google Devs - Adding Push Notifications to a Web App](https://developers.google.com/web/fundamentals/codelabs/push-notifications/)
 * [ ] [MDN - How to make PWAs re-engageable](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Re-engageable_Notifications_Push)
 * [ ] [MDN - Notifications API](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API)
 
 ### Web App manifest
-
-Learn how to tell the browser about your web app and how it should behave when 'installed' by creating a web app manifest.
 
 * [ ] [Google Devs - Web App Manifest](https://developers.google.com/web/fundamentals/web-app-manifest/)
 * [ ] [web.dev - Add a web app manifest](https://web.dev/add-manifest/)
@@ -1155,15 +501,11 @@ Learn how to tell the browser about your web app and how it should behave when '
 
 ### Add to homescreen
 
-Learn how to make your web app installable.
-
 * [ ] [web.dev - Installable](https://web.dev/installable)
 * [ ] [Google Devs - App Install Banners](https://developers.google.com/web/fundamentals/app-install-banners/)
 * [ ] [MDN - Add to Home screen](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Add_to_home_screen)
 
 ### Pointer Events
-
-Learn how to handle inputs from pointing devices such as a mouse, pen/stylus or touch.
 
 * [ ] [MDN - Pointer Events](https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events)
 * [ ] [Google Devs - Add Touch to Your Site](https://developers.google.com/web/fundamentals/design-and-ux/input/touch)
@@ -1176,21 +518,15 @@ Learn how to handle inputs from pointing devices such as a mouse, pen/stylus or 
 
 ### App shell
 
-Learn how to use an app shell to provide an instant and reliable experience to users on repeat visits
-
 * [ ] [Google Devs - The App Shell Model](https://developers.google.com/web/fundamentals/architecture/app-shell)
 * [ ] [MDN - Architecture of an app](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/App_structure)
 
 ### Render-Blocking Resources
 
-Learn about render-blocking resources and why they are bad for the user-experience.
-
 * [ ] [MDN - Render-blocking resources](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Loading#Render-blocking_resources)
 * [ ] [Google Devs - Render-Blocking Resources](https://developers.google.com/web/tools/lighthouse/audits/blocking-resources)
 
 ### Compression
-
-Learn how to minimize the overall download size by optimizing and compressing resources.
 
 * [ ] [Google Devs - Optimizing Encoding and Transfer Size](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer)
 * [ ] [Google Devs - Replace Animated GIFs with Video](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/replace-animated-gifs-with-video/)
@@ -1201,15 +537,11 @@ Learn how to minimize the overall download size by optimizing and compressing re
 
 ### Performance metrics
 
-Learn why it is important to measure performance and which metrics you should prioritize.
-
 * [ ] [Google Devs - User-centric Performance Metrics](https://developers.google.com/web/fundamentals/performance/user-centric-performance-metrics)
 * [ ] [Udacity - Website Performance Optimization](https://www.udacity.com/course/website-performance-optimization--ud884)
 * [ ] [Udacity - Browser Rendering Optimization](https://www.udacity.com/course/browser-rendering-optimization--ud860)
 
 #### Largest Contentful Paint
-
-Learn about Largest Contentful Paint and how it impacts the overall performance.
 
 * [ ] [web.dev - Largest Contentful Paint](https://web.dev/lcp/)
 * [ ] [web.dev - Lighthouse Largest Contentful Paint](https://web.dev/lighthouse-largest-contentful-paint)
@@ -1217,29 +549,21 @@ Learn about Largest Contentful Paint and how it impacts the overall performance.
 
 #### Total Blocking Time
 
-Learn about Total Blocking Time and how it impacts the overall performance.
-
 * [ ] [web.dev - First CPU Idle](https://web.dev/first-cpu-idle)
 * [ ] [Google Devs - Total Blocking Time](https://web.dev/tbt)
 
 #### Time to Interactive
-
-Learn about Time to Interactive and how it impacts the overall performance.
 
 * [ ] [web.dev - Total Blocking Time](https://web.dev/lighthouse-total-blocking-time/)
 * [ ] [Google Devs - Time to Interactive](https://developers.google.com/web/tools/lighthouse/audits/time-to-interactive)
 
 ### Lazy Loading
 
-Learn how to use lazy loading to lower the initial page payload and load time.
-
 * [ ] [Google Devs - Lazy Loading Images and Video](https://developers.google.com/web/fundamentals/performance/lazy-loading-guidance/images-and-video)
 * [ ] [Addy Osmani - Lazy Loading Images](https://addyosmani.com/blog/lazy-loading/)
 * [ ] [web.dev - Native lazy-loading for the web](https://web.dev/native-lazy-loading/)
 
 #### Dynamic Import
-
-Learn how to use dynamic import to lazy load javascript.
 
 * [ ] [V8 - Dynamic import()](https://v8.dev/features/dynamic-import)
 * [ ] [JavaScript dynamic import() & export](https://medium.com/@WebReflection/javascript-dynamic-import-export-b0e8775a59d4)
@@ -1248,8 +572,6 @@ Learn how to use dynamic import to lazy load javascript.
 
 #### Offscreen images
 
-Learn why offscreen images increase the load time and how to avoid them by lazy loading images.
-
 * [ ] [web.dev - Defer offscreen images](https://web.dev/offscreen-images/)
 * [ ] [Google Devs - Properly Size Images](https://developers.google.com/web/tools/lighthouse/audits/oversized-images)
 * [ ] [web.dev - Native lazy-loading for the web](https://web.dev/native-lazy-loading)
@@ -1257,28 +579,20 @@ Learn why offscreen images increase the load time and how to avoid them by lazy 
 
 ### Critical Request Chains
 
-Learn about the critical request chains and how to find them in your web app.
-
 * [ ] [Google Devs - Critical Request Chains](https://developers.google.com/web/tools/lighthouse/audits/critical-request-chains)
 * [ ] [web.dev - Minimize critical requests depth](https://web.dev/critical-request-chains)
 
 ### Tree shaking
-
-Learn how to use tree shaking to eliminate dead code.
 
 * [ ] [Google Devs - Reduce JavaScript Payloads](https://developers.google.com/web/fundamentals/performance/optimizing-javascript/tree-shaking)
 * [ ] [How to Clean Up Your JavaScript](https://www.keycdn.com/blog/tree-shaking)
 
 ### Codesplitting
 
-Learn about codesplitting an how dividing your code into multiple chunks makes your web app faster.
-
 * [ ] [Google Devs - Reduce JavaScript Payloads](https://developers.google.com/web/fundamentals/performance/optimizing-javascript/code-splitting)
 * [ ] [All you need to know about JavaScript code splitting](https://www.creativebloq.com/how-to/all-you-need-to-know-about-javascript-code-splitting)
 
 ### PRPL Pattern
-
-Learn how to use the PRPL pattern to make web apps more performant.
 
 * [ ] [Google Devs - The PRPL Pattern](https://developers.google.com/web/fundamentals/performance/prpl-pattern/)
 * [ ] [Google Devs - JavaScript Start-up Optimization](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/javascript-startup-optimization)
@@ -1286,8 +600,6 @@ Learn how to use the PRPL pattern to make web apps more performant.
 * [ ] [The Cost of Javascript](https://medium.com/@addyosmani/the-cost-of-javascript-in-2018-7d8950fbb5d4)
 
 ### Resource Prioritization
-
-Learn about resource prioritization and how to inform the browser about the importance of a resource.
 
 * [ ] [Google Devs - Resource Prioritization](https://developers.google.com/web/fundamentals/performance/resource-prioritization)
 * [ ] [Eliminating Roundtrips with Preconnect](https://www.igvita.com/2015/08/17/eliminating-roundtrips-with-preconnect/)
@@ -1297,8 +609,6 @@ Learn about resource prioritization and how to inform the browser about the impo
 
 ### Caching
 
-Learn about caching and how it can be uses to make web apps load faster.
-
 * [ ] [Google Devs - HTTP Caching](https://developers.google.com/web/fundamentals/performance/get-started/httpcaching-6)
 * [ ] [MDN - HTTP caching](https://developer.mozilla.org/en-US/docs/Web/HTTP/Caching)
 
@@ -1307,16 +617,12 @@ Learn about caching and how it can be uses to make web apps load faster.
 
 ### Rendering
 
-Learn about rendering, how a page is rendered and why it is important to keep your web app interactive and smooth running.
-
 * [ ] [Google Devs - Constructing the Object Model](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/constructing-the-object-model)
 * [ ] [Google Devs - Rendering Performance](https://developers.google.com/web/fundamentals/performance/rendering)
 * [ ] [Google Devs - Render-tree Construction](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/render-tree-construction)
 * [ ] [Google Devs - Render Blocking CSS](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/render-blocking-css)
 
 ### Event loop
-
-Learn about the event loop and how Javascript simulate like it’s running our commands in a multi-thread environment.
 
 * [ ] [Youtube - Jake Archibald: In The Loop](https://youtu.be/cCOL7MC4Pl0)
 * [ ] [Understanding JavaScript](https://medium.com/@muratcatal/understanding-javascript-heap-stack-event-loops-and-callback-queue-6fdec3cfe32e)
@@ -1327,16 +633,12 @@ Learn about the event loop and how Javascript simulate like it’s running our c
 
 #### Microtask
 
-Learn about microtasks and the microtask queue.
-
 * [ ] [Tasks, microtasks, queues and schedules](https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/)
 * [ ] [MDN - Using microtasks in JavaScript](https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API/Microtask_guide)
 * [ ] [javascript.info - Microtasks and macrotasks](https://javascript.info/event-loop)
 * [ ] [javascript.info - Microtasks](https://javascript.info/microtask-queue)
 
 #### Stack
-
-Learn about the stack and how to investigate the staack trace when debugging.
 
 * [ ] [Javascript Stack Trade - Using it to debug](https://www.scalyr.com/blog/javascript-stack-trace-understanding-it-and-using-it-to-debug/)
 * [ ] [MDN - console.trace()](https://developer.mozilla.org/en-US/docs/Web/API/Console/trace)
@@ -1345,8 +647,6 @@ Learn about the stack and how to investigate the staack trace when debugging.
 
 #### Heap
 
-Learn about the heap and how to investigate the heap snapshots when debugging.
-
 * [ ] [Google Devs - Memory Problems](https://developers.google.com/web/tools/chrome-devtools/memory-problems/)
 * [ ] [Google Devs - Memory Terminology](https://developers.google.com/web/tools/chrome-devtools/memory-problems/memory-101)
 * [ ] [Google Devs - How to Record Heap Snapshots](https://developers.google.com/web/tools/chrome-devtools/memory-problems/heap-snapshots)
@@ -1354,8 +654,6 @@ Learn about the heap and how to investigate the heap snapshots when debugging.
 * [ ] [Google Devs - How to Use the Allocation Profiler Tool](https://developers.google.com/web/tools/chrome-devtools/memory-problems/allocation-profiler)
 
 ### RAIL Model
-
-Learn how to use the RAIL model to ensure a good user experience.
 
 * [ ] [Google Devs - RAIL](https://developers.google.com/web/fundamentals/performance/rail)
 * [ ] [Google Devs - Why Performance Matters](https://developers.google.com/web/fundamentals/performance/why-performance-matters/)
@@ -1370,14 +668,10 @@ Learn how to use the RAIL model to ensure a good user experience.
 
 #### requestAnimationFrame
 
-Learn how to use the requestAnimationFrame API to create butter-smooth animations.
-
 * [ ] [Google Devs - Optimize JavaScript Execution](https://developers.google.com/web/fundamentals/performance/rendering/optimize-javascript-execution)
 * [ ] [MDN - requestAnimationFrame()](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame)
 
 #### requestIdleCallback
-
-Learn how to use the requestIdleCallback to defer heavy tasks.
 
 * [ ] [MDN - Background Tasks API](https://developer.mozilla.org/en-US/docs/Web/API/Background_Tasks_API)
 * [ ] [Google Dev - requestIdleCallback](https://developers.google.com/web/updates/2015/08/using-requestidlecallback?hl=en)
@@ -1385,15 +679,11 @@ Learn how to use the requestIdleCallback to defer heavy tasks.
 
 ### Critical Rendering Path
 
-Learn about the critical rendering path and how to identify it.
-
 * [ ] [Google Devs - Critical Rendering Path](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/)
 * [ ] [MDN - Critical Rendering Path](https://developer.mozilla.org/en-US/docs/Web/Performance/Critical_rendering_path)
 * [ ] [Understanding the critical rendering path](https://medium.com/@luisvieira_gmr/understanding-the-critical-rendering-path-rendering-pages-in-1-second-735c6e45b47a)
 
 ### The Pixel Pipeline
-
-Learn about the five key points in the pixels-to-screen pipeline.
 
 * [ ] [Google Devs - The pixel pipeline](https://developers.google.com/web/fundamentals/performance/rendering#the_pixel_pipeline)
 * [ ] [Pixels are expensive](https://aerotwist.com/blog/pixels-are-expensive/)
@@ -1402,13 +692,9 @@ Learn about the five key points in the pixels-to-screen pipeline.
 
 #### Style calculations
 
-Learn how to optimize your CSS to avoid heavy style calculations.
-
 * [ ] [Google Devs - Style Calculations](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations)
 
 #### Transforms
-
-Learn about transforms and how it is possible to avoid both layout and paint.
 
 * [ ] [Google Devs - Use transform and opacity for animations](https://developers.google.com/web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count#use_transform_and_opacity_changes_for_animations)
 * [ ] [Achieving 60 FPS Animations with CSS3](https://medium.com/outsystems-experts/how-to-achieve-60-fps-animations-with-css3-db7b98610108)
@@ -1416,15 +702,11 @@ Learn about transforms and how it is possible to avoid both layout and paint.
 
 #### Paint areas
 
-Learn about paint areas and how it is possible to reduce them.
-
 * [ ] [Google Devs - Paint Areas](https://developers.google.com/web/fundamentals/performance/rendering/simplify-paint-complexity-and-reduce-paint-areas)
 * [ ] [CSS Tricks - Browser painting](https://css-tricks.com/browser-painting-and-considerations-for-web-performance/)
 * [ ] [HTML5 Rocks - Avoiding Unnecessary Paints](https://www.html5rocks.com/en/tutorials/speed/unnecessary-paints/)
 
 #### Layout Trashing
-
-Learn about layout trashing and how to avoid it.
 
 * [ ] [Google Devs - Layout Thrashing](https://developers.google.com/web/fundamentals/performance/rendering/avoid-large-complex-layouts-and-layout-thrashing)
 * [ ] [Beware JavaScript Layout Thrashing!](https://blog.idrsolutions.com/2014/08/beware-javascript-layout-thrashing/)
@@ -1432,23 +714,17 @@ Learn about layout trashing and how to avoid it.
 
 #### Layers
 
-Learn about layers and how to promote an element to another layer.
-
 * [ ] [Google Devs - Manage Layer Count](https://developers.google.com/web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count)
 * [ ] [HTML5 Rocks - Accelerated Rendering in Chrome](https://www.html5rocks.com/en/tutorials/speed/layers/)
 * [ ] [Layers and how to force them](https://dassur.ma/things/forcing-layers/)
 
 #### Debounce
 
-Learn how to debounce computationally expensive code to avoid blocking the UI.
-
 * [ ] [Google Devs - Debounce Your Input Handlers](https://developers.google.com/web/fundamentals/performance/rendering/debounce-your-input-handlers)
 * [ ] [What is Debouncing?](https://medium.com/@jamischarles/what-is-debouncing-2505c0648ff1)
 * [ ] [Level Up - Debounce in JavaScript](https://levelup.gitconnected.com/debounce-in-javascript-improve-your-applications-performance-5b01855e086)
 
 ### CSS Containment
-
-Learn how to use CSS containment to improve the performance of your web app.
 
 * [ ] [Google Devs - CSS Containment](https://developers.google.com/web/updates/2016/06/css-containment)
 * [ ] [W3C - CSS Containment Module](https://www.w3.org/TR/css-contain-1/)
@@ -1457,8 +733,6 @@ Learn how to use CSS containment to improve the performance of your web app.
 * [ ] [CSS Tricks - CSS containment](https://css-tricks.com/css-containment/)
 
 ### Web Workers
-
-Learn how to use web workers to run a script operation in a background thread separate from the main execution thread.
 
 * [ ] [MDN - Web Workers API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API)
 * [ ] [HTML5 Rocks - The Basics of Web Workers](https://www.html5rocks.com/en/tutorials/workers/basics/)
@@ -1469,8 +743,6 @@ Learn how to use web workers to run a script operation in a background thread se
 
 ### HTTPS
 
-Learn about HTTPS and why a website should always be protected with HTTPS.
-
 * [ ] [Google Devs - Why HTTPS Matters](https://developers.google.com/web/fundamentals/security/encrypt-in-transit/why-https)
 * [ ] [Google Devs - Enabling HTTPS on Your Servers](https://developers.google.com/web/fundamentals/security/encrypt-in-transit/enable-https)
 * [ ] [Google Devs - Mixed Content](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content)
@@ -1478,15 +750,11 @@ Learn about HTTPS and why a website should always be protected with HTTPS.
 
 ### Browser Sandbox
 
-Learn about the sandbox security mechanism and how it restricts the execution environment.
-
 * [ ] [web.dev - Browser sandbox](https://web.dev/browser-sandbox/)
 * [ ] [Wikipedia - Sandbox (computer security)](https://en.wikipedia.org/wiki/Sandbox_(computer_security))
 * [ ] [Howtogeek - Sandboxes Explained](https://www.howtogeek.com/169139/sandboxes-explained-how-theyre-already-protecting-you-and-how-to-sandbox-any-program/)
 
 ### OWASP
-
-Learn about the OWASP organization and how they help with web application security.
 
 * [ ] [Wikipedia - OWASP](https://en.wikipedia.org/wiki/OWASP)
 * [ ] [OWASP - About](https://www.owasp.org/index.php/About_The_Open_Web_Application_Security_Project)
@@ -1498,16 +766,12 @@ Learn about the OWASP organization and how they help with web application securi
 
 #### Cross-Site Scripting
 
-Learn about cross-site scripting and how it is possible mitigate these kind of attacks.
-
 * [ ] [MDN - Cross-site scripting](https://developer.mozilla.org/en-US/docs/Glossary/Cross-site_scripting)
 * [ ] [OWASP - Cross-site Scripting (XSS)](https://www.owasp.org/index.php/Cross-site_Scripting_(XSS))
 * [ ] [OWASP - XSS Cheatsheet](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)
 * [ ] [Excess XSS](https://excess-xss.com/)
 
 #### Clickjacking
-
-Learn about clickjacking and how it is possible to mitigate these kind of attacks.
 
 * [ ] [OWASP - Clickjacking](https://www.owasp.org/index.php/Clickjacking)
 * [ ] [Wikipedia - Clickjacking](https://en.wikipedia.org/wiki/Clickjacking)
@@ -1516,17 +780,12 @@ Learn about clickjacking and how it is possible to mitigate these kind of attack
 
 ### Content Security Policy
 
-Learn about content security policy and how it can help to detect and mitigate certain types of attacks.
-
 * [ ] [MDN - Content Security Policy (CSP)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
 * [ ] [Google Devs - CSP](https://developers.google.com/web/fundamentals/security/csp)
-
 
 ### Audits
 
 ### Performance budgets
-
-Learn about performance budgets and how you can create one for your web app.
 
 * [ ] [web.dev - Performance Budgets](https://web.dev/performance-budgets-101)
 * [ ] [Google Devs - Performance Budget](https://developers.google.com/web/tools/lighthouse/audits/budgets)
@@ -1534,36 +793,24 @@ Learn about performance budgets and how you can create one for your web app.
 
 ### Lighthouse
 
-Learn about lighthouse and how it can be used to audit your web app.
-
 * [ ] [Google Devs - Lighthouse](https://developers.google.com/web/tools/lighthouse/)
 * [ ] [Youtube - Staying off the Rocks](https://www.youtube.com/watch?v=NoRYn6gOtVo)
 * [ ] [web.dev - Measure](https://web.dev/measure)
 
 ### Chrome DevTools
 
-Learn about the Chrome DevTools and how it can be used to audit your web app.
-
 * [ ] [Google Devs - Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools)
 * [ ] [Google Devs - Inspect animations](https://developers.google.com/web/tools/chrome-devtools/inspect-styles/animations)
 * [ ] [Investigate animation performance with DevTools](https://calibreapp.com/blog/investigate-animation-performance-with-devtools/)
 
-
-
-
-
-## ➤ Build tools
+## Build tools
 
 ### Package Managers
-
-Learn about package managers and how they make managing dependencies easier.
 
 * [ ] [Freecodecamp - How JavaScript package managers work](https://www.freecodecamp.org/news/javascript-package-managers-101-9afd926add0a/)
 * [ ] [Guide to JavaScript frontend package managers](https://www.javascriptstuff.com/javascript-frontend-package-managers/)
 
 #### NPM
-
-Learn about NPM and how it can be used to manage dependencies.
 
 * [ ] [npmjs - About npm](https://docs.npmjs.com/about-npm/)
 * [ ] [npmjs - Getting started](https://docs.npmjs.com/getting-started/)
@@ -1572,14 +819,10 @@ Learn about NPM and how it can be used to manage dependencies.
 
 #### Yarn
 
-Learn about Yarn and how it can be used to manage dependencies.
-
 * [ ] [Yarnpkg - Getting Started](https://yarnpkg.com/en/docs/getting-started)
 * [ ] [Facebook Engineering - Yarn](https://engineering.fb.com/web/yarn-a-new-package-manager-for-javascript/)
 
 ### Module Bundlers
-
-Learn about module bundler and how they can help bundling your code.
 
 * [ ] [dev.to - What is a module bundler?](https://dev.to/tanhauhau/what-is-module-bundler-and-how-does-it-work-3gp2)
 * [ ] [Freecodecamp - Let’s learn how module bundlers work](https://www.freecodecamp.org/news/lets-learn-how-module-bundlers-work-and-then-write-one-ourselves-b2e3fe6c88ae/)
@@ -1587,28 +830,20 @@ Learn about module bundler and how they can help bundling your code.
 
 #### Rollup
 
-Learn how you can use Rollup to bundle your code.
-
 * [ ] [Rollup - Introduction](https://rollupjs.org/guide/en/)
 * [ ] [How to Bundle JavaScript With Rollup](https://lengstorf.com/learn-rollup-js/)
 
 #### Webpack
-
-Learn how you can use Webpack to bundle your code.
 
 * [ ] [Webpack - Getting Started](https://webpack.js.org/guides/getting-started/)
 * [ ] [Webpack: A Gentle Introduction to the Module Bundler](https://auth0.com/blog/webpack-a-gentle-introduction/)
 
 #### Parcel
 
-Learn how you can use Parcel to bundle your code.
-
 * [ ] [Parcel - Getting Started](https://parceljs.org/getting_started.html)
 * [ ] [Parcel, a simpler webpack](https://flaviocopes.com/parcel/)
 
 #### Snowpack
-
-Learn how Snowpack can replace the traditional app bundler during development.
 
 * [ ] [Snowpack](https://www.snowpack.dev/)
 * [ ] [Snowpack - Quickstart](https://www.snowpack.dev/#quickstart)
@@ -1618,14 +853,10 @@ Learn how Snowpack can replace the traditional app bundler during development.
 
 ### Linters and formatters
 
-Learn how you can improve your code quality with linters and formatters.
-
 * [ ] [Improve Your JavaScript Code Quality With Linters](https://www.gistia.com/javascript-linters-formatter-prettier-eslint/)
 * [ ] [Why you should always use a Linter](https://medium.com/dailyjs/why-you-should-always-use-a-linter-and-or-pretty-formatter-bb5471115a76)
 
 #### Prettier
-
-Learn how you can use Prettier to format your code.
 
 * [ ] [Prettier - What is Prettier?](https://prettier.io/docs/en/index.html)
 * [ ] [Let the computer do the formatting](https://blog.bitsrc.io/let-the-computer-do-the-formatting-ddb799e8a068)
@@ -1634,37 +865,27 @@ Learn how you can use Prettier to format your code.
 
 #### ESLint
 
-Learn how you can use ESLint to lint your code.
-
 * [ ] [Eslint - Getting Started](https://eslint.org/docs/user-guide/getting-started)
 * [ ] [Streamline Code Reviews with ESLint + Prettier](https://medium.com/javascript-scene/streamline-code-reviews-with-eslint-prettier-6fb817a6b51d)
 * [ ] [Prettier vs ESLint: What’s The Difference?](https://www.futurehosting.com/blog/prettier-vs-eslint-whats-the-difference/)
 
 ### Task Runners
 
-Learn about task runners and how you can automate code execution.
-
 * [ ] [The Advantages of Using Task Runners](https://www.dbswebsite.com/blog/the-advantages-of-using-task-runners/)
 * [ ] [Being Productive With Task Runners](https://www.smashingmagazine.com/2016/06/harness-machines-productive-task-runners/)
 
 #### NPM Scripts
-
-Learn about NPM scripts and how you can run your own.
 
 * [ ] [CSS Tricks - Why npm Scripts?](https://css-tricks.com/why-npm-scripts/)
 * [ ] [Helpers and tips for npm run scripts](https://michael-kuehnel.de/tooling/2018/03/22/helpers-and-tips-for-npm-run-scripts.html)
 
 ### Transpilers
 
-Learn what transpilers are and why we need them.
-
 * [ ] [Scotch - Javascript Transpilers](https://scotch.io/tutorials/javascript-transpilers-what-they-are-why-we-need-them)
 * [ ] [What JavaScript Programmers Need to Know about Transpilers](https://thenewstack.io/javascript-transpilers-need-know/)
 * [ ] [Wikipedia - Source-to-source compiler](https://en.wikipedia.org/wiki/Source-to-source_compiler)
 
 #### Babel
-
-Learn about Babel and how you can use it to transpile your code.
 
 * [ ] [Complete Babel 7 Guide for Beginners](https://medium.com/@onlykiosk/complete-babel-7-guide-for-beginners-in-2019-7dd78214c464)
 * [ ] [Babel - What is Babel?](https://babeljs.io/docs/en/)
@@ -1674,15 +895,11 @@ Learn about Babel and how you can use it to transpile your code.
 
 #### Typescript
 
-Learn how to use Typescript and how it can help making your code typesafe.
-
 * [ ] [Typescript - Documentation](http://www.typescriptlang.org/docs/home.html)
 * [ ] [Typescript: Why should one use i?](https://medium.com/tech-tajawal/typescript-why-should-one-use-it-a539faa92010)
 * [ ] [Why TypeScript is the best way to write Front-end in 2019](https://medium.com/@jtomaszewski/why-typescript-is-the-best-way-to-write-front-end-in-2019-feb855f9b164)
 
 ### CSS Pre-processors
-
-Learn about CSS pre-processors and why we need them.
 
 * [ ] [MDN - CSS preprocessor](https://developer.mozilla.org/en-US/docs/Glossary/CSS_preprocessor)
 * [ ] [Advantages of Using a Preprocessor](https://medium.com/swlh/advantages-of-using-a-preprocessor-sass-in-css-eb7310179944)
@@ -1690,14 +907,10 @@ Learn about CSS pre-processors and why we need them.
 
 #### SASS
 
-Learn about SASS and how you can use it to simplify your styles.
-
 * [ ] [SASS - Guide](https://sass-lang.com/guide)
 * [ ] [10 Reasons to Use a CSS Preprocessor in 2018](https://raygun.com/blog/10-reasons-css-preprocessor/)
 
 #### PostCSS
-
-Learn about PostCSS and how you can use its ecosystem of plugins to extend your CSS build pipeline.
 
 * [ ] [PostCSS](https://postcss.org/)
 * [ ] [What is PostCSS?](https://www.sitepoint.com/an-introduction-to-postcss/)
@@ -1706,22 +919,14 @@ Learn about PostCSS and how you can use its ecosystem of plugins to extend your 
 
 ### Node.js
 
-Learn how to use Node.js.
-
 * [ ] [Node.js](https://nodejs.org)
 * [ ] [Introduction to Node.js](https://nodejs.dev/)
 * [ ] [Node.js - Guides](https://nodejs.org/en/docs/guides/)
 * [ ] [W3Schools - Node.js tutorial](https://www.w3schools.com/nodejs/)
 
-
-
-
-
-## ➤ Frameworks & Libraries
+## Frameworks & Libraries
 
 ### lit-element
-
-Learn how to use lit-element for creating fast, lightweight web components.
 
 * [ ] [lit-element](https://lit-element.polymer-project.org/)
 * [ ] [Google Devs - Lightning-fast templates](https://developers.google.com/web/updates/2019/02/lit-element-and-lit-html)
@@ -1730,15 +935,11 @@ Learn how to use lit-element for creating fast, lightweight web components.
 
 ### Vue
 
-Learn about Vue and how you can use it for building web apps.
-
 * [ ] [Vue](https://vuejs.org/)
 * [ ] [Vue - CLI](https://cli.vuejs.org/)
 * [ ] [Getting Started with Vue](https://www.taniarascia.com/getting-started-with-vue/)
 
 ### React
-
-Learn about React and how you can use it for building web apps.
 
 * [ ] [React](https://reactjs.org/)
 * [ ] [web.dev - React](https://web.dev/react)
@@ -1746,15 +947,11 @@ Learn about React and how you can use it for building web apps.
 
 ### Angular
 
-Learn about Angular and how you can use it for building web apps.
-
 * [ ] [Angular](https://angular.io/)
 * [ ] [web.dev - Angular](https://web.dev/angular)
 * [ ] [Angular - CLI](https://cli.angular.io/)
 
 ### Svelte
-
-Learn about Svelte and how it can convert your component into highly efficient imperative code.
 
 * [ ] [Svelte](https://svelte.dev/)
 * [ ] [Github - Svelte FAQ](https://github.com/sveltejs/svelte/wiki/FAQ)
@@ -1762,29 +959,19 @@ Learn about Svelte and how it can convert your component into highly efficient i
 
 ### Stencil
 
-Learn how Stencil can be used for generating small, fast web components.
-
 * [ ] [Stencil](https://stenciljs.com/)
 * [ ] [Alligator - Getting Started With Stencil](https://alligator.io/stencil/getting-started/)
 * [ ] [How to Build Reusable Web Components Using Stenciljs](https://codeburst.io/how-to-build-web-components-using-stenciljs-afacc5451c2d)
 
-
-
-
-
-## ➤ Testing
+## Testing
 
 ### Testing Methodologies
-
-Learn about various software testing methodologies and why it is important to test your code.
 
 * [ ] [Wikipedia - Software testing](https://en.wikipedia.org/wiki/Software_testing)
 * [ ] [Software Testing Methodologies](https://smartbear.com/learn/automated-testing/software-testing-methodologies/)
 * [ ] [Learn The Methods & Tools](https://www.inflectra.com/ideas/topic/testing-methodologies.aspx)
 
 #### Unit Testing
-
-Learn about unit testing and how it can be used to test individual units of code.
 
 * [ ] [Unit Testing Tutorial](https://www.guru99.com/unit-testing-guide.html)
 * [ ] [Wikipedia - Unit testing](https://en.wikipedia.org/wiki/Unit_testing)
@@ -1793,15 +980,11 @@ Learn about unit testing and how it can be used to test individual units of code
 
 #### Integration Testing
 
-Learn about integration testing and how it can be used to test modules as a group.
-
 * [ ] [Integration Testing Tutorial](https://www.guru99.com/integration-testing.html)
 * [ ] [What is Integration Testing?](https://www.tutorialspoint.com/software_testing_dictionary/integration_testing.htm)
 * [ ] [Integration Testing](http://softwaretestingfundamentals.com/integration-testing/)
 
 #### System Testing
-
-Learn about system testing and how it can be used to test the fully integrated software product.
 
 * [ ] [System Testing Tutorial](https://www.guru99.com/system-testing.html)
 * [ ] [What is System Testing?](https://www.tutorialspoint.com/software_testing_dictionary/system_testing.htm)
@@ -1809,22 +992,16 @@ Learn about system testing and how it can be used to test the fully integrated s
 
 #### Acceptance Testing
 
-Learn about acceptance testing and how it can be used to test the software for acceptability
-
 * [ ] [What is User Acceptance Testing?](https://www.guru99.com/user-acceptance-testing.html)
 * [ ] [Acceptance Testing](http://softwaretestingfundamentals.com/acceptance-testing/)
 * [ ] [What is Acceptance Testing?](https://www.tutorialspoint.com/software_testing_dictionary/acceptance_testing.htm)
 
 #### Smoke Testing
 
-Learn about smoke testing and how it can be used to ensure that critical functionalities of the program are working fine.
-
 * [ ] [Sanity Testing Vs Smoke Testing](https://www.guru99.com/smoke-sanity-testing.html)
 * [ ] [Smoke Testing](http://softwaretestingfundamentals.com/smoke-testing/)
 
 #### Performance Testing
-
-Learn about performance testing and how it can be used to determine the responsiveness and stability of a program.
 
 * [ ] [Performance Testing Tutorial](https://www.guru99.com/performance-testing.html)
 * [ ] [Performance Testing](http://softwaretestingfundamentals.com/performance-testing/)
@@ -1832,36 +1009,26 @@ Learn about performance testing and how it can be used to determine the responsi
 
 #### Usability Testing
 
-Learn about usability testing and how it can be used to determine if the system is easily usable for the end-user.
-
 * [ ] [What is Usability Testing?](https://www.guru99.com/usability-testing.html)
 * [ ] [Usability Testing](http://softwaretestingfundamentals.com/usability-testing/)
 * [ ] [Wikipedia - Usability testing](https://en.wikipedia.org/wiki/Usability_testing)
 
 #### White Box Testing
 
-Learn about white box testing and how it can be used to test the software's internal structure, design, and coding.
-
 * [ ] [What is White Box Testing?](https://www.guru99.com/white-box-testing.html)
 * [ ] [White Box Testing](http://softwaretestingfundamentals.com/white-box-testing/)
 
 #### Black Box Testing
-
-Learn about black box testing and how a test can be carried out without looking at the internal code.
 
 * [ ] [What is Black Box Testing?](https://www.guru99.com/black-box-testing.html)
 * [ ] [Black Box Testing](http://softwaretestingfundamentals.com/black-box-testing/)
 
 #### Automated Testing
 
-Learn about automated testing and when it should be applied.
-
 * [ ] [What is Automated Testing?](https://smartbear.com/learn/automated-testing/what-is-automated-testing/)
 * [ ] [Automated Testing Tutorial](https://www.guru99.com/automation-testing.html)
 
 #### Manual Testing
-
-Learn about manual testing and when it should be applied.
 
 * [ ] [Manual Testing Tutorial](https://www.guru99.com/manual-testing.html)
 * [ ] [Wikipedia - Manual Testing](https://en.wikipedia.org/wiki/Manual_testing)
@@ -1869,15 +1036,11 @@ Learn about manual testing and when it should be applied.
 
 ### Continuous integration
 
-Learn about continuous integration and it can enable iterative software development.
-
 * [ ] [dev.to - Continuous Integration Explained](https://dev.to/markoa/continuous-integration-explained-59f9)
 * [ ] [Continuous Integration Tutorial](https://www.tutorialspoint.com/continuous_integration/index.htm)
 * [ ] [Wikipedia - Continuous integration](https://en.wikipedia.org/wiki/Continuous_integration)
 
 ### A/B Testing
-
-Learn about A/B testing and how it can be used to optimize your web app.
 
 * [ ] [dev.to - A/B testing: introduction](https://dev.to/ice_lenor/ab-testing-introduction-3jpd)
 * [ ] [dev.to - When Not To A/B Test](https://dev.to/ice_lenor/when-not-to-ab-test-4cc7)
@@ -1886,22 +1049,16 @@ Learn about A/B testing and how it can be used to optimize your web app.
 
 ### Test Runners
 
-Learn about test runners and how they can help running tests.
-
 * [ ] [Classifications of Testing Software](https://amzotti.github.io/testing/2015/03/16/what-is-the-difference-between-a-test-runner-testing-framework-assertion-library-and-a-testing-plugin/)
 * [ ] [Udacity - Javascript Testing](https://www.udacity.com/course/javascript-testing--ud549)
 * [ ] [JavaScript Unit Testing Frameworks](https://www.guru99.com/javascript-unit-testing-frameworks.html)
 
 #### Karma
 
-Learn about the Karma test runner.
-
 * [ ] [Karma](https://karma-runner.github.io/latest/index.html)
 * [ ] [Getting started with Karma and Mocha](https://medium.com/@jazcodes/getting-started-with-karma-and-mocha-for-automated-browser-tests-5ebb6cd02edf)
 
 #### Mocha
-
-Learn about the Mocha testing framework.
 
 * [ ] [Mocha](https://mochajs.org/)
 * [ ] [A quick and complete guide to Mocha testing](https://blog.logrocket.com/a-quick-and-complete-guide-to-mocha-testing-d0e0ea09f09d/)
@@ -1909,21 +1066,15 @@ Learn about the Mocha testing framework.
 
 #### Jasmine
 
-Learn about the Jasmine testing frameworks.
-
 * [ ] [Jasmine](https://jasmine.github.io/)
 * [ ] [How to set up a testing environment with Jasmine and karma](https://medium.com/bb-tutorials-and-thoughts/javascript-how-to-set-up-a-testing-environment-with-jasmine-and-karma-58591dd39734)
 
 #### Cypress
 
-Learn how to use Cypress for end-to-end-testing.
-
 * [ ] [Cypress](https://www.cypress.io/)
 * [ ] [End-to-End Testing with Cypress](https://webdevstudios.com/2018/11/13/end-to-end-testing-with-cypress-io/)
 
 #### Ava
-
-Learn about the Ava test runner.
 
 * [ ] [Github - Ava](https://github.com/avajs/ava)
 * [ ] [A Fresh Take On JavaScript Testing](https://pusher.com/sessions/meetup/the-js-roundabout/ava-test-runner-a-fresh-take-on-javascript-testing-and-growing-an-open-source-project)
@@ -1931,23 +1082,15 @@ Learn about the Ava test runner.
 
 ### Best Practices
 
-Learn about the best practices when it comes to testing.
-
 * [ ] [Javascript Testing Best Practices](https://github.com/goldbergyoni/javascript-testing-best-practices)
 * [ ] [What are the best practices in software Testing?](https://www.quora.com/What-are-the-best-practices-in-software-Testing)
 * [ ] [7 Software Testing Best Practices](https://www.qasymphony.com/blog/7-software-testing-best-practices/)
 
-
-
-
-
-## ➤ Architecture & paradigms
+## Architecture & paradigms
 
 ### Paradigms
 
 ### Programming Paradigms
-
-Learn how programming languages can be categoried into different paraigmes based on their features.
 
 * [ ] [Wikipedia - Programming paradigm](https://en.wikipedia.org/wiki/Programming_paradigm)
 * [ ] [Introduction of Programming Paradigms](https://www.geeksforgeeks.org/introduction-of-programming-paradigms/)
@@ -1955,23 +1098,17 @@ Learn how programming languages can be categoried into different paraigmes based
 
 ### Object Oriented Programming
 
-Learn about object oriented programming and how objects can make your code easier to read and debug.
-
 * [ ] [MDN - Object-oriented JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS)
 * [ ] [Freecodecamp - An introduction to Object-Oriented Programming](https://www.freecodecamp.org/news/an-introduction-to-object-oriented-programming-in-javascript-8900124e316a/)
 * [ ] [Introduction to Object Oriented Programming in JavaScript](https://www.geeksforgeeks.org/introduction-object-oriented-programming-javascript/)
 
 #### S.O.L.I.D
 
-Learn about the SOLID design pricinples that can make your code more understandable, flexible and maintainable.
-
 * [ ] [Wikipedia - SOLID](https://en.wikipedia.org/wiki/SOLID)
 * [ ] [S.O.L.I.D: The First 5 Principles of Object Oriented Design](https://scotch.io/bar-talk/s-o-l-i-d-the-first-five-principles-of-object-oriented-design)
 * [ ] [S.O.L.I.D The first 5 principles of Object Oriented Design with JavaScript](https://medium.com/@cramirez92/s-o-l-i-d-the-first-5-priciples-of-object-oriented-design-with-javascript-790f6ac9b9fa)
 
 ### Functional programming
-
-Learn about functional programming and how it can make your code easier to read and debug.
 
 * [ ] [An introduction to functional programming in JavaScript](https://opensource.com/article/17/6/functional-javascript)
 * [ ] [Functional Programming in JavaScript](https://codeburst.io/functional-programming-in-javascript-e57e7e28c0e5)
@@ -1982,16 +1119,12 @@ Learn about functional programming and how it can make your code easier to read 
 
 #### Recursion
 
-Learn about recursion and when it can be used to make your code more readable.
-
 * [ ] [Learn and Understand Recursion in JavaScript](https://codeburst.io/learn-and-understand-recursion-in-javascript-b588218e87ea)
 * [ ] [Understanding Recursion in JavaScript](https://medium.com/@zfrisch/understanding-recursion-in-javascript-992e96449e03)
 * [ ] [Freecodecamp - Recursion in JavaScript](https://www.freecodecamp.org/news/recursion-in-javascript-1608032c7a1f/)
 * [ ] [javascript.info - Recursion and stack](https://javascript.info/recursion)
 
 #### Higher-Order Functions
-
-Learn about higher-order functions and when it can be used to make your code more readable.
 
 * [ ] [Higher-Order Functions](https://www.sitepoint.com/higher-order-functions-javascript/)
 * [ ] [Freecodecamp - A quick intro to Higher-Order Functions](https://www.freecodecamp.org/news/a-quick-intro-to-higher-order-functions-in-javascript-1a014f89c6b/)
@@ -2000,16 +1133,12 @@ Learn about higher-order functions and when it can be used to make your code mor
 
 #### Currying
 
-Learn about currying and when it can be used to make your code more readable.
-
 * [ ] [dev.to - All you need to know about currying](https://dev.to/bettercodingacademy/functional-programming-all-you-need-to-know-about-currying-5k7)
 * [ ] [JavaScript: Currying and Partial Application](https://gideonpyzer.dev/blog/2017/01/14/javascript-currying-and-partial-application/)
 * [ ] [Curry and Function Composition](https://medium.com/javascript-scene/curry-and-function-composition-2c208d774983)
 * [ ] [Wikipedia - Currying](https://en.wikipedia.org/wiki/Currying)
 
 #### Monads
-
-Learn about monads and when it can be used to make your code more readable.
 
 * [ ] [Youtube - Monad, FunFunFunction](https://www.youtube.com/watch?v=9QveBbn7t_c)
 * [ ] [Youtube - Functors, FunFunFunction ](https://www.youtube.com/watch?v=YLIH8TKbAh4)
@@ -2019,12 +1148,9 @@ Learn about monads and when it can be used to make your code more readable.
 * [ ] [Implementing JavaScript Functors and Monads](https://medium.com/front-end-weekly/implementing-javascript-functors-and-monads-a87b6a4b4d9a)
 * [ ] [MDN - Array.prototype.flatMap()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flatMap)
 
-
 ### Architecture
 
 ### Design Patterns
-
-Learn how commonly occurring problems can be solved using design patterns.
 
 * [ ] [Wikipedia - Software design pattern](https://en.wikipedia.org/wiki/Software_design_pattern)
 * [ ] [The 7 Most Important Software Design Patterns](https://medium.com/educative/the-7-most-important-software-design-patterns-d60e546afb0e)
@@ -2035,15 +1161,11 @@ Learn how commonly occurring problems can be solved using design patterns.
 
 #### Singleton
 
-Learn about the singleton design pattern and when it should be used.
-
 * [ ] [Singleton Pattern](https://refactoring.guru/design-patterns/singleton)
 * [ ] [Singleton Example](https://www.dofactory.com/javascript/singleton-design-pattern)
 * [ ] [Wikipedia - Singleton Pattern](https://en.wikipedia.org/wiki/Singleton_pattern)
 
 #### Observer
-
-Learn about the observer design pattern and when it should be used.
 
 * [ ] [Observer Pattern](https://refactoring.guru/design-patterns/observer)
 * [ ] [Observer Example](https://www.dofactory.com/javascript/observer-design-pattern)
@@ -2051,15 +1173,11 @@ Learn about the observer design pattern and when it should be used.
 
 #### Prototype
 
-Learn about the prototype design pattern and when it should be used.
-
 * [ ] [Prototype Pattern](https://refactoring.guru/design-patterns/prototype)
 * [ ] [Prototype Example](https://www.dofactory.com/javascript/prototype-design-pattern)
 * [ ] [Wikipedia - Prototype pattern](https://en.wikipedia.org/wiki/Prototype_pattern)
 
 #### Bridge
-
-Learn about the bridge design pattern and when it should be used.
 
 * [ ] [Bridge Pattern](https://refactoring.guru/design-patterns/bridge)
 * [ ] [Bridge Example](https://www.dofactory.com/javascript/bridge-design-pattern)
@@ -2067,15 +1185,11 @@ Learn about the bridge design pattern and when it should be used.
 
 #### Proxy
 
-Learn about the proxy design pattern and when it should be used.
-
 * [ ] [Proxy Pattern](https://refactoring.guru/design-patterns/proxy)
 * [ ] [Proxy Example](https://www.dofactory.com/javascript/proxy-design-pattern)
 * [ ] [Wikipedia - Proxy pattern](https://en.wikipedia.org/wiki/Proxy_pattern)
 
 #### Chain of responsibility
-
-Learn about the chain of responsibility design pattern and when it should be used.
 
 * [ ] [Chain of Responsibility Pattern](https://refactoring.guru/design-patterns/chain-of-responsibility)
 * [ ] [Chain of Responsibility Example](https://www.dofactory.com/javascript/chain-of-responsibility-design-pattern)
@@ -2083,15 +1197,11 @@ Learn about the chain of responsibility design pattern and when it should be use
 
 #### Constructor
 
-Learn about the constructor design pattern and when it should be used.
-
 * [ ] [The Constructor Pattern](https://www.oreilly.com/library/view/learning-javascript-design/9781449334840/ch09s01.html)
 * [ ] [Fundamental Object Design Patterns in JavaScript](https://medium.com/@severinperez/javascript-weekly-fundamental-object-design-patterns-31453f68427f)
 * [ ] [Difference between Constructor pattern and Prototype pattern](https://stackoverflow.com/questions/35057827/difference-between-constructor-pattern-and-prototype-pattern)
 
 ### CSS Methodologies
-
-Learn how CSS can be structured using CSS methodologies.
 
 * [ ] [A Look at Some CSS Methodologies](https://www.webfx.com/blog/web-design/css-methodologies/)
 * [ ] [A web designer's guide to CSS methodologies](https://www.creativebloq.com/features/a-web-designers-guide-to-css-methodologies)
@@ -2099,38 +1209,26 @@ Learn how CSS can be structured using CSS methodologies.
 
 #### BEM
 
-Learn about the BEM methodology and when it should be used.
-
 * [ ] [Get BEM](http://getbem.com/)
 * [ ] [CSS Tricks - BEM 101](https://css-tricks.com/bem-101/)
 * [ ] [What is BEM? And Why you should use it in your project.](https://medium.com/@dannyhuang_75970/what-is-bem-and-why-you-should-use-it-in-your-project-ab37c6d10b79)
 
 #### SMACSS
 
-Learn about the SMACSS methodology and when it should be used.
-
 * [ ] [SMACSS](http://smacss.com/)
 * [ ] [BEM vs SMACSS](https://www.sitepoint.com/bem-smacss-advice-from-developers/)
 
 #### OOCSS
 
-Learn about the OOCSS methodology and when it should be used.
-
 * [ ] [OOCSS](https://github.com/stubbornella/oocss/wiki)
 * [ ] [An Introduction To Object Oriented CSS](https://www.smashingmagazine.com/2011/12/an-introduction-to-object-oriented-css-oocss/)
 * [ ] [The Future of Writing CSS](https://www.keycdn.com/blog/oocss)
 
-
-
-
-
-## ➤ Team Collaboration
+## Team Collaboration
 
 ### Version Control
 
 ### Git
-
-Learn about git and how it is used for version control.
 
 * [ ] [Learn Git Branching](https://learngitbranching.js.org/)
 * [ ] [Git Handbook](https://guides.github.com/introduction/git-handbook/)
@@ -2141,26 +1239,19 @@ Learn about git and how it is used for version control.
 
 #### Github
 
-Learn how to use Github.
-
 * [ ] [What is GitHub?](https://guides.github.com/activities/hello-world/)
 * [ ] [GitHub Learning Lab](https://lab.github.com/)
 * [ ] [Wikipedia - Github](https://en.wikipedia.org/wiki/Github)
 
 #### Bitbucket
 
-Learn how to use Bitbucket.
-
 * [ ] [Wikipedia - Bitbucket](https://en.wikipedia.org/wiki/Bitbucket)
 * [ ] [Tutorial: Learn Bitbucket with Git](https://confluence.atlassian.com/bitbucket/tutorial-learn-bitbucket-with-git-759857287.html)
 * [ ] [Getting Started with Bitbucket for Version Control](https://www.tecmint.com/bitbucket-for-version-control/)
 
-
 ### Management
 
 ### Agile Development
-
-Learn about agile development and when to use it.
 
 * [ ] [Wikipedia - Agile software development](https://en.wikipedia.org/wiki/Agile_software_development)
 * [ ] [What is agile methodology?](https://www.infoworld.com/article/3237508/what-is-agile-methodology-modern-software-development-explained.html)
@@ -2168,14 +1259,10 @@ Learn about agile development and when to use it.
 
 #### Scrum
 
-Learn about scrum and when to use it.
-
 * [ ] [Scrum Tutorial](https://www.knowledgehut.com/tutorials/scrum-tutorial)
 * [ ] [Scrum - Overview](https://www.tutorialspoint.com/scrum/scrum_overview.htm)
 
 #### Kanban
-
-Learn about kanban and when to use it.
 
 * [ ] [Kanban Tutorial](https://www.tutorialspoint.com/kanban/kanban_introduction.htm)
 * [ ] [What is kanban?](https://www.atlassian.com/agile/kanban)
@@ -2183,15 +1270,11 @@ Learn about kanban and when to use it.
 
 ### Waterfall Development
 
-Learn about waterfall development and when to use it.
-
 * [ ] [Waterfall Model](https://www.tutorialspoint.com/sdlc/sdlc_waterfall_model.htm)
 * [ ] [Waterfall vs. Agile](https://www.seguetech.com/waterfall-vs-agile-methodology/)
 * [ ] [Waterfall Model: What and when](https://airbrake.io/blog/sdlc/waterfall-model)
 
 ### Test Driven Development
-
-Learn about test driven development and when to use it.
 
 * [ ] [Wikipedia - Test-driven development](https://en.wikipedia.org/wiki/Test-driven_development)
 * [ ] [Red, Green, Refactor](https://www.codecademy.com/articles/tdd-red-green-refactor)
@@ -2199,15 +1282,9 @@ Learn about test driven development and when to use it.
 * [ ] [TDD Changed My Life](https://medium.com/javascript-scene/tdd-changed-my-life-5af0ce099f80)
 * [ ] [dev.to - Test-driven development in JavaScript](https://dev.to/tomekbuszewski/test-driven-development-in-javascript-olg)
 
-
-
-
-
-## ➤ Design & UX
+## Design & UX
 
 ### Color Theory
-
-Learn about color theory and how you can make your own color schemes.
 
 * [ ] [All you need to know about colors in UI Design](https://uxdesign.cc/all-you-need-to-know-about-colors-in-ui-design-theory-practice-235179712522)
 * [ ] [The Role of Color in UX](https://www.toptal.com/designers/ux/color-in-ux)
@@ -2218,16 +1295,12 @@ Learn about color theory and how you can make your own color schemes.
 
 #### Color Wheel
 
-Learn how to use the color wheel when making a color scheme.
-
 * [ ] [Color Theory: Brief Guide For Designers](https://uxplanet.org/color-theory-brief-guide-for-designers-76e11c57eaa)
 * [ ] [Color theory and the color wheel](https://www.canva.com/colors/color-wheel/)
 * [ ] [The fundamentals of understanding color theory](https://99designs.dk/blog/tips/the-7-step-guide-to-understanding-color-theory/)
 * [ ] [Adobe - Color wheel](https://color.adobe.com/)
 
 ### Typography
-
-Learn about typography and how to describe fonts.
 
 * [ ] [Google - Understanding typography](https://material.io/design/typography/understanding-typography.html#type-classification)
 * [ ] [How to Understand Typography](https://www.howtogeek.com/howto/30065/how-to-understand-typography-like-a-professional-designer/)
@@ -2243,8 +1316,6 @@ Learn about typography and how to describe fonts.
 
 #### Font Size
 
-Learn about font sizes and how to choose the right one.
-
 * [ ] [Type scale](https://type-scale.com/)
 * [ ] [The importance of font size](https://www.cardinalpath.com/the-importance-of-font-size/)
 * [ ] [Website font size: Size does matter](https://www.liveseysolar.com/website-font-size-size-does-matter/)
@@ -2253,16 +1324,12 @@ Learn about font sizes and how to choose the right one.
 
 #### Line Spacing
 
-Learn about line spacing and how to choose the right one.
-
 * [ ] [Best UX practices for line spacing](https://www.justinmind.com/blog/best-ux-practices-for-line-spacing/)
 * [ ] [Line spacing](https://practicaltypography.com/line-spacing.html)
 * [ ] [Why you should go big with line spacing](https://www.invisionapp.com/inside-design/line-spacing/)
 * [ ] [CSS Tricks - line-height](https://css-tricks.com/almanac/properties/l/line-height/)
 
 ### C.R.A.P
-
-Learn how the C.R.A.P. design principles can help you point out the qualities (or flaws) in a design.
 
 * [ ] [Build Better User Experience](https://vwo.com/blog/crap-design-principles/)
 * [ ] [CRAP Principles](https://www.instructables.com/id/CRAP-principles/)
@@ -2273,16 +1340,12 @@ Learn how the C.R.A.P. design principles can help you point out the qualities (o
 
 #### Contrast
 
-Learn how the principles of contrast can help you when designing.
-
 * [ ] [Designing with contrast: 20 tips from a designer](https://www.canva.com/learn/contrasting-colors/)
 * [ ] [Contrast Design principle of Graphic Design](https://www.youtube.com/watch?v=r0SAPEw0ru4)
 * [ ] [Contrast In Design](https://www.designcontest.com/blog/contrast-in-design/)
 * [ ] [Fully understanding contrast in design](https://www.webdesignerdepot.com/2010/09/fully-understanding-contrast-in-design/)
 
 #### Repetition
-
-Learn how the principles of repetition can help you when designing.
 
 * [ ] [Repetition Design principle of Graphic Design](https://www.youtube.com/watch?v=u55BW6WBqVU)
 * [ ] [Repetition Principle of Design](https://254-online.com/repetition-principle-of-design/)
@@ -2292,16 +1355,12 @@ Learn how the principles of repetition can help you when designing.
 
 #### Alignment
 
-Learn how the principles of alignment can help you when designing.
-
 * [ ] [Alignment Design principle of Graphic Design](https://www.youtube.com/watch?v=2kokQi9vb6E)
 * [ ] [Alignment Principle Of Design](https://254-online.com/alignment-principle-design/)
 * [ ] [The Art Of Alignment In Graphic Design](https://www.designmantic.com/blog/art-of-alignment-graphic-design/)
 * [ ] [Introduction to Alignment](https://uxengineer.com/principles-of-design/alignment/)
 
 #### Proximity
-
-Learn how the principles of proximity can help you when designing.
 
 * [ ] [Proximity Design principle of Graphic Design](https://www.youtube.com/watch?v=xUdqSiI_G8Y)
 * [ ] [How to Use Proximity Effectively](https://www.edgee.net/the-principles-of-graphic-design-how-to-use-proximity-effectively/)
@@ -2311,8 +1370,6 @@ Learn how the principles of proximity can help you when designing.
 
 ### Consistency
 
-Learn why consistency is one of the most important building-blocks in a design.
-
 * [ ] [Design principle: Consistency](https://uxdesign.cc/design-principle-consistency-6b0cf7e7339f)
 * [ ] [Consistency, A Key Design Principle](https://blog.prototypr.io/consistency-a-key-design-principle-5d125469da8e)
 * [ ] [Consistency: MORE than what you think](https://www.interaction-design.org/literature/article/consistency-more-than-what-you-think)
@@ -2320,8 +1377,6 @@ Learn why consistency is one of the most important building-blocks in a design.
 * [ ] [The value of consistent design](https://www.invisionapp.com/inside-design/consistent-design/)
 
 ### Spacing
-
-Learn how to use space in your design.
 
 * [ ] [Space in Design Systems](https://medium.com/eightshapes-llc/space-in-design-systems-188bcbae0d62)
 * [ ] [How to use spacing margin and spacing in design](https://visme.co/blog/how-to-properly-use-margins-and-spacing-in-design/)
@@ -2332,15 +1387,11 @@ Learn how to use space in your design.
 
 ### Error Handling
 
-Learn how to improve the user experience by handling errors in an intuitive way.
-
 * [ ] [Design an Error Handling System before you structure your App](https://medium.com/lattice-product-development/design-an-error-handling-system-before-you-structure-your-app-or-software-project-part-i-efe6a1674628)
 * [ ] [UI Error Handling](https://uimovement.com/tag/error-handling/)
 * [ ] [Creating Error Messages](https://uxdesign.cc/creating-error-messages-best-practice-in-ux-design-cda3be0f5e16)
 
 ### Loading
-
-Learn how a loading state can improve the user experience.
 
 * [ ] [Everything you need to know about skeleton screens](https://uxdesign.cc/what-you-should-know-about-skeleton-screens-a820c45a571a)
 * [ ] [Engaging users with progressive loading in skeleton screen](https://uxdesign.cc/engaging-users-with-progressive-loading-in-skeleton-screen-335a4e287a55)
@@ -2354,8 +1405,6 @@ Learn how a loading state can improve the user experience.
 
 ### The Golden Ratio
 
-Learn how the golden ratio can help you when choose measurements for your design.
-
 * [ ] [The Golden Ratio in Design](https://designshack.net/articles/layouts/golden-ratio-in-design/)
 * [ ] [A guide to the Golden Ratio for designers](https://www.invisionapp.com/inside-design/golden-ratio-designers/)
 * [ ] [What is the golden ratio](https://www.canva.com/learn/what-is-the-golden-ratio/)
@@ -2368,8 +1417,6 @@ Learn how the golden ratio can help you when choose measurements for your design
 
 ### Mobile First
 
-Learn about designing for mobile first and why it is important.
-
 * [ ] [Complete guide to mobile first design](https://www.justinmind.com/blog/complete-guide-to-mobile-first-design/)
 * [ ] [What is Mobile First Design?](https://medium.com/@Vincentxia77/what-is-mobile-first-design-why-its-important-how-to-make-it-7d3cf2e29d00)
 * [ ] [A Hands-On Guide to Mobile-First Responsive Design](https://www.uxpin.com/studio/blog/a-hands-on-guide-to-mobile-first-design/)
@@ -2377,15 +1424,11 @@ Learn about designing for mobile first and why it is important.
 
 #### Hit Targets
 
-Learn about hit targets can why they should not be neglected.
-
 * [ ] [Finger-Friendly Design](https://www.smashingmagazine.com/2012/02/finger-friendly-design-ideal-mobile-touchscreen-target-sizes/)
 * [ ] [Size matters! Accessibility and Touch Targets](https://medium.com/@zacdicko/size-matters-accessibility-and-touch-targets-56e942adc0cc)
 * [ ] [Optimal Size and Spacing for Mobile Buttons](https://uxmovement.com/mobile/optimal-size-and-spacing-for-mobile-buttons/)
 
 ### Design Systems
-
-Learn what design systems are and get familiar with some.
 
 * [ ] [A guide to design systems](https://www.invisionapp.com/inside-design/guide-to-design-systems/)
 * [ ] [What the heck is a design system?](https://uxdesign.cc/what-the-heck-is-a-design-system-c89a8ea73b0d)
@@ -2395,8 +1438,6 @@ Learn what design systems are and get familiar with some.
 
 #### Material Design
 
-Learn about material design and get familiar with the core principles.
-
 * [ ] [Google - Material Design](https://material.io/design/)
 * [ ] [Google - Material Components](https://material.io/components/)
 * [ ] [Google - Material Develop](https://material.io/develop/web/)
@@ -2404,8 +1445,6 @@ Learn about material design and get familiar with the core principles.
 * [ ] [Wikipedia - Material Design](https://en.wikipedia.org/wiki/Material_Design)
 
 #### Fluent Design
-
-Learn about fluent design and get familiar with the core principles.
 
 * [ ] [Microsoft - Fluent Design System](https://www.microsoft.com/design/fluent/#/web)
 * [ ] [Microsoft - Fluent UI Toolkit](https://www.microsoft.com/design/fluent/toolkits/)
@@ -2415,8 +1454,6 @@ Learn about fluent design and get familiar with the core principles.
 * [ ] [Evolving the Microsoft Fluent Design System](https://medium.com/microsoft-design/evolving-the-microsoft-fluent-design-system-9b37fb890c82)
 
 ### Accessibility
-
-Learn how and why it is important to design for accessibility.
 
 * [ ] [Designing For Accessibility And Inclusion](https://www.smashingmagazine.com/2018/04/designing-accessibility-inclusion/)
 * [ ] [Designing for accessibility is not that hard](https://uxdesign.cc/designing-for-accessibility-is-not-that-hard-c04cc4779d94)
@@ -2428,8 +1465,6 @@ Learn how and why it is important to design for accessibility.
 
 ### Best Practices
 
-Learn about some of the best practices when designing.
-
 * [ ] [13 Website Design Best Practices For 2019](https://www.quicksprout.com/website-design-best-practices/)
 * [ ] [Design Best Practices](https://medium.com/thinking-design/design-best-practices/home)
 * [ ] [Refactoring UI](https://refactoringui.com/)
@@ -2440,16 +1475,12 @@ Learn about some of the best practices when designing.
 
 #### Streams
 
-Learn about streams and how they can help you effeciently transporting data.
-
 * [ ] [MDN - Streams](https://developer.mozilla.org/en-US/docs/Web/API/Streams_API)
 * [ ] [MDN - Streams API concepts](https://developer.mozilla.org/en-US/docs/Web/API/Streams_API/Concepts)
 * [ ] [Experimenting with the Streams API](https://deanhume.com/experimenting-with-the-streams-api/)
 * [ ] [WHATWG - Streams](https://streams.spec.whatwg.org/)
 
 #### Media Streams
-
-Learn about media streams and how it is possible to get a stream to device specific hardware such as the camera or microphone.
 
 * [ ] [MDN - Media Streams API](https://developer.mozilla.org/en-US/docs/Web/API/Media_Streams_API)
 * [ ] [MDN - Image Capture API](https://developer.mozilla.org/en-US/docs/Web/API/MediaStream_Image_Capture_API)
@@ -2458,16 +1489,12 @@ Learn about media streams and how it is possible to get a stream to device speci
 
 #### Media Recorder
 
-Learn how to use the media recorder API to record media streams.
-
 * [ ] [MDN - MediaStream Recording API](https://developer.mozilla.org/en-US/docs/Web/API/MediaStream_Recording_API)
 * [ ] [Media Recorder API Demo](https://addpipe.com/media-recorder-api-demo/)
 * [ ] [WTC - MediaStream Recording](https://www.w3.org/TR/mediastream-recording/)
 * [ ] [What Web Can Do Today - Recording Media](https://whatwebcando.today/recording.html)
 
 #### Web RTC
-
-Learn how to use Web RTC for establishing real-time communication.
 
 * [ ] [MDN - WebRTC API](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API)
 * [ ] [WebRTC - Getting Started](https://webrtc.org/start/)
@@ -2477,15 +1504,11 @@ Learn how to use Web RTC for establishing real-time communication.
 
 #### Screen Capture
 
-Learn how to use the Screen Capture API for recording the screen.
-
 * [ ] [MDN - Screen Capture API](https://developer.mozilla.org/en-US/docs/Web/API/Screen_Capture_API)
 * [ ] [dev.to - Intro to Screen Capture API](https://dev.to/al_khovansky/intro-to-screen-capture-api-scanning-qr-codes-bgi)
 * [ ] [W3C - Screen Capture](https://www.w3.org/TR/screen-capture/)
 
 #### Generators
-
-Learn how to use generator functions to define iterative algorithms by writing functions whose execution is not continuous.
 
 * [ ] [MDN - Iterators and generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators)
 * [ ] [Functional JavaScript - Streams](https://blog.jeremyfairbank.com/javascript/functional-javascript-streams-2/)
@@ -2498,8 +1521,6 @@ Learn how to use generator functions to define iterative algorithms by writing f
 
 #### Speech Synthesis
 
-Learn how the speech synthesis API can help you converting text to speech.
-
 * [ ] [Google Devs - Web apps that talk](https://developers.google.com/web/updates/2014/01/Web-apps-that-talk-Introduction-to-the-Speech-Synthesis-API)
 * [ ] [MDN - window.speechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/Window/speechSynthesis)
 * [ ] [MDN - SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis)
@@ -2508,8 +1529,6 @@ Learn how the speech synthesis API can help you converting text to speech.
 
 #### Web Sockets
 
-Learn about web sockets and how you can push data to your web app.
-
 * [ ] [MDN - Websockets API](https://developer.mozilla.org/en-US/docs/Web/API/Websockets_API)
 * [ ] [What are Web Sockets?](https://medium.com/@dominik.t/what-are-web-sockets-what-about-rest-apis-b9c15fd72aac)
 * [ ] [HTML5 Rocks - Introducing WebSockets](https://www.html5rocks.com/en/tutorials/websockets/basics/)
@@ -2517,16 +1536,12 @@ Learn about web sockets and how you can push data to your web app.
 
 #### Geolocation
 
-Learn how to ask the user for permission to the location.
-
 * [ ] [MDN - Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API)
 * [ ] [Alligrator - Using the Geolocation API](https://alligator.io/js/geolocation-api/)
 * [ ] [Google Maps Platform - Displaying User Position on Maps](https://developers.google.com/maps/documentation/javascript/geolocation)
 * [ ] [What Web Can Do Today - Geolocation](https://whatwebcando.today/geolocation.html)
 
 #### Device orientation & motion
-
-Learn how to measure the orientation and motion of the device.
 
 * [ ] [MDN - Detecting device orientation](https://developer.mozilla.org/en-US/docs/Web/API/Detecting_device_orientation)
 * [ ] [W3C - DeviceOrientation Event Specification](https://www.w3.org/TR/orientation-event/)
@@ -2538,15 +1553,11 @@ Learn how to measure the orientation and motion of the device.
 
 #### Fullscreen
 
-Learn how to use the fullscreen API to give the user a more immersive experience when needed.
-
 * [ ] [MDN - Fullscreen API](https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API)
 * [ ] [Google Devs - Let Your Content Do the Talking](https://developers.google.com/web/updates/2011/10/Let-Your-Content-Do-the-Talking-Fullscreen-API)
 * [ ] [David Walsh - Fullscreen API](https://davidwalsh.name/fullscreen)
 
 #### Variable Fonts
-
-Learn how to use variable fonts and how it is possible to customize fonts without the need for loading more.
 
 * [ ] [v-fonts](https://v-fonts.com/)
 * [ ] [MDN - Variable fonts guide](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Fonts/Variable_Fonts_Guide)
@@ -2554,8 +1565,6 @@ Learn how to use variable fonts and how it is possible to customize fonts withou
 * [ ] [Supercharged - Variable Fonts](https://www.youtube.com/watch?v=B42rUMdcB7c)
 
 #### HTTP/2
-
-Learn about the faster and more convenient HTTP/2 protocol.
 
 * [ ] [Google Devs - Introduction to HTTP/2](https://developers.google.com/web/fundamentals/performance/http2/)
 * [ ] [Wikipedia - HTTP/2](https://en.wikipedia.org/wiki/HTTP/2)
@@ -2565,8 +1574,6 @@ Learn about the faster and more convenient HTTP/2 protocol.
 
 #### Payment Request API
 
-Learn about the payment request API and how it can help monetize your web app.
-
 * [ ] [MDN - Payment Request API](https://developer.mozilla.org/en-US/docs/Web/API/Payment_Request_API)
 * [ ] [Codelabs - Payment Request API](https://developers.google.com/web/fundamentals/codelabs/payment-request-api)
 * [ ] [What Web Can Do Today - Payments](https://whatwebcando.today/payments.html)
@@ -2574,8 +1581,6 @@ Learn about the payment request API and how it can help monetize your web app.
 * [ ] [Google Devs - Introduction to the Payment Request API](https://developers.google.com/web/ilt/pwa/introduction-to-the-payment-request-api)
 
 #### Web Audio
-
-Learn how to use the Web Audio API to add audio to your web app.
 
 * [ ] [MDN - Using the Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Using_Web_Audio_API)
 * [ ] [MDN - Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API)
@@ -2586,16 +1591,12 @@ Learn how to use the Web Audio API to add audio to your web app.
 
 #### Observers
 
-Learn about the observer pattern and get comfortable concepts such as subjects and observers.
-
 * [ ] [Javascript Observers and You](https://chromatichq.com/blog/javascript-observers-and-you)
 * [ ] [How to Use the Observable Pattern in JavaScript](https://webdevstudios.com/2019/02/19/observable-pattern-in-javascript/)
 * [ ] [Wikipedia - Publish–subscribe pattern](https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern)
 * [ ] [The Observer Pattern with Vanilla JavaScript](https://medium.com/@patrickackerman/the-observer-pattern-with-vanilla-javascript-8f85ea05eaa8)
 
 #### Mutation Observer
-
-Learn how to use the Mutation Observer API to get informed about changes to the DOM.
 
 * [ ] [MDN - MutationObserver](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver)
 * [ ] [Listening to the DOM changes with MutationObserver](https://medium.com/@abbeal/listening-to-the-dom-changes-with-mutationobserver-b53a068a58d2)
@@ -2604,8 +1605,6 @@ Learn how to use the Mutation Observer API to get informed about changes to the 
 * [ ] [WHATWG - Mutation observers](https://dom.spec.whatwg.org/#mutation-observers)
 
 #### Intersection Observer
-
-Learn how to use the Intersection Observer API can help you detect when an element is visible on the screen.
 
 * [ ] [MDN - Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API)
 * [ ] [W3C - Intersection Observer](https://www.w3.org/TR/intersection-observer/)
@@ -2617,8 +1616,6 @@ Learn how to use the Intersection Observer API can help you detect when an eleme
 
 #### Resize Observer
 
-Learn how to use the Resize Observer API to get informed when the element resizes.
-
 * [ ] [MDN - Resize Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Resize_Observer_API)
 * [ ] [Google Devs - It’s Like document.onresize for Elements](https://developers.google.com/web/updates/2016/10/resizeobserver)
 * [ ] [Alligator - A Look at the Resize Observer JavaScript API](https://alligator.io/js/resize-observer/)
@@ -2626,15 +1623,11 @@ Learn how to use the Resize Observer API to get informed when the element resize
 
 #### Performance Observer
 
-Learn how the Performance Observer API can help you get information about the performance of your web app.
-
 * [ ] [MDN - Long Tasks API](https://developer.mozilla.org/en-US/docs/Web/API/Long_Tasks_API)
 * [ ] [MDN - PerformanceObserver](https://developer.mozilla.org/en-US/docs/Web/API/PerformanceObserver)
 * [ ] [Google Devs - Efficient Access to Performance Data](https://developers.google.com/web/updates/2016/06/performance-observer)
 
 #### Scrollsnapping
-
-Learn about the Scrollsnapping API and how it can help you provide an intuitive experience when scrolling.
 
 * [ ] [CSS Tricks - Practical CSS Scroll Snapping](https://css-tricks.com/practical-css-scroll-snapping/)
 * [ ] [CSS Tricks - Introducing CSS Scroll Snap Points](https://css-tricks.com/introducing-css-scroll-snap-points/)
@@ -2643,8 +1636,6 @@ Learn about the Scrollsnapping API and how it can help you provide an intuitive 
 * [ ] [The scroll-snap-* Properties](https://webkit.org/demos/scroll-snap/index.html)
 
 #### Web Assembly
-
-Learn about Web Assembly and how it opens up the playing field for new types of web apps.
 
 * [ ] [MDN - WebAssembly Concepts](https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts)
 * [ ] [MDN - WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly)
@@ -2656,23 +1647,17 @@ Learn about Web Assembly and how it opens up the playing field for new types of 
 
 #### Beacon
 
-Learn how the Beacon API can help you send data to endpoints before the user closes the page.
-
 * [ ] [MDN - sendBeacon](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/sendBeacon)
 * [ ] [MDN - Using the Beacon API](https://developer.mozilla.org/en-US/docs/Web/API/Beacon_API/Using_the_Beacon_API)
 * [ ] [Logging Activity With The Web Beacon API](https://www.smashingmagazine.com/2018/07/logging-activity-web-beacon-api/)
 
 #### Clipboard
 
-Learn about the Clipboard API and how it can help you copy and paste data.
-
 * [ ] [MDN - Clipboard](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/clipboard)
 * [ ] [What Web Can Do Today - Clipboard (Copy & Paste)](https://whatwebcando.today/clipboard.html)
 * [ ] [Google Devs - Image Support for the Async Clipboard API](https://developers.google.com/web/updates/2019/07/image-support-for-async-clipboard)
 
 #### Share
-
-Learn how the Web Share API can help users sharing your web app.
 
 * [ ] [MDN - Share](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/share)
 * [ ] [Google Devs - Introducing the Web Share API](https://developers.google.com/web/updates/2016/09/navigator-share)
@@ -2683,8 +1668,6 @@ Learn how the Web Share API can help users sharing your web app.
 
 #### Performance API
 
-Learn about the Performance API and how it can help you monitor the performance of the device.
-
 * [ ] [MDN - Performance](https://developer.mozilla.org/en-US/docs/Web/API/Performance)
 * [ ] [MDN - performance.measure()](https://developer.mozilla.org/en-US/docs/Web/API/Performance/measure)
 * [ ] [CSS Tricks - Breaking Down the Performance API](https://css-tricks.com/breaking-performance-api/)
@@ -2694,16 +1677,12 @@ Learn about the Performance API and how it can help you monitor the performance 
 
 #### Gamepad API
 
-Learn how the Gamepad API can help you integrate with various controllers such as an x-box or playstation controller
-
 * [ ] [MDN - Using the Gamepad API](https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API/Using_the_Gamepad_API)
 * [ ] [MDN - Gamepad API](https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API)
 * [ ] [luser - Gamepad Test](http://luser.github.io/gamepadtest/)
 * [ ] [MDN - Implementing controls using the Gamepad API](https://developer.mozilla.org/en-US/docs/Games/Techniques/Controls_Gamepad_API)
 
 #### Speech Recognition
-
-Learn how to use the Speech Recognition API to analyze speech.
 
 * [ ] [MDN - Using the Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API/Using_the_Web_Speech_API)
 * [ ] [David Walsh - JavaScript Speech Recognition](https://davidwalsh.name/speech-recognition)
@@ -2714,8 +1693,6 @@ Learn how to use the Speech Recognition API to analyze speech.
 
 #### Interaction Media Queries
 
-Learn how to use Interaction Media Queries to optimize the user experience for the specific type of device.
-
 * [ ] [Introducing CSS Interaction Media Queries](https://medium.com/@rossbulat/introducing-css-interaction-media-queries-38eea48f4221)
 * [ ] [MDN - Media features](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#Media_features)
 * [ ] [Touch Devices Should Not Be Judged By Their Size](https://css-tricks.com/touch-devices-not-judged-size/)
@@ -2725,8 +1702,6 @@ Learn how to use Interaction Media Queries to optimize the user experience for t
 
 #### Browser Extensions
 
-Learn how to build browser extensions to enhance the functionality of your browser.
-
 * [ ] [MDN - Browser Extensions](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions)
 * [ ] [Chrome - What are extensions?](https://developer.chrome.com/extensions)
 * [ ] [Chrome - Getting Started with Extensions](https://developer.chrome.com/extensions/getstarted)
@@ -2734,15 +1709,11 @@ Learn how to build browser extensions to enhance the functionality of your brows
 
 #### Pointer Lock API
 
-Learn how to use the Pointer Lock API to get the raw mouse movement and lock the target of mouse events to a single element.
-
 * [ ] [MDN - Pointer Lock API](https://developer.mozilla.org/en-US/docs/Web/API/Pointer_Lock_API)
 * [ ] [W3C - Pointer Lock](https://www.w3.org/TR/pointerlock/)
 * [ ] [Use the Pointer Lock API to Restrict Mouse Movement](https://dzone.com/articles/html5-use-pointer-lock-api)
 
 #### Picture In Picture
-
-Learn how to use the Picture-In-Picture API to watch videos in a floating window (always on top of other windows).
 
 * [ ] [Google Devs - Watch video using Picture-in-Picture](https://developers.google.com/web/updates/2018/10/watch-video-using-picture-in-picture)
 * [ ] [Picture-in-Picture Sample](https://googlechrome.github.io/samples/picture-in-picture/)
@@ -2752,8 +1723,6 @@ Learn how to use the Picture-In-Picture API to watch videos in a floating window
 
 #### Proxies
 
-Learn how to use proxies to intercept certain operations and implement custom behaviors.
-
 * [ ] [MDN - Meta programming](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Meta_programming)
 * [ ] [MDN - Proxy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy)
 * [ ] [A practical guide to Javascript Proxy](https://blog.bitsrc.io/a-practical-guide-to-es6-proxy-229079c3c2f0?gi=92cd1f951006)
@@ -2761,8 +1730,6 @@ Learn how to use proxies to intercept certain operations and implement custom be
 * [ ] [Medium - How to use JavaScript Proxies for Fun and Profit](https://medium.com/dailyjs/how-to-use-javascript-proxies-for-fun-and-profit-365579d4a9f8)
 
 #### Houdini
-
-Learn about the Houdini project and get excited about the future of CSS.
 
 * [ ] [Google Devs - Houdini, Demystifying CSS](https://developers.google.com/web/updates/2016/05/houdini)
 * [ ] [web.dev - Smarter custom properties](https://web.dev/css-props-and-vals/)
@@ -2773,8 +1740,6 @@ Learn about the Houdini project and get excited about the future of CSS.
 
 #### Project Fugu
 
-Learn about Project Fugu project and get excited about the future of the Web.
-
 * [ ] [Our commitment to a more capable web](https://blog.chromium.org/2018/11/our-commitment-to-more-capable-web.html)
 * [ ] [Web Capabilities (Fugu)](https://www.chromium.org/teams/web-capabilities-fugu)
 * [ ] [Chromium Bugs - Fugu](https://bugs.chromium.org/p/chromium/issues/list?q=proj-fugu)
@@ -2783,8 +1748,6 @@ Learn about Project Fugu project and get excited about the future of the Web.
 * [ ] [Controlling Access to Powerful Web Platform Features](https://chromium.googlesource.com/chromium/src/+/f384207e04ad27f58287e972907f17ad66acc115/docs/security/permissions-for-powerful-web-platform-features.md)
 
 #### Web Authentication API
-
-Learn how to use the Web Authentication API to provide a strong authentication with public key cryptography.
 
 * [ ] [MDN - Web Authentication API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Authentication_API)
 * [ ] [W3C - Web Authentication: An API for accessing Public Key Credentials](https://www.w3.org/TR/webauthn-2/)
@@ -2795,8 +1758,6 @@ Learn how to use the Web Authentication API to provide a strong authentication w
 
 #### Credentials Manager API
 
-Learn about the Credentials Manager API proposal and how it can help authenticating users.
-
 * [ ] [MDN - Credential Management API](https://developer.mozilla.org/en-US/docs/Web/API/Credential_Management_API)
 * [ ] [Google Devs - The Credential Management API](https://developers.google.com/web/fundamentals/security/credential-management)
 * [ ] [Google Devs - Sign in Users](https://developers.google.com/web/fundamentals/security/credential-management/retrieve-credentials)
@@ -2804,8 +1765,6 @@ Learn about the Credentials Manager API proposal and how it can help authenticat
 * [ ] [What Web Can Do Today - Credentials](https://whatwebcando.today/credentials.html)
 
 #### Native File System
-
-Learn how the Native File System API proposal enables interacting with files on the user's local device.
 
 * [ ] [Google Devs - The Native File System API](https://developers.google.com/web/updates/2019/08/native-file-system)
 * [ ] [Github - Native File System](https://github.com/WICG/native-file-system/blob/master/EXPLAINER.md)
@@ -2816,8 +1775,6 @@ Learn how the Native File System API proposal enables interacting with files on 
 
 #### Shape Detection
 
-Learn how the Shape Detection API proposal can be use to detect shapes such as faces or barcodes in pictures.
-
 * [ ] [W3C - Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
 * [ ] [web.dev - A Picture is Worth a Thousand Words](https://web.dev/shape-detection/)
 * [ ] [Github - Shape Detection API Specification](https://github.com/WICG/shape-detection-api)
@@ -2825,8 +1782,6 @@ Learn how the Shape Detection API proposal can be use to detect shapes such as f
 * [ ] [Face detection using Shape Detection API](https://paul.kinlan.me/face-detection/)
 
 #### Web Bluetooth
-
-Learn how the Web Bluetooth API proposal can be used to connect with nearby devices.
 
 * [ ] [MDN - Web Bluetooth API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Bluetooth_API)
 * [ ] [Google Devs - Interact with Bluetooth devices](https://developers.google.com/web/updates/2015/07/interact-with-ble-devices-on-the-web)
@@ -2836,16 +1791,12 @@ Learn how the Web Bluetooth API proposal can be used to connect with nearby devi
 
 #### Web USB
 
-Learn the Web USB API proposal can be used to connect with hardware through a cable.
-
 * [ ] [MDN - USB](https://developer.mozilla.org/en-US/docs/Web/API/USB)
 * [ ] [WICG - Web USB](https://github.com/WICG/webusb)
 * [ ] [Google Devs - Access USB Devices on the Web](https://developers.google.com/web/updates/2016/03/access-usb-devices-on-the-web)
 * [ ] [What Web Can Do Today -	Web USB](https://whatwebcando.today/usb.html)
 
 #### Web XR
-
-Learn how to use Web XR API proposal for virtual- and augmented reality experiences.
 
 * [ ] [MDN - WebXR Device API](https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API)
 * [ ] [Google Devs - Welcome to the immersive web](https://developers.google.com/web/updates/2018/05/welcome-to-immersive)
@@ -2854,16 +1805,12 @@ Learn how to use Web XR API proposal for virtual- and augmented reality experien
 
 #### Presentation
 
-Learn how the Presentation API proposal enables your web app to use the presentation display mode in the browser or at an external display device.
-
 * [ ] [MDN - Presentation API](https://developer.mozilla.org/en-US/docs/Web/API/Presentation_API)
 * [ ] [What Web Can Do Today - Presentation Features](https://whatwebcando.today/presentation.html)
 * [ ] [Google Devs - Present web pages to secondary attached displays](https://developers.google.com/web/updates/2018/04/present-web-pages-to-secondary-attached-displays)
 * [ ] [W3C - Presentation API](https://w3c.github.io/presentation-api)
 
 #### Network Information API
-
-Learn how the Network Information API proposal can give you information about the state of the network.
 
 * [ ] [MDN - Network Information API](https://developer.mozilla.org/en-US/docs/Web/API/Network_Information_API)
 * [ ] [Addy Osmani - Adaptive Serving](https://addyosmani.com/blog/adaptive-serving/)
@@ -2875,16 +1822,12 @@ Learn how the Network Information API proposal can give you information about th
 
 #### Arrays
 
-Learn how and when arrays should be used.
-
 * [x] [javascript.info - Arrays](https://javascript.info/array)
 * [x] [Freecodecamp - Arrays, A Visual Introduction for Beginners](https://www.freecodecamp.org/news/data-structures-101-arrays-a-visual-introduction-for-beginners-7f013bcc355a/)
 * [x] [Wikipedia - Array data structure](https://en.wikipedia.org/wiki/Array_data_structure)
 * [x] [MDN - Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
 #### Queues & Stacks
-
-Learn how and when queues and stacks should be used.
 
 * [x] [Stacks and Queues](https://www.cs.cmu.edu/~adamchik/15-121/lectures/Stacks%20and%20Queues/Stacks%20and%20Queues.html)
 * [x] [Difference between Stack and Queue Data Structures](https://www.geeksforgeeks.org/difference-between-stack-and-queue-data-structures/)
@@ -2893,15 +1836,11 @@ Learn how and when queues and stacks should be used.
 
 #### Trees
 
-Learn how and when trees should be used.
-
 * [ ] [Wikipedia - Tree (data structure)](https://en.wikipedia.org/wiki/Tree_(data_structure))
 * [ ] [Freecodecamp - Everything you need to know about tree data structure](https://www.freecodecamp.org/news/all-you-need-to-know-about-tree-data-structures-bceacb85490c/)
 * [ ] [Data Structure and Algorithms - Tree](https://www.tutorialspoint.com/data_structures_algorithms/tree_data_structure.htm)
 
 #### Binary Indexed Tree
-
-Learn how and when binary indexed trees should be used.
 
 * [ ] [Wikipedia - Fenwick tree](https://en.wikipedia.org/wiki/Fenwick_tree)
 * [ ] [What is the intuition behind a binary indexed tree?](https://cs.stackexchange.com/questions/10538/bit-what-is-the-intuition-behind-a-binary-indexed-tree-and-how-was-it-thought-a)
@@ -2912,8 +1851,6 @@ Learn how and when binary indexed trees should be used.
 
 #### Heap
 
-Learn how and when heaps should be used.
-
 * [ ] [Wikipedia - Heap (data structure)](https://en.wikipedia.org/wiki/Heap_(data_structure))
 * [ ] [Tutorialspoint - Heap Data Structure](https://www.tutorialspoint.com/data_structures_algorithms/heap_data_structure.htm)
 * [ ] [Learning to Love Heaps](https://medium.com/basecs/learning-to-love-heaps-cef2b273a238)
@@ -2922,8 +1859,6 @@ Learn how and when heaps should be used.
 
 #### Red-black Tree
 
-Learn how and when red-black trees should be used.
-
 * [ ] [Wikipedia - Red–black tree](https://en.wikipedia.org/wiki/Red%E2%80%93black_tree)
 * [ ] [Painting Nodes Black With Red-Black Trees](https://dev.to/vaidehijoshi/painting-nodes-black-with-red-black-trees)
 * [ ] [Red-Black Tree](https://www.geeksforgeeks.org/red-black-tree-set-1-introduction-2/)
@@ -2931,8 +1866,6 @@ Learn how and when red-black trees should be used.
 * [ ] [Github - Red–Black Tree](https://github.com/trekhleb/javascript-algorithms/tree/master/src/data-structures/tree/red-black-tree)
 
 #### Trie
-
-Learn how and when tries should be used.
 
 * [ ] [Wikipedia - Trie](https://en.wikipedia.org/wiki/Trie)
 * [ ] [Trie (Insert and Search)](https://www.geeksforgeeks.org/trie-insert-and-search/)
@@ -2944,16 +1877,12 @@ Learn how and when tries should be used.
 
 #### K-D Tree
 
-Learn how and when K-D trees should be used.
-
 * [ ] [Wikipedia - k-d tree](https://en.wikipedia.org/wiki/K-d_tree)
 * [ ] [Github - k-d Tree JavaScript Library](https://github.com/ubilabs/kd-tree-javascript)
 * [ ] [kd-Trees](https://www.cs.cmu.edu/~ckingsf/bioinfo-lectures/kdtrees.pdf)
 * [ ] [Youtube - KD Tree Algorithm](https://www.youtube.com/watch?v=TLxWtXEbtFE)
 
 #### Hash Tables
-
-Learn how and when hash tables should be used.
 
 * [ ] [Wikipedia - Hash table](https://en.wikipedia.org/wiki/Hash_table)
 * [ ] [Hash tables explained](https://yourbasic.org/algorithms/hash-tables-explained/)
@@ -2963,16 +1892,12 @@ Learn how and when hash tables should be used.
 
 #### Linked Lists
 
-Learn how and when linked lists should be used.
-
 * [ ] [Wikipedia - Linked list](https://en.wikipedia.org/wiki/Linked_list)
 * [ ] [Introduction to Linked Lists](https://www.studytonight.com/data-structures/introduction-to-linked-list)
 * [ ] [Linked Lists in JavaScript](https://codeburst.io/linked-lists-in-javascript-es6-code-part-1-6dd349c3dcc3)
 * [ ] [The Little Guide of Linked List in JavaScript](https://hackernoon.com/the-little-guide-of-linked-list-in-javascript-9daf89b63b54)
 
 #### Graphs
-
-Learn how and when graphs should be used.
 
 * [ ] [Wikipedia - Graph theory](https://en.wikipedia.org/wiki/Graph_theory)
 * [ ] [Implementation of Graph in JavaScript](https://www.geeksforgeeks.org/implementation-graph-javascript/)
@@ -2984,8 +1909,6 @@ Learn how and when graphs should be used.
 
 #### Time complexity
 
-Learn about time complexity and how it can be used to analyze an algorithm.
-
 * [ ] [Wikipedia - Time complexity](https://en.wikipedia.org/wiki/Time_complexity)
 * [ ] [Time Complexity of Algorithms](https://www.studytonight.com/data-structures/time-complexity-of-algorithms)
 * [ ] [Freecodecamp - An Introduction to Time Complexity](https://www.freecodecamp.org/news/time-complexity-of-algorithms/)
@@ -2995,23 +1918,17 @@ Learn about time complexity and how it can be used to analyze an algorithm.
 
 #### Cost model
 
-Learn how to setup a cost model for an algorithm.
-
 * [ ] [Wikipedia - Analysis of algorithms](https://en.wikipedia.org/wiki/Analysis_of_algorithms)
 * [ ] [Analysis of Algorithms](https://aofa.cs.princeton.edu/10analysis/)
 * [ ] [The cost of JavaScript in 2019](https://v8.dev/blog/cost-of-javascript-2019)
 
 #### Order of Growth
 
-Learn how to make an order-of-growth classification to classify the cost model.
-
 * [ ] [Quora - What is the meaning of 'order of growth'](https://www.quora.com/What-is-the-meaning-of-order-of-growth-in-algorithm-analysis-and-how-can-we-find-the-order-of-growth-of-given-algorithm)
 * [ ] [Orders of Growth](http://www.ccs.neu.edu/home/jaa/CS7800.12F/Information/Handouts/order.html)
 * [ ] [Coursera - Order-of-Growth Classifications](https://www.coursera.org/lecture/algorithms-part1/order-of-growth-classifications-Xk03a)
 
 #### Big O notation
-
-Learn how to use Big O notation to classify the time complexity of an algorithm.
 
 * [ ] [Wikipedia - Big O notation](https://en.wikipedia.org/wiki/Big_O_notation)
 * [ ] [Time Complexity/Big O Notation](https://medium.com/javascript-scene/time-complexity-big-o-notation-1a4310c3ee4b)
@@ -3022,8 +1939,6 @@ Learn how to use Big O notation to classify the time complexity of an algorithm.
 * [ ] [dev.to - Big-O Notation Useful guide](https://dev.to/yashwanthambati/big-o-notation-complete-guide-226h)
 
 #### Space Complexity
-
-Learn about space complexity and how it can be used to analyze an algorithm.
 
 * [ ] [Space Complexity of Algorithms](https://www.studytonight.com/data-structures/space-complexity-of-algorithms)
 * [ ] [Google Devs - Fix Memory Problems](https://developers.google.com/web/tools/chrome-devtools/memory-problems)
@@ -3038,8 +1953,6 @@ Learn about space complexity and how it can be used to analyze an algorithm.
 
 #### Sorting
 
-Learn about the most important sorting algorithms and figure out what challenges there are involved with implementing one.
-
 * [ ] [A Guide To Sorting Algorithms in JavaScript](https://blog.bitsrc.io/a-guide-to-sorting-algorithms-in-javascript-5b32da4eae1e)
 * [ ] [dev.to - Sorting Algorithms with Javascript](https://dev.to/wangonya/sorting-algorithms-with-javascript-part-1-4aca)
 * [ ] [Introduction to Sorting](https://www.studytonight.com/data-structures/introduction-to-sorting)
@@ -3047,8 +1960,6 @@ Learn about the most important sorting algorithms and figure out what challenges
 * [ ] [Algorithms – Sorting Algorithms in JavaScript](https://notlaura.com/day-6-algorithms-sorting-algorithms-in-javascript/)
 
 #### Insertion Sort
-
-Learn about the insertion sort algorithm.
 
 * [ ] [Wikipedia - Insertion sort](https://en.wikipedia.org/wiki/Insertion_sort)
 * [ ] [Insertion Sort](https://www.geeksforgeeks.org/insertion-sort/)
@@ -3058,8 +1969,6 @@ Learn about the insertion sort algorithm.
 
 #### Quicksort
 
-Learn about the quicksort algorithm.
-
 * [ ] [Wikipedia - Quicksort](https://en.wikipedia.org/wiki/Quicksort)
 * [ ] [A Quick Explanation of Quick Sort](https://medium.com/karuna-sehgal/a-quick-explanation-of-quick-sort-7d8e2563629b)
 * [ ] [QuickSort](https://www.geeksforgeeks.org/quick-sort/)
@@ -3067,8 +1976,6 @@ Learn about the quicksort algorithm.
 * [ ] [Computer science in JavaScript: Quicksort](https://humanwhocodes.com/blog/2012/11/27/computer-science-in-javascript-quicksort/)
 
 #### Mergesort
-
-Learn about the mergesort algorithm.
 
 * [ ] [Wikipedia - Merge sort](https://en.wikipedia.org/wiki/Merge_sort)
 * [ ] [Merge Sort Algorithm in JavaScript](https://medium.com/javascript-in-plain-english/javascript-merge-sort-3205891ac060)
@@ -3078,8 +1985,6 @@ Learn about the mergesort algorithm.
 
 #### Heapsort
 
-Learn about the heapsort algorithm.
-
 * [ ] [Wikipedia - Heapsort](https://en.wikipedia.org/wiki/Heapsort)
 * [ ] [Heapify All The Things With Heap Sort](https://medium.com/basecs/heapify-all-the-things-with-heap-sort-55ee1c93af82)
 * [ ] [Heap Sort Algorithm](https://www.studytonight.com/data-structures/heap-sort)
@@ -3088,8 +1993,6 @@ Learn about the heapsort algorithm.
 
 #### Searching
 
-Learn about the most important searching algorithms and figure out what challenges there are involved with implementing one.
-
 * [ ] [Wikipedia - Search algorithm](https://en.wikipedia.org/wiki/Search_algorithm)
 * [ ] [Search Algorithms with ES6](https://github.com/Crizstian/data-structure-and-algorithms-with-ES6/tree/master/13-chapter-Searching-Algorithms)
 * [ ] [Introduction to Searching Algorithms](https://www.studytonight.com/data-structures/search-algorithms)
@@ -3097,8 +2000,6 @@ Learn about the most important searching algorithms and figure out what challeng
 * [ ] [Searching Algorithms In Javascript](https://www.scriptonitejs.com/javascript-searching-algorithms/)
 
 #### Binary Search
-
-Learn about the binary search algorithm.
 
 * [ ] [Wikipedia - Binary search algorithm](https://en.wikipedia.org/wiki/Binary_search_algorithm)
 * [ ] [How to implement a Binary search algorithm](https://reactgo.com/binary-search-algorithm-javascript/)
@@ -3109,8 +2010,6 @@ Learn about the binary search algorithm.
 
 #### Breadth First Search
 
-Learn about the breadth first search algorithm.
-
 * [ ] [Wikipedia - Breadth-first search](https://en.wikipedia.org/wiki/Breadth-first_search)
 * [ ] [Breaking Down Breadth-First Search](https://medium.com/basecs/breaking-down-breadth-first-search-cebe696709d9)
 * [ ] [Breadth First Search in JavaScript](https://medium.com/dailyjs/breadth-first-search-in-javascript-e655cd824fa4)
@@ -3118,8 +2017,6 @@ Learn about the breadth first search algorithm.
 * [ ] [The Magician’s Guide to Algorithms](https://levelup.gitconnected.com/the-magicians-guide-to-algorithms-part-4-the-breadth-first-search-b800aec8ccf8)
 
 #### Depth First Search
-
-Learn about the depth first search algorithm.
 
 * [ ] [Wikipedia - Depth-first search](https://en.wikipedia.org/wiki/Depth-first_search)
 * [ ] [Depth First Search Algorithm](https://edgy.app/depth-first-search-algorithm-what-it-is-and-how-it-works)
@@ -3129,8 +2026,6 @@ Learn about the depth first search algorithm.
 
 #### Dijkstra's Algorithm
 
-Learn about dijkstra's algorithm.
-
 * [ ] [Wikipedia - Dijkstra's algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)
 * [ ] [Dijkstra’s algorithm](https://courses.cs.washington.edu/courses/cse373/16su/lectures/lecture15.pdf)
 * [ ] [How to implement Dijkstra’s Algorithm](https://hackernoon.com/how-to-implement-dijkstras-algorithm-in-javascript-abdfd1702d04)
@@ -3138,15 +2033,11 @@ Learn about dijkstra's algorithm.
 
 #### String Search
 
-Learn about various algorithms for searching in strings.
-
 * [ ] [Wikipedia - String-searching algorithm](https://en.wikipedia.org/wiki/String-searching_algorithm)
 * [ ] [Boyer Moore String Search](https://ongspxm.github.io/blog/2017/05/boyer-moore-search/)
 * [ ] [Boyer–Moore string-search algorithm](https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_string-search_algorithm)
 
 #### Hashing
-
-Learn about hashing algorithms.
 
 * [ ] [Wikipedia - Hash function](https://en.wikipedia.org/wiki/Hash_function)
 * [ ] [How Encryption Works](https://computer.howstuffworks.com/encryption5.htm)
@@ -3157,8 +2048,6 @@ Learn about hashing algorithms.
 
 #### Relational Databases
 
-Learn about relational databases and how to use them.
-
 * [ ] [Wikipedia - Relational database](https://en.wikipedia.org/wiki/Relational_database)
 * [ ] [Relational database](https://searchdatamanagement.techtarget.com/definition/relational-database)
 * [ ] [Everything you need to know about (Relational) Databases](https://dev.to/lmolivera/everything-you-need-to-know-about-relational-databases-3ejl)
@@ -3166,8 +2055,6 @@ Learn about relational databases and how to use them.
 * [ ] [What is a Relational Database Management System?](https://www.codecademy.com/articles/what-is-rdbms-sql)
 
 #### SQL
-
-Learn how to write SQL statements to communicate with a database.
 
 * [ ] [Learn SQL](https://www.codecademy.com/learn/learn-sql)
 * [ ] [Wikipedia - SQL](https://en.wikipedia.org/wiki/SQL)
@@ -3177,8 +2064,6 @@ Learn how to write SQL statements to communicate with a database.
 
 #### MySQL
 
-Learn about the open-source relational database management system called MySQL.
-
 * [ ] [MySQL](https://www.mysql.com/)
 * [ ] [Wikipedia - MySQL](https://en.wikipedia.org/wiki/MySQL)
 * [ ] [Tutorialspoint - MySQL Tutorial](https://www.tutorialspoint.com/mysql/index.htm)
@@ -3187,16 +2072,12 @@ Learn about the open-source relational database management system called MySQL.
 
 #### PostgreSQL
 
-Learn about the open-source relational database management system called PostgreSQL.
-
 * [ ] [PostgreSQL](https://www.postgresql.org/)
 * [ ] [Wikipedia - PostgreSQL](https://en.wikipedia.org/wiki/PostgreSQL)
 * [ ] [PostgreSQL Tutorial](http://www.postgresqltutorial.com/)
 * [ ] [Postgres Guide](http://postgresguide.com/)
 
 #### Non-relational Databases
-
-Learn about non-relational databases and how to use them.
 
 * [ ] [What Is A Non Relational Database](https://www.mongodb.com/scale/what-is-a-non-relational-database)
 * [ ] [Wikipedia - NoSQL](https://en.wikipedia.org/wiki/NoSQL)
@@ -3205,8 +2086,6 @@ Learn about non-relational databases and how to use them.
 * [ ] [Non-Relational Database](https://www.techopedia.com/definition/25218/non-relational-database)
 
 #### Redis
-
-Learn about the open-source non-relational database management system called Redis.
 
 * [ ] [Redis](https://redis.io/)
 * [ ] [Try Redis](http://try.redis.io/)
@@ -3218,8 +2097,6 @@ Learn about the open-source non-relational database management system called Red
 
 #### MongoDB
 
-Learn about the open-source non-relational database management system called MongoDB.
-
 * [ ] [MongoDB](https://www.mongodb.com/)
 * [ ] [MongoDB - Documentation](https://docs.mongodb.com/)
 * [ ] [MongoDB - University](https://university.mongodb.com/)
@@ -3227,8 +2104,6 @@ Learn about the open-source non-relational database management system called Mon
 * [ ] [Youtube - MongoDB In 30 Minutes](https://www.youtube.com/watch?v=pWbMrx5rVBE)
 
 #### Data Modelling
-
-Learn how data modelling can help your database design.
 
 * [ ] [Chapter 5 Data Modelling](https://opentextbc.ca/dbdesign01/chapter/chapter-5-data-modelling/)
 * [ ] [Wikipedia - Database Model](https://en.wikipedia.org/wiki/Database_model)
@@ -3238,8 +2113,6 @@ Learn how data modelling can help your database design.
 
 #### ER Diagram
 
-Learn how to model your data using ER diagrams.
-
 * [ ] [Tutorialspoint - DBMS, Data Models](https://www.tutorialspoint.com/dbms/dbms_data_models.htm)
 * [ ] [Entity Relationship Diagram](https://www.smartdraw.com/entity-relationship-diagram/)
 * [ ] [Youtube - Entity Relationship Diagram Tutorial](https://www.youtube.com/watch?v=QpdhBUYk7Kk)
@@ -3248,8 +2121,6 @@ Learn how to model your data using ER diagrams.
 
 #### Keys
 
-Learn how to figure out what types of keys to use and where to use them.
-
 * [ ] [Introduction to Database Keys](https://www.studytonight.com/dbms/database-key.php)
 * [ ] [7 Different Types of Database Keys](https://www.csestack.org/different-types-database-keys-example/)
 * [ ] [Database Management: Keys](https://databasemanagement.fandom.com/wiki/Relational_Database:_Keys)
@@ -3257,8 +2128,6 @@ Learn how to figure out what types of keys to use and where to use them.
 * [ ] [Youtube - Database Keys](https://www.youtube.com/watch?v=yMYH0zP1m8U)
 
 #### Indexing
-
-Learn how to use indexing to speed up your database.
 
 * [ ] [Indexing in Databases](https://www.geeksforgeeks.org/indexing-in-databases-set-1/)
 * [ ] [Wikipedia - Database index](https://en.wikipedia.org/wiki/Database_index)
@@ -3270,8 +2139,6 @@ Learn how to use indexing to speed up your database.
 
 #### Data Integrity
 
-Learn how to assure the accuracy and consistency of data.
-
 * [ ] [Wikipedia - Data Integrity](https://en.wikipedia.org/wiki/Data_integrity)
 * [ ] [What is Data Integrity and Why Is It Important?](https://www.talend.com/resources/what-is-data-integrity/)
 * [ ] [hat is Data Integrity?](https://digitalguardian.com/blog/what-data-integrity-data-protection-101)
@@ -3281,8 +2148,6 @@ Learn how to assure the accuracy and consistency of data.
 
 #### Normalization
 
-Learn how data normalization can help you decrease data redundancy and improve data integrity in your database.
-
 * [ ] [Wikipedia - Database normalization](https://en.wikipedia.org/wiki/Database_normalization)
 * [ ] [Database Normalization (Explained in Simple English)](https://www.essentialsql.com/get-ready-to-learn-sql-database-normalization-explained-in-simple-english/)
 * [ ] [What is Normalization?](https://www.guru99.com/database-normalization.html)
@@ -3291,8 +2156,6 @@ Learn how data normalization can help you decrease data redundancy and improve d
 * [ ] [Database Normalization Explained](https://towardsdatascience.com/database-normalization-explained-53e60a494495)
 
 #### Functional Dependencies
-
-Learn how to find functional dependencies to improve your database design.
 
 * [ ] [Full Functional Dependency in Database Normalization](https://www.lifewire.com/full-functional-dependency-1019753)
 * [ ] [Stackoverflow - Functional dependency and normalization](https://stackoverflow.com/questions/4199444/functional-dependency-and-normalization)
@@ -3304,8 +2167,6 @@ Learn how to find functional dependencies to improve your database design.
 
 #### Normal Forms
 
-Learn how normal forms can help you normalize your database.
-
 * [ ] [Wikipedia - Normal forms](https://en.wikipedia.org/wiki/Database_normalization#Normal_forms)
 * [ ] [1NF, 2NF, 3NF and BCNF in Database](https://beginnersbook.com/2015/05/normalization-in-dbms/)
 * [ ] [Chapter 12 Normalization](https://opentextbc.ca/dbdesign01/chapter/chapter-12-normalization/)
@@ -3315,8 +2176,6 @@ Learn how normal forms can help you normalize your database.
 
 #### Transactions
 
-Learn how transactions can group a set of database tasks into a single execution unit.
-
 * [ ] [Wikipedia - Database transaction](https://en.wikipedia.org/wiki/Database_transaction)
 * [ ] [Stackoverflow - What is a database transaction?](https://stackoverflow.com/questions/974596/what-is-a-database-transaction)
 * [ ] [Tutorialspoint - DBMS, Transaction](https://www.tutorialspoint.com/dbms/dbms_transaction.htm)
@@ -3324,8 +2183,6 @@ Learn how transactions can group a set of database tasks into a single execution
 * [ ] [SQL Transactions](https://www.geeksforgeeks.org/sql-transactions/)
 
 #### ACID
-
-Learn about the ACID properties of transactions.
 
 * [ ] [A beginner’s guide to ACID](https://vladmihalcea.com/a-beginners-guide-to-acid-and-database-transactions/)
 * [ ] [DBMS Transaction Management: ACID Properties](https://www.guru99.com/dbms-transaction-management.html)
@@ -3337,8 +2194,6 @@ Learn about the ACID properties of transactions.
 
 #### Serializability
 
-Learn how to determine whether a schedule is serializable and leaves the database in a consistent state.
-
 * [ ] [Wikipedia - Serializability](https://en.wikipedia.org/wiki/Serializability)
 * [ ] [Transaction Serializability in DBMS](https://www.tutorialcup.com/dbms/transaction-serializability.htm)
 * [ ] [DBMS Serializability](https://beginnersbook.com/2018/12/dbms-serializability/)
@@ -3347,8 +2202,6 @@ Learn how to determine whether a schedule is serializable and leaves the databas
 
 #### Locks
 
-Learn about locks and when they should be used.
-
 * [ ] [Wikipedia - Record locking](https://en.wikipedia.org/wiki/Record_locking)
 * [ ] [Database Locking: What, why and how?](http://www.methodsandtools.com/archive/archive.php?id=83)
 * [ ] [A beginner’s guide to locking and lost updates](https://vladmihalcea.com/a-beginners-guide-to-database-locking-and-the-lost-update-phenomena/)
@@ -3356,8 +2209,6 @@ Learn about locks and when they should be used.
 * [ ] [Implementation of Locking in DBMS](https://www.geeksforgeeks.org/implementation-of-locking-in-dbms/)
 
 ##### Deadlocks
-
-Learn about deadlocks and why they should be avoided.
 
 * [ ] [Deadlock in DBMS](https://www.geeksforgeeks.org/deadlock-in-dbms/)
 * [ ] [Wikipedia - Deadlock](https://en.wikipedia.org/wiki/Deadlock)
@@ -3368,8 +2219,6 @@ Learn about deadlocks and why they should be avoided.
 * [ ] [dev.to - Understanding SQL Server Deadlocks](https://dev.to/integerman/understanding-sql-server-deadlocks-2ej6)
 
 #### Precedence graph
-
-Learn how to create a precedence graph to test for conflict serializability of a schedule.
 
 * [ ] [Wikipedia - Precedence graph](https://en.wikipedia.org/wiki/Precedence_graph)
 * [ ] [Youtube - How to draw a precedence graph](https://www.youtube.com/watch?v=U3SHusK80q0)
@@ -3382,16 +2231,12 @@ Learn how to create a precedence graph to test for conflict serializability of a
 
 #### Architectural Models
 
-Learn about the fundamental architectural server models.
-
 * [ ] [Server Architecture](https://www.techopedia.com/definition/30262/server-architecture)
 * [ ] [Youtube - Architectural model](https://www.youtube.com/watch?v=SKtR7NVxYFA)
 * [ ] [Architectural Model](https://www.sciencedirect.com/topics/computer-science/architectural-model)
 * [ ] [Distributed Systems: Models and Design](http://www2.imm.dtu.dk/courses/02220/2018/L3/Models.pdf)
 
 #### Client-Server
-
-Learn about the client-server model.
 
 * [ ] [Wikipedia - Client-server model](https://en.wikipedia.org/wiki/Client%E2%80%93server_model)
 * [ ] [Client Server Architecture](https://cio-wiki.org/wiki/Client_Server_Architecture)
@@ -3403,8 +2248,6 @@ Learn about the client-server model.
 
 #### Proxy Server
 
-Learn about the proxy-server model.
-
 * [ ] [Wikipedia - Proxy Server](https://en.wikipedia.org/wiki/Proxy_server)
 * [ ] [Youtube - What is a Proxy Server?](https://www.youtube.com/watch?v=5cPIukqXe5w)
 * [ ] [What is a Proxy Server and How Does it Work?](https://www.varonis.com/blog/what-is-a-proxy-server/)
@@ -3412,8 +2255,6 @@ Learn about the proxy-server model.
 * [ ] [What is a proxy server?](https://www.itpro.co.uk/server-storage/30246/what-is-a-proxy-server)
 
 #### Peer-To-Peer
-
-Learn about the peer-to-peer model.
 
 * [ ] [Wikipedia - Peer-to-peer](https://en.wikipedia.org/wiki/Peer-to-peer)
 * [ ] [Youtube - What is a Peer to Peer Network? ](https://www.youtube.com/watch?v=ie-qRQIQT4I)
@@ -3423,8 +2264,6 @@ Learn about the peer-to-peer model.
 
 #### Middleware
 
-Learn about middleware.
-
 * [ ] [Wikipedia - Middleware](https://en.wikipedia.org/wiki/Middleware)
 * [ ] [Middleware Definition](https://searchapparchitecture.techtarget.com/definition/middleware)
 * [ ] [Quora - Why is Middleware important?](https://www.quora.com/Why-is-Middleware-important)
@@ -3433,16 +2272,12 @@ Learn about middleware.
 
 ### Request-Reply Protocol
 
-Learn how computers communicate with each other using the request-reply protocol.
-
 * [ ] [Wikipedia - Request Response](https://en.wikipedia.org/wiki/Request%E2%80%93response)
 * [ ] [Youtube - Event-Driven Architecture](https://www.youtube.com/watch?v=3bxAm3XIFmk)
 * [ ] [Request/Reply](https://solace.com/samples/solace-samples-jms/request-reply/)
 * [ ] [Enterprise Integration - Request-Reply](http://www.informit.com/articles/article.aspx?p=1398616&seqNum=4)
 
 #### UDP
-
-Learn about the UDP transport layer protocol.
 
 * [ ] [UDP (User Datagram Protocol)](https://searchnetworking.techtarget.com/definition/UDP-User-Datagram-Protocol)
 * [ ] [Wikipedia - User Datagram Protocol](https://en.wikipedia.org/wiki/User_Datagram_Protocol)
@@ -3452,8 +2287,6 @@ Learn about the UDP transport layer protocol.
 
 #### TCP
 
-Learn about the TCP transport layer protocol.
-
 * [ ] [TCP (Transmission Control Protocol)](https://searchnetworking.techtarget.com/definition/TCP)
 * [ ] [Wikipedia - Transmission Control Protocol](https://en.wikipedia.org/wiki/Transmission_Control_Protocol)
 * [ ] [TCP/IP (Transmission Control Protocol/Internet Protocol)](https://searchnetworking.techtarget.com/definition/TCP-IP)
@@ -3461,8 +2294,6 @@ Learn about the TCP transport layer protocol.
 * [ ] [TCP and UDP in Transport Layer](https://www.geeksforgeeks.org/tcp-and-udp-in-transport-layer/)
 
 #### REST API
-
-Learn how an API can be designed to be RESTful.
 
 * [ ] [Wikipeia - Representational state transfer](https://en.wikipedia.org/wiki/Representational_state_transfer)
 * [ ] [Learn REST: A RESTful Tutorial](https://www.restapitutorial.com/)
@@ -3472,8 +2303,6 @@ Learn how an API can be designed to be RESTful.
 
 #### CRUD
 
-Learn about the CRUD operations.
-
 * [ ] [Wikipedia - Create, read, update and delete](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete)
 * [ ] [Codecademy - What is CRUD?](https://www.codecademy.com/articles/what-is-crud)
 * [ ] [What is the Difference between REST and CRUD?](https://www.bmc.com/blogs/rest-vs-crud-whats-the-difference/)
@@ -3481,8 +2310,6 @@ Learn about the CRUD operations.
 * [ ] [REST was NEVER about CRUD](https://tyk.io/rest-never-crud/)
 
 ### Express
-
-Learn about the Node.js web application framework called Express.
 
 * [ ] [Express](https://expressjs.com/)
 * [ ] [Tutorialspoint - Express Framework](https://www.tutorialspoint.com/nodejs/nodejs_express_framework.htm)
@@ -3492,25 +2319,12 @@ Learn about the Node.js web application framework called Express.
 
 ### GraphQL
 
-Learn how to use the GraphQL query language.
-
 * [ ] [GraphQL](https://graphql.org/)
 * [ ] [Youtube - Introduction to GraphQL](https://www.youtube.com/watch?v=Y0lDGjwRYKw)
 * [ ] [Github - GraphQL Specification](https://github.com/graphql/graphql-spec)
 * [ ] [The Fullstack Tutorial for GraphQL](https://www.howtographql.com/)
 
-### GNU/Linux
-
-Learn about the GNU/Linux operating system
-
-* [ ] [Linux and the GNU System](https://www.gnu.org/gnu/linux-and-gnu.en.html)
-* [ ] [Wikipedia - GNU/Linux naming controversy](https://en.wikipedia.org/wiki/GNU/Linux_naming_controversy)
-* [ ] [What is GNU/Linux?](https://www.debian.org/releases/stable/amd64/ch01s02.en.html)
-* [ ] [GNU Linux](https://searchdatacenter.techtarget.com/definition/GNU-Linux)
-
 ### Docker
-
-Learn how to use Docker.
 
 * [ ] [Docker](https://www.docker.com/)
 * [ ] [Wikipedia - Docker (software)](https://en.wikipedia.org/wiki/Docker_(software))
@@ -3519,8 +2333,6 @@ Learn how to use Docker.
 * [ ] [Get Started, Part 1: Orientation and setup](https://docs.docker.com/get-started/)
 
 ### SSH
-
-Learn how to use SSH and learn how to connect to a device using an SSH client.
 
 * [ ] [Wikipedia - Secure Shell](https://en.wikipedia.org/wiki/Secure_Shell)
 * [ ] [Secure Shell (SSH)](https://searchsecurity.techtarget.com/definition/Secure-Shell)

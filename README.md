@@ -8,6 +8,6 @@
 
 - Table of Resources:
   * [My personal notes](./notes/PERSONAL-NOTES.md)
-  * [Web development](./notes/WEB-GENERAL.md)
+  * [Web development](./notes/WEB.md)
   * [System design](./notes/SYSTEM-DESIGN.md)
   * [Computer science](./notes/COMPUTER-SCIENCE.md)
