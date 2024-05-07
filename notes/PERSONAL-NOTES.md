@@ -293,20 +293,6 @@ end
 
 ### Javascript
 
-- Events:
-```javascript
-const events = require("events");
-
-const testFunction = () => {
-  console.log("hello from testFunction!")
-};
-
-const testEmitter = new events.EventEmitter();
-
-testEmitter.on("test", testFunction);
-testEmitter.emit("test") // hello from testFunction!
-```
-
 - Closure example:
 ```javascript
 let exampleFunction;
