@@ -296,6 +296,12 @@ end
 
 ### Javascript
 
+- Why use Express (or something like it):
+    - Don't reinvent the wheel;
+    - Good layer of abstraction from http, streams and promises.
+    - Middleware system that makes it easier to handle authentication, logging, etc.
+    - It is still lightweight.
+
 - Closure example:
 ```javascript
 let exampleFunction;
