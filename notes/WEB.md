@@ -29,7 +29,7 @@
 - [X] [MDN - ES6 In Depth: Destructuring](https://hacks.mozilla.org/2015/05/es6-in-depth-destructuring/)
 - [X] [javascript.info - Destructuring assignment](https://javascript.info/destructuring-assignment)
 
-### DOM
+#### DOM
 
 - [X] [MDN - DOM Introduction](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
 - [X] [Freecodecamp - What's the DOM](https://www.freecodecamp.org/news/whats-the-document-object-model-and-why-you-should-know-how-to-use-it-1a2d0bc5429d/)
@@ -41,7 +41,7 @@
 - [X] [MDN - Locating DOM elements using selectors](https://developer.mozilla.org/en-US/docs/Web/API/Document_object_model/Locating_DOM_elements_using_selectors)
 - [X] [Supercharged - querySelector](https://www.youtube.com/watch?v=s0vg_H9hBuU)
 
-### Events
+#### Events
 
 - [X] [MDN - Introduction to events](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events)
 - [X] [MDN - Creating and triggering events](https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Creating_and_triggering_events)
@@ -52,7 +52,7 @@
 - [X] [MDN - removeEventListener(](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener)
 - [X] [Event order](https://www.quirksmode.org/js/events_order.html)
 
-### Objects
+#### Objects
 
 - [X] [MDN - Introducing JavaScript objects](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects)
 - [X] [MDN - Working with objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects)
@@ -78,19 +78,19 @@
 - [X] [MDN - Object Oriented Programming](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS)
 - [X] [MDN - super](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super)
 
-### Regex
+#### Regex
 
 - [ ] [MDN - Regular Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
 - [ ] [javascript.info - Regular expressions](https://javascript.info/regular-expressions)
 - [ ] [MDN - RegExp](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp)
 
-### Template Literals
+#### Template Literals
 
 - [X] [MDN - Template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
 - [X] [MDN - ES6 In Depth: Template strings](https://hacks.mozilla.org/2015/05/es6-in-depth-template-strings-2/)
 - [X] [Google Devs - Getting Literal With ES6 Template Strings](https://developers.google.com/web/updates/2015/01/ES6-Template-Strings)
 
-### Promises
+#### Promises
 
 - [X] [Google Devs - JavaScript Promises: an Introduction](https://developers.google.com/web/fundamentals/primers/promises)
 - [X] [MDN - Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
@@ -118,32 +118,32 @@
 - [ ] [Supercharged - Fetch](https://www.youtube.com/watch?v=GiI77ya60yk)
 - [ ] [Codelabs - Fetch ](https://codelabs.developers.google.com/codelabs/pwa-fetch/index.html?index=..%2F..dev-pwa-training#0)
 
-### Web Animations
+#### Web Animations
 
 - [ ] [Google Devs - Animations](https://developers.google.com/web/fundamentals/design-and-ux/animations)
 - [ ] [MDN - Using The Web Animations API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API/Using_the_Web_Animations_API)
 - [ ] [CSS Tricks - CSS Animations vs Web Animations API](https://css-tricks.com/css-animations-vs-web-animations-api/)
 
-### Modules
+#### Modules
 
 - [ ] [MDN - Export](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export)
 - [ ] [MDN - Import](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
 - [ ] [V8 - Modules](https://v8.dev/features/modules)
 - [ ] [Freecodecamp - A Practical guide to ES6 modules](https://www.freecodecamp.org/news/how-to-use-es6-modules-and-why-theyre-important-a9b20b480773/)
 
-### Intl
+#### Intl
 
 - [ ] [MDN - Intl](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl)
 - [ ] [MDN - Date Time Format](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat)
 - [ ] [New Intl APIs in JavaScript](https://blog.bitsrc.io/new-intl-apis-in-javascript-c50dc89d2cf3)
 
-### Canvas
+#### Canvas
 
 - [ ] [MDN - Canvas tutorial](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial)
 - [ ] [MDN - Canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)
 - [ ] [CSS Tricks - Manipulating Pixels Using Canvas](https://css-tricks.com/manipulating-pixels-using-canvas/)
 
-### Documentation
+#### Documentation
 
 - [ ] [Getting Started with JSDoc](https://jsdoc.app/about-getting-started.html)
 - [ ] [A beginner’s guide to writing documentation](https://www.writethedocs.org/guide/writing/beginners-guide-to-docs/)
@@ -151,7 +151,7 @@
 - [ ] [The power of jsDoc](https://dev.to/gmartigny/the-power-of-jsdoc-272d)
 - [ ] [Document your Javascript code with JSDoc](https://dev.to/paulasantamaria/document-your-javascript-code-with-jsdoc-2fbf)
 
-### Best Practices
+#### Best Practices
 
 - [ ] [MDN - JavaScript guidelines](https://developer.mozilla.org/en-US/docs/MDN/Contribute/Guidelines/Code_guidelines/JavaScript)
 - [ ] [Airbnb - JavaScript Style Guide](https://github.com/airbnb/javascript)
@@ -160,9 +160,9 @@
 - [ ] [JavaScript Style Guide and Coding Conventions](https://www.w3schools.com/js/js_conventions.asp)
 
 
-### The Browser
+#### The Browser
 
-### Standardization
+#### Standardization
 
 - [ ] [Wikipedia - Web Standards](https://en.wikipedia.org/wiki/Web_standards)
 - [ ] [What Are Web Standards?](https://www.elcom.com.au/resources/blog/web-standards)
@@ -200,7 +200,7 @@
 - [ ] [Learning CSS by reading specs](https://www.chenhuijing.com/blog/learning-css-by-reading-specifications/)
 - [ ] [Understanding the CSS Specifications](https://www.w3.org/Style/CSS/read.en.html)
 
-### Browser Engines
+#### Browser Engines
 
 - [ ] [Medium - Browser Engines](https://medium.com/@jonbiro/browser-engines-chromium-v8-blink-gecko-webkit-98d6b0490968)
 - [ ] [Wikipedia - Comparison](https://en.wikipedia.org/wiki/Comparison_of_browser_engines)
@@ -219,14 +219,14 @@
 
 - [ ] [Gecko](https://en.wikipedia.org/wiki/Gecko_(software))
 
-### HTTP
+#### HTTP
 
 - [ ] [MDN - HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP)
 - [ ] [MDN - HTTP Glossary](https://developer.mozilla.org/en-US/docs/Glossary/HTTP)
 - [ ] [MDN - An overview of HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview)
 - [ ] [Wikipedia - Hypertext Transfer Protocol](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol)
 
-### The Internet
+#### The Internet
 
 - [ ] [MDN - How does the Internet work?](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work)
 - [ ] [Youtube - How the Internet Works in 5 Minutes](https://www.youtube.com/watch?v=7_LPdttKXPc)
@@ -234,14 +234,14 @@
 - [ ] [Stanford - How Does the Internet Work?](https://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper.htm)
 - [ ] [How the Internet Works](https://blog.hubspot.com/marketing/how-the-internet-works)
 
-### Polyfills
+#### Polyfills
 
 - [ ] [MDN - Polyfill](https://developer.mozilla.org/en-US/docs/Glossary/Polyfill)
 - [ ] [Introduction To Polyfills & Their Usage](https://medium.com/beginners-guide-to-mobile-web-development/introduction-to-polyfills-their-usage-9cd6db4b1923)
 - [ ] [W3C - Polyfills and the evolution of the Web](https://www.w3.org/2001/tag/doc/polyfills/)
 - [ ] [Can I use](http://caniuse.com/)
 
-### Debugging
+#### Debugging
 
 - [ ] [Google Devs - Inspect and Edit Pages and Styles](https://developers.google.com/web/tools/chrome-devtools/inspect-styles/)
 - [ ] [MDN - Cross browser testing](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing)
