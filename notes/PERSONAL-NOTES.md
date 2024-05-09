@@ -33,7 +33,18 @@
     - The linked-lists shouldn't be too big (which means the hashing function is good and the hash table array is big enough).
     - Some of the simplest and most common hashing functions uses some prime number, and at the end makes the modulo of the
       hash table size to insert the element on a linked list based on the hash function output as index.
-- [ ] Trees
+- [-] Trees
+    - Non-linear data structure (doesn't have an logical start and end), hierarchically.
+    - Trees consists of nodes, the first node is called root.
+    - I saw somewhere that the nodes without children can be called leaves.
+    - The connections between nodes are called edges.
+    - Height: the longest length between a leaf and its root.
+    - Depth: the length between a specific node and its root.
+    - Binary tree
+        - A binary tree is one that has at most two children nodes for each node.
+        - The nodes are called left and right.
+        - @TODO: Make a binary tree in C.
+        - @TODO: Continue notes about trees.
 - [ ] Graphs
 
 ## Algorithms

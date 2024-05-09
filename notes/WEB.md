@@ -169,59 +169,47 @@
 
 #### Specifications
 
-- [ ] [How to Read the ECMAScript Specification](https://timothygu.me/es-howto/)
-- [ ] [How to Read W3C Specs](https://alistapart.com/article/readspec/)
-- [ ] [Learning CSS by reading specs](https://www.chenhuijing.com/blog/learning-css-by-reading-specifications/)
-- [ ] [Understanding the CSS Specifications](https://www.w3.org/Style/CSS/read.en.html)
+- [X] [How to Read the ECMAScript Specification](https://timothygu.me/es-howto/)
+- [X] [How to Read W3C Specs](https://alistapart.com/article/readspec/)
+- [X] [Learning CSS by reading specs](https://www.chenhuijing.com/blog/learning-css-by-reading-specifications/)
+- [X] [Understanding the CSS Specifications](https://www.w3.org/Style/CSS/read.en.html)
 
 #### Browser Engines
 
-- [ ] [Medium - Browser Engines](https://medium.com/@jonbiro/browser-engines-chromium-v8-blink-gecko-webkit-98d6b0490968)
-- [ ] [Wikipedia - Comparison](https://en.wikipedia.org/wiki/Comparison_of_browser_engines)
-- [ ] [HTML5 Rocks - How Browsers Work](https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/)
-- [ ] [Demystifying Browsers](https://textslashplain.com/2020/02/09/demystifying-browsers/)
-
-#### Webkit
-
-- [ ] [Webkit](https://webkit.org/)
-
-#### Blink
-
-- [ ] [Blink](https://en.wikipedia.org/wiki/Blink_(browser_engine))
-
-#### Gecko
-
-- [ ] [Gecko](https://en.wikipedia.org/wiki/Gecko_(software))
+- [X] [Medium - Browser Engines](https://medium.com/@jonbiro/browser-engines-chromium-v8-blink-gecko-webkit-98d6b0490968)
+- [X] [Wikipedia - Comparison](https://en.wikipedia.org/wiki/Comparison_of_browser_engines)
+- [X] [HTML5 Rocks - How Browsers Work](https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/)
+- [X] [Demystifying Browsers](https://textslashplain.com/2020/02/09/demystifying-browsers/)
 
 #### HTTP
 
-- [ ] [MDN - HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP)
-- [ ] [MDN - HTTP Glossary](https://developer.mozilla.org/en-US/docs/Glossary/HTTP)
-- [ ] [MDN - An overview of HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview)
-- [ ] [Wikipedia - Hypertext Transfer Protocol](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol)
+- [X] [MDN - HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP)
+- [X] [MDN - HTTP Glossary](https://developer.mozilla.org/en-US/docs/Glossary/HTTP)
+- [X] [MDN - An overview of HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview)
+- [X] [Wikipedia - Hypertext Transfer Protocol](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol)
 
 #### The Internet
 
-- [ ] [MDN - How does the Internet work?](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work)
-- [ ] [Youtube - How the Internet Works in 5 Minutes](https://www.youtube.com/watch?v=7_LPdttKXPc)
-- [ ] [Explain That Stuff - Internet](https://www.explainthatstuff.com/internet.html)
-- [ ] [Stanford - How Does the Internet Work?](https://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper.htm)
-- [ ] [How the Internet Works](https://blog.hubspot.com/marketing/how-the-internet-works)
+- [X] [MDN - How does the Internet work?](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work)
+- [X] [Youtube - How the Internet Works in 5 Minutes](https://www.youtube.com/watch?v=7_LPdttKXPc)
+- [X] [Explain That Stuff - Internet](https://www.explainthatstuff.com/internet.html)
+- [X] [Stanford - How Does the Internet Work?](https://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper.htm)
+- [X] [How the Internet Works](https://blog.hubspot.com/marketing/how-the-internet-works)
 
 #### Polyfills
 
-- [ ] [MDN - Polyfill](https://developer.mozilla.org/en-US/docs/Glossary/Polyfill)
-- [ ] [Introduction To Polyfills & Their Usage](https://medium.com/beginners-guide-to-mobile-web-development/introduction-to-polyfills-their-usage-9cd6db4b1923)
-- [ ] [W3C - Polyfills and the evolution of the Web](https://www.w3.org/2001/tag/doc/polyfills/)
-- [ ] [Can I use](http://caniuse.com/)
+- [X] [MDN - Polyfill](https://developer.mozilla.org/en-US/docs/Glossary/Polyfill)
+- [X] [Introduction To Polyfills & Their Usage](https://medium.com/beginners-guide-to-mobile-web-development/introduction-to-polyfills-their-usage-9cd6db4b1923)
+- [X] [W3C - Polyfills and the evolution of the Web](https://www.w3.org/2001/tag/doc/polyfills/)
+- [X] [Can I use](http://caniuse.com/)
 
-#### Debugging
+#### @TODO: Debugging
 
 - [ ] [Google Devs - Inspect and Edit Pages and Styles](https://developers.google.com/web/tools/chrome-devtools/inspect-styles/)
 - [ ] [MDN - Cross browser testing](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing)
 - [ ] [5 things to remember for better debugging of your code](https://medium.com/dev-bits/5-things-to-remember-for-better-debugging-of-your-code-94b9bc3fb3df)
 
-#### Developer console
+#### @TODO: Developer console
 
 - [ ] [MDN - Console](https://developer.mozilla.org/en-US/docs/Web/API/Console)
 - [ ] [Google Devs - Console API Reference](https://developers.google.com/web/tools/chrome-devtools/console/api)
@@ -238,7 +226,7 @@
 
 ## Accessibility
 
-### @TODO: The why
+### The why
 
 - [ ] [Google Devs - Accessibility Fundamentals](https://developers.google.com/web/fundamentals/accessibility/)
 - [ ] [A11ycasts with Rob Dodson](https://www.youtube.com/playlist?list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g)
@@ -408,7 +396,7 @@ Get familiar with best practices when it comes to building Web Components.
 
 ## Progressive Webapps
 
-### @TODO: Storage
+### Storage
 
 - [ ] [MDN - Storage](https://developer.mozilla.org/en-US/docs/Web/API/Storage_API)
 - [ ] [MDN - Web Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API)
@@ -417,7 +405,7 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [Google Devs - View And Edit Local Storage](https://developers.google.com/web/tools/chrome-devtools/storage/localstorage)
 - [ ] [MDN - Client-side storage](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Client-side_storage)
 
-### @TODO: Routing
+### Routing
 
 - [ ] [How Single-Page Applications Work](https://blog.pshrmn.com/how-single-page-applications-work/)
 - [ ] [Static Apps - Routing URLs in Static Web Apps](https://staticapps.org/articles/routing-urls-in-static-apps/)
@@ -433,7 +421,7 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [Google Devs - History API: Scroll Restoration](https://developers.google.com/web/updates/2015/09/history-api-scroll-restoration)
 - [ ] [MDN - The Document Base URL element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base)
 
-### @TODO: Service Workers
+### Service Workers
 
 - [ ] [Google Devs - Service Workers: an Introduction](https://developers.google.com/web/fundamentals/primers/service-workers)
 - [ ] [Google Devs - The Service Worker Lifecycle](https://developers.google.com/web/fundamentals/primers/service-workers/lifecycle)
@@ -1436,7 +1424,7 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [Refactoring UI | CSS Day 2019](https://www.youtube.com/watch?v=7Z9rrryIOC4)
 - [ ] [Dieter Ram' 10 principles for good design](https://www.3pillarglobal.com/insights/dieter-rams-10-principles-good-design)
 
-### Modern Web (APIs)
+### Modern Web
 
 #### Streams
 
@@ -1787,22 +1775,22 @@ Get familiar with best practices when it comes to building Web Components.
 
 #### Arrays
 
-- [ ] [javascript.info - Arrays](https://javascript.info/array)
-- [ ] [Freecodecamp - Arrays, A Visual Introduction for Beginners](https://www.freecodecamp.org/news/data-structures-101-arrays-a-visual-introduction-for-beginners-7f013bcc355a/)
-- [ ] [Wikipedia - Array data structure](https://en.wikipedia.org/wiki/Array_data_structure)
-- [ ] [MDN - Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+- [X] [javascript.info - Arrays](https://javascript.info/array)
+- [X] [Freecodecamp - Arrays, A Visual Introduction for Beginners](https://www.freecodecamp.org/news/data-structures-101-arrays-a-visual-introduction-for-beginners-7f013bcc355a/)
+- [X] [Wikipedia - Array data structure](https://en.wikipedia.org/wiki/Array_data_structure)
+- [X] [MDN - Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
 #### Queues & Stacks
 
-- [ ] [Stacks and Queues](https://www.cs.cmu.edu/~adamchik/15-121/lectures/Stacks%20and%20Queues/Stacks%20and%20Queues.html)
-- [ ] [Difference between Stack and Queue Data Structures](https://www.geeksforgeeks.org/difference-between-stack-and-queue-data-structures/)
-- [ ] [Data Structures: Stacks & Queues](https://medium.com/@hitherejoe/data-structures-stacks-queues-a3b3591c8cb0)
-- [ ] [Stacks vs. Queues In JavaScript](https://dev.to/emmawedekind/stacks-vs-queues-in-javascript-4d1o)
+- [X] [Stacks and Queues](https://www.cs.cmu.edu/~adamchik/15-121/lectures/Stacks%20and%20Queues/Stacks%20and%20Queues.html)
+- [X] [Difference between Stack and Queue Data Structures](https://www.geeksforgeeks.org/difference-between-stack-and-queue-data-structures/)
+- [X] [Data Structures: Stacks & Queues](https://medium.com/@hitherejoe/data-structures-stacks-queues-a3b3591c8cb0)
+- [X] [Stacks vs. Queues In JavaScript](https://dev.to/emmawedekind/stacks-vs-queues-in-javascript-4d1o)
 
 #### Trees
 
 - [ ] [Wikipedia - Tree (data structure)](https://en.wikipedia.org/wiki/Tree_(data_structure))
-- [ ] [Freecodecamp - Everything you need to know about tree data structure](https://www.freecodecamp.org/news/all-you-need-to-know-about-tree-data-structures-bceacb85490c/)
+- [-] [Freecodecamp - Everything you need to know about tree data structure](https://www.freecodecamp.org/news/all-you-need-to-know-about-tree-data-structures-bceacb85490c/)
 - [ ] [Data Structure and Algorithms - Tree](https://www.tutorialspoint.com/data_structures_algorithms/tree_data_structure.htm)
 
 #### Binary Indexed Tree
