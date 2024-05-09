@@ -78,9 +78,8 @@
 - [X] [MDN - Object Oriented Programming](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS)
 - [X] [MDN - super](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super)
 
-#### Regex
+#### @TODO: Regex
 
-> @TODO: Regex
 - [ ] [MDN - Regular Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
 - [ ] [javascript.info - Regular expressions](https://javascript.info/regular-expressions)
 - [ ] [MDN - RegExp](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp)

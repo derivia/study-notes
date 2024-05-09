@@ -9,7 +9,6 @@
 - [Databases](#databases)
 - [Frameworks](#frameworks)
 - [Math](#math)
-- [Organize these in some category](#organize-these-in-some-category)
 
 ## Data Structures
 > Implementations: [Here](https://github.com/lorrito/algorithms)
@@ -115,6 +114,19 @@
     - The system that uses message queuing doesn't require an immediate response to continue working.
     - Achieves asynchronous communication between different components
     - Instead of communicating directly with each other, components send messages to the message broker, which delivers them to the intended recipients.
+    - RabbitMQ
+        - It acts as an intermediary between different parts of an application or between different applications in a queued manner.
+        - Imagine that in a few days, a new Marvel movie scheduled to be released. Many users visit a hypothetical website, "https://movietickets.com," to reserve their tickets for the movie. However, the system does not use a queue to handle the high demand, resulting in failures.
+        - Implementing a queue ensures that even under heavy loads, the application continues to respond, albeit at a slower pace.
+- Caching
+    - Caching is a method to speed up responses by increasing the use of storage.
+    - It can be done in various ways, typically categorized as server-side and client-side caching.
+    - In client-side caching, it involves storing static resources that change infrequently and are frequently accessed. This reduces the demand on the web server, as the browser checks if the resource is stored in the cache before requesting it.
+    - In server-side caching, a database technology is often used to accelerate queries made to a parent database.
+    - It also plays a role in how parts of the DNS work; recently accessed websites are stored in the cache to avoid the need for repeated lookups.
+- HATEOAS (Hypertext as the Engine of Application State)
+    - A principle in RESTful APIs that makes the API's usage self-explanatory by providing links to related operations.
+    - It allows the API consumer, typically a developer, to easily navigate operations, as, typically, end-users don't interact with the API JSON "directly" but rather perceives it in the formatting provided by the front-end developer.
 
 ## Operating Systems
 
@@ -156,6 +168,10 @@
     - A common use of a PID is a sigkill, which is an signal used in unix-like systems to terminate a process.
 - An unique process only sees itself on the system, it sees a virtual memory that the system allocates to it in order to prevent different processes from interfering with the memory of other processes, achieving a degree of stability.
     - So two programs that allocate memory and prints the allocated memory address can have the same output, but in fact they have different memory addresses, the program is just printing what he sees, the virtual memory address from a bigger virtual memory that the system gave, from a bigger physical memory.
+- Inter-process Communication (IPC)
+    - Mechanisms which allows data exchanges between threads of one or different processes.
+- Syscalls
+    - Low-level interfaces provided by an operating system for accessing its services. They allow programs to interact with the underlying hardware resources, such as file systems, input/output operations, process management, etc. Syscalls are generally implemented through specific function invocations from the user space to the kernel space, and they provide a standardized way for programs to request system resources and services.
 
 ## Networking
 
@@ -244,6 +260,9 @@
         - Subdomain: www, dev, etc.
         - SDL: google, youtube, twitch, etc.
         - TLD: com, org, net, us, br, etc.
+- CORS (Cross-origin Resource Sharing)
+    - A security mechanism that helps prevent cross-origin attacks. A server defines rules determining which external origins have access to a domain's resources.
+    - This is why executing JavaScript functions that fetch data from an external API, imported by an open HTML file in the browser, may fail if CORS is not configured properly.
 
 ## Programming Languages
 > these are just some notes about some languages.
@@ -616,7 +635,7 @@ function App() {
 
 ### Math
 
-- @TODO: Maybe work on these
+- @TODO: Work on these after FME collection
     - Calculus 1-3
     - Linear Algebra
     - Probability
@@ -632,28 +651,3 @@ function App() {
         - Optimization Theory
         - Mathematical Modeling
         - Complex Analysis
-
-### Some random notes
-
-- @TODO: Organize random notes somewhere
-- Inter-process Communication (IPC)
-    - Mechanisms which allows data exchanges between threads of one or different processes.
-- Syscalls
-    - Low-level interfaces provided by an operating system for accessing its services. They allow programs to interact with the underlying hardware resources, such as file systems, input/output operations, process management, etc. Syscalls are generally implemented through specific function invocations from the user space to the kernel space, and they provide a standardized way for programs to request system resources and services.
-- HATEOAS (Hypertext as the Engine of Application State)
-    - A principle in RESTful APIs that makes the API's usage self-explanatory by providing links to related operations.
-    - It allows the API consumer, typically a developer, to easily navigate operations, as, typically, end-users don't interact with the API JSON "directly" but rather perceives it in the formatting provided by the front-end developer.
-- Caching
-    - Caching is a method to speed up responses by increasing the use of storage.
-    - It can be done in various ways, typically categorized as server-side and client-side caching.
-    - In client-side caching, it involves storing static resources that change infrequently and are frequently accessed. This reduces the demand on the web server, as the browser checks if the resource is stored in the cache before requesting it.
-    - In server-side caching, a database technology is often used to accelerate queries made to a parent database.
-    - It also plays a role in how parts of the DNS work; recently accessed websites are stored in the cache to avoid the need for repeated lookups.
-- CORS (Cross-origin Resource Sharing)
-    - A security mechanism that helps prevent cross-origin attacks. A server defines rules determining which external origins have access to a domain's resources.
-    - This is why executing JavaScript functions that fetch data from an external API, imported by an open HTML file in the browser, may fail if CORS is not configured properly.
-- RabbitMQ
-    - A message queuing service, also known as a message broker or queue manager.
-    - It acts as an intermediary between different parts of an application or between different applications in a queued manner.
-    - Imagine that in a few days, a new Marvel movie scheduled to be released. Many users visit a hypothetical website, "https://movietickets.com," to reserve their tickets for the movie. However, the system does not use a queue to handle the high demand, resulting in failures.
-    - Implementing a queue ensures that even under heavy loads, the application continues to respond, albeit at a slower pace.
