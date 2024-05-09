@@ -70,7 +70,7 @@
 - [X] [Prototypes in JavaScript](https://medium.com/better-programming/prototypes-in-javascript-5bba2990e04b)
 - [X] [dev.to - JavaScript Visualized: Prototypal Inheritance](https://dev.to/lydiahallie/javascript-visualized-prototypal-inheritance-47co)
 
-##### Classes
+#### Classes
 
 - [X] [MDN - Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
 - [X] [Medium - ES6 Classes](https://medium.com/@luke_smaki/javascript-es6-classes-8a34b0a6720a)
@@ -80,6 +80,7 @@
 
 #### Regex
 
+> @TODO: Regex
 - [ ] [MDN - Regular Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
 - [ ] [javascript.info - Regular expressions](https://javascript.info/regular-expressions)
 - [ ] [MDN - RegExp](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp)
@@ -110,88 +111,62 @@
 
 #### Fetch
 
-- [ ] [Google Devs - Introduction to fetch](https://developers.google.com/web/updates/2015/03/introduction-to-fetch)
-- [ ] [Google Devs - Networking](https://developers.google.com/training/certification/mobile-web-specialist/study-guide/networking)
-- [ ] [Freecodecamp - Fetch practical guide](https://www.freecodecamp.org/news/a-practical-es6-guide-on-how-to-perform-http-requests-using-the-fetch-api-594c3d91a547/)
-- [ ] [MDN - CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
-- [ ] [Alligator - Fetch API](https://alligator.io/js/fetch-api/)
-- [ ] [Supercharged - Fetch](https://www.youtube.com/watch?v=GiI77ya60yk)
-- [ ] [Codelabs - Fetch ](https://codelabs.developers.google.com/codelabs/pwa-fetch/index.html?index=..%2F..dev-pwa-training#0)
+- [X] [Google Devs - Introduction to fetch](https://developers.google.com/web/updates/2015/03/introduction-to-fetch)
+- [X] [Google Devs - Networking](https://developers.google.com/training/certification/mobile-web-specialist/study-guide/networking)
+- [X] [Freecodecamp - Fetch practical guide](https://www.freecodecamp.org/news/a-practical-es6-guide-on-how-to-perform-http-requests-using-the-fetch-api-594c3d91a547/)
+- [X] [MDN - CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
+- [X] [Alligator - Fetch API](https://alligator.io/js/fetch-api/)
+- [X] [Supercharged - Fetch](https://www.youtube.com/watch?v=GiI77ya60yk)
+- [X] [Codelabs - Fetch ](https://codelabs.developers.google.com/codelabs/pwa-fetch/index.html?index=..%2F..dev-pwa-training#0)
 
 #### Web Animations
 
-- [ ] [Google Devs - Animations](https://developers.google.com/web/fundamentals/design-and-ux/animations)
-- [ ] [MDN - Using The Web Animations API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API/Using_the_Web_Animations_API)
-- [ ] [CSS Tricks - CSS Animations vs Web Animations API](https://css-tricks.com/css-animations-vs-web-animations-api/)
+- [X] [Google Devs - Animations](https://developers.google.com/web/fundamentals/design-and-ux/animations)
+- [X] [MDN - Using The Web Animations API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API/Using_the_Web_Animations_API)
+- [X] [CSS Tricks - CSS Animations vs Web Animations API](https://css-tricks.com/css-animations-vs-web-animations-api/)
 
 #### Modules
 
-- [ ] [MDN - Export](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export)
-- [ ] [MDN - Import](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
-- [ ] [V8 - Modules](https://v8.dev/features/modules)
-- [ ] [Freecodecamp - A Practical guide to ES6 modules](https://www.freecodecamp.org/news/how-to-use-es6-modules-and-why-theyre-important-a9b20b480773/)
+- [X] [MDN - Export](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export)
+- [X] [MDN - Import](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
+- [X] [V8 - Modules](https://v8.dev/features/modules)
+- [X] [Freecodecamp - A Practical guide to ES6 modules](https://www.freecodecamp.org/news/how-to-use-es6-modules-and-why-theyre-important-a9b20b480773/)
 
 #### Intl
 
-- [ ] [MDN - Intl](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl)
-- [ ] [MDN - Date Time Format](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat)
-- [ ] [New Intl APIs in JavaScript](https://blog.bitsrc.io/new-intl-apis-in-javascript-c50dc89d2cf3)
+- [X] [MDN - Intl](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl)
+- [X] [MDN - Date Time Format](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat)
+- [X] [New Intl APIs in JavaScript](https://blog.bitsrc.io/new-intl-apis-in-javascript-c50dc89d2cf3)
 
 #### Canvas
 
-- [ ] [MDN - Canvas tutorial](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial)
-- [ ] [MDN - Canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)
-- [ ] [CSS Tricks - Manipulating Pixels Using Canvas](https://css-tricks.com/manipulating-pixels-using-canvas/)
+- [X] [MDN - Canvas tutorial](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial)
+- [X] [MDN - Canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)
+- [X] [CSS Tricks - Manipulating Pixels Using Canvas](https://css-tricks.com/manipulating-pixels-using-canvas/)
 
 #### Documentation
 
-- [ ] [Getting Started with JSDoc](https://jsdoc.app/about-getting-started.html)
-- [ ] [A beginner’s guide to writing documentation](https://www.writethedocs.org/guide/writing/beginners-guide-to-docs/)
-- [ ] [Write Good Documentation](https://hackernoon.com/write-good-documentation-6caffb9082b4)
-- [ ] [The power of jsDoc](https://dev.to/gmartigny/the-power-of-jsdoc-272d)
-- [ ] [Document your Javascript code with JSDoc](https://dev.to/paulasantamaria/document-your-javascript-code-with-jsdoc-2fbf)
+- [X] [Getting Started with JSDoc](https://jsdoc.app/about-getting-started.html)
+- [X] [A beginner’s guide to writing documentation](https://www.writethedocs.org/guide/writing/beginners-guide-to-docs/)
+- [X] [Write Good Documentation](https://hackernoon.com/write-good-documentation-6caffb9082b4)
+- [X] [The power of jsDoc](https://dev.to/gmartigny/the-power-of-jsdoc-272d)
+- [X] [Document your Javascript code with JSDoc](https://dev.to/paulasantamaria/document-your-javascript-code-with-jsdoc-2fbf)
 
 #### Best Practices
 
-- [ ] [MDN - JavaScript guidelines](https://developer.mozilla.org/en-US/docs/MDN/Contribute/Guidelines/Code_guidelines/JavaScript)
-- [ ] [Airbnb - JavaScript Style Guide](https://github.com/airbnb/javascript)
-- [ ] [Principles of Writing Consistent, Idiomatic JavaScript](https://github.com/rwaldron/idiomatic.js/)
-- [ ] [5 JavaScript Style Guides](https://codeburst.io/5-javascript-style-guides-including-airbnb-github-google-88cbc6b2b7aa)
-- [ ] [JavaScript Style Guide and Coding Conventions](https://www.w3schools.com/js/js_conventions.asp)
-
+- [X] [MDN - JavaScript guidelines](https://developer.mozilla.org/en-US/docs/MDN/Contribute/Guidelines/Code_guidelines/JavaScript)
+- [X] [Airbnb - JavaScript Style Guide](https://github.com/airbnb/javascript)
+- [X] [Principles of Writing Consistent, Idiomatic JavaScript](https://github.com/rwaldron/idiomatic.js/)
+- [X] [5 JavaScript Style Guides](https://codeburst.io/5-javascript-style-guides-including-airbnb-github-google-88cbc6b2b7aa)
+- [X] [JavaScript Style Guide and Coding Conventions](https://www.w3schools.com/js/js_conventions.asp)
 
 #### The Browser
 
 #### Standardization
 
-- [ ] [Wikipedia - Web Standards](https://en.wikipedia.org/wiki/Web_standards)
-- [ ] [What Are Web Standards?](https://www.elcom.com.au/resources/blog/web-standards)
-- [ ] [A Comprehensive Explanation of Web Standards](https://robertnyman.com/2007/05/21/what-are-web-standards-a-comprehensive-explanation-of-what-is-comprised-in-the-term/)
-
-#### W3C
-
-- [ ] [W3C - About](https://www.w3.org/standards/about.html)
-- [ ] [W3C - Standards](https://www.w3.org/standards/)
-- [ ] [W3C - Process](http://webdiy.org/w3c/)
-- [ ] [Web Standards Guide](https://www.smashingmagazine.com/2019/01/web-standards-guide/)
-- [ ] [W3C - Groups](https://www.w3.org/community/groups/)
-- [ ] [The W3C At Twenty-Five](https://www.smashingmagazine.com/2019/10/happy-birthday-w3c/)
-
-#### TC39
-
-- [ ] [The TC39 process for ECMAScript features](https://2ality.com/2015/11/tc39-process.html)
-- [ ] [Github - TC39](https://github.com/tc39)
-- [ ] [Ecma International - Programme of work](https://www.ecma-international.org/memento/tc39.htm)
-- [ ] [Wikipedia - Ecma International](https://en.wikipedia.org/wiki/Ecma_International)
-
-#### WHATWG
-
-- [ ] [WHATWG - FAQ](https://whatwg.org/faq)
-- [ ] [WHATWG - Standards](https://spec.whatwg.org/)
-- [ ] [MDN - WHATWG](https://developer.mozilla.org/en-US/docs/Glossary/WHATWG)
-- [ ] [W3C vs. WHATWG HTML5 Specs](https://dzone.com/articles/w3c-vs-whatwg-html5-specs)
-- [ ] [WHATWG - HTML](https://html.spec.whatwg.org/)
-- [ ] [Wikipedia - WHATWG](https://en.wikipedia.org/wiki/WHATWG)
+- [X] [Wikipedia - Web Standards](https://en.wikipedia.org/wiki/Web_standards)
+- [X] [What Are Web Standards?](https://www.elcom.com.au/resources/blog/web-standards)
+- [X] [A Comprehensive Explanation of Web Standards](https://robertnyman.com/2007/05/21/what-are-web-standards-a-comprehensive-explanation-of-what-is-comprised-in-the-term/)
 
 #### Specifications
 
@@ -264,7 +239,7 @@
 
 ## Accessibility
 
-### The why
+### @TODO: The why
 
 - [ ] [Google Devs - Accessibility Fundamentals](https://developers.google.com/web/fundamentals/accessibility/)
 - [ ] [A11ycasts with Rob Dodson](https://www.youtube.com/playlist?list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g)
@@ -434,9 +409,7 @@ Get familiar with best practices when it comes to building Web Components.
 
 ## Progressive Webapps
 
-### API's
-
-### Storage
+### @TODO: Storage
 
 - [ ] [MDN - Storage](https://developer.mozilla.org/en-US/docs/Web/API/Storage_API)
 - [ ] [MDN - Web Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API)
@@ -445,7 +418,7 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [Google Devs - View And Edit Local Storage](https://developers.google.com/web/tools/chrome-devtools/storage/localstorage)
 - [ ] [MDN - Client-side storage](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Client-side_storage)
 
-### Routing
+### @TODO: Routing
 
 - [ ] [How Single-Page Applications Work](https://blog.pshrmn.com/how-single-page-applications-work/)
 - [ ] [Static Apps - Routing URLs in Static Web Apps](https://staticapps.org/articles/routing-urls-in-static-apps/)
@@ -461,7 +434,7 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [Google Devs - History API: Scroll Restoration](https://developers.google.com/web/updates/2015/09/history-api-scroll-restoration)
 - [ ] [MDN - The Document Base URL element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base)
 
-### Service Workers
+### @TODO: Service Workers
 
 - [ ] [Google Devs - Service Workers: an Introduction](https://developers.google.com/web/fundamentals/primers/service-workers)
 - [ ] [Google Devs - The Service Worker Lifecycle](https://developers.google.com/web/fundamentals/primers/service-workers/lifecycle)
@@ -613,9 +586,6 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [Google Devs - HTTP Caching](https://developers.google.com/web/fundamentals/performance/get-started/httpcaching-6)
 - [ ] [MDN - HTTP caching](https://developer.mozilla.org/en-US/docs/Web/HTTP/Caching)
 
-
-### Rendering Performance
-
 ### Rendering
 
 - [ ] [Google Devs - Constructing the Object Model](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/constructing-the-object-model)
@@ -739,9 +709,6 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [HTML5 Rocks - The Basics of Web Workers](https://www.html5rocks.com/en/tutorials/workers/basics/)
 - [ ] [When should you be using Web Workers?](https://dassur.ma/things/when-workers/)
 
-
-### Security
-
 ### HTTPS
 
 - [ ] [Google Devs - Why HTTPS Matters](https://developers.google.com/web/fundamentals/security/encrypt-in-transit/why-https)
@@ -783,8 +750,6 @@ Get familiar with best practices when it comes to building Web Components.
 
 - [ ] [MDN - Content Security Policy (CSP)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
 - [ ] [Google Devs - CSP](https://developers.google.com/web/fundamentals/security/csp)
-
-### Audits
 
 ### Performance budgets
 
@@ -1149,7 +1114,7 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [Implementing JavaScript Functors and Monads](https://medium.com/front-end-weekly/implementing-javascript-functors-and-monads-a87b6a4b4d9a)
 - [ ] [MDN - Array.prototype.flatMap()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flatMap)
 
-### Architecture
+### @TODO: Architecture
 
 ### Design Patterns
 
@@ -1285,7 +1250,7 @@ Get familiar with best practices when it comes to building Web Components.
 
 ## Design & UX
 
-### Color Theory
+### @TODO: Color Theory
 
 - [ ] [All you need to know about colors in UI Design](https://uxdesign.cc/all-you-need-to-know-about-colors-in-ui-design-theory-practice-235179712522)
 - [ ] [The Role of Color in UX](https://www.toptal.com/designers/ux/color-in-ux)
@@ -1472,7 +1437,7 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [Refactoring UI | CSS Day 2019](https://www.youtube.com/watch?v=7Z9rrryIOC4)
 - [ ] [Dieter Ram' 10 principles for good design](https://www.3pillarglobal.com/insights/dieter-rams-10-principles-good-design)
 
-### Modern Web
+### Modern Web (APIs)
 
 #### Streams
 
@@ -1819,7 +1784,7 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [Network Information API Sample](https://googlechrome.github.io/samples/network-information/)
 - [ ] [What Web Can Do Today - Network Type & Speed](https://whatwebcando.today/network-type-speed.html)
 
-### Data structures
+### @TODO: Data structures
 
 #### Arrays
 
@@ -1906,7 +1871,7 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [The Javascript Developer’s Guide to Graphs](https://hackernoon.com/the-javascript-developers-guide-to-graphs-and-detecting-cycles-in-them-96f4f619d563)
 
 
-### Analysis
+### @TODO: Analysis
 
 #### Time complexity
 
@@ -1950,7 +1915,7 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [Space Complexity](http://exploreshaifali.github.io/2014/02/13/Space-Complexity/)
 
 
-### Algorithms
+### @TODO: Algorithms
 
 #### Sorting
 
@@ -2045,7 +2010,7 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [Cryptography for JavaScript: Hash Function](https://medium.com/@promentol/cryptography-for-javascript-node-js-developers-part-1-hash-function-86d119c7304)
 - [ ] [Github - hash.js](https://gist.github.com/iperelivskiy/4110988)
 
-### Databases
+### @TODO: Databases
 
 #### Relational Databases
 
@@ -2228,7 +2193,7 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [Precedence Graph, DBMS](https://www.includehelp.com/dbms/precedence-graph.aspx)
 
 
-### Servers
+### @TODO: Servers
 
 #### Architectural Models
 
