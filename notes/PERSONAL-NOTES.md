@@ -13,6 +13,10 @@
 ## Data Structures
 > Implementations: [Here](https://github.com/lorrito/algorithms)
 
+- [X] Bitwise Operations
+    - A word is a unit of data of defined bit length (size in bits) that is addressable and can be moved between the processor and storage (be it non-volatile or not).
+        - Usually, the word is the size of the bus, so the movement of any word can be made with only one operation between registers.
+        - And, obviously, it is tipically a power of 2.
 - [X] Arrays
     - Fixed size n, fixed type t with size s. The size of the array is basically n * s. Each element has a index. To get an element, go to the start of the array and multiply the index by s, some simple pointer arithmetic.
     - Constant access O(1).
@@ -33,7 +37,12 @@
     - The linked-lists shouldn't be too big (which means the hashing function is good and the hash table array is big enough).
     - Some of the simplest and most common hashing functions uses some prime number, and at the end makes the modulo of the
       hash table size to insert the element on a linked list based on the hash function output as index.
-- [-] Trees
+    - The size of the hash table should be the next prime number that is at least 1.3 times bigger than the expected number of distinct keys.
+    - A clever way to handle deletion on hash tables is to mark the keys as deleted, instead of "shifting" the entire linked list items after the item back.
+    - A particular "alternative" could be resizing the hash table, based on its ratio of filled buckets.
+        - Maybe, if ratio is bigger than 0.7 after insertion/deletion: grow to the next prime number at least twice as big than the current size.
+        - and if ratio is lower than 0.7 after insertion/deletion: shrink to the next prime number at least twice as small than the current size.
+- [-] @TODO: Trees
     - Non-linear data structure (doesn't have an logical start and end), hierarchically.
     - Trees consists of nodes, the first node is called root.
     - I saw somewhere that the nodes without children can be called leaves.
