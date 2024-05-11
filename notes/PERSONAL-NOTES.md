@@ -17,6 +17,7 @@
     - A word is a unit of data of defined bit length (size in bits) that is addressable and can be moved between the processor and storage (be it non-volatile or not).
         - Usually, the word is the size of the bus, so the movement of any word can be made with only one operation between registers.
         - And, obviously, it is tipically a power of 2.
+    - Left shifting by n is multiplying by 2 n times and right shifting by n is dividing by 2 n times.
 - [X] Arrays
     - Fixed size n, fixed type t with size s. The size of the array is basically n * s. Each element has a index. To get an element, go to the start of the array and multiply the index by s, some simple pointer arithmetic.
     - Constant access O(1).

@@ -78,11 +78,11 @@
 - [X] [MDN - Object Oriented Programming](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS)
 - [X] [MDN - super](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super)
 
-#### @TODO: Regex
+#### Regex
 
-- [ ] [MDN - Regular Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
-- [ ] [javascript.info - Regular expressions](https://javascript.info/regular-expressions)
-- [ ] [MDN - RegExp](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp)
+- [X] [MDN - Regular Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
+- [X] [javascript.info - Regular expressions](https://javascript.info/regular-expressions)
+- [X] [MDN - RegExp](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp)
 
 #### Template Literals
 
@@ -203,28 +203,28 @@
 - [X] [W3C - Polyfills and the evolution of the Web](https://www.w3.org/2001/tag/doc/polyfills/)
 - [X] [Can I use](http://caniuse.com/)
 
-#### @TODO: Debugging
+#### Debugging
 
-- [ ] [Google Devs - Inspect and Edit Pages and Styles](https://developers.google.com/web/tools/chrome-devtools/inspect-styles/)
-- [ ] [MDN - Cross browser testing](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing)
-- [ ] [5 things to remember for better debugging of your code](https://medium.com/dev-bits/5-things-to-remember-for-better-debugging-of-your-code-94b9bc3fb3df)
+- [X] [Google Devs - Inspect and Edit Pages and Styles](https://developers.google.com/web/tools/chrome-devtools/inspect-styles/)
+- [X] [MDN - Cross browser testing](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing)
+- [X] [5 things to remember for better debugging of your code](https://medium.com/dev-bits/5-things-to-remember-for-better-debugging-of-your-code-94b9bc3fb3df)
 
-#### @TODO: Developer console
+#### Developer console
 
-- [ ] [MDN - Console](https://developer.mozilla.org/en-US/docs/Web/API/Console)
-- [ ] [Google Devs - Console API Reference](https://developers.google.com/web/tools/chrome-devtools/console/api)
-- [ ] [Google Devs - Get Started with Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools/javascript)
-- [ ] [Google Devs - Console Utilities API Reference](https://developers.google.com/web/tools/chrome-devtools/console/utilities)
-- [ ] [MDN - Debugging CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Debugging_CSS)
-- [ ] [MDN - Debugging HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Debugging_HTML)
-- [ ] [javascript.info - Debugging in Chrome](https://javascript.info/debugging-chrome)
-- [ ] [14 JavaScript debugging tips](https://raygun.com/javascript-debugging-tips)
-- [ ] [The definitive guide to debugging JavaScript](https://flaviocopes.com/javascript-debugging/)
-- [ ] [Youtube - Chrome DevTools 101](https://www.youtube.com/watch?v=H0XScE08hy8)
-- [ ] [Chrome Devs - Quickly monitor events](https://developers.google.com/web/updates/2015/05/quickly-monitor-events-from-the-console-panel)
-- [ ] [Youtube - 14 Must Know Chrome Dev Tools Tricks](https://www.youtube.com/watch?v=xkzDaKwinA8)
+- [X] [MDN - Console](https://developer.mozilla.org/en-US/docs/Web/API/Console)
+- [X] [Google Devs - Console API Reference](https://developers.google.com/web/tools/chrome-devtools/console/api)
+- [X] [Google Devs - Get Started with Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools/javascript)
+- [X] [Google Devs - Console Utilities API Reference](https://developers.google.com/web/tools/chrome-devtools/console/utilities)
+- [X] [MDN - Debugging CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Debugging_CSS)
+- [X] [MDN - Debugging HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Debugging_HTML)
+- [X] [javascript.info - Debugging in Chrome](https://javascript.info/debugging-chrome)
+- [X] [14 JavaScript debugging tips](https://raygun.com/javascript-debugging-tips)
+- [X] [The definitive guide to debugging JavaScript](https://flaviocopes.com/javascript-debugging/)
+- [X] [Youtube - Chrome DevTools 101](https://www.youtube.com/watch?v=H0XScE08hy8)
+- [X] [Chrome Devs - Quickly monitor events](https://developers.google.com/web/updates/2015/05/quickly-monitor-events-from-the-console-panel)
+- [X] [Youtube - 14 Must Know Chrome Dev Tools Tricks](https://www.youtube.com/watch?v=xkzDaKwinA8)
 
-## Accessibility
+## @TODO: Come back to this - Accessibility
 
 ### The why
 
@@ -324,7 +324,7 @@
 - [ ] [WCAG 2.0 checklists](https://www.wuhcag.com/wcag-checklist/)
 - [ ] [How to Meet WCAG (Quick Reference)](https://www.w3.org/WAI/WCAG21/quickref/)
 
-## Web Components
+## @TODO: Come back to this - Web Components
 
 ### Custom Elements
 
@@ -1237,7 +1237,7 @@ Get familiar with best practices when it comes to building Web Components.
 
 ## Design & UX
 
-### @TODO: Color Theory
+### Color Theory
 
 - [ ] [All you need to know about colors in UI Design](https://uxdesign.cc/all-you-need-to-know-about-colors-in-ui-design-theory-practice-235179712522)
 - [ ] [The Role of Color in UX](https://www.toptal.com/designers/ux/color-in-ux)
