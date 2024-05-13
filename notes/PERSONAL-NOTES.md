@@ -9,6 +9,7 @@
 - [Databases](#databases)
 - [Frameworks](#frameworks)
 - [Math](#math)
+- [Security](#security)
 
 ## Data Structures
 > Implementations: [Here](https://github.com/lorrito/algorithms)
@@ -672,3 +673,13 @@ function App() {
         - Optimization Theory
         - Mathematical Modeling
         - Complex Analysis
+
+### Security
+
+- Authentication
+    - Confirms an user identity.
+    - Is when a user wants to login. The combination of the username/email + password/passkey is handled by the server.
+    - If the result of the hash (maybe with salt) is the same as the one stored on the database, the user will be logged in.
+- Authorization
+    - Determines actions/resources a user has permissions.
+    - Is when a user wants to read/write something, if he has sufficient privileges, he is able to do so.
