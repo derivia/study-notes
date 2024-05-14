@@ -217,8 +217,7 @@
     - 7 - Application (HTTP, FTP, etc)
         - Allows applications to access network services such as email forwarding.
     - The model is a general concept of the connection between different devices, that uses different protocols.
-- TCP Model
-- TCP/IP
+- TCP/IP model
     - When connected to the internet, a computer speaks TCP/IP, which is a protocol consisting of four layers: application, transport, internet and network access.
         - TCP/IP can be compared to the OSI Model, which is a model consisting of seven layers: application, presentation, session, transport, network, data link and physical.
         - The benefits of having a layered structure, is that each layer only does what it has to do, and, while every layer is a client to another layer, it's also a server to other, as data goes in and out.
@@ -233,6 +232,14 @@
     - An IP address is an identifier assigned to an device on a local network that has a unique sequence of numbers, typically in the format of four sets of numbers separated by periods, such as 192.168.1.1.
 - TCP/UDP
     - TCP is used when the content that is being shared shouldn't have problems, which means there are verifications and a slower transmission in order to have properly received data.
+        - Three-way handshake
+            - This is an over-simplified explanation (the syn bits are important)
+            1 - SYN (Synchronize Sequence Number)
+                - The client wants to start a communication with the server.
+            2 - SYN/ACK (Acknowledgment)
+                - Signifies that the server received the request.
+            3 - ACK
+                - Client acknowledges the response of the server and the connection starts.
     - UDP is an alternative to TCP, which doesn't care too much about the data integrity, being used commonly on games and audio/video real time transmission.
     - Ports
         - Used to identify applications that speaks and/or listen for connections, an application that needs a TCP connection have an assigned port.
@@ -663,7 +670,7 @@ function App() {
     - Probability
     - Statistics
     - Differential Equations
-        - Maybe maybe maybe these:
+    - Maybe maybe maybe these:
         - Numerical Analysis
         - Game Theory
         - Combinatorics
@@ -683,3 +690,30 @@ function App() {
 - Authorization
     - Determines actions/resources a user has permissions.
     - Is when a user wants to read/write something, if he has sufficient privileges, he is able to do so.
+- Enumeration
+    - The process of gathering information on a target in order to find potential attack vectors.
+    - Nmap
+        - A port scanning tool that tries to communicate with each port, and, depending on the response, it tries to determine if the port is open, closed or filtered (firewall).
+        - When a port is open, a service enumeration can be done. It is possible to get things like the service version.
+        - Common scan types:
+            - TCP (-sT)
+                - If the server responds with RST after a SYN (TCP handshake), it means the port is closed.
+                - Ports behind a firewall doesn't respond at all, which would be marked as filtered.
+                - But, it's easy to make ports that are behind a firewall respond with RST.
+                - Making it harder to differentiate when a port is closed/filtered.
+            - UDP (-sU)
+                - Normally there is no response, so nmap marks ports as open|filtered, them try again to send another UDP.
+                - The target responds with a ICMP ping if the port is closed, then nmap marks it.
+                - This is important: nmap -sU --top-ports 20
+                    - UDP port scanning is usually slower than TCP ones, and there are generally no UDP ports open.
+            - SYN/ACK (-sS)
+                - Nmap sends a RST instead of the final ACK, making the server stop trying to establish connections.
+                - Also, some systems log only "fully-finished" TCP connections, so the "non-finished" three-way handshake would not appear on their logs.
+                - To send a RST, nmap needs sudo privileges, in order to create raw packets.
+        - ICMP is, by default, blocked on Windows systems.
+
+### Organize later
+
+- Server Message Block Protocol (SMB)
+    - A client-server protocol used to share access to files, devices, serial ports, etc.
+    - Basically a shared hard disk on the network.
