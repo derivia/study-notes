@@ -159,7 +159,7 @@
 - [X] [5 JavaScript Style Guides](https://codeburst.io/5-javascript-style-guides-including-airbnb-github-google-88cbc6b2b7aa)
 - [X] [JavaScript Style Guide and Coding Conventions](https://www.w3schools.com/js/js_conventions.asp)
 
-#### The Browser
+### The Browser
 
 #### Standardization
 
@@ -1041,8 +1041,6 @@ Get familiar with best practices when it comes to building Web Components.
 
 ## Architecture & paradigms
 
-### Paradigms
-
 ### Programming Paradigms
 
 - [ ] [Wikipedia - Programming paradigm](https://en.wikipedia.org/wiki/Programming_paradigm)
@@ -1181,28 +1179,21 @@ Get familiar with best practices when it comes to building Web Components.
 
 ### Version Control
 
-### Git
+#### Git
 
-- [ ] [Learn Git Branching](https://learngitbranching.js.org/)
-- [ ] [Git Handbook](https://guides.github.com/introduction/git-handbook/)
-- [ ] [Github Cheatsheet](https://github.github.com/training-kit/downloads/github-git-cheat-sheet/)
-- [ ] [Visualizing Git](http://git-school.github.io/visualizing-git/)
-- [ ] [Codecademy - Learn Gitthis](https://www.codecademy.com/learn/learn-git)
-- [ ] [Git Hint](https://git-hint.netlify.com/)
+- [X] [Learn Git Branching](https://learngitbranching.js.org/)
+- [X] [Git Handbook](https://guides.github.com/introduction/git-handbook/)
+- [X] [Github Cheatsheet](https://github.github.com/training-kit/downloads/github-git-cheat-sheet/)
+- [X] [Visualizing Git](http://git-school.github.io/visualizing-git/)
+- [X] [Codecademy - Learn Gitthis](https://www.codecademy.com/learn/learn-git)
 
 #### Github
 
-- [ ] [What is GitHub?](https://guides.github.com/activities/hello-world/)
-- [ ] [GitHub Learning Lab](https://lab.github.com/)
-- [ ] [Wikipedia - Github](https://en.wikipedia.org/wiki/Github)
+- [X] [What is GitHub?](https://guides.github.com/activities/hello-world/)
+- [X] [GitHub Learning Lab](https://lab.github.com/)
+- [X] [Wikipedia - Github](https://en.wikipedia.org/wiki/Github)
 
-#### Bitbucket
-
-- [ ] [Wikipedia - Bitbucket](https://en.wikipedia.org/wiki/Bitbucket)
-- [ ] [Tutorial: Learn Bitbucket with Git](https://confluence.atlassian.com/bitbucket/tutorial-learn-bitbucket-with-git-759857287.html)
-- [ ] [Getting Started with Bitbucket for Version Control](https://www.tecmint.com/bitbucket-for-version-control/)
-
-### Management
+## Management
 
 ### Agile Development
 
@@ -1239,12 +1230,12 @@ Get familiar with best practices when it comes to building Web Components.
 
 ### Color Theory
 
-- [ ] [All you need to know about colors in UI Design](https://uxdesign.cc/all-you-need-to-know-about-colors-in-ui-design-theory-practice-235179712522)
-- [ ] [The Role of Color in UX](https://www.toptal.com/designers/ux/color-in-ux)
-- [ ] [10 Questions of Color Theory](https://medium.muz.li/10-questions-of-color-theory-that-will-make-you-a-better-ux-designer-b5244c1341a6)
-- [ ] [Wikipedia - Color Theory](https://en.wikipedia.org/wiki/Color_theory)
-- [ ] [The Meaning of Color](https://www.smashingmagazine.com/2010/01/color-theory-for-designers-part-1-the-meaning-of-color/)
-- [ ] [50 Gorgeous Color Schemes](https://visme.co/blog/website-color-schemes/)
+- [X] [All you need to know about colors in UI Design](https://uxdesign.cc/all-you-need-to-know-about-colors-in-ui-design-theory-practice-235179712522)
+- [X] [The Role of Color in UX](https://www.toptal.com/designers/ux/color-in-ux)
+- [X] [10 Questions of Color Theory](https://medium.muz.li/10-questions-of-color-theory-that-will-make-you-a-better-ux-designer-b5244c1341a6)
+- [X] [Wikipedia - Color Theory](https://en.wikipedia.org/wiki/Color_theory)
+- [X] [The Meaning of Color](https://www.smashingmagazine.com/2010/01/color-theory-for-designers-part-1-the-meaning-of-color/)
+- [X] [50 Gorgeous Color Schemes](https://visme.co/blog/website-color-schemes/)
 
 #### Color Wheel
 
