@@ -19,101 +19,73 @@
     - [Balanced search trees](#balanced-search-trees)
 - [Sorting](#sorting)
 - [Graphs](#graphs)
-- [Even More Knowledge](#even-more-knowledge)
-    - [Recursion](#recursion)
-    - [Dynamic Programming](#dynamic-programming)
-    - [Design Patterns](#design-patterns)
-    - [Combinatorics (n choose k) & Probability](#combinatorics-n-choose-k--probability)
-    - [NP, NP-Complete and Approximation Algorithms](#np-np-complete-and-approximation-algorithms)
-    - [How computers process a program](#how-computers-process-a-program)
-    - [Caches](#caches)
-    - [Processes and Threads](#processes-and-threads)
-    - [Testing](#testing)
-    - [String searching & manipulations](#string-searching--manipulations)
-    - [Tries](#tries)
-    - [Floating Point Numbers](#floating-point-numbers)
-    - [Unicode](#unicode)
-    - [Endianness](#endianness)
-    - [Networking](#networking)
+- [Recursion](#recursion)
+- [Dynamic Programming](#dynamic-programming)
+- [Design Patterns](#design-patterns)
+- [Combinatorics (n choose k) & Probability](#combinatorics-n-choose-k--probability)
+- [NP, NP-Complete and Approximation Algorithms](#np-np-complete-and-approximation-algorithms)
+- [How computers process a program](#how-computers-process-a-program)
+- [Caches](#caches)
+- [Processes and Threads](#processes-and-threads)
+- [Testing](#testing)
+- [String searching & manipulations](#string-searching--manipulations)
+- [Tries](#tries)
+- [Floating Point Numbers](#floating-point-numbers)
+- [Unicode](#unicode)
+- [Endianness](#endianness)
+- [Networking](#networking)
 - [Final Review](#final-review)
-
-### Getting the Job
-
-- [Update Your Resume](#update-your-resume)
-- [Find a Job](#find-a-job)
-- [Interview Process & General Interview Prep](#interview-process--general-interview-prep)
-- [Be thinking of for when the interview comes](#be-thinking-of-for-when-the-interview-comes)
-- [Have questions for the interviewer](#have-questions-for-the-interviewer)
-- [Once You've Got The Job](#once-youve-got-the-job)
-
-### Optional Extra Topics & Resources
-
 - [Additional Books](#additional-books)
 - [System Design, Scalability, Data Handling](#system-design-scalability-data-handling) (if you have 4+ years experience)
-- [Additional Learning](#additional-learning)
-    - [Compilers](#compilers)
-    - [Emacs and vi(m)](#emacs-and-vim)
-    - [Unix command line tools](#unix-command-line-tools)
-    - [Information theory](#information-theory-videos)
-    - [Parity & Hamming Code](#parity--hamming-code-videos)
-    - [Entropy](#entropy)
-    - [Cryptography](#cryptography)
-    - [Compression](#compression)
-    - [Computer Security](#computer-security)
-    - [Garbage collection](#garbage-collection)
-    - [Parallel Programming](#parallel-programming)
-    - [Messaging, Serialization, and Queueing Systems](#messaging-serialization-and-queueing-systems)
-    - [A*](#a)
-    - [Fast Fourier Transform](#fast-fourier-transform)
-    - [Bloom Filter](#bloom-filter)
-    - [HyperLogLog](#hyperloglog)
-    - [Locality-Sensitive Hashing](#locality-sensitive-hashing)
-    - [van Emde Boas Trees](#van-emde-boas-trees)
-    - [Augmented Data Structures](#augmented-data-structures)
-    - [Balanced search trees](#balanced-search-trees)
-        - AVL trees
-        - Splay trees
-        - Red/black trees
-        - 2-3 search trees
-        - 2-3-4 Trees (aka 2-4 trees)
-        - N-ary (K-ary, M-ary) trees
-        - B-Trees
-    - [k-D Trees](#k-d-trees)
-    - [Skip lists](#skip-lists)
-    - [Network Flows](#network-flows)
-    - [Disjoint Sets & Union Find](#disjoint-sets--union-find)
-    - [Math for Fast Processing](#math-for-fast-processing)
-    - [Treap](#treap)
-    - [Linear Programming](#linear-programming-videos)
-    - [Geometry, Convex hull](#geometry-convex-hull-videos)
-    - [Discrete math](#discrete-math)
+- [Compilers](#compilers)
+- [Emacs and vi(m)](#emacs-and-vim)
+- [Unix command line tools](#unix-command-line-tools)
+- [Information theory](#information-theory-videos)
+- [Parity & Hamming Code](#parity--hamming-code-videos)
+- [Entropy](#entropy)
+- [Cryptography](#cryptography)
+- [Compression](#compression)
+- [Computer Security](#computer-security)
+- [Garbage collection](#garbage-collection)
+- [Parallel Programming](#parallel-programming)
+- [Messaging, Serialization, and Queueing Systems](#messaging-serialization-and-queueing-systems)
+- [A](#a)
+- [Fast Fourier Transform](#fast-fourier-transform)
+- [Bloom Filter](#bloom-filter)
+- [HyperLogLog](#hyperloglog)
+- [Locality-Sensitive Hashing](#locality-sensitive-hashing)
+- [van Emde Boas Trees](#van-emde-boas-trees)
+- [Augmented Data Structures](#augmented-data-structures)
+- [Balanced search trees](#balanced-search-trees)
+    - AVL trees
+    - Splay trees
+    - Red/black trees
+    - 2-3 search trees
+    - 2-3-4 Trees (aka 2-4 trees)
+    - N-ary (K-ary, M-ary) trees
+    - B-Trees
+- [k-D Trees](#k-d-trees)
+- [Skip lists](#skip-lists)
+- [Network Flows](#network-flows)
+- [Disjoint Sets & Union Find](#disjoint-sets--union-find)
+- [Math for Fast Processing](#math-for-fast-processing)
+- [Treap](#treap)
+- [Linear Programming](#linear-programming-videos)
+- [Geometry, Convex hull](#geometry-convex-hull-videos)
+- [Discrete math](#discrete-math)
 - [Additional Detail on Some Subjects](#additional-detail-on-some-subjects)
 - [Video Series](#video-series)
 - [Computer Science Courses](#computer-science-courses)
 - [Papers](#papers)
 
-- [Programming Interviews Exposed: Coding Your Way Through the Interview, 4th Edition](https://www.amazon.com/Programming-Interviews-Exposed-Through-Interview/dp/111941847X/)
-    - Answers in C++ and Java
-    - This is a good warm-up for Cracking the Coding Interview
-    - Not too difficult. Most problems may be easier than what you'll see in an interview (from what I've read)
-- [Cracking the Coding Interview, 6th Edition](http://www.amazon.com/Cracking-Coding-Interview-6th-Programming/dp/0984782850/)
-    - answers in Java
-
-### If you have tons of extra time:
-
-- [Elements of Programming Interviews (C++ version)](https://www.amazon.com/Elements-Programming-Interviews-Insiders-Guide/dp/1479274836)
-- [Elements of Programming Interviews in Python](https://www.amazon.com/Elements-Programming-Interviews-Python-Insiders/dp/1537713949/)
-- [Elements of Programming Interviews (Java version)](https://www.amazon.com/Elements-Programming-Interviews-Java-Insiders/dp/1517435803/)
-        - [Companion Project - Method Stub and Test Cases for Every Problem in the Book](https://github.com/gardncl/elements-of-programming-interviews)
-
-### 3. Do Coding Interview Questions While You're Learning
+### Do Coding Interview Questions While You're Learning
 
 Once you've learned a topic, and feel somewhat comfortable with it, for example, linked lists:
-1. Open one of the [coding interview books](#interview-prep-books) (or coding problem websites, listed below)
-1. Do 2 or 3 questions regarding linked lists.
-1. Move on to the next learning topic.
-1. Later, go back and do another 2 or 3 linked list problems.
-1. Do this with each new topic you learn.
+1. Open one of the [coding interview books](#interview-prep-books)
+2. Do 2 or 3 questions regarding linked lists.
+3. Move on to the next learning topic.
+4. Later, go back and do another 2 or 3 linked list problems.
+5. Do this with each new topic you learn.
 
 Why you need to practice doing programming problems:
 - Problem recognition, and where the right data structures and algorithms fit in
@@ -123,36 +95,14 @@ Why you need to practice doing programming problems:
 - Coming up with time and space complexity for your solutions (see Big-O below)
 - Testing your solutions
 
-## Coding Problems
+### Getting the Job
 
-Don't forget your key coding interview books [here](#interview-prep-books).
-
-Solving Problems:
-- [How to Find a Solution](https://www.topcoder.com/thrive/articles/How%20To%20Find%20a%20Solution)
-- [How to Dissect a Topcoder Problem Statement](https://www.topcoder.com/thrive/articles/How%20To%20Dissect%20a%20Topcoder%20Problem%20Statement%20Content)
-
-Coding Interview Question Videos:
-- [IDeserve (88 videos)](https://www.youtube.com/playlist?list=PLamzFoFxwoNjPfxzaWqs7cZGsPYy0x_gI)
-- [Tushar Roy (5 playlists)](https://www.youtube.com/user/tusharroy2525/playlists?shelf_id=2&view=50&sort=dd)
-    - Super for walkthroughs of problem solutions
-- [Nick White - LeetCode Solutions (187 Videos)](https://www.youtube.com/playlist?list=PLU_sdQYzUj2keVENTP0a5rdykRSgg9Wp-)
-    - Good explanations of the solution and the code
-    - You can watch several in a short time
-- [FisherCoder - LeetCode Solutions](https://youtube.com/FisherCoder)
-
-Challenge/Practice sites:
-- [LeetCode](https://leetcode.com/)
-    - My favorite coding problem site. It's worth the subscription money for the 1-2 months you'll likely be preparing.
-    - See Nick White and FisherCoder Videos above for code walk-throughs.
-- [HackerRank](https://www.hackerrank.com/)
-- [TopCoder](https://www.topcoder.com/)
-- [Codeforces](https://codeforces.com/)
-- [Codility](https://codility.com/programmers/)
-- [Geeks for Geeks](https://practice.geeksforgeeks.org/explore/?page=1)
-- [AlgoExpert](https://www.algoexpert.io/product)
-    - Created by Google engineers, this is also an excellent resource to hone your skills.
-- [Project Euler](https://projecteuler.net/)
-    - very math-focused, and not really suited for coding interviews
+- [Update Your Resume](#update-your-resume)
+- [Find a Job](#find-a-job)
+- [Interview Process & General Interview Prep](#interview-process--general-interview-prep)
+- [Be thinking of for when the interview comes](#be-thinking-of-for-when-the-interview-comes)
+- [Have questions for the interviewer](#have-questions-for-the-interviewer)
+- [Once You've Got The Job](#once-youve-got-the-job)
 
 ## Algorithmic complexity and Big-O
 
@@ -236,8 +186,6 @@ Challenge/Practice sites:
         - [-] [Table Doubling, Karp-Rabin (video)](https://www.youtube.com/watch?v=BRO7mVIFt08&index=9&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
         - [X] [[Review] Hash tables in 4 minutes (video)](https://youtu.be/knV86FlSXJ8)
 
-## More Knowledge
-
 ### Binary search
     - [X] [Binary Search (video)](https://www.youtube.com/watch?v=D5SrAga1pno)
     - [X] [Binary Search (video)](https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search)
@@ -274,8 +222,6 @@ Challenge/Practice sites:
         - [Swap](https://bits.stephan-brumme.com/swap.html)
     - [ ] Absolute value:
         - [Absolute Integer](https://bits.stephan-brumme.com/absInteger.html)
-
-## Trees
 
 ### Trees - Intro
     - [ ] [Intro to Trees (video)](https://www.coursera.org/lecture/data-structures/trees-95qda)
@@ -430,10 +376,7 @@ Challenge/Practice sites:
     - [ ] [Randomization: Matrix Multiply, Quicksort, Freivalds' algorithm (video)](https://www.youtube.com/watch?v=cNB2lADK3_s&index=8&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp)
     - [ ] [Sorting in Linear Time (video)](https://www.youtube.com/watch?v=pOKy3RZbSws&list=PLUl4u3cNGP61hsJNdULdudlRL493b-XZf&index=14)
 
-As a summary, here is a visual representation of [15 sorting algorithms](https://www.youtube.com/watch?v=kPRA0W1kECg).
-If you need more detail on this subject, see the "Sorting" section in [Additional Detail on Some Subjects](#additional-detail-on-some-subjects)
-
-## Graphs
+### Graphs
 
 Graphs can be used to represent many problems in computer science, so this section is long, like trees and sorting.
 
@@ -493,8 +436,6 @@ Graphs can be used to represent many problems in computer science, so this secti
         - [ ] count connected components in a graph
         - [ ] list strongly connected components
         - [ ] check for bipartite graph
-
-## Even More Knowledge
 
 ### Recursion
     - [ ] @TODO: Stanford lectures on recursion & backtracking:
@@ -696,8 +637,6 @@ Graphs can be used to represent many problems in computer science, so this secti
         - The first half is enough.
 
 ### Networking
-    - If you have networking experience or want to be a reliability engineer or operations engineer, expect questions
-    - Otherwise, this is just good to know
     - [ ] [Khan Academy](https://www.khanacademy.org/computing/code-org/computers-and-the-internet)
     - [ ] [UDP and TCP: Comparison of Transport Protocols (video)](https://www.youtube.com/watch?v=Vdc8TCESIg8)
     - [ ] [TCP/IP and the OSI Model Explained! (video)](https://www.youtube.com/watch?v=e5DEVa9eSN0)
@@ -725,10 +664,8 @@ Graphs can be used to represent many problems in computer science, so this secti
 ## Update Your Resume
 
 - See Resume prep information in the books: "Cracking The Coding Interview" and "Programming Interviews Exposed"
-- ["This Is What A GOOD Resume Should Look Like" by Gayle McDowell (author of Cracking the Coding Interview)](https://www.careercup.com/resume),
-    - Note by the author: "This is for a US-focused resume. CVs for India and other countries have different expectations, although many of the points will be the same."
-- ["Step-by-step resume guide" by Tech Interview Handbook](https://www.techinterviewhandbook.org/resume/guide)
-    - Detailed guide on how to set up your resume from scratch, write effective resume content, optimize it, and test your resume
+- ["This Is What A GOOD Resume Should Look Like"](https://www.careercup.com/resume),
+- ["Step-by-step resume guide"](https://www.techinterviewhandbook.org/resume/guide)
 
 ## Interview Process & General Interview Prep
 
@@ -743,13 +680,6 @@ Graphs can be used to represent many problems in computer science, so this secti
 - [ ] Cracking the Facebook Coding Interview:
     - [ ] [The Approach](https://www.youtube.com/watch?v=wCl9kvQGHPI)
     - [ ] [Problem Walkthrough](https://www.youtube.com/watch?v=4UWDyJq8jZg)
-- Prep Courses:
-    - [Python for Data Structures, Algorithms, and Interviews (paid course)](https://www.udemy.com/python-for-data-structures-algorithms-and-interviews/):
-        - A Python-centric interview prep course that covers data structures, algorithms, mock interviews, and much more.
-    - [Intro to Data Structures and Algorithms using Python (Udacity free course)](https://www.udacity.com/course/data-structures-and-algorithms-in-python--ud513):
-        - A free Python-centric data structures and algorithms course.
-    - [Data Structures and Algorithms Nanodegree! (Udacity paid Nanodegree)](https://www.udacity.com/course/data-structures-and-algorithms-nanodegree--nd256):
-        - Get hands-on practice with over 100 data structures and algorithm exercises and guidance from a dedicated mentor to help prepare you for interviews and on-the-job scenarios.
     - [Grokking the Behavioral Interview (Educative free course)](https://www.educative.io/courses/grokking-the-behavioral-interview):
         - Many times, it’s not your technical competency that holds you back from landing your dream job, it’s how you perform on the behavioral interview.
     - [AlgoMonster (paid course with free content)](https://algo.monster/?utm_campaign=jwasham&utm_medium=referral&utm_content=coding-interview-university&utm_source=github):
@@ -762,94 +692,35 @@ Mock Interviews:
 - [Meetapro: Mock interviews with top FAANG interviewers](https://meetapro.com/?utm_source=ciu) - an Airbnb-style mock interview/coaching platform.
 - [Hello Interview: Mock Interviews with Expert Coaches and AI](https://www.hellointerview.com/?utm_source=ciu) - interview directly with AI or with FAANG staff engineers and managers.
 
-## Have questions for the interviewer
-
-Some of mine (I already may know the answers, but want their opinion or team perspective):
-
-- How large is your team?
-- What does your dev cycle look like? Do you do waterfall/sprints/agile?
-- Are rushes to deadlines common? Or is there flexibility?
-- How are decisions made in your team?
-- How many meetings do you have per week?
-- Do you feel your work environment helps you concentrate?
-- What are you working on?
-- What do you like about it?
-- What is the work life like?
-- How is the work/life balance?
-
-# Optional learning resources
-
 ## Additional Books
 
 - [The Unix Programming Environment](https://www.amazon.com/dp/013937681X)
-    - An oldie but a goodie
 - [The Linux Command Line: A Complete Introduction](https://www.amazon.com/dp/1593273894/)
-    - A modern option
 - [TCP/IP Illustrated Series](https://en.wikipedia.org/wiki/TCP/IP_Illustrated)
 - [Head First Design Patterns](https://www.amazon.com/gp/product/0596007124/)
-    - A gentle introduction to design patterns
 - [Design Patterns: Elements of Reusable Object-Oriented Software](https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612)
-    - AKA the "Gang Of Four" book or GOF
-    - The canonical design patterns book
 - [Algorithm Design Manual](http://www.amazon.com/Algorithm-Design-Manual-Steven-Skiena/dp/1849967202) (Skiena)
-    - As a review and problem-recognition
-    - The algorithm catalog portion is well beyond the scope of difficulty you'll get in an interview
-    - This book has 2 parts:
-        - Class textbook on data structures and algorithms
-            - Pros:
-                - Is a good review as any algorithms textbook would be
-                - Nice stories from his experiences solving problems in industry and academia
-                - Code examples in C
-            - Cons:
-                - Can be as dense or impenetrable as CLRS, and in some cases, CLRS may be a better alternative for some subjects
-                - Chapters 7, 8, and 9 can be painful to try to follow, as some items are not explained well or require more brain than I have
-                - Don't get me wrong: I like Skiena, his teaching style, and mannerisms, but I may not be Stony Brook material
-        - Algorithm catalog:
-            - This is the real reason you buy this book.
-            - This book is better as an algorithm reference, and not something you read cover to cover.
-    - Can rent it on Kindle
-    - Answers:
-        - [Solutions](https://web.archive.org/web/20150404194210/http://www.algorithm.cs.sunysb.edu/algowiki/index.php/The_Algorithms_Design_Manual_(Second_Edition))
-    - [Errata](http://www3.cs.stonybrook.edu/~skiena/algorist/book/errata)
-- [Algorithm](http://jeffe.cs.illinois.edu/teaching/algorithms/) (Jeff Erickson)
+    - [Solutions](https://web.archive.org/web/20150404194210/http://www.algorithm.cs.sunysb.edu/algowiki/index.php/The_Algorithms_Design_Manual_(Second_Edition))
+- [Algorithms](http://jeffe.cs.illinois.edu/teaching/algorithms/) (Jeff Erickson)
 - [Write Great Code: Volume 1: Understanding the Machine](https://www.amazon.com/Write-Great-Code-Understanding-Machine/dp/1593270038)
-    - The book was published in 2004, and is somewhat outdated, but it's a terrific resource for understanding a computer in brief
-    - The author invented [HLA](https://en.wikipedia.org/wiki/High_Level_Assembly), so take mentions and examples in HLA with a grain of salt. Not widely used, but decent examples of what assembly looks like
-    - These chapters are worth the read to give you a nice foundation:
-        - Chapter 2 - Numeric Representation
-        - Chapter 3 - Binary Arithmetic and Bit Operations
-        - Chapter 4 - Floating-Point Representation
-        - Chapter 5 - Character Representation
-        - Chapter 6 - Memory Organization and Access
-        - Chapter 7 - Composite Data Types and Memory Objects
-        - Chapter 9 - CPU Architecture
-        - Chapter 10 - Instruction Set Architecture
-        - Chapter 11 - Memory Architecture and Organization
 - [Introduction to Algorithms](https://www.amazon.com/Introduction-Algorithms-fourth-Thomas-Cormen/dp/026204630X)
-    - Important: Reading this book will only have limited value. This book is a great review of algorithms and data structures, but won't teach you how to write good code. You have to be able to code a decent solution efficiently
-    - AKA CLR, sometimes CLRS, because Stein was late to the game
 - [Computer Architecture, Sixth Edition: A Quantitative Approach](https://www.amazon.com/dp/0128119055)
-    - For a richer, more up-to-date (2017), but longer treatment
 
 ## System Design, Scalability, Data Handling
 
-- Scalability and System Design are very large topics with many topics and resources, since
-      there is a lot to consider when designing a software/hardware system that can scale.
-      Expect to spend quite a bit of time on this
-- Considerations:
-    - Scalability
-        - Distill large data sets to single values
-        - Transform one data set to another
-        - Handling obscenely large amounts of data
-    - System design
-        - features sets
-        - interfaces
-        - class hierarchies
-        - designing a system under certain constraints
-        - simplicity and robustness
-        - tradeoffs
-        - performance analysis and optimization
-- [ ] START HERE: [The System Design Primer](https://github.com/donnemartin/system-design-primer)
+- Scalability
+    - Distill large data sets to single values
+    - Transform one data set to another
+    - Handling obscenely large amounts of data
+- System design
+    - features sets
+    - interfaces
+    - class hierarchies
+    - designing a system under certain constraints
+    - simplicity and robustness
+    - tradeoffs
+    - performance analysis and optimization
+- [ ] [The System Design Primer](https://github.com/donnemartin/system-design-primer)
 - [ ] [System Design from HiredInTech](http://www.hiredintech.com/system-design/)
 - [ ] [How Do I Prepare To Answer Design Questions In A Technical Interview?](https://www.quora.com/How-do-I-prepare-to-answer-design-questions-in-a-technical-interview?redirected_qid=1500023)
 - [ ] [8 steps guide to ace your system design interview](https://javascript.plainenglish.io/8-steps-guide-to-ace-a-system-design-interview-7a5a797f4d7d)
@@ -869,13 +740,11 @@ Some of mine (I already may know the answers, but want their opinion or team per
 - [ ] [Consistent Hashing](http://www.tom-e-white.com/2007/11/consistent-hashing.html)
 - [ ] [NoSQL Patterns](http://horicky.blogspot.com/2009/11/nosql-patterns.html)
 - [ ] Scalability:
-    - You don't need all of these. Just pick a few that interest you.
     - [ ] [Great overview (video)](https://www.youtube.com/watch?v=-W9F__D3oY4)
-    - [ ] Short series:
-        - [Clones](http://www.lecloud.net/post/7295452622/scalability-for-dummies-part-1-clones)
-        - [Database](http://www.lecloud.net/post/7994751381/scalability-for-dummies-part-2-database)
-        - [Cache](http://www.lecloud.net/post/9246290032/scalability-for-dummies-part-3-cache)
-        - [Asynchronism](http://www.lecloud.net/post/9699762917/scalability-for-dummies-part-4-asynchronism)
+    - [ ] [Clones](http://www.lecloud.net/post/7295452622/scalability-for-dummies-part-1-clones)
+    - [ ] [Database](http://www.lecloud.net/post/7994751381/scalability-for-dummies-part-2-database)
+    - [ ] [Cache](http://www.lecloud.net/post/9246290032/scalability-for-dummies-part-3-cache)
+    - [ ] [Asynchronism](http://www.lecloud.net/post/9699762917/scalability-for-dummies-part-4-asynchronism)
     - [ ] [Scalable Web Architecture and Distributed Systems](http://www.aosabook.org/en/distsys.html)
     - [ ] [Fallacies of Distributed Computing Explained](https://pages.cs.wisc.edu/~zuyu/files/fallacies.pdf)
     - [ ] [Jeff Dean - Building Software Systems At Google and Lessons Learned (video)](https://www.youtube.com/watch?v=modXC5IWTJI)
@@ -1168,7 +1037,6 @@ Some of mine (I already may know the answers, but want their opinion or team per
                 - covers cache-oblivious B-Trees, very interesting data structures
                 - the first 37 minutes are very technical, and may be skipped (B is block size, cache line size)
         - [[Review] B-Trees (playlist) in 26 minutes (video)](https://www.youtube.com/playlist?list=PL9xmBV_5YoZNFPPv98DjTdD9X6UI9KMHz)
-
 
 - k-D Trees
     - Great for finding a number of points in a rectangle or higher-dimensional object
