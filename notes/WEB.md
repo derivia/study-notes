@@ -1,47 +1,23 @@
 ~ This file was cloned and adapted from the project [web-skills](https://github.com/andreasbm/web-skills/) which is licensed under [web-skills-license](../licenses/web-skills.andreasbm)
 
 ## Table of Contents
-- [Fundamentals](#fundamentals)
-    - [Javascript](#javascript)
-- [Accessibility](#accessibility)
-- [Web Components](#web-components)
-- [Progressive Webapps](#progressive-webapps)
-- [Build tools](#build-tools)
-- [Frameworks & Libraries](#frameworks-libraries)
-- [Testing](#testing)
-- [Architecture & paradigms](#architecture-paradigms)
-- [Team Collaboration](#team-collaboration)
-- [Design & UX](#design-ux)
+- [Javascript](#javascript)
+ 
+## Javascript
 
-## Fundamentals
-
-### Javascript
-
-#### Spread
+### Spread
 
 - [X] [MDN - Spread syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
 - [X] [Freecodecamp - An introduction to Spread syntax](https://www.freecodecamp.org/news/an-introduction-to-spread-syntax-in-javascript-fba39595922c/)
 - [X] [Object rest and spread properties](https://v8.dev/features/object-rest-spread)
 
-#### Destructuring
+### Destructuring
 
 - [X] [MDN - Destructuring assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
 - [X] [MDN - ES6 In Depth: Destructuring](https://hacks.mozilla.org/2015/05/es6-in-depth-destructuring/)
 - [X] [javascript.info - Destructuring assignment](https://javascript.info/destructuring-assignment)
 
-#### DOM
-
-- [X] [MDN - DOM Introduction](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
-- [X] [Freecodecamp - What's the DOM](https://www.freecodecamp.org/news/whats-the-document-object-model-and-why-you-should-know-how-to-use-it-1a2d0bc5429d/)
-- [X] [Introduction to the DOM](https://learn.co/lessons/introduction-to-the-dom)
-- [X] [htmldom.dev](https://htmldom.dev/)
-
-#### DOM Manipulation
-
-- [X] [MDN - Locating DOM elements using selectors](https://developer.mozilla.org/en-US/docs/Web/API/Document_object_model/Locating_DOM_elements_using_selectors)
-- [X] [Supercharged - querySelector](https://www.youtube.com/watch?v=s0vg_H9hBuU)
-
-#### Events
+### Events
 
 - [X] [MDN - Introduction to events](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events)
 - [X] [MDN - Creating and triggering events](https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Creating_and_triggering_events)
@@ -52,7 +28,7 @@
 - [X] [MDN - removeEventListener(](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener)
 - [X] [Event order](https://www.quirksmode.org/js/events_order.html)
 
-#### Objects
+### Objects
 
 - [X] [MDN - Introducing JavaScript objects](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects)
 - [X] [MDN - Working with objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects)
@@ -64,13 +40,13 @@
 - [X] [MDN - new.target](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new.target)
 - [X] [Data Structures: Objects and Arrays](https://scotch.io/courses/10-need-to-know-javascript-concepts/data-structures-objects-and-arrays)
 
-#### Prototype
+### Prototype
 
 - [X] [The prototype chain](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
 - [X] [Prototypes in JavaScript](https://medium.com/better-programming/prototypes-in-javascript-5bba2990e04b)
 - [X] [dev.to - JavaScript Visualized: Prototypal Inheritance](https://dev.to/lydiahallie/javascript-visualized-prototypal-inheritance-47co)
 
-#### Classes
+### Classes
 
 - [X] [MDN - Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
 - [X] [Medium - ES6 Classes](https://medium.com/@luke_smaki/javascript-es6-classes-8a34b0a6720a)
@@ -78,37 +54,37 @@
 - [X] [MDN - Object Oriented Programming](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS)
 - [X] [MDN - super](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super)
 
-#### Regex
+### Regex
 
 - [X] [MDN - Regular Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
 - [X] [javascript.info - Regular expressions](https://javascript.info/regular-expressions)
 - [X] [MDN - RegExp](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp)
 
-#### Template Literals
+### Template Literals
 
 - [X] [MDN - Template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
 - [X] [MDN - ES6 In Depth: Template strings](https://hacks.mozilla.org/2015/05/es6-in-depth-template-strings-2/)
 - [X] [Google Devs - Getting Literal With ES6 Template Strings](https://developers.google.com/web/updates/2015/01/ES6-Template-Strings)
 
-#### Promises
+### Promises
 
 - [X] [Google Devs - JavaScript Promises: an Introduction](https://developers.google.com/web/fundamentals/primers/promises)
 - [X] [MDN - Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 - [X] [Master the JavaScript Interview: What is a Promise?](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-promise-27fc71e77261)
 
-#### Callbacks
+### Callbacks
 
 - [X] [MDN - Callback function](https://developer.mozilla.org/en-US/docs/Glossary/Callback_function)
 - [X] [JavaScript: What the heck is a Callback?](https://codeburst.io/javascript-what-the-heck-is-a-callback-aba4da2deced)
 - [X] [javascript.info - Callbacks](https://javascript.info/callbacks)
 
-#### Async/await
+### Async/await
 
 - [X] [MDN - async function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function)
 - [X] [Google Devs - Async functions](https://developers.google.com/web/fundamentals/primers/async-functions)
 - [X] [javascript.info - Async/await](https://javascript.info/async-await)
 
-#### Fetch
+### Fetch
 
 - [X] [Google Devs - Introduction to fetch](https://developers.google.com/web/updates/2015/03/introduction-to-fetch)
 - [X] [Google Devs - Networking](https://developers.google.com/training/certification/mobile-web-specialist/study-guide/networking)
@@ -116,42 +92,22 @@
 - [X] [MDN - CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
 - [X] [Alligator - Fetch API](https://alligator.io/js/fetch-api/)
 - [X] [Supercharged - Fetch](https://www.youtube.com/watch?v=GiI77ya60yk)
-- [X] [Codelabs - Fetch ](https://codelabs.developers.google.com/codelabs/pwa-fetch/index.html?index=..%2F..dev-pwa-training#0)
+- [X] [Codelabs - Fetch ](https://codelabs.developers.google.com/codelabs/pwa-fetch/index.html?index=..%2F..dev-pwa-training0)
 
-#### Web Animations
-
-- [X] [Google Devs - Animations](https://developers.google.com/web/fundamentals/design-and-ux/animations)
-- [X] [MDN - Using The Web Animations API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API/Using_the_Web_Animations_API)
-- [X] [CSS Tricks - CSS Animations vs Web Animations API](https://css-tricks.com/css-animations-vs-web-animations-api/)
-
-#### Modules
+### Modules
 
 - [X] [MDN - Export](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export)
 - [X] [MDN - Import](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
 - [X] [V8 - Modules](https://v8.dev/features/modules)
 - [X] [Freecodecamp - A Practical guide to ES6 modules](https://www.freecodecamp.org/news/how-to-use-es6-modules-and-why-theyre-important-a9b20b480773/)
 
-#### Intl
+### Intl
 
 - [X] [MDN - Intl](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl)
 - [X] [MDN - Date Time Format](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat)
 - [X] [New Intl APIs in JavaScript](https://blog.bitsrc.io/new-intl-apis-in-javascript-c50dc89d2cf3)
 
-#### Canvas
-
-- [X] [MDN - Canvas tutorial](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial)
-- [X] [MDN - Canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)
-- [X] [CSS Tricks - Manipulating Pixels Using Canvas](https://css-tricks.com/manipulating-pixels-using-canvas/)
-
-#### Documentation
-
-- [X] [Getting Started with JSDoc](https://jsdoc.app/about-getting-started.html)
-- [X] [A beginner’s guide to writing documentation](https://www.writethedocs.org/guide/writing/beginners-guide-to-docs/)
-- [X] [Write Good Documentation](https://hackernoon.com/write-good-documentation-6caffb9082b4)
-- [X] [The power of jsDoc](https://dev.to/gmartigny/the-power-of-jsdoc-272d)
-- [X] [Document your Javascript code with JSDoc](https://dev.to/paulasantamaria/document-your-javascript-code-with-jsdoc-2fbf)
-
-#### Best Practices
+### Best Practices
 
 - [X] [MDN - JavaScript guidelines](https://developer.mozilla.org/en-US/docs/MDN/Contribute/Guidelines/Code_guidelines/JavaScript)
 - [X] [Airbnb - JavaScript Style Guide](https://github.com/airbnb/javascript)
@@ -159,36 +115,36 @@
 - [X] [5 JavaScript Style Guides](https://codeburst.io/5-javascript-style-guides-including-airbnb-github-google-88cbc6b2b7aa)
 - [X] [JavaScript Style Guide and Coding Conventions](https://www.w3schools.com/js/js_conventions.asp)
 
-### The Browser
+## The Browser
 
-#### Standardization
+### Standardization
 
 - [X] [Wikipedia - Web Standards](https://en.wikipedia.org/wiki/Web_standards)
 - [X] [What Are Web Standards?](https://www.elcom.com.au/resources/blog/web-standards)
 - [X] [A Comprehensive Explanation of Web Standards](https://robertnyman.com/2007/05/21/what-are-web-standards-a-comprehensive-explanation-of-what-is-comprised-in-the-term/)
 
-#### Specifications
+### Specifications
 
 - [X] [How to Read the ECMAScript Specification](https://timothygu.me/es-howto/)
 - [X] [How to Read W3C Specs](https://alistapart.com/article/readspec/)
 - [X] [Learning CSS by reading specs](https://www.chenhuijing.com/blog/learning-css-by-reading-specifications/)
 - [X] [Understanding the CSS Specifications](https://www.w3.org/Style/CSS/read.en.html)
 
-#### Browser Engines
+### Browser Engines
 
 - [X] [Medium - Browser Engines](https://medium.com/@jonbiro/browser-engines-chromium-v8-blink-gecko-webkit-98d6b0490968)
 - [X] [Wikipedia - Comparison](https://en.wikipedia.org/wiki/Comparison_of_browser_engines)
 - [X] [HTML5 Rocks - How Browsers Work](https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/)
 - [X] [Demystifying Browsers](https://textslashplain.com/2020/02/09/demystifying-browsers/)
 
-#### HTTP
+### HTTP
 
 - [X] [MDN - HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP)
 - [X] [MDN - HTTP Glossary](https://developer.mozilla.org/en-US/docs/Glossary/HTTP)
 - [X] [MDN - An overview of HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview)
 - [X] [Wikipedia - Hypertext Transfer Protocol](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol)
 
-#### The Internet
+### The Internet
 
 - [X] [MDN - How does the Internet work?](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work)
 - [X] [Youtube - How the Internet Works in 5 Minutes](https://www.youtube.com/watch?v=7_LPdttKXPc)
@@ -196,20 +152,20 @@
 - [X] [Stanford - How Does the Internet Work?](https://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper.htm)
 - [X] [How the Internet Works](https://blog.hubspot.com/marketing/how-the-internet-works)
 
-#### Polyfills
+### Polyfills
 
 - [X] [MDN - Polyfill](https://developer.mozilla.org/en-US/docs/Glossary/Polyfill)
 - [X] [Introduction To Polyfills & Their Usage](https://medium.com/beginners-guide-to-mobile-web-development/introduction-to-polyfills-their-usage-9cd6db4b1923)
 - [X] [W3C - Polyfills and the evolution of the Web](https://www.w3.org/2001/tag/doc/polyfills/)
 - [X] [Can I use](http://caniuse.com/)
 
-#### Debugging
+### Debugging
 
 - [X] [Google Devs - Inspect and Edit Pages and Styles](https://developers.google.com/web/tools/chrome-devtools/inspect-styles/)
 - [X] [MDN - Cross browser testing](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing)
 - [X] [5 things to remember for better debugging of your code](https://medium.com/dev-bits/5-things-to-remember-for-better-debugging-of-your-code-94b9bc3fb3df)
 
-#### Developer console
+### Developer console
 
 - [X] [MDN - Console](https://developer.mozilla.org/en-US/docs/Web/API/Console)
 - [X] [Google Devs - Console API Reference](https://developers.google.com/web/tools/chrome-devtools/console/api)
@@ -224,9 +180,9 @@
 - [X] [Chrome Devs - Quickly monitor events](https://developers.google.com/web/updates/2015/05/quickly-monitor-events-from-the-console-panel)
 - [X] [Youtube - 14 Must Know Chrome Dev Tools Tricks](https://www.youtube.com/watch?v=xkzDaKwinA8)
 
-## @TODO: Come back to this - Accessibility
+### @TODO: Accessibility
 
-### The why
+#### The why
 
 - [ ] [Google Devs - Accessibility Fundamentals](https://developers.google.com/web/fundamentals/accessibility/)
 - [ ] [A11ycasts with Rob Dodson](https://www.youtube.com/playlist?list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g)
@@ -236,14 +192,14 @@
 - [ ] [Udacity - Web Accessibility](https://www.udacity.com/course/web-accessibility--ud891)
 - [ ] [Youtube - Headings, Landmarks, and Tabs](https://www.youtube.com/watch?v=HE2R86EZPMA)
 
-### Screen Readers
+#### Screen Readers
 
 - [ ] [The A11Y Project - Screen Reader Myths](https://a11yproject.com/posts/people-who-use-screen-readers-dont-use-javascript/)
 - [ ] [The A11Y Project - NVDA Screen Reader](https://a11yproject.com/posts/getting-started-with-nvda/)
 - [ ] [The A11Y Project - OS X Voiceover](https://a11yproject.com/posts/getting-started-with-voiceover/)
 - [ ] [Webaim - Screen Reader Survey](https://webaim.org/projects/screenreadersurvey7/)
 
-### Accessibility tree
+#### Accessibility tree
 
 - [ ] [Google Devs - The Accessibility Tree](https://developers.google.com/web/fundamentals/accessibility/semantics-builtin/the-accessibility-tree)
 
@@ -272,16 +228,16 @@
 
 - [ ] [Webaim - CSS](https://webaim.org/techniques/css/)
 
-### Accessible forms
+#### Accessible forms
 
 - [ ] [Webaim - Forms](https://webaim.org/techniques/forms/)
 - [ ] [Itnext - Form Accessibility Gudie](https://itnext.io/form-accessibility-a-practical-guide-4062b7e2dd14)
 
-### UI States
+#### UI States
 
 - [ ] [Google Devs - Accessible Styles](https://developers.google.com/web/fundamentals/accessibility/accessible-styles)
 
-### Keyboard Accessibility
+#### Keyboard Accessibility
 
 - [ ] [Webaim - Keyboard](https://webaim.org/techniques/keyboard/)
 - [ ] [Smashing Magazine - Web with just a keyboard](https://www.smashingmagazine.com/2018/07/web-with-just-a-keyboard/)
@@ -296,14 +252,14 @@
 - [ ] [MDN - :focus-visible](https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible)
 - [ ] [MDN - :focus-within](https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-within)
 
-### Accessible Colors
+#### Accessible Colors
 
 - [ ] [Webaim - Contrast and Color](https://webaim.org/articles/contrast/)
 - [ ] [The A11Y Project - Check contrast](https://a11yproject.com/posts/check-contrast-with-mobile-device/)
 - [ ] [The A11Y Project - What is color contrast?](https://a11yproject.com/posts/what-is-color-contrast/)
 - [ ] [Designing accessible color systems](https://stripe.com/en-dk/blog/accessible-color-systems)
 
-### Laws & Policies
+#### Laws & Policies
 
 - [ ] [W3C - Laws & Policies](https://www.w3.org/WAI/policies/)
 - [ ] [Webaim - Laws around the world](https://webaim.org/articles/laws/world/)
@@ -324,9 +280,9 @@
 - [ ] [WCAG 2.0 checklists](https://www.wuhcag.com/wcag-checklist/)
 - [ ] [How to Meet WCAG (Quick Reference)](https://www.w3.org/WAI/WCAG21/quickref/)
 
-## @TODO: Come back to this - Web Components
+## @TODO: Web Components
 
-### Custom Elements
+#### Custom Elements
 
 - [ ] [Google Devs - Custom Elements](https://developers.google.com/web/fundamentals/web-components/customelements)
 - [ ] [MDN - Using Custom Elements](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements)
@@ -336,13 +292,13 @@
 - [ ] [itnext - Introduction to Web Components](https://itnext.io/introduction-to-web-components-part-i-custom-elements-4de6713cef9d)
 - [ ] [web.dev - Web Components](https://web.dev/web-components-io-2019/)
 
-### HTML Templates
+#### HTML Templates
 
 - [ ] [MDN - Using Templates & Slots](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_templates_and_slots)
 - [ ] [Javascript.info - Template Element](https://javascript.info/template-element)
 - [ ] [MDN - The Content Template element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template)
 
-### Shadow DOM
+#### Shadow DOM
 
 - [ ] [Google Devs - Shadow DOM](https://developers.google.com/web/fundamentals/web-components/shadowdom)
 - [ ] [MDN - Using Shadow DOM](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM)
@@ -367,7 +323,7 @@
 - [ ] [MDN - HTML <slot> element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot)
 - [ ] [Component.kitchen - A history of the HTML slot element](https://component.kitchen/blog/posts/a-history-of-the-html-slot-element)
 
-### Best practices
+#### Best practices
 
 Get familiar with best practices when it comes to building Web Components.
 
@@ -376,7 +332,7 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [mateusortiz - Web Components the Right Way](https://github.com/mateusortiz/webcomponents-the-right-way)
 - [ ] [dev.to - Making Web Components for Different Contexts](https://dev.to/equinusocio/making-web-components-for-different-contexts-25ed)
 
-### Constructible Stylesheets
+#### Constructible Stylesheets
 
 - [ ] [Google Devs - Constructable Stylesheets](https://developers.google.com/web/updates/2019/02/constructable-stylesheets)
 - [ ] [W3C - Constructable Stylesheet Objects](https://wicg.github.io/construct-stylesheets/)
@@ -385,7 +341,7 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [WICG - Constructable Stylesheet Objects](https://github.com/WICG/construct-stylesheets/blob/gh-pages/explainer.md)
 - [ ] [Chrome Status - Constructible Stylesheets](https://www.chromestatus.com/feature/5394843094220800)
 
-### Form Participation
+#### Form Participation
 
 - [ ] [Form Participation API Explained](https://docs.google.com/document/d/1JO8puctCSpW-ZYGU8lF-h4FWRIDQNDVexzHoOQ2iQmY/edit)
 - [ ] [Chrome Status - Form-associated custom elements](https://www.chromestatus.com/features/4708990554472448)
@@ -394,9 +350,9 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [web.dev - More capable form controls](https://web.dev/more-capable-form-controls/)
 - [ ] [W3C - Creating a form-associated custom element](https://html.spec.whatwg.org/multipage/custom-elements.html#custom-elements-face-example)
 
-## Progressive Webapps
+## @TODO: Progressive Webapps
 
-### Storage
+#### Storage
 
 - [ ] [MDN - Storage](https://developer.mozilla.org/en-US/docs/Web/API/Storage_API)
 - [ ] [MDN - Web Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API)
@@ -405,7 +361,7 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [Google Devs - View And Edit Local Storage](https://developers.google.com/web/tools/chrome-devtools/storage/localstorage)
 - [ ] [MDN - Client-side storage](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Client-side_storage)
 
-### Routing
+#### Routing
 
 - [ ] [How Single-Page Applications Work](https://blog.pshrmn.com/how-single-page-applications-work/)
 - [ ] [Static Apps - Routing URLs in Static Web Apps](https://staticapps.org/articles/routing-urls-in-static-apps/)
@@ -421,7 +377,7 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [Google Devs - History API: Scroll Restoration](https://developers.google.com/web/updates/2015/09/history-api-scroll-restoration)
 - [ ] [MDN - The Document Base URL element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base)
 
-### Service Workers
+#### Service Workers
 
 - [ ] [Google Devs - Service Workers: an Introduction](https://developers.google.com/web/fundamentals/primers/service-workers)
 - [ ] [Google Devs - The Service Worker Lifecycle](https://developers.google.com/web/fundamentals/primers/service-workers/lifecycle)
@@ -453,20 +409,20 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [MDN - How to make PWAs re-engageable](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Re-engageable_Notifications_Push)
 - [ ] [MDN - Notifications API](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API)
 
-### Web App manifest
+#### Web App manifest
 
 - [ ] [Google Devs - Web App Manifest](https://developers.google.com/web/fundamentals/web-app-manifest/)
 - [ ] [web.dev - Add a web app manifest](https://web.dev/add-manifest/)
 - [ ] [W3C - Web App Manifest](https://www.w3.org/TR/appmanifest/)
 - [ ] [MDN - How to make PWAs installable](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Installable_PWAs)
 
-### Add to homescreen
+#### Add to homescreen
 
 - [ ] [web.dev - Installable](https://web.dev/installable)
 - [ ] [Google Devs - App Install Banners](https://developers.google.com/web/fundamentals/app-install-banners/)
 - [ ] [MDN - Add to Home screen](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Add_to_home_screen)
 
-### Pointer Events
+#### Pointer Events
 
 - [ ] [MDN - Pointer Events](https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events)
 - [ ] [Google Devs - Add Touch to Your Site](https://developers.google.com/web/fundamentals/design-and-ux/input/touch)
@@ -474,8 +430,7 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [Google Devs - Touch Action Options](https://developers.google.com/web/updates/2016/10/touch-action)
 - [ ] [W3C - Pointer Events](https://www.w3.org/TR/pointerevents/)
 
-
-### Loading Performance
+### @TODO: Loading Performance
 
 ### App shell
 
@@ -756,7 +711,7 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [Google Devs - Inspect animations](https://developers.google.com/web/tools/chrome-devtools/inspect-styles/animations)
 - [ ] [Investigate animation performance with DevTools](https://calibreapp.com/blog/investigate-animation-performance-with-devtools/)
 
-## Build tools
+## @TODO: Build tools
 
 ### Package Managers
 
@@ -877,46 +832,7 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [Node.js - Guides](https://nodejs.org/en/docs/guides/)
 - [ ] [W3Schools - Node.js tutorial](https://www.w3schools.com/nodejs/)
 
-## Frameworks & Libraries
-
-### lit-element
-
-- [ ] [lit-element](https://lit-element.polymer-project.org/)
-- [ ] [Google Devs - Lightning-fast templates](https://developers.google.com/web/updates/2019/02/lit-element-and-lit-html)
-- [ ] [Vaadin - Creating a LitElement project](https://vaadin.com/tutorials/lit-element/starting-a-lit-element-project)
-- [ ] [dev.to - Web Components: from zero to hero, part three](https://dev.to/thepassle/web-components-from-zero-to-hero-part-three-3c5h)
-
-### Vue
-
-- [ ] [Vue](https://vuejs.org/)
-- [ ] [Vue - CLI](https://cli.vuejs.org/)
-- [ ] [Getting Started with Vue](https://www.taniarascia.com/getting-started-with-vue/)
-
-### React
-
-- [ ] [React](https://reactjs.org/)
-- [ ] [web.dev - React](https://web.dev/react)
-- [ ] [Getting Started with React](https://www.taniarascia.com/getting-started-with-react/)
-
-### Angular
-
-- [ ] [Angular](https://angular.io/)
-- [ ] [web.dev - Angular](https://web.dev/angular)
-- [ ] [Angular - CLI](https://cli.angular.io/)
-
-### Svelte
-
-- [ ] [Svelte](https://svelte.dev/)
-- [ ] [Github - Svelte FAQ](https://github.com/sveltejs/svelte/wiki/FAQ)
-- [ ] [Svelte - Rethinking reactivity](https://svelte.dev/blog/svelte-3-rethinking-reactivity)
-
-### Stencil
-
-- [ ] [Stencil](https://stenciljs.com/)
-- [ ] [Alligator - Getting Started With Stencil](https://alligator.io/stencil/getting-started/)
-- [ ] [How to Build Reusable Web Components Using Stenciljs](https://codeburst.io/how-to-build-web-components-using-stenciljs-afacc5451c2d)
-
-## Testing
+## @TODO: Testing
 
 ### Testing Methodologies
 
@@ -1039,7 +955,7 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [What are the best practices in software Testing?](https://www.quora.com/What-are-the-best-practices-in-software-Testing)
 - [ ] [7 Software Testing Best Practices](https://www.qasymphony.com/blog/7-software-testing-best-practices/)
 
-## Architecture & paradigms
+## @TODO: Architecture & paradigms
 
 ### Programming Paradigms
 
@@ -1099,9 +1015,7 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [Implementing JavaScript Functors and Monads](https://medium.com/front-end-weekly/implementing-javascript-functors-and-monads-a87b6a4b4d9a)
 - [ ] [MDN - Array.prototype.flatMap()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flatMap)
 
-### @TODO: Architecture
-
-### Design Patterns
+#### Design Patterns
 
 - [ ] [Wikipedia - Software design pattern](https://en.wikipedia.org/wiki/Software_design_pattern)
 - [ ] [The 7 Most Important Software Design Patterns](https://medium.com/educative/the-7-most-important-software-design-patterns-d60e546afb0e)
@@ -1175,7 +1089,7 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [An Introduction To Object Oriented CSS](https://www.smashingmagazine.com/2011/12/an-introduction-to-object-oriented-css-oocss/)
 - [ ] [The Future of Writing CSS](https://www.keycdn.com/blog/oocss)
 
-## Team Collaboration
+## @TODO: Team Collaboration
 
 ### Version Control
 
@@ -1193,7 +1107,7 @@ Get familiar with best practices when it comes to building Web Components.
 - [X] [GitHub Learning Lab](https://lab.github.com/)
 - [X] [Wikipedia - Github](https://en.wikipedia.org/wiki/Github)
 
-## Management
+## @TODO: Management
 
 ### Agile Development
 
@@ -1226,7 +1140,7 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [TDD Changed My Life](https://medium.com/javascript-scene/tdd-changed-my-life-5af0ce099f80)
 - [ ] [dev.to - Test-driven development in JavaScript](https://dev.to/tomekbuszewski/test-driven-development-in-javascript-olg)
 
-## Design & UX
+## @TODO: Design & UX
 
 ### Color Theory
 
@@ -1237,7 +1151,7 @@ Get familiar with best practices when it comes to building Web Components.
 - [X] [The Meaning of Color](https://www.smashingmagazine.com/2010/01/color-theory-for-designers-part-1-the-meaning-of-color/)
 - [X] [50 Gorgeous Color Schemes](https://visme.co/blog/website-color-schemes/)
 
-#### Color Wheel
+### Color Wheel
 
 - [ ] [Color Theory: Brief Guide For Designers](https://uxplanet.org/color-theory-brief-guide-for-designers-76e11c57eaa)
 - [ ] [Color theory and the color wheel](https://www.canva.com/colors/color-wheel/)
@@ -1258,7 +1172,7 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [7 web typography rules](https://uxdesign.cc/7-web-typography-rules-27de68c60f6)
 - [ ] [15 Best Practices To Excellent UI](https://medium.muz.li/typography-in-mobile-design-15-best-practices-to-excellent-ui-5eaf18280ad)
 
-#### Font Size
+### Font Size
 
 - [ ] [Type scale](https://type-scale.com/)
 - [ ] [The importance of font size](https://www.cardinalpath.com/the-importance-of-font-size/)
@@ -1266,7 +1180,7 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [CSS Tricks - font-size](https://css-tricks.com/almanac/properties/f/font-size/)
 - [ ] [CSS Tricks - Fluid Typography](https://css-tricks.com/snippets/css/fluid-typography/)
 
-#### Line Spacing
+### Line Spacing
 
 - [ ] [Best UX practices for line spacing](https://www.justinmind.com/blog/best-ux-practices-for-line-spacing/)
 - [ ] [Line spacing](https://practicaltypography.com/line-spacing.html)
@@ -1282,14 +1196,14 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [How CRAP Will Make You a Better Designer](https://creativemarket.com/blog/how-crap-will-make-you-a-better-designer)
 - [ ] [The Big Four: Contrast, Repetition, Alignment, Proximity](https://www.presentationzen.com/chapter6_spread.pdf)
 
-#### Contrast
+### Contrast
 
 - [ ] [Designing with contrast: 20 tips from a designer](https://www.canva.com/learn/contrasting-colors/)
 - [ ] [Contrast Design principle of Graphic Design](https://www.youtube.com/watch?v=r0SAPEw0ru4)
 - [ ] [Contrast In Design](https://www.designcontest.com/blog/contrast-in-design/)
 - [ ] [Fully understanding contrast in design](https://www.webdesignerdepot.com/2010/09/fully-understanding-contrast-in-design/)
 
-#### Repetition
+### Repetition
 
 - [ ] [Repetition Design principle of Graphic Design](https://www.youtube.com/watch?v=u55BW6WBqVU)
 - [ ] [Repetition Principle of Design](https://254-online.com/repetition-principle-of-design/)
@@ -1366,7 +1280,7 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [A Hands-On Guide to Mobile-First Responsive Design](https://www.uxpin.com/studio/blog/a-hands-on-guide-to-mobile-first-design/)
 - [ ] [Mobile First Design](https://designshack.net/articles/mobile/mobilefirst/)
 
-#### Hit Targets
+### Hit Targets
 
 - [ ] [Finger-Friendly Design](https://www.smashingmagazine.com/2012/02/finger-friendly-design-ideal-mobile-touchscreen-target-sizes/)
 - [ ] [Size matters! Accessibility and Touch Targets](https://medium.com/@zacdicko/size-matters-accessibility-and-touch-targets-56e942adc0cc)
@@ -1380,7 +1294,7 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [What is a Design System?](https://medium.muz.li/what-is-a-design-system-1e43d19e7696)
 - [ ] [What's a Design System](https://dev.to/graphqleditor/what-s-design-system-and-why-you-need-one-31fh)
 
-#### Material Design
+### Material Design
 
 - [ ] [Google - Material Design](https://material.io/design/)
 - [ ] [Google - Material Components](https://material.io/components/)
@@ -1388,7 +1302,7 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [Google - Material Tutorial](https://material.io/collections/developer-tutorials/#web)
 - [ ] [Wikipedia - Material Design](https://en.wikipedia.org/wiki/Material_Design)
 
-#### Fluent Design
+### Fluent Design
 
 - [ ] [Microsoft - Fluent Design System](https://www.microsoft.com/design/fluent/#/web)
 - [ ] [Microsoft - Fluent UI Toolkit](https://www.microsoft.com/design/fluent/toolkits/)
@@ -1417,28 +1331,28 @@ Get familiar with best practices when it comes to building Web Components.
 
 ### Modern Web
 
-#### Streams
+### Streams
 
 - [ ] [MDN - Streams](https://developer.mozilla.org/en-US/docs/Web/API/Streams_API)
 - [ ] [MDN - Streams API concepts](https://developer.mozilla.org/en-US/docs/Web/API/Streams_API/Concepts)
 - [ ] [Experimenting with the Streams API](https://deanhume.com/experimenting-with-the-streams-api/)
 - [ ] [WHATWG - Streams](https://streams.spec.whatwg.org/)
 
-#### Media Streams
+### Media Streams
 
 - [ ] [MDN - Media Streams API](https://developer.mozilla.org/en-US/docs/Web/API/Media_Streams_API)
 - [ ] [MDN - Image Capture API](https://developer.mozilla.org/en-US/docs/Web/API/MediaStream_Image_Capture_API)
 - [ ] [MDN - mediaDevices.getUserMedia()](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia)
 - [ ] [W3C - Media Capture and Streams](https://w3c.github.io/mediacapture-main/#dom-mediastream)
 
-#### Media Recorder
+### Media Recorder
 
 - [ ] [MDN - MediaStream Recording API](https://developer.mozilla.org/en-US/docs/Web/API/MediaStream_Recording_API)
 - [ ] [Media Recorder API Demo](https://addpipe.com/media-recorder-api-demo/)
 - [ ] [WTC - MediaStream Recording](https://www.w3.org/TR/mediastream-recording/)
 - [ ] [What Web Can Do Today - Recording Media](https://whatwebcando.today/recording.html)
 
-#### Web RTC
+### Web RTC
 
 - [ ] [MDN - WebRTC API](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API)
 - [ ] [WebRTC - Getting Started](https://webrtc.org/start/)
@@ -1446,13 +1360,13 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [Wikipedia - WebRTC](https://en.wikipedia.org/wiki/WebRTC)
 - [ ] [What Web Can Do Today - WebRTC](https://whatwebcando.today/realtime.html)
 
-#### Screen Capture
+### Screen Capture
 
 - [ ] [MDN - Screen Capture API](https://developer.mozilla.org/en-US/docs/Web/API/Screen_Capture_API)
 - [ ] [dev.to - Intro to Screen Capture API](https://dev.to/al_khovansky/intro-to-screen-capture-api-scanning-qr-codes-bgi)
 - [ ] [W3C - Screen Capture](https://www.w3.org/TR/screen-capture/)
 
-#### Generators
+### Generators
 
 - [ ] [MDN - Iterators and generators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators)
 - [ ] [Functional JavaScript - Streams](https://blog.jeremyfairbank.com/javascript/functional-javascript-streams-2/)
@@ -1463,7 +1377,7 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [javascript.info - Generators](https://javascript.info/generators)
 - [ ] [Medium - A Simple Guide to Understanding Javascript Generators](https://medium.com/dailyjs/a-simple-guide-to-understanding-javascript-es6-generators-d1c350551950)
 
-#### Speech Synthesis
+### Speech Synthesis
 
 - [ ] [Google Devs - Web apps that talk](https://developers.google.com/web/updates/2014/01/Web-apps-that-talk-Introduction-to-the-Speech-Synthesis-API)
 - [ ] [MDN - window.speechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/Window/speechSynthesis)
@@ -1471,21 +1385,21 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [W3C - Web Speech API](https://w3c.github.io/speech-api)
 - [ ] [The Speech Synthesis API](https://flaviocopes.com/speech-synthesis-api/)
 
-#### Web Sockets
+### Web Sockets
 
 - [ ] [MDN - Websockets API](https://developer.mozilla.org/en-US/docs/Web/API/Websockets_API)
 - [ ] [What are Web Sockets?](https://medium.com/@dominik.t/what-are-web-sockets-what-about-rest-apis-b9c15fd72aac)
 - [ ] [HTML5 Rocks - Introducing WebSockets](https://www.html5rocks.com/en/tutorials/websockets/basics/)
 - [ ] [WHATWG - Web sockets](https://html.spec.whatwg.org/multipage/web-sockets.html)
 
-#### Geolocation
+### Geolocation
 
 - [ ] [MDN - Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API)
 - [ ] [Alligrator - Using the Geolocation API](https://alligator.io/js/geolocation-api/)
 - [ ] [Google Maps Platform - Displaying User Position on Maps](https://developers.google.com/maps/documentation/javascript/geolocation)
 - [ ] [What Web Can Do Today - Geolocation](https://whatwebcando.today/geolocation.html)
 
-#### Device orientation & motion
+### Device orientation & motion
 
 - [ ] [MDN - Detecting device orientation](https://developer.mozilla.org/en-US/docs/Web/API/Detecting_device_orientation)
 - [ ] [W3C - DeviceOrientation Event Specification](https://www.w3.org/TR/orientation-event/)
@@ -1495,20 +1409,20 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [MDN - Sensor APIs](https://developer.mozilla.org/en-US/docs/Web/API/Sensor_APIs)
 - [ ] [Google Devs - Sensors For The Web](https://developers.google.com/web/updates/2017/09/sensors-for-the-web)
 
-#### Fullscreen
+### Fullscreen
 
 - [ ] [MDN - Fullscreen API](https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API)
 - [ ] [Google Devs - Let Your Content Do the Talking](https://developers.google.com/web/updates/2011/10/Let-Your-Content-Do-the-Talking-Fullscreen-API)
 - [ ] [David Walsh - Fullscreen API](https://davidwalsh.name/fullscreen)
 
-#### Variable Fonts
+### Variable Fonts
 
 - [ ] [v-fonts](https://v-fonts.com/)
 - [ ] [MDN - Variable fonts guide](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Fonts/Variable_Fonts_Guide)
 - [ ] [Google Devs - Introduction to variable fonts](https://developers.google.com/web/fundamentals/design-and-ux/typography/variable-fonts)
 - [ ] [Supercharged - Variable Fonts](https://www.youtube.com/watch?v=B42rUMdcB7c)
 
-#### HTTP/2
+### HTTP/2
 
 - [ ] [Google Devs - Introduction to HTTP/2](https://developers.google.com/web/fundamentals/performance/http2/)
 - [ ] [Wikipedia - HTTP/2](https://en.wikipedia.org/wiki/HTTP/2)
@@ -1992,34 +1906,19 @@ Get familiar with best practices when it comes to building Web Components.
 
 #### Relational Databases
 
-- [ ] [Wikipedia - Relational database](https://en.wikipedia.org/wiki/Relational_database)
-- [ ] [Relational database](https://searchdatamanagement.techtarget.com/definition/relational-database)
-- [ ] [Everything you need to know about (Relational) Databases](https://dev.to/lmolivera/everything-you-need-to-know-about-relational-databases-3ejl)
-- [ ] [What are relational databases?](https://computer.howstuffworks.com/question599.htm)
-- [ ] [What is a Relational Database Management System?](https://www.codecademy.com/articles/what-is-rdbms-sql)
+- [X] [Wikipedia - Relational database](https://en.wikipedia.org/wiki/Relational_database)
+- [X] [Relational database](https://searchdatamanagement.techtarget.com/definition/relational-database)
+- [X] [Everything you need to know about (Relational) Databases](https://dev.to/lmolivera/everything-you-need-to-know-about-relational-databases-3ejl)
+- [X] [What are relational databases?](https://computer.howstuffworks.com/question599.htm)
+- [X] [What is a Relational Database Management System?](https://www.codecademy.com/articles/what-is-rdbms-sql)
 
 #### SQL
 
-- [ ] [Learn SQL](https://www.codecademy.com/learn/learn-sql)
-- [ ] [Wikipedia - SQL](https://en.wikipedia.org/wiki/SQL)
-- [ ] [A beginners guide to SQL](https://learntocodewith.me/posts/sql-guide/)
-- [ ] [The Last SQL Guide for Data Analysis You’ll Ever Need](https://medium.com/better-programming/the-last-sql-guide-for-data-analysis-youll-ever-need-17ae10fa4a6f)
-- [ ] [SQL Tutorial](https://www.tutorialrepublic.com/sql-tutorial/)
-
-#### MySQL
-
-- [ ] [MySQL](https://www.mysql.com/)
-- [ ] [Wikipedia - MySQL](https://en.wikipedia.org/wiki/MySQL)
-- [ ] [Tutorialspoint - MySQL Tutorial](https://www.tutorialspoint.com/mysql/index.htm)
-- [ ] [MySQL Definition](https://searchoracle.techtarget.com/definition/MySQL)
-- [ ] [Getting Started with MySQL](http://www.mysqltutorial.org/getting-started-with-mysql/)
-
-#### PostgreSQL
-
-- [ ] [PostgreSQL](https://www.postgresql.org/)
-- [ ] [Wikipedia - PostgreSQL](https://en.wikipedia.org/wiki/PostgreSQL)
-- [ ] [PostgreSQL Tutorial](http://www.postgresqltutorial.com/)
-- [ ] [Postgres Guide](http://postgresguide.com/)
+- [X] [Learn SQL](https://www.codecademy.com/learn/learn-sql)
+- [X] [Wikipedia - SQL](https://en.wikipedia.org/wiki/SQL)
+- [X] [A beginners guide to SQL](https://learntocodewith.me/posts/sql-guide/)
+- [X] [The Last SQL Guide for Data Analysis You’ll Ever Need](https://medium.com/better-programming/the-last-sql-guide-for-data-analysis-youll-ever-need-17ae10fa4a6f)
+- [X] [SQL Tutorial](https://www.tutorialrepublic.com/sql-tutorial/)
 
 #### Non-relational Databases
 
@@ -2028,24 +1927,6 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [dev.to - Relational SQL vs. Non-Relational NoSQL Databases](https://dev.to/trevoirwilliams/relational-sql-vs-non-relational-nosql-databases-hi5)
 - [ ] [Non-relational data and NoSQL](https://docs.microsoft.com/en-us/azure/architecture/data-guide/big-data/non-relational-data)
 - [ ] [Non-Relational Database](https://www.techopedia.com/definition/25218/non-relational-database)
-
-#### Redis
-
-- [ ] [Redis](https://redis.io/)
-- [ ] [Try Redis](http://try.redis.io/)
-- [ ] [Wikipedia - Redis](https://en.wikipedia.org/wiki/Redis)
-- [ ] [An introduction to Redis data types and abstractions](https://redis.io/topics/data-types-intro)
-- [ ] [Redis - Documentation](https://redis.io/documentation)
-- [ ] [Redis: What and Why?](https://codeburst.io/redis-what-and-why-d52b6829813)
-- [ ] [Tutorialspoint - Redis Tutorial](https://www.tutorialspoint.com/redis/index.htm)
-
-#### MongoDB
-
-- [ ] [MongoDB](https://www.mongodb.com/)
-- [ ] [MongoDB - Documentation](https://docs.mongodb.com/)
-- [ ] [MongoDB - University](https://university.mongodb.com/)
-- [ ] [Tutorialspoint - MongoDB Tutorial](https://www.tutorialspoint.com/mongodb/index.htm)
-- [ ] [Youtube - MongoDB In 30 Minutes](https://www.youtube.com/watch?v=pWbMrx5rVBE)
 
 #### Data Modelling
 
@@ -2170,7 +2051,6 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [Testing for conflict serializablity](http://www.exploredatabase.com/2017/11/testing-for-conflict-serializablity-using-precedence-graph.html)
 - [ ] [Precedence Graph, DBMS](https://www.includehelp.com/dbms/precedence-graph.aspx)
 
-
 ### @TODO: Servers
 
 #### Architectural Models
@@ -2214,13 +2094,6 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [What is middleware?](https://www.redhat.com/en/topics/middleware/what-is-middleware)
 - [ ] [What is Middleware? Technology’s Go-to Middleman](https://www.talend.com/resources/what-is-middleware/)
 
-### Request-Reply Protocol
-
-- [ ] [Wikipedia - Request Response](https://en.wikipedia.org/wiki/Request%E2%80%93response)
-- [ ] [Youtube - Event-Driven Architecture](https://www.youtube.com/watch?v=3bxAm3XIFmk)
-- [ ] [Request/Reply](https://solace.com/samples/solace-samples-jms/request-reply/)
-- [ ] [Enterprise Integration - Request-Reply](http://www.informit.com/articles/article.aspx?p=1398616&seqNum=4)
-
 #### UDP
 
 - [ ] [UDP (User Datagram Protocol)](https://searchnetworking.techtarget.com/definition/UDP-User-Datagram-Protocol)
@@ -2252,30 +2125,7 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [Youtube - Introduction to CRUD Operations](https://www.youtube.com/watch?v=Lyi8SoVdkhM)
 - [ ] [REST was NEVER about CRUD](https://tyk.io/rest-never-crud/)
 
-### Express
-
-- [ ] [Express](https://expressjs.com/)
-- [ ] [Tutorialspoint - Express Framework](https://www.tutorialspoint.com/nodejs/nodejs_express_framework.htm)
-- [ ] [Youtube - Express.js & Node.js Course for Beginners](https://www.youtube.com/watch?v=G8uL0lFFoN0)
-- [ ] [Understanding Node.js & Express.js fundamentals](https://medium.com/@LindaVivah/the-beginners-guide-understanding-node-js-express-js-fundamentals-e15493462be1)
-- [ ] [Wikipedia - Express.js](https://en.wikipedia.org/wiki/Express.js)
-
-### GraphQL
-
-- [ ] [GraphQL](https://graphql.org/)
-- [ ] [Youtube - Introduction to GraphQL](https://www.youtube.com/watch?v=Y0lDGjwRYKw)
-- [ ] [Github - GraphQL Specification](https://github.com/graphql/graphql-spec)
-- [ ] [The Fullstack Tutorial for GraphQL](https://www.howtographql.com/)
-
-### Docker
-
-- [ ] [Docker](https://www.docker.com/)
-- [ ] [Wikipedia - Docker (software)](https://en.wikipedia.org/wiki/Docker_(software))
-- [ ] [Docker for beginners](https://docker-curriculum.com/)
-- [ ] [What is Docker?](https://opensource.com/resources/what-docker)
-- [ ] [Get Started, Part 1: Orientation and setup](https://docs.docker.com/get-started/)
-
-### SSH
+### @TODO: SSH
 
 - [ ] [Wikipedia - Secure Shell](https://en.wikipedia.org/wiki/Secure_Shell)
 - [ ] [Secure Shell (SSH)](https://searchsecurity.techtarget.com/definition/Secure-Shell)

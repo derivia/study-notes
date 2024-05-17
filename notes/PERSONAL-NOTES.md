@@ -1,5 +1,4 @@
-## Topics
-
+## Table of Contents
 - [Data Structures](#data-structures)
 - [Algorithms](#algorithms)
 - [Software Architecture](#software-architecture)
