@@ -55,7 +55,7 @@
         - The nodes are called left and right.
         - @TODO: Make a binary tree in C.
         - @TODO: Continue notes about trees.
-    - @TODO: Different tree and their uses.
+    - @TODO: Add notes about different tree and their uses.
 - [ ] Graphs
 
 ## Algorithms
@@ -68,14 +68,10 @@
         - As in: an^2 + bn + c
         - There will always be a moment where bn + c (starts being) < an^2.
     - [Big-O Cheat sheet](http://bigocheatsheet.com/)
-- [-] Sorting (common sorting algorithms)
-    - Not going to implement since they are horrible:
-        - Bubble sort
-        - Insertion sort
-        - Selection sort
+- [X] Sorting (common sorting algorithms)
     - The following two are commonly considered the most efficient:
-        - [X] Merge sort
-        - [ ] Quick sort
+    - [X] Merge sort
+    - [X] Quick sort
 - [X] Searching
     - [X] Linear search
         - Works on non-ordered elements.
@@ -83,38 +79,6 @@
     - [X] Binary search
         - Works only on ordered elements.
         - It is O(log n).
-- [ ] Dynamic Programming
-    - [ ] Fibonacci series
-    - [ ] Longest Common Subsequence
-    - [ ] Knapsack problem
-- [ ] Greedy Algorithms
-    - [ ] Activity selection problem
-    - [ ] Huffman coding
-- [ ] Graph Algorithms
-    - [ ] Breadth-First Search (BFS)
-    - [ ] Depth-First Search (DFS)
-    - [ ] Shortest path algorithms (Dijkstra's, Bellman-Ford)
-    - [ ] Minimum Spanning Tree (Prim's, Kruskal's)
-- [ ] String Algorithms
-    - [ ] Pattern matching (Naive, KMP, Rabin-Karp)
-    - [ ] Longest Common Substring
-- [ ] Advanced Topics
-    - [ ] Sliding Window
-    - [ ] Divide and Conquer
-    - [ ] Backtracking
-    - [ ] Randomized Algorithms
-    - [ ] NP-completeness and P vs NP
-- [ ] Machine Learning Algorithms
-    - [ ] Linear Regression
-    - [ ] Decision Trees
-    - [ ] k-Nearest Neighbors (kNN)
-    - [ ] Support Vector Machines (SVM)
-    - [ ] Neural Networks
-- [ ] Miscellaneous
-    - [ ] Bit manipulation
-    - [ ] Topological sorting
-    - [ ] Trie data structure
-    - [ ] Segment Tree
 
 ## Software Architecture
 
@@ -703,25 +667,6 @@ function App() {
   );
 }
 ```
-
-## Math
-
-- @TODO: Work on these after FME collection
-    - Calculus 1-3
-    - Linear Algebra
-    - Probability
-    - Statistics
-    - Differential Equations
-    - Maybe maybe maybe these:
-        - Numerical Analysis
-        - Game Theory
-        - Combinatorics
-        - Set Theory
-        - Number Theory
-        - Topology
-        - Optimization Theory
-        - Mathematical Modeling
-        - Complex Analysis
 
 ## Security
 
