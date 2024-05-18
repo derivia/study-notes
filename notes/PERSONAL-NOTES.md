@@ -673,6 +673,17 @@ function App() {
 
 ## Security
 
+### Password storing
+
+- A hash, compared to an ciphertext (text that has been encrypted by some kind of encryption algorithm), is generated with the goal of being irreversible.
+- User passwords should be hashed, always, never saved as plaintext (text has NOT been encrypted).
+    - Always use hashing functions designed to store passwords: bcrypt, scrypt, argon2id.
+        - These tend to be slower, which is good, slows down brute force attacks.
+- The dumb thing to do is just hashing, even with a strong password hashing function, a salt should be added.
+    - Salts should be big strings randomly generated (using CSPRNG(s), crypto-safe pseurandom number generator(s)), that are appended to the password before hashing.
+        - Salts should be stored on the database besides the hashed password (the same that has hashed using the salt).
+        - The objective of salts is to avoid lookup tables attacks, where a giant collection of pre-hashed passwords are stored.
+
 ### Encryption
 
 - Symmetric
