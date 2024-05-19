@@ -1,4 +1,4 @@
-~ This file was cloned and adapted from the project [system-design-primer](https://github.com/binhnguyennus/awesome-scalability) which is licensed under [system-design-primer-license](../licenses/system-design-primer.donnemartin)
+~ This file was cloned and adapted from the project [system-design-primer](https://github.com/donnemartin/system-design-primer) which is licensed under [system-design-primer-license](../licenses/system-design-primer.donnemartin)
 
 ## Table of Contents
 - [System design topics: start here](#system-design-topics-start-here)
