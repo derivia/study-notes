@@ -186,6 +186,8 @@
     - I guess if you are making small websites, you don't need to choose the best, just choose one.
     - I would use MongoDB or some other NoSQL based database when ACID is not a requirement and horizontal scalability is necessary.
 
+### @TODO: MVC Pattern
+
 ### @TODO: GoF Patterns
 
 - Creational Design Patterns
@@ -387,6 +389,16 @@
 ## Programming Languages
 > these are just some notes about some languages.
 
+### About compiling
+
+- Lexing: transforms source code into tokens.
+- Parsing: parses tokens into an abstract syntax tree (ast).
+- Semantic Analysis: constructs a symbol table and performs type checking using the ast.
+- Intermediate code generation: transforms the ast into an intermediate representation (ir).
+- Optimization: optimizes the intermediate representation.
+- Code generation: transforms the optimized ir into assembly or machine code.
+- Assembly/Linking: assembles the code into binary and links it to create the final executable.
+
 ### Ruby
 
 #### Enumerable common methods:
@@ -540,6 +552,8 @@ for (let value of arr) { // iterates over values
 - map()
     - return an array of same length based on some function.
     - useful when making some mathematics.
+
+#### @TODO: Rails
 
 ## Databases
 > Aside from the first note, databases here usually mean "relational databases".
