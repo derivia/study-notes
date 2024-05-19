@@ -11,7 +11,7 @@
 - [Security](#security)
 
 ## Data Structures
-> Implementations: [Here](https://github.com/lorrito/algorithms)
+> Implementations: [Here](https://github.com/derivia/algorithms)
 
 - [X] Bitwise Operations
     - A word is a unit of data of defined bit length (size in bits) that is addressable and can be moved between the processor and storage (be it non-volatile or not).
@@ -59,7 +59,7 @@
 - [ ] Graphs
 
 ## Algorithms
-> Implementations: [Here](https://github.com/lorrito/algorithms)
+> Implementations: [Here](https://github.com/derivia/algorithms)
 
 - [X] Complexity (Big-O)
     - To avoid the difference between CPUs runtimes in seconds/minutes, Big-O notation works based on the limit concept, as n grows towards infinity, how does the algorithm behaves.

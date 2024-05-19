@@ -1,7 +1,7 @@
 ## A collection of study-related README.md's with my notes
 
 - Licenses related to the files that aren't initially made by me: [licenses](./licenses)
-- The license used in this project: [study-notes](./licenses/study-notes.lorrito)
+- The license used in this project: [study-notes](./licenses/study-notes.derivia)
 - To the original creators, I tried to add acknowledges and licenses the best way i could.
 
 - Table of Contents:
