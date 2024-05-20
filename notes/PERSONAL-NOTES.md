@@ -141,7 +141,6 @@
     - Containers are instances of Docker images that run in memory, for example, you can isolate three different APIs, all managed by an Nginx web server, and they all share the same database. Each of these components can run in its own Docker container. To manage the configuration of these containers, docker compose can be used, which defines the relationships and configurations between containers in a single file.
     - Also, i think docker is good for testing the application under "low-resource conditions", like setting up on docker compose that each API should have only 275mb of ram and 1 CPU.
 
-
 ### Tests
 
 - Test Driven Development
@@ -185,6 +184,29 @@
     - Maybe because new programmers usually think it is "the best" database.
     - I guess if you are making small websites, you don't need to choose the best, just choose one.
     - I would use MongoDB or some other NoSQL based database when ACID is not a requirement and horizontal scalability is necessary.
+
+### A JavaScript back-end project structure example
+
+```markdown
+/project
+├── /public             <-- static files served
+├── /test               <-- application tests
+├── /database
+│   ├── /migrations     <-- database migrations (changes in database).
+│   └── schema          <-- initial database schema definition.
+├── /src
+│   ├── /controllers    <-- uses services to communicate with database.
+│   ├── /middlewares    <-- functions that process requests before they reach controllers. e.g: userAuth.js
+│   ├── /models         <-- ORM models, to interact with db. e.g: userModel.js
+│   ├── /routes         <-- endpoints & link them to controllers. e.g: userRoutes.js [getUser()]
+│   ├── /services       <-- business logic, used by controllers. e.g: userService.js [createUser()]
+│   ├── /utils          <-- utility functions and helpers.
+│   ├── /config         <-- configuration-related files.
+│   ├── app.js          <-- application entry point.
+│   └── server.js       <-- server start entry point.
+├── .env                <-- environment variables.
+└── package.json        <-- metadata about the project (manifest).
+```
 
 ### @TODO: MVC Pattern
 
@@ -422,6 +444,7 @@
     - for an array, it writes on separate lines the result of calling to_s on each element of the array."
 
 #### Ranges:
+
 ```ruby
 (1..16)     # inclusive range -> 1, 2, ..., 16
 (1...16)    # exclusive range -> 1, 2, ..., 15
@@ -429,6 +452,7 @@
 ```
 
 #### Times:
+
 ```ruby
 3.times do
   puts "hello, world!"
@@ -440,6 +464,7 @@ end
 ```
 
 #### Downto & upto:
+
 ```ruby
 3.upto(6) { |number| print "#{number} " }    # 3 4 5 6
 6.downto(3) { |number| print "#{number} " }  # 6 5 4 3
@@ -455,6 +480,7 @@ end
 - Don't reinvent the wheel;
 
 #### Closure:
+
 ```javascript
 let exampleFunction;
 
@@ -473,6 +499,7 @@ exampleFunction(); // 200
 ```
 
 #### Differents types of functions:
+
 ```javascript
 // Expression
 const returnSum = function (a, b) {
@@ -489,6 +516,7 @@ const returnSum = (a, b) => a + b;
 ```
 
 #### Dynamic function parameter, creating an internal array from the parameters:
+
 ```javascript
 function max(...numbers) {
   let result = -Infinity;
@@ -502,6 +530,7 @@ console.log(max(4, 1, 9, -2));
 ```
 
 #### Array destructuring:
+
 ```javascript
 const names = ["maria", "lucas", "pedro", "gabriel"];
 for (let [i, j] of names.entries()) console.log(`${i + 1}: ${j}`);
@@ -522,6 +551,7 @@ const [, , starterMenuFavorite, [starterMenuFavoriteCondiment]] = restaurant.sta
 ```
 
 #### For in & For of:
+
 ```javascript
 const obj = { a: 1, b: 2, c: 3 };
 for (let key in obj) { // iterates over properties
@@ -666,8 +696,11 @@ for (let value of arr) { // iterates over values
 - Apparently all react functions that starts with "use" are hooks.
 
 #### @TODO: Events
+
 #### @TODO: Forms
+
 #### @TODO: Redux
+
 #### @TODO: Router
 
 #### Tricks:
