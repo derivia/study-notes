@@ -2051,83 +2051,83 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [Testing for conflict serializablity](http://www.exploredatabase.com/2017/11/testing-for-conflict-serializablity-using-precedence-graph.html)
 - [ ] [Precedence Graph, DBMS](https://www.includehelp.com/dbms/precedence-graph.aspx)
 
-### @TODO: Servers
+### Servers
 
 #### Architectural Models
 
-- [ ] [Server Architecture](https://www.techopedia.com/definition/30262/server-architecture)
-- [ ] [Youtube - Architectural model](https://www.youtube.com/watch?v=SKtR7NVxYFA)
-- [ ] [Architectural Model](https://www.sciencedirect.com/topics/computer-science/architectural-model)
-- [ ] [Distributed Systems: Models and Design](http://www2.imm.dtu.dk/courses/02220/2018/L3/Models.pdf)
+- [X] [Server Architecture](https://www.techopedia.com/definition/30262/server-architecture)
+- [X] [Youtube - Architectural model](https://www.youtube.com/watch?v=SKtR7NVxYFA)
+- [X] [Architectural Model](https://www.sciencedirect.com/topics/computer-science/architectural-model)
+- [X] [Distributed Systems: Models and Design](http://www2.imm.dtu.dk/courses/02220/2018/L3/Models.pdf)
 
 #### Client-Server
 
-- [ ] [Wikipedia - Client-server model](https://en.wikipedia.org/wiki/Client%E2%80%93server_model)
-- [ ] [Client Server Architecture](https://cio-wiki.org/wiki/Client_Server_Architecture)
-- [ ] [Understanding What Client Server Architecture Is All About](https://freefeast.info/general-it-articles/client-server-architecture/)
-- [ ] [Wikipedia - Client-server](https://simple.wikipedia.org/wiki/Client-server)
-- [ ] [Client-server model (client-server architecture)](https://searchnetworking.techtarget.com/definition/client-server)
-- [ ] [Client-Server Model](https://www.techopedia.com/definition/18321/client-server-model)
-- [ ] [Learn more about Client-Server Model](https://www.sciencedirect.com/topics/computer-science/client-server-model)
+- [X] [Wikipedia - Client-server model](https://en.wikipedia.org/wiki/Client%E2%80%93server_model)
+- [X] [Client Server Architecture](https://cio-wiki.org/wiki/Client_Server_Architecture)
+- [X] [Understanding What Client Server Architecture Is All About](https://freefeast.info/general-it-articles/client-server-architecture/)
+- [X] [Wikipedia - Client-server](https://simple.wikipedia.org/wiki/Client-server)
+- [X] [Client-server model (client-server architecture)](https://searchnetworking.techtarget.com/definition/client-server)
+- [X] [Client-Server Model](https://www.techopedia.com/definition/18321/client-server-model)
+- [X] [Learn more about Client-Server Model](https://www.sciencedirect.com/topics/computer-science/client-server-model)
 
 #### Proxy Server
 
-- [ ] [Wikipedia - Proxy Server](https://en.wikipedia.org/wiki/Proxy_server)
-- [ ] [Youtube - What is a Proxy Server?](https://www.youtube.com/watch?v=5cPIukqXe5w)
-- [ ] [What is a Proxy Server and How Does it Work?](https://www.varonis.com/blog/what-is-a-proxy-server/)
-- [ ] [Proxy Server Definition](https://whatis.techtarget.com/definition/proxy-server)
-- [ ] [What is a proxy server?](https://www.itpro.co.uk/server-storage/30246/what-is-a-proxy-server)
+- [X] [Wikipedia - Proxy Server](https://en.wikipedia.org/wiki/Proxy_server)
+- [X] [Youtube - What is a Proxy Server?](https://www.youtube.com/watch?v=5cPIukqXe5w)
+- [X] [What is a Proxy Server and How Does it Work?](https://www.varonis.com/blog/what-is-a-proxy-server/)
+- [X] [Proxy Server Definition](https://whatis.techtarget.com/definition/proxy-server)
+- [X] [What is a proxy server?](https://www.itpro.co.uk/server-storage/30246/what-is-a-proxy-server)
 
 #### Peer-To-Peer
 
-- [ ] [Wikipedia - Peer-to-peer](https://en.wikipedia.org/wiki/Peer-to-peer)
-- [ ] [Youtube - What is a Peer to Peer Network? ](https://www.youtube.com/watch?v=ie-qRQIQT4I)
-- [ ] [What's a Peer-to-Peer (P2P) Network?](https://www.computerworld.com/article/2588287/networking-peer-to-peer-network.html)
-- [ ] [Peer-to-peer (P2P)](https://searchnetworking.techtarget.com/definition/peer-to-peer)
-- [ ] [Make a P2P connection in 10 minutes](https://dev.to/carloslfu/make-a-p2p-connection-in-10-minutes-4b32)
+- [X] [Wikipedia - Peer-to-peer](https://en.wikipedia.org/wiki/Peer-to-peer)
+- [X] [Youtube - What is a Peer to Peer Network? ](https://www.youtube.com/watch?v=ie-qRQIQT4I)
+- [X] [What's a Peer-to-Peer (P2P) Network?](https://www.computerworld.com/article/2588287/networking-peer-to-peer-network.html)
+- [X] [Peer-to-peer (P2P)](https://searchnetworking.techtarget.com/definition/peer-to-peer)
+- [X] [Make a P2P connection in 10 minutes](https://dev.to/carloslfu/make-a-p2p-connection-in-10-minutes-4b32)
 
 #### Middleware
 
-- [ ] [Wikipedia - Middleware](https://en.wikipedia.org/wiki/Middleware)
-- [ ] [Middleware Definition](https://searchapparchitecture.techtarget.com/definition/middleware)
-- [ ] [Quora - Why is Middleware important?](https://www.quora.com/Why-is-Middleware-important)
-- [ ] [What is middleware?](https://www.redhat.com/en/topics/middleware/what-is-middleware)
-- [ ] [What is Middleware? Technology’s Go-to Middleman](https://www.talend.com/resources/what-is-middleware/)
+- [X] [Wikipedia - Middleware](https://en.wikipedia.org/wiki/Middleware)
+- [X] [Middleware Definition](https://searchapparchitecture.techtarget.com/definition/middleware)
+- [X] [Quora - Why is Middleware important?](https://www.quora.com/Why-is-Middleware-important)
+- [X] [What is middleware?](https://www.redhat.com/en/topics/middleware/what-is-middleware)
+- [X] [What is Middleware? Technology’s Go-to Middleman](https://www.talend.com/resources/what-is-middleware/)
 
 #### UDP
 
-- [ ] [UDP (User Datagram Protocol)](https://searchnetworking.techtarget.com/definition/UDP-User-Datagram-Protocol)
-- [ ] [Wikipedia - User Datagram Protocol](https://en.wikipedia.org/wiki/User_Datagram_Protocol)
-- [ ] [User Datagram Protocol (UDP)](https://www.techopedia.com/definition/13460/user-datagram-protocol-udp)
-- [ ] [Youtube - Explained! UDP and TCP](https://www.youtube.com/watch?v=1LYqtkgtSPU)
-- [ ] [User Datagram Protocol](https://www.geeksforgeeks.org/user-datagram-protocol-udp/)
+- [X] [UDP (User Datagram Protocol)](https://searchnetworking.techtarget.com/definition/UDP-User-Datagram-Protocol)
+- [X] [Wikipedia - User Datagram Protocol](https://en.wikipedia.org/wiki/User_Datagram_Protocol)
+- [X] [User Datagram Protocol (UDP)](https://www.techopedia.com/definition/13460/user-datagram-protocol-udp)
+- [X] [Youtube - Explained! UDP and TCP](https://www.youtube.com/watch?v=1LYqtkgtSPU)
+- [X] [User Datagram Protocol](https://www.geeksforgeeks.org/user-datagram-protocol-udp/)
 
 #### TCP
 
-- [ ] [TCP (Transmission Control Protocol)](https://searchnetworking.techtarget.com/definition/TCP)
-- [ ] [Wikipedia - Transmission Control Protocol](https://en.wikipedia.org/wiki/Transmission_Control_Protocol)
-- [ ] [TCP/IP (Transmission Control Protocol/Internet Protocol)](https://searchnetworking.techtarget.com/definition/TCP-IP)
-- [ ] [Services and Segment structure in TCP](https://www.geeksforgeeks.org/services-and-segment-structure-in-tcp/)
-- [ ] [TCP and UDP in Transport Layer](https://www.geeksforgeeks.org/tcp-and-udp-in-transport-layer/)
+- [X] [TCP (Transmission Control Protocol)](https://searchnetworking.techtarget.com/definition/TCP)
+- [X] [Wikipedia - Transmission Control Protocol](https://en.wikipedia.org/wiki/Transmission_Control_Protocol)
+- [X] [TCP/IP (Transmission Control Protocol/Internet Protocol)](https://searchnetworking.techtarget.com/definition/TCP-IP)
+- [X] [Services and Segment structure in TCP](https://www.geeksforgeeks.org/services-and-segment-structure-in-tcp/)
+- [X] [TCP and UDP in Transport Layer](https://www.geeksforgeeks.org/tcp-and-udp-in-transport-layer/)
 
 #### REST API
 
-- [ ] [Wikipeia - Representational state transfer](https://en.wikipedia.org/wiki/Representational_state_transfer)
-- [ ] [Learn REST: A RESTful Tutorial](https://www.restapitutorial.com/)
-- [ ] [Youtube - REST API concepts and examples](https://www.youtube.com/watch?v=7YcW25PHnAA)
-- [ ] [REST API Tutorial](https://restfulapi.net/)
-- [ ] [What is a REST API?](https://www.mulesoft.com/resources/api/what-is-rest-api-design)
+- [X] [Wikipeia - Representational state transfer](https://en.wikipedia.org/wiki/Representational_state_transfer)
+- [X] [Learn REST: A RESTful Tutorial](https://www.restapitutorial.com/)
+- [X] [Youtube - REST API concepts and examples](https://www.youtube.com/watch?v=7YcW25PHnAA)
+- [X] [REST API Tutorial](https://restfulapi.net/)
+- [X] [What is a REST API?](https://www.mulesoft.com/resources/api/what-is-rest-api-design)
 
 #### CRUD
 
-- [ ] [Codecademy - What is CRUD?](https://www.codecademy.com/articles/what-is-crud)
-- [ ] [What is the Difference between REST and CRUD?](https://www.bmc.com/blogs/rest-vs-crud-whats-the-difference/)
-- [ ] [Youtube - Introduction to CRUD Operations](https://www.youtube.com/watch?v=Lyi8SoVdkhM)
-- [ ] [REST was NEVER about CRUD](https://tyk.io/rest-never-crud/)
+- [X] [Codecademy - What is CRUD?](https://www.codecademy.com/articles/what-is-crud)
+- [X] [What is the Difference between REST and CRUD?](https://www.bmc.com/blogs/rest-vs-crud-whats-the-difference/)
+- [X] [Youtube - Introduction to CRUD Operations](https://www.youtube.com/watch?v=Lyi8SoVdkhM)
+- [X] [REST was NEVER about CRUD](https://tyk.io/rest-never-crud/)
 
-### @TODO: SSH
+### SSH
 
-- [ ] [Wikipedia - Secure Shell](https://en.wikipedia.org/wiki/Secure_Shell)
-- [ ] [Secure Shell (SSH)](https://searchsecurity.techtarget.com/definition/Secure-Shell)
-- [ ] [SSH command in Linux with Examples](https://www.geeksforgeeks.org/ssh-command-in-linux-with-examples/)
-- [ ] [How to Establish a Connection Using SSH](https://help.ubnt.com/hc/en-us/articles/218850057-Intro-to-Networking-How-to-Establish-a-Connection-Using-SSH)
+- [X] [Wikipedia - Secure Shell](https://en.wikipedia.org/wiki/Secure_Shell)
+- [X] [Secure Shell (SSH)](https://searchsecurity.techtarget.com/definition/Secure-Shell)
+- [X] [SSH command in Linux with Examples](https://www.geeksforgeeks.org/ssh-command-in-linux-with-examples/)
+- [X] [How to Establish a Connection Using SSH](https://help.ubnt.com/hc/en-us/articles/218850057-Intro-to-Networking-How-to-Establish-a-Connection-Using-SSH)

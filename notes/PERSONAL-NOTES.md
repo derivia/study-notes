@@ -43,7 +43,7 @@
     - A particular "alternative" could be resizing the hash table, based on its ratio of filled buckets.
         - Maybe, if ratio is bigger than 0.7 after insertion/deletion: grow to the next prime number at least twice as big than the current size.
         - and if ratio is lower than 0.7 after insertion/deletion: shrink to the next prime number at least twice as small than the current size.
-- [-] @TODO: Trees
+- [-] @TODO: (continue) Trees
     - Non-linear data structure (doesn't have an logical start and end), hierarchically.
     - Trees consists of nodes, the first node is called root.
     - I saw somewhere that the nodes without children can be called leaves.
@@ -326,11 +326,11 @@
 - TCP is used when the content that is being shared shouldn't have problems, which means there are verifications and a slower transmission in order to have properly received data.
     - Three-way handshake
         - This is an over-simplified explanation (the syn bits are important)
-        1 - SYN (Synchronize Sequence Number)
+        1. SYN (Synchronize Sequence Number)
             - The client wants to start a communication with the server.
-        2 - SYN/ACK (Acknowledgment)
+        2. SYN/ACK (Acknowledgment)
             - Signifies that the server received the request.
-        3 - ACK
+        3. ACK
             - Client acknowledges the response of the server and the connection starts.
 - UDP is an alternative to TCP, which doesn't care too much about the data integrity, being used commonly on games and audio/video real time transmission.
 
@@ -339,20 +339,20 @@
 - Divided into 7 layers, each one responsible for a specific function.
 - The model is a general concept of the connection between different devices, that uses different protocols.
 - On a communication between computers, requests/responses don't stricly follow the layers.
-    - 1 - Physical (RJ45, DSL, etc)
-            - Bits are encoded into physical signals (current, light, radio waves) and transmitted further by wire or wirelessly.
-    - 2 - Data link (MAC, HDLC, etc)
-            - Physical signals are decoded back into ones and zeros, errors are corrected.
-    - 3 - Network (IP, ICMP, etc)
-            - Traffic routing, DNS queries and IP packet generation.
-    - 4 - Transport (TCP, UDP, etc)
-            - Data transfer based on TCP or UDP (explained later).
-    - 5 - Session (APIs sockets, etc)
-            - Responsible for opening/closing sessions.
-    - 6 - Presentation (SSH, IMAP, etc)
-            - Encryption/decryption and data compression.
-    - 7 - Application (HTTP, FTP, etc)
-            - Allows applications to access network services such as email forwarding.
+    1. Physical (RJ45, DSL, etc)
+        - Bits are encoded into physical signals (current, light, radio waves) and transmitted further by wire or wirelessly.
+    2. Data link (MAC, HDLC, etc)
+        - Physical signals are decoded back into ones and zeros, errors are corrected.
+    3. Network (IP, ICMP, etc)
+        - Traffic routing, DNS queries and IP packet generation.
+    4. Transport (TCP, UDP, etc)
+        - Data transfer based on TCP or UDP (explained later).
+    5. Session (APIs sockets, etc)
+        - Responsible for opening/closing sessions.
+    6. Presentation (SSH, IMAP, etc)
+        - Encryption/decryption and data compression.
+    7. Application (HTTP, FTP, etc)
+        - Allows applications to access network services such as email forwarding.
 
 ### TCP/IP model
 
@@ -409,7 +409,6 @@
 - As an analogy, telnet is like http and ssh is https.
 
 ## Programming Languages
-> these are just some notes about some languages.
 
 ### About compiling
 
@@ -420,170 +419,6 @@
 - Optimization: optimizes the intermediate representation.
 - Code generation: transforms the optimized ir into assembly or machine code.
 - Assembly/Linking: assembles the code into binary and links it to create the final executable.
-
-### Ruby
-
-#### Enumerable common methods:
-
-- inject/reduce
-    - perform a function on every element and accumulate the result on a single value.
-    - useful for transforming arrays into different data structures.
-- select/find_all
-    - loop over objects and return an array for which a expression returns true
-    - filtering unwanted elements.
-- collect/map
-    - loop over objects and add the return value to an array
-    - useful when making some mathematics.
-- sort
-    - modifies the array by sorting it based on some comparison function.
-    - useful to sort elements.
-
-#### About to_s & puts
-> from launchscool.com
-- "puts method calls to_s for any argument that is not an array.
-    - for an array, it writes on separate lines the result of calling to_s on each element of the array."
-
-#### Ranges:
-
-```ruby
-(1..16)     # inclusive range -> 1, 2, ..., 16
-(1...16)    # exclusive range -> 1, 2, ..., 15
-('a'..'g')  # letters range -> a, b, ..., g
-```
-
-#### Times:
-
-```ruby
-3.times do
-  puts "hello, world!"
-end
-
-3.times do |iteration|   # starts from 0
-  puts "iteration: #{iteration}"
-end
-```
-
-#### Downto & upto:
-
-```ruby
-3.upto(6) { |number| print "#{number} " }    # 3 4 5 6
-6.downto(3) { |number| print "#{number} " }  # 6 5 4 3
-```
-
-### Javascript
-
-#### Why use Express (or something like it):
-
-- Good layer of abstraction from http, streams and promises.
-- Middleware system that makes it easier to handle authentication, logging, etc.
-- It is still lightweight.
-- Don't reinvent the wheel;
-
-#### Closure:
-
-```javascript
-let exampleFunction;
-
-const closureCreateFunction = () => {
-  let numberFromInside = 25;
-  exampleFunction = () => {
-    numberFromInside *= 2;
-    console.log(numberFromInside);
-  }
-}
-
-closureCreateFunction();
-exampleFunction(); // 50
-exampleFunction(); // 100
-exampleFunction(); // 200
-```
-
-#### Differents types of functions:
-
-```javascript
-// Expression
-const returnSum = function (a, b) {
-    return a + b;
-}
-
-// Declaration
-function returnSum(a, b) {
-    return a + b;
-}
-
-// Arrow
-const returnSum = (a, b) => a + b;
-```
-
-#### Dynamic function parameter, creating an internal array from the parameters:
-
-```javascript
-function max(...numbers) {
-  let result = -Infinity;
-  for (let number of numbers) {
-    if (number > result) result = number;
-  }
-  return result;
-}
-console.log(max(4, 1, 9, -2));
-// → 9
-```
-
-#### Array destructuring:
-
-```javascript
-const names = ["maria", "lucas", "pedro", "gabriel"];
-for (let [i, j] of names.entries()) console.log(`${i + 1}: ${j}`);
-/*
- * 1: maria
- * 2: lucas
- * 3: pedro
- * 4: gabriel
-*/
-
-const restaurant = {
-  categories: ["Vegetarian", "Italian", "Pizzeria"],
-  mainMenu: ["Pizza", "Pasta", "Risotto"],
-  starterMenu: ["Bruschetta", "Garlic Bread", "Caprese Salad", ["Extra-Virgin Olive Oil", "Balsamic Vinegar", "Parmesan Cheese"]],
-};
-const [, mainMenuFavorite] = restaurant.mainMenu; // Pasta
-const [, , starterMenuFavorite, [starterMenuFavoriteCondiment]] = restaurant.starterMenu; // Caprese Salad & Extra-Virgin Olive Oil
-```
-
-#### For in & For of:
-
-```javascript
-const obj = { a: 1, b: 2, c: 3 };
-for (let key in obj) { // iterates over properties
-  console.log(key, obj[key]);
-}
-
-const arr = [1, 2, 3];
-for (let value of arr) { // iterates over values
-  console.log(value);
-}
-```
-
-#### Array methods:
-> when to use each array method
-
-- reduce()
-    - perform a function on every element and accumulate the result on a single value.
-    - useful for transforming arrays into different data structures.
-- slice()
-    - extract a portion of the array without modifying it.
-    - create shallow copy or work with a subset of the array.
-- filter()
-    - create a new array based on another array + conditions.
-    - filtering unwanted elements.
-- sort()
-    - modifies the array by sorting it based on some comparison function.
-    - useful to sort elements.
-- map()
-    - return an array of same length based on some function.
-    - useful when making some mathematics.
-
-#### @TODO: Rails
 
 ## Databases
 > Aside from the first note, databases here usually mean "relational databases".
@@ -702,21 +537,6 @@ for (let value of arr) { // iterates over values
 #### @TODO: Redux
 
 #### @TODO: Router
-
-#### Tricks:
-
-- A good way to render elements from a list is this syntax, using the map method
-```javascript
-function App() {
-  return (
-    <>
-      {array.map((element, index) => (
-        <span key={index}>{element.body}</span>
-      ))}
-    </>
-  );
-}
-```
 
 ## Security
 
