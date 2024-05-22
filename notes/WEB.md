@@ -2,7 +2,7 @@
 
 ## Table of Contents
 - [Javascript](#javascript)
- 
+
 ## Javascript
 
 ### Spread
@@ -1089,7 +1089,7 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [An Introduction To Object Oriented CSS](https://www.smashingmagazine.com/2011/12/an-introduction-to-object-oriented-css-oocss/)
 - [ ] [The Future of Writing CSS](https://www.keycdn.com/blog/oocss)
 
-## @TODO: Team Collaboration
+## Team Collaboration
 
 ### Version Control
 
@@ -1140,7 +1140,7 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [TDD Changed My Life](https://medium.com/javascript-scene/tdd-changed-my-life-5af0ce099f80)
 - [ ] [dev.to - Test-driven development in JavaScript](https://dev.to/tomekbuszewski/test-driven-development-in-javascript-olg)
 
-## @TODO: Design & UX
+## @TODO: (continue) Design & UX
 
 ### Color Theory
 
@@ -1676,7 +1676,7 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [Network Information API Sample](https://googlechrome.github.io/samples/network-information/)
 - [ ] [What Web Can Do Today - Network Type & Speed](https://whatwebcando.today/network-type-speed.html)
 
-### @TODO: Data structures
+### @TODO: (continue) Data structures
 
 #### Arrays
 
@@ -1763,16 +1763,16 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [The Javascript Developer’s Guide to Graphs](https://hackernoon.com/the-javascript-developers-guide-to-graphs-and-detecting-cycles-in-them-96f4f619d563)
 
 
-### @TODO: Analysis
+### @TODO: (continue) Analysis
 
 #### Time complexity
 
-- [ ] [Wikipedia - Time complexity](https://en.wikipedia.org/wiki/Time_complexity)
-- [ ] [Time Complexity of Algorithms](https://www.studytonight.com/data-structures/time-complexity-of-algorithms)
-- [ ] [Freecodecamp - An Introduction to Time Complexity](https://www.freecodecamp.org/news/time-complexity-of-algorithms/)
-- [ ] [8 time complexities that every programmer should know](https://adrianmejia.com/most-popular-algorithms-time-complexity-every-programmer-should-know-free-online-tutorial-course/)
-- [ ] [Time Complexity Analysis in JavaScript](https://www.jenniferbland.com/time-complexity-analysis-in-javascript/)
-- [ ] [An intro to Algorithms](https://codeburst.io/algorithms-i-searching-and-sorting-algorithms-56497dbaef20)
+- [X] [Wikipedia - Time complexity](https://en.wikipedia.org/wiki/Time_complexity)
+- [X] [Time Complexity of Algorithms](https://www.studytonight.com/data-structures/time-complexity-of-algorithms)
+- [X] [Freecodecamp - An Introduction to Time Complexity](https://www.freecodecamp.org/news/time-complexity-of-algorithms/)
+- [X] [8 time complexities that every programmer should know](https://adrianmejia.com/most-popular-algorithms-time-complexity-every-programmer-should-know-free-online-tutorial-course/)
+- [X] [Time Complexity Analysis in JavaScript](https://www.jenniferbland.com/time-complexity-analysis-in-javascript/)
+- [X] [An intro to Algorithms](https://codeburst.io/algorithms-i-searching-and-sorting-algorithms-56497dbaef20)
 
 #### Cost model
 
@@ -1807,39 +1807,39 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [Space Complexity](http://exploreshaifali.github.io/2014/02/13/Space-Complexity/)
 
 
-### @TODO: Algorithms
+### @TODO: (continue) Algorithms
 
 #### Sorting
 
-- [ ] [A Guide To Sorting Algorithms in JavaScript](https://blog.bitsrc.io/a-guide-to-sorting-algorithms-in-javascript-5b32da4eae1e)
-- [ ] [dev.to - Sorting Algorithms with Javascript](https://dev.to/wangonya/sorting-algorithms-with-javascript-part-1-4aca)
-- [ ] [Introduction to Sorting](https://www.studytonight.com/data-structures/introduction-to-sorting)
-- [ ] [Implementing Sorting Algorithms in JavaScript](https://medium.com/@rwillt/implementing-sorting-algorithms-in-javascript-b08504cdf4a9)
-- [ ] [Algorithms – Sorting Algorithms in JavaScript](https://notlaura.com/day-6-algorithms-sorting-algorithms-in-javascript/)
+- [X] [A Guide To Sorting Algorithms in JavaScript](https://blog.bitsrc.io/a-guide-to-sorting-algorithms-in-javascript-5b32da4eae1e)
+- [X] [dev.to - Sorting Algorithms with Javascript](https://dev.to/wangonya/sorting-algorithms-with-javascript-part-1-4aca)
+- [X] [Introduction to Sorting](https://www.studytonight.com/data-structures/introduction-to-sorting)
+- [X] [Implementing Sorting Algorithms in JavaScript](https://medium.com/@rwillt/implementing-sorting-algorithms-in-javascript-b08504cdf4a9)
+- [X] [Algorithms – Sorting Algorithms in JavaScript](https://notlaura.com/day-6-algorithms-sorting-algorithms-in-javascript/)
 
 #### Insertion Sort
 
-- [ ] [Wikipedia - Insertion sort](https://en.wikipedia.org/wiki/Insertion_sort)
-- [ ] [Insertion Sort](https://www.geeksforgeeks.org/insertion-sort/)
-- [ ] [Insertion Sort Algorithm](https://www.interviewbit.com/tutorial/insertion-sort-algorithm/)
-- [ ] [Insertion Sorting for Beginners in JS](https://dev.to/ryan_dunton/insertion-sorting-for-beginners-in-js------fkg)
-- [ ] [Algorithms: Insertion Sort in JavaScript](https://medium.com/dailyjs/insertion-sort-in-javascript-9c077844717a)
+- [X] [Wikipedia - Insertion sort](https://en.wikipedia.org/wiki/Insertion_sort)
+- [X] [Insertion Sort](https://www.geeksforgeeks.org/insertion-sort/)
+- [X] [Insertion Sort Algorithm](https://www.interviewbit.com/tutorial/insertion-sort-algorithm/)
+- [X] [Insertion Sorting for Beginners in JS](https://dev.to/ryan_dunton/insertion-sorting-for-beginners-in-js------fkg)
+- [X] [Algorithms: Insertion Sort in JavaScript](https://medium.com/dailyjs/insertion-sort-in-javascript-9c077844717a)
 
 #### Quicksort
 
-- [ ] [Wikipedia - Quicksort](https://en.wikipedia.org/wiki/Quicksort)
-- [ ] [A Quick Explanation of Quick Sort](https://medium.com/karuna-sehgal/a-quick-explanation-of-quick-sort-7d8e2563629b)
-- [ ] [QuickSort](https://www.geeksforgeeks.org/quick-sort/)
-- [ ] [Implementing Quicksort in JavaScript](https://medium.com/@Charles_Stover/implementing-quicksort-in-javascript-8044a8e2bf39)
-- [ ] [Computer science in JavaScript: Quicksort](https://humanwhocodes.com/blog/2012/11/27/computer-science-in-javascript-quicksort/)
+- [X] [Wikipedia - Quicksort](https://en.wikipedia.org/wiki/Quicksort)
+- [X] [A Quick Explanation of Quick Sort](https://medium.com/karuna-sehgal/a-quick-explanation-of-quick-sort-7d8e2563629b)
+- [X] [QuickSort](https://www.geeksforgeeks.org/quick-sort/)
+- [X] [Implementing Quicksort in JavaScript](https://medium.com/@Charles_Stover/implementing-quicksort-in-javascript-8044a8e2bf39)
+- [X] [Computer science in JavaScript: Quicksort](https://humanwhocodes.com/blog/2012/11/27/computer-science-in-javascript-quicksort/)
 
 #### Mergesort
 
-- [ ] [Wikipedia - Merge sort](https://en.wikipedia.org/wiki/Merge_sort)
-- [ ] [Merge Sort Algorithm in JavaScript](https://medium.com/javascript-in-plain-english/javascript-merge-sort-3205891ac060)
-- [ ] [A Simplified Explanation of Merge Sort](https://medium.com/karuna-sehgal/a-simplified-explanation-of-merge-sort-77089fe03bb2)
-- [ ] [Overview of merge sort](https://www.khanacademy.org/computing/computer-science/algorithms/merge-sort/a/overview-of-merge-sort)
-- [ ] [Freecodecamp - The Merge Sort Algorithm Explained](https://www.freecodecamp.org/forum/t/the-merge-sort-algorithm-explained/16104)
+- [X] [Wikipedia - Merge sort](https://en.wikipedia.org/wiki/Merge_sort)
+- [X] [Merge Sort Algorithm in JavaScript](https://medium.com/javascript-in-plain-english/javascript-merge-sort-3205891ac060)
+- [X] [A Simplified Explanation of Merge Sort](https://medium.com/karuna-sehgal/a-simplified-explanation-of-merge-sort-77089fe03bb2)
+- [X] [Overview of merge sort](https://www.khanacademy.org/computing/computer-science/algorithms/merge-sort/a/overview-of-merge-sort)
+- [X] [Freecodecamp - The Merge Sort Algorithm Explained](https://www.freecodecamp.org/forum/t/the-merge-sort-algorithm-explained/16104)
 
 #### Heapsort
 
@@ -1851,20 +1851,20 @@ Get familiar with best practices when it comes to building Web Components.
 
 #### Searching
 
-- [ ] [Wikipedia - Search algorithm](https://en.wikipedia.org/wiki/Search_algorithm)
-- [ ] [Search Algorithms with ES6](https://github.com/Crizstian/data-structure-and-algorithms-with-ES6/tree/master/13-chapter-Searching-Algorithms)
-- [ ] [Introduction to Searching Algorithms](https://www.studytonight.com/data-structures/search-algorithms)
-- [ ] [Implement linear and binary search algorithms with Javascript](https://medium.com/employbl/implement-linear-and-binary-search-algorithms-with-javascript-2149997588f0)
-- [ ] [Searching Algorithms In Javascript](https://www.scriptonitejs.com/javascript-searching-algorithms/)
+- [X] [Wikipedia - Search algorithm](https://en.wikipedia.org/wiki/Search_algorithm)
+- [X] [Search Algorithms with ES6](https://github.com/Crizstian/data-structure-and-algorithms-with-ES6/tree/master/13-chapter-Searching-Algorithms)
+- [X] [Introduction to Searching Algorithms](https://www.studytonight.com/data-structures/search-algorithms)
+- [X] [Implement linear and binary search algorithms with Javascript](https://medium.com/employbl/implement-linear-and-binary-search-algorithms-with-javascript-2149997588f0)
+- [X] [Searching Algorithms In Javascript](https://www.scriptonitejs.com/javascript-searching-algorithms/)
 
 #### Binary Search
 
-- [ ] [Wikipedia - Binary search algorithm](https://en.wikipedia.org/wiki/Binary_search_algorithm)
-- [ ] [How to implement a Binary search algorithm](https://reactgo.com/binary-search-algorithm-javascript/)
-- [ ] [Binary Search](https://www.interviewbit.com/courses/programming/topics/binary-search/)
-- [ ] [What Is Binary Search, A Detailed Step-By-Step](https://medium.com/@jeffrey.allen.lewis/javascript-algorithms-explained-binary-search-25064b896470)
-- [ ] [Programming with JS: Binary Search](https://hackernoon.com/programming-with-js-binary-search-aaf86cef9cb3)
-- [ ] [Binary Search In JavaScript](https://www.geeksforgeeks.org/binary-search-in-javascript/)
+- [X] [Wikipedia - Binary search algorithm](https://en.wikipedia.org/wiki/Binary_search_algorithm)
+- [X] [How to implement a Binary search algorithm](https://reactgo.com/binary-search-algorithm-javascript/)
+- [X] [Binary Search](https://www.interviewbit.com/courses/programming/topics/binary-search/)
+- [X] [What Is Binary Search, A Detailed Step-By-Step](https://medium.com/@jeffrey.allen.lewis/javascript-algorithms-explained-binary-search-25064b896470)
+- [X] [Programming with JS: Binary Search](https://hackernoon.com/programming-with-js-binary-search-aaf86cef9cb3)
+- [X] [Binary Search In JavaScript](https://www.geeksforgeeks.org/binary-search-in-javascript/)
 
 #### Breadth First Search
 
@@ -1897,12 +1897,12 @@ Get familiar with best practices when it comes to building Web Components.
 
 #### Hashing
 
-- [ ] [Wikipedia - Hash function](https://en.wikipedia.org/wiki/Hash_function)
-- [ ] [How Encryption Works](https://computer.howstuffworks.com/encryption5.htm)
-- [ ] [Cryptography for JavaScript: Hash Function](https://medium.com/@promentol/cryptography-for-javascript-node-js-developers-part-1-hash-function-86d119c7304)
-- [ ] [Github - hash.js](https://gist.github.com/iperelivskiy/4110988)
+- [X] [Wikipedia - Hash function](https://en.wikipedia.org/wiki/Hash_function)
+- [X] [How Encryption Works](https://computer.howstuffworks.com/encryption5.htm)
+- [X] [Cryptography for JavaScript: Hash Function](https://medium.com/@promentol/cryptography-for-javascript-node-js-developers-part-1-hash-function-86d119c7304)
+- [X] [Github - hash.js](https://gist.github.com/iperelivskiy/4110988)
 
-### @TODO: Databases
+### @TODO: (continue) Databases
 
 #### Relational Databases
 
@@ -1922,19 +1922,19 @@ Get familiar with best practices when it comes to building Web Components.
 
 #### Non-relational Databases
 
-- [ ] [What Is A Non Relational Database](https://www.mongodb.com/scale/what-is-a-non-relational-database)
-- [ ] [Wikipedia - NoSQL](https://en.wikipedia.org/wiki/NoSQL)
-- [ ] [dev.to - Relational SQL vs. Non-Relational NoSQL Databases](https://dev.to/trevoirwilliams/relational-sql-vs-non-relational-nosql-databases-hi5)
-- [ ] [Non-relational data and NoSQL](https://docs.microsoft.com/en-us/azure/architecture/data-guide/big-data/non-relational-data)
-- [ ] [Non-Relational Database](https://www.techopedia.com/definition/25218/non-relational-database)
+- [X] [What Is A Non Relational Database](https://www.mongodb.com/scale/what-is-a-non-relational-database)
+- [X] [Wikipedia - NoSQL](https://en.wikipedia.org/wiki/NoSQL)
+- [X] [dev.to - Relational SQL vs. Non-Relational NoSQL Databases](https://dev.to/trevoirwilliams/relational-sql-vs-non-relational-nosql-databases-hi5)
+- [X] [Non-relational data and NoSQL](https://docs.microsoft.com/en-us/azure/architecture/data-guide/big-data/non-relational-data)
+- [X] [Non-Relational Database](https://www.techopedia.com/definition/25218/non-relational-database)
 
 #### Data Modelling
 
-- [ ] [Chapter 5 Data Modelling](https://opentextbc.ca/dbdesign01/chapter/chapter-5-data-modelling/)
-- [ ] [Wikipedia - Database Model](https://en.wikipedia.org/wiki/Database_model)
-- [ ] [Wikipedia - Database Modelling](https://en.wikipedia.org/wiki/Data_modeling)
-- [ ] [What is Data Modelling?](https://www.guru99.com/data-modelling-conceptual-logical.html)
-- [ ] [Data Modeling Definition](https://searchdatamanagement.techtarget.com/definition/data-modeling)
+- [X] [Chapter 5 Data Modelling](https://opentextbc.ca/dbdesign01/chapter/chapter-5-data-modelling/)
+- [X] [Wikipedia - Database Model](https://en.wikipedia.org/wiki/Database_model)
+- [X] [Wikipedia - Database Modelling](https://en.wikipedia.org/wiki/Data_modeling)
+- [X] [What is Data Modelling?](https://www.guru99.com/data-modelling-conceptual-logical.html)
+- [X] [Data Modeling Definition](https://searchdatamanagement.techtarget.com/definition/data-modeling)
 
 #### ER Diagram
 

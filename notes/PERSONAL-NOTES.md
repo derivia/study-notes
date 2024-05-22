@@ -477,6 +477,21 @@
         - e.g.: an intermediate table named "user_groups" could store pairs of user IDs and group IDs to signify which users are members of which groups.
             - a user can be part of many groups and a group can have many users.
 
+### Data modelling
+
+- High level/abstract design phase, describing these three things:
+    - Entities
+        - Represents the objects (data) contained in the database, which typically become tables in a relational db.
+        - e.g., students, teachers, courses.
+    - Relationships
+        - Represents how different entities interact with each other.
+        - e.g., a student has a one-to-many relationships with both courses and teachers.
+    - Constraints
+        - The rules enforced to entities in order to maintain data integrity.
+        - A common rule are unique identifiers (id) for each entity (student_id, teacher_id, course_id).
+        - e.g., course_id in the student-course relationship must reference an existing course_id in the courses table.
+        - e.g., students must be enrolled in at least two courses, each teacher must be assigned to at least one course.
+
 ### Transactions
 
 - A sequence of various operations performed on a specific database. The goal is to adhere to the "A" in ACID (Atomicity), ensuring that when these operations occur, they happen in their entirety.
