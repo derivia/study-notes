@@ -42,7 +42,7 @@
     - A clever way to handle deletion on hash tables is to mark the keys as deleted, instead of "shifting" the entire linked list items after the item back.
     - A particular "alternative" could be resizing the hash table, based on its ratio of filled buckets.
         - Maybe, if ratio is bigger than 0.7 after insertion/deletion: grow to the next prime number at least twice as big than the current size.
-        - and if ratio is lower than 0.7 after insertion/deletion: shrink to the next prime number at least twice as small than the current size.
+        - And if ratio is lower than 0.7 after insertion/deletion: shrink to the next prime number at least twice as small than the current size.
 - [-] @TODO: (continue) Trees
     - Non-linear data structure (doesn't have an logical start and end), hierarchically.
     - Trees consists of nodes, the first node is called root.
@@ -508,6 +508,42 @@
 ## Frameworks
 
 ### Spring (Java)
+
+#### Common Annotations
+
+- @SpringBootApplication
+    - An "alias" for three common main application class annotations
+    - @EnableAutoConfiguration
+        - Tries to auto-configure the application based on the dependencies.
+    - @ComponentScan
+        - Enables @Component classes scan on the application.
+    - @Configuration
+        - Indicates that the class is a source of beans definitions to be processed by the Spring container.
+    - Since @EnableAutoConfiguration and @ComponentScan are present, @Configuration is able to load the beans founded by the scan.
+- @Component
+    - Marks a class to be scanned and registered as a bean.
+- @Bean
+    - Used on methods that returns objects that should be registered as beans.
+    - Added inside @Configuration, since it marks a class as source of beans.
+- @RequestMapping
+    - Defines the prefix for the specific controller/route class.
+- @GetMapping
+    - Handles HTTP GET requests within @RequestMapping classes.
+- @PostMapping
+    - Handles HTTP POST requests within @RequestMapping classes.
+- @Autowired
+    - Marks a constructor, field or setter method to be automatically injected by Spring DI.
+    - Removes the necessity of manual instantiation.
+- @Service
+    - A specialized @Component, which identifies a service component in the service layer.
+- @Repository
+    - A specialized @Component, which identifies a repository component in the persistence layer.
+- @Controller
+    - Marks a class as a Spring MVC controller.
+    - Used when sending HTML/templates.
+- @RestController
+    - A specialized @Controller for RESTful services, combining @Controller and @ResponseBody.
+    - Used when sending JSON.
 
 #### Inversion of Control with Spring
 
