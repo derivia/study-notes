@@ -420,6 +420,24 @@
 - Code generation: transforms the optimized ir into assembly or machine code.
 - Assembly/Linking: assembles the code into binary and links it to create the final executable.
 
+### Java access modifiers
+> these are not java inclusive concepts
+
+- public
+    - accessible from any other class.
+- private
+    - accessible only in the class where it's defined.
+- protected
+    - accessible in the package where it's defined and by superclass.
+- final
+    - used to declare constants (immutable variables), prevent method overriding and inheritance of classes.
+- abstract
+    - declare a class that cannot be instantiated and must be subclassed.
+    - when used on methods, they must be implemented by subclasses.
+- default
+    - set when there is no access modifier explicitly set.
+    - accessible in the entire package.
+
 ## Databases
 > Aside from the first note, databases here usually mean "relational databases".
 > And DB/db means "database".
