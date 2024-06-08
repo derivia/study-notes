@@ -308,8 +308,18 @@
 - Sockets
     - Communication endpoints in computer networks that enable data exchange between applications on different devices or systems.
     - The communication endpoint consists of ip + port: 127.0.0.1:12345
-    - The socket is binded at the port and listen, accepts/refuses connections, etc.
+    - The socket is bound at the port and listen, accepts/refuses connections, etc.
     - Websites HTTP requests works based on sockets between the local browser and the remote server.
+    - Typical HTTP server using sockets loop:
+        1. Create a listener socket.
+        2. Bind the socket to an address.
+        3. Listen for incoming connections on the bound address:port.
+        4. Accept connections from clients, creating a socket for each one.
+        5. Receive the HTTP request and determine the requested file.
+        6. Open the requested file to be sent.
+        7. Get file status, including file size.
+        8. Send the contents of the file over the connection socket.
+        9. Close file descriptor and connection socket.
 - Packet
     - A unit of a bigger data, that goes along with others packets.
 - Router
