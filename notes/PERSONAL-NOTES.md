@@ -298,15 +298,23 @@
 - Proxy
     - Basically a man-in-the-middle, it's useful when you are connected behind a lot of proxies (aka: proxychain), to hide your own identity.
 - Load balancing
-    - A technique used to manage requests coming to a server, balancing the load on separated processes that are isolated from each other, preventing overloading a single process.
+    - A technique used to manage requests coming to a server, balancing the load on separated processes (and other strategies) that are isolated from each other, preventing overloading a single process.
     - Nginx is generally used as a load balancer between before two or more servers.
 - IP
     - An IP address is an identifier assigned to an device on a local network that has a unique sequence of numbers, typically in the format of four sets of numbers separated by periods, such as 192.168.1.1.
 - Ports
     - Used to identify applications that speaks and/or listen for connections, an application that needs a TCP connection have an assigned port.
     - Like HTTP is normally 80 and HTTPS 443.
+- Packet
+    - A unit of a bigger data, that goes along with others packets.
+- Router
+    - A device that routes packets between networks.
+
+### Sockets
+
 - Sockets
     - Communication endpoints in computer networks that enable data exchange between applications on different devices or systems.
+        - Generally bidirectional.
     - The communication endpoint consists of ip + port: 127.0.0.1:12345
     - The socket is bound at the port and listen, accepts/refuses connections, etc.
     - Websites HTTP requests works based on sockets between the local browser and the remote server.
@@ -320,11 +328,7 @@
         7. Get file status, including file size.
         8. Send the contents of the file over the connection socket.
         9. Close file descriptor and connection socket.
-- Packet
-    - A unit of a bigger data, that goes along with others packets.
-- Router
-    - A device that routes packets between networks.
-- A client/server interaction example:
+- A client/server interaction example
     - Client Request (as example, HTTP GET) -> Server IP + Port (SVIP+P) -> Socket bound to SVIP+P -> Process bound to the socket -> Back-end generates a response and gives it back.
     - This means that both, client (CL) and server (SV), are, at the same time, a client and a server.
         - Which means they receive and respond to interactions from the other, using a set of protocols.
@@ -371,6 +375,7 @@
     - The benefits of having a layered structure, is that each layer only does what it has to do, and, while every layer is a client to another layer, it's also a server to other, as data goes in and out.
 
 ### HTTP
+
 - A protocol used to transfer data between a server and a client based on requests and responses.
 - HTTP + SSL/TLS = HTTPS
     - An encrypted version that gives more security on the communication between the server and client.
