@@ -578,6 +578,26 @@
     - A specialized @Controller for RESTful services, combining @Controller and @ResponseBody.
     - Used when sending JSON.
 
+#### Some scattered notes
+
+- JDBC
+    - Database-dependent API, uses raw SQL statements.
+    - Used when fine-grained control over database interaction is necessary.
+    - Used by Hibernate & JPA for abstracted database communication.
+- JPA (Jakarta Persistence API)
+    - ORM Standard specification, defines a set of interfaces that should be implemented.
+- Hibernate
+    - Framework for easier persistence in Java.
+    - Minimizes JDBC code, providing an implementation of JPA for ORM.
+- Spring Data
+    - Simpliefies common database operations, allowing Repository classes to be extended.
+    - The extended classes generally doesn't have the need of overrided functions, integrating easier with different databases.
+- Briefly, from bottom to top
+    - JDBC is the API used for low-level database connection and SQL request/response handling.
+    - JPA is a specification which defines a set of interfaces that gives easier database operations when implemented.
+    - Hibernate is a popular implementation of JPA interfaces for ORM.
+    - Spring Data is itself another level of abstraction which simplifies even more, but still allows raw sql.
+
 #### Inversion of Control with Spring
 
 - Spring takes the responsibility of managing various components of the application, known as Beans, which have their lifecycle and connections based on Spring's interpretation of annotations in classes/methods.
