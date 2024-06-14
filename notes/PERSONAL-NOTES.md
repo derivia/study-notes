@@ -292,7 +292,7 @@
 
 ### Basics
 
-- Network is the interconnection two different computers in order to make them communicate (exchange data), they are able to do that while following some kind of protocol.
+- Network is the interconnection two different computers in order to make then communicate (exchange data), they are able to do that while following some kind of protocol.
 - Firewall
     - A set of algorithms used to block incoming requests that could harm the system.
 - Proxy
@@ -652,6 +652,20 @@
 
 ## Security
 
+### Json Web Token
+
+- A standard popular for user authentication.
+- Claims
+    - Statements about an entity, as example, a claim might assert the user's identity/permissions.
+- Divided in three parts:
+    1. Header
+        - Contains metadata, such as, token type (jwt) and signing algorithm.
+    2. Payload
+        - Contains the claims.
+    3. Signature
+        - Crytographic signature used to authenticate that the token hasn't been tampered with.
+        - Created by concatenating the encoded header and payload, then signing with a private key.
+
 ### Password storing
 
 - A hash, compared to an ciphertext (text that has been encrypted by some kind of encryption algorithm), is generated with the goal of being irreversible.
@@ -671,7 +685,7 @@
     - Better, a key-pair is generated based on some algorithm, one public and one private.
         - Something like RSA.
     - The public key encrypts, the private key decrypts.
-    - Like on WhatsApp, i encrypt my message with the public key of some contact of mine. Them, they receive it encrypted, and only their private key can decrypt the message.
+    - Like on WhatsApp, i encrypt my message with the public key of some contact of mine. Then, they receive it encrypted, and only their private key can decrypt the message.
 
 ### Authentication/Authorization
 
@@ -697,7 +711,7 @@
                 - But, it's easy to make ports that are behind a firewall respond with RST.
                 - Making it harder to differentiate when a port is closed/filtered.
             - UDP (-sU)
-                - Normally there is no response, so nmap marks ports as open|filtered, them try again to send another UDP.
+                - Normally there is no response, so nmap marks ports as open|filtered, then try again to send another UDP.
                 - The target responds with a ICMP ping if the port is closed, then nmap marks it.
                 - This is important: nmap -sU --top-ports 20
                     - UDP port scanning is usually slower than TCP ones, and there are generally no UDP ports open.
