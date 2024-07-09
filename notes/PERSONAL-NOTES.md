@@ -132,6 +132,10 @@
 - Dependency Inversion
     - Decouple classes from implementations, using abstractions.
 
+### Entities and DTOs
+
+- Entities typically represent the structure of data in database (meaning they usually are 1:1 with database entities), while DTOs are used to pass information between functions on the backend, as example, if there is no need to have an user password (hashed or not) being passed around, them a user dto should be used, which should have only the necessary data.
+
 ### Docker
 
 - What is docker
@@ -208,7 +212,22 @@
 └── package.json        <-- metadata about the project (manifest).
 ```
 
-### @TODO: MVC Pattern
+### MVC Pattern
+
+- Model
+    - Represents the data and business logic of your application.
+    - Entities like User and Post would typically be part of the model layer.
+    - These entities define the structure of data and may include methods for interacting with the data.
+
+- View
+    - Handles the presentation layer.
+    - In a frontend context (React), views are typically components that render UI elements based on the data provided by the controller.
+    - In a backend context, views can represent templates or responses sent to clients.
+
+- Controller
+    - Acts as an intermediary between the model and the view.
+    - Handles user input and updates the model or directs the view to change based on that input.
+    - Receives requests and sends responses.
 
 ### @TODO: GoF Patterns
 
@@ -498,7 +517,7 @@
     - Used to specify the mapping of the persistent field to a column in the database.
     - Allows properties to be passed, such as column name, length, nullable, updatable, etc.
 - @Transient
-    - Marks a field as not to be persisted to the database. 
+    - Marks a field as not to be persisted to the database.
     - Typically because it's derived or transient data that doesn't need to be saved.
 
 #### Some scattered notes
