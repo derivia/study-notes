@@ -264,17 +264,29 @@
 
 ### Memory Allocation
 
-#### Memory layout
+- Memory layout
+    - A process runs within it's own separated memory space. Usually formed in 5 parts.
+    - Text section: Binary instructions
+    - Data section: Non-zero static data
+    - BSS (Block Started by Symbol): Zero static data
+    - Heap: Dynamically allocated data
+    - Stack: Implicit variables created, function arguments, copies of pointers, etc.
+    - The stack and the heap grows in opposite directions, the heap has a pointer called brk, which is the end of the heap, on the top.
+    - As more memory is allocated for a process using something like new or malloc, the heap grows as brk goes up.
+    - This layout applies to a single process memory, not the entire computer memory.
 
-- A process runs within it's own separated memory space. Usually formed in 5 parts.
-- Text section: Binary instructions
-- Data section: Non-zero static data
-- BSS (Block Started by Symbol): Zero static data
-- Heap: Dynamically allocated data
-- Stack: Implicit variables created, function arguments, copies of pointers, etc.
-- The stack and the heap grows in opposite directions, the heap has a pointer called brk, which is the end of the heap, on the top.
-- As more memory is allocated for a process using something like new or malloc, the heap grows as brk goes up.
-- This layout applies to a single process memory, not the entire computer memory.
+### Windows Processes
+
+- Virtual address space
+    - A set of memory that is mapped so the process can use without interfering with other processes memory.
+- Executable program
+    - The code/data that is mapped into the virtual address space.
+- Security context
+    - Access token that identifies user, security group, privileges, capabilities, session and other securiry-related things that are associated with the process.
+- Process ID
+    - The unique identifier of the process.
+- Open handles list
+    - Files, semaphores and other things that are accessible to the threads of the process.
 
 ### Linux Kernel
 
