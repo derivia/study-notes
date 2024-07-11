@@ -14,7 +14,7 @@
 > Implementations: [Here](https://github.com/derivia/algorithms)
 
 - [X] Bitwise Operations
-    - A word is a unit of data of defined bit length (size in bits) that is addressable and can be moved between the processor and storage (be it non-volatile or not).
+    - A word is a unit of data of defined size in bits that is addressable and can be moved between the processor and storage (be it non-volatile or not).
         - Usually, the word is the size of the bus, so the movement of any word can be made with only one operation between registers.
         - And, obviously, it is typically a power of 2.
     - Left shifting by n is multiplying by 2 n times and right shifting by n is dividing by 2 n times.
@@ -35,7 +35,7 @@
 - [X] Hash tables
     - Combines some of the best things between arrays and linked-lists.
     - Basically an array of linked-lists with hashing function, good for having near constant access.
-    - The linked-lists shouldn't be too big (which means the hashing function is good and the hash table array is big enough).
+    - The linked-lists shouldn't be too big, which means the hashing function is good and the hash table array is big enough.
     - Some of the simplest and most common hashing functions uses some prime number, and at the end makes the modulo of the
       hash table size to insert the element on a linked list based on the hash function output as index.
     - The size of the hash table should be the next prime number that is at least 1.3 times bigger than the expected number of distinct keys.
@@ -148,10 +148,13 @@
 ### Tests
 
 - Test Driven Development
-    - A concept (approach) to follow from the beginning of application development, as the name suggests, where the application is developed based on tests.
-- Types of Tests
-    - Unit Testing: conducted on small parts such as functions/methods, often using mock objects as parameters.
-    - Integration Testing: conducted on connections between different parts of the application.
+    - A approach to follow from the beginning of application development, as the name suggests, where the application is developed based on tests.
+- Unit Testing
+    - Conducted on small parts such as functions/methods, often using mock objects as parameters.
+    - Generally, when some code is hard to test, it's an sign that the code should be improved.
+        - But even if the project has a high degree of decoupling (which means it's easy to unit test), it can still be a bad implemented one.
+- Integration Testing
+    - Conducted on connections between different parts of the application.
 
 ### Caching
 
@@ -165,52 +168,6 @@
 
 - A principle in RESTful APIs that makes the API's usage self-explanatory by providing links to related operations.
 - It allows the API consumer, typically a developer, to easily navigate operations, as, typically, end-users don't interact with the API JSON "directly" but rather perceives it in the formatting provided by the front-end developer.
-
-### Analyzing different web-projects stacks
-
-- A stack is just the set of main components from the project backend/frontend.
-- Stack acronyms are commonly used on posts by people who use JavaScript, i don't know why.
-- Common ones i found on the internet:
-    - These first three are JavaScript based.
-    - MERN (MongoDB, Express, React & NodeJS).
-    - MEAN (MongoDB, Express, Angular & NodeJS).
-    - MEVN (MongoDB, Express, VueJS & NodeJS).
-        - MongoDB can be changed for something like PostgreSQL if it suits better.
-        - Express is commonly used, but, fastify is also good.
-        - React, angular and vue all are related to the visuals of the website and they are all in javascript/typescript.
-        - NodeJS is just the engine that executes the javascript code.
-    - LAMP (Linux (?), Apache, MySQL & PHP).
-        - This appears like something a bit older than the other ones before.
-        - I don't understand why linux is listed here, maybe just to have four letters.
-        - Linux is commonly used as a server-side operating system, the same for MERN, MEAN, MEVN, etc.
-        - Apache/Nginx is also commonly used.
-- I find it strange that MongoDB appears on the three most common ones.
-    - Maybe because new programmers usually think it is "the best" database.
-    - I guess if you are making small websites, you don't need to choose the best, just choose one.
-    - I would use MongoDB or some other NoSQL based database when ACID is not a requirement and horizontal scalability is necessary.
-
-### A JavaScript back-end project structure example
-
-```markdown
-/project
-├── /public             <-- static files served
-├── /test               <-- application tests
-├── /database
-│   ├── /migrations     <-- database migrations (changes in database).
-│   └── schema          <-- initial database schema definition.
-├── /src
-│   ├── /controllers    <-- uses services to communicate with database.
-│   ├── /middlewares    <-- functions that process requests before they reach controllers. e.g: userAuth.js
-│   ├── /models         <-- ORM models, to interact with db. e.g: userModel.js
-│   ├── /routes         <-- endpoints & link them to controllers. e.g: userRoutes.js [getUser()]
-│   ├── /services       <-- business logic, used by controllers. e.g: userService.js [createUser()]
-│   ├── /utils          <-- utility functions and helpers.
-│   ├── /config         <-- configuration-related files.
-│   ├── app.js          <-- application entry point.
-│   └── server.js       <-- server start entry point.
-├── .env                <-- environment variables.
-└── package.json        <-- metadata about the project (manifest).
-```
 
 ### MVC Pattern
 
