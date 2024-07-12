@@ -1,186 +1,6 @@
 ~ This file was cloned and adapted from the project [web-skills](https://github.com/andreasbm/web-skills/) which is licensed under [web-skills-license](../licenses/web-skills.andreasbm)
 
-## Table of Contents
-- [Javascript](#javascript)
-
-## Javascript
-
-### Spread
-
-- [X] [MDN - Spread syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
-- [X] [Freecodecamp - An introduction to Spread syntax](https://www.freecodecamp.org/news/an-introduction-to-spread-syntax-in-javascript-fba39595922c/)
-- [X] [Object rest and spread properties](https://v8.dev/features/object-rest-spread)
-
-### Destructuring
-
-- [X] [MDN - Destructuring assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
-- [X] [MDN - ES6 In Depth: Destructuring](https://hacks.mozilla.org/2015/05/es6-in-depth-destructuring/)
-- [X] [javascript.info - Destructuring assignment](https://javascript.info/destructuring-assignment)
-
-### Events
-
-- [X] [MDN - Introduction to events](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events)
-- [X] [MDN - Creating and triggering events](https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Creating_and_triggering_events)
-- [X] [Event Bubbling and Event Capturing in JavaScript](https://medium.com/@vsvaibhav2016/event-bubbling-and-event-capturing-in-javascript-6ff38bec30e)
-- [X] [Freecodecamp - A simplified explanation of event propagation](https://www.freecodecamp.org/news/a-simplified-explanation-of-event-propagation-in-javascript-f9de7961a06e/)
-- [X] [JavaScript Events Explained](https://flaviocopes.com/javascript-events/)
-- [X] [MDN - addEventListener()](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
-- [X] [MDN - removeEventListener(](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener)
-- [X] [Event order](https://www.quirksmode.org/js/events_order.html)
-
-### Objects
-
-- [X] [MDN - Introducing JavaScript objects](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects)
-- [X] [MDN - Working with objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects)
-- [X] [javascript.info - Objects](https://javascript.info/object)
-- [X] [MDN - this](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)
-- [X] [W3Schools - The JavaScript this Keyword](https://www.w3schools.com/js/js_this.asp)
-- [X] [MDN - bind()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind)
-- [X] [MDN - new operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new)
-- [X] [MDN - new.target](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new.target)
-- [X] [Data Structures: Objects and Arrays](https://scotch.io/courses/10-need-to-know-javascript-concepts/data-structures-objects-and-arrays)
-
-### Prototype
-
-- [X] [The prototype chain](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
-- [X] [Prototypes in JavaScript](https://medium.com/better-programming/prototypes-in-javascript-5bba2990e04b)
-- [X] [dev.to - JavaScript Visualized: Prototypal Inheritance](https://dev.to/lydiahallie/javascript-visualized-prototypal-inheritance-47co)
-
-### Classes
-
-- [X] [MDN - Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
-- [X] [Medium - ES6 Classes](https://medium.com/@luke_smaki/javascript-es6-classes-8a34b0a6720a)
-- [X] [MDN - Inheritance](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Inheritance)
-- [X] [MDN - Object Oriented Programming](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS)
-- [X] [MDN - super](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super)
-
-### Regex
-
-- [X] [MDN - Regular Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)
-- [X] [javascript.info - Regular expressions](https://javascript.info/regular-expressions)
-- [X] [MDN - RegExp](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp)
-
-### Template Literals
-
-- [X] [MDN - Template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
-- [X] [MDN - ES6 In Depth: Template strings](https://hacks.mozilla.org/2015/05/es6-in-depth-template-strings-2/)
-- [X] [Google Devs - Getting Literal With ES6 Template Strings](https://developers.google.com/web/updates/2015/01/ES6-Template-Strings)
-
-### Promises
-
-- [X] [Google Devs - JavaScript Promises: an Introduction](https://developers.google.com/web/fundamentals/primers/promises)
-- [X] [MDN - Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
-- [X] [Master the JavaScript Interview: What is a Promise?](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-promise-27fc71e77261)
-
-### Callbacks
-
-- [X] [MDN - Callback function](https://developer.mozilla.org/en-US/docs/Glossary/Callback_function)
-- [X] [JavaScript: What the heck is a Callback?](https://codeburst.io/javascript-what-the-heck-is-a-callback-aba4da2deced)
-- [X] [javascript.info - Callbacks](https://javascript.info/callbacks)
-
-### Async/await
-
-- [X] [MDN - async function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function)
-- [X] [Google Devs - Async functions](https://developers.google.com/web/fundamentals/primers/async-functions)
-- [X] [javascript.info - Async/await](https://javascript.info/async-await)
-
-### Fetch
-
-- [X] [Google Devs - Introduction to fetch](https://developers.google.com/web/updates/2015/03/introduction-to-fetch)
-- [X] [Google Devs - Networking](https://developers.google.com/training/certification/mobile-web-specialist/study-guide/networking)
-- [X] [Freecodecamp - Fetch practical guide](https://www.freecodecamp.org/news/a-practical-es6-guide-on-how-to-perform-http-requests-using-the-fetch-api-594c3d91a547/)
-- [X] [MDN - CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
-- [X] [Alligator - Fetch API](https://alligator.io/js/fetch-api/)
-- [X] [Supercharged - Fetch](https://www.youtube.com/watch?v=GiI77ya60yk)
-- [X] [Codelabs - Fetch ](https://codelabs.developers.google.com/codelabs/pwa-fetch/index.html?index=..%2F..dev-pwa-training0)
-
-### Modules
-
-- [X] [MDN - Export](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export)
-- [X] [MDN - Import](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
-- [X] [V8 - Modules](https://v8.dev/features/modules)
-- [X] [Freecodecamp - A Practical guide to ES6 modules](https://www.freecodecamp.org/news/how-to-use-es6-modules-and-why-theyre-important-a9b20b480773/)
-
-### Intl
-
-- [X] [MDN - Intl](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl)
-- [X] [MDN - Date Time Format](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat)
-- [X] [New Intl APIs in JavaScript](https://blog.bitsrc.io/new-intl-apis-in-javascript-c50dc89d2cf3)
-
-### Best Practices
-
-- [X] [MDN - JavaScript guidelines](https://developer.mozilla.org/en-US/docs/MDN/Contribute/Guidelines/Code_guidelines/JavaScript)
-- [X] [Airbnb - JavaScript Style Guide](https://github.com/airbnb/javascript)
-- [X] [Principles of Writing Consistent, Idiomatic JavaScript](https://github.com/rwaldron/idiomatic.js/)
-- [X] [5 JavaScript Style Guides](https://codeburst.io/5-javascript-style-guides-including-airbnb-github-google-88cbc6b2b7aa)
-- [X] [JavaScript Style Guide and Coding Conventions](https://www.w3schools.com/js/js_conventions.asp)
-
-## The Browser
-
-### Standardization
-
-- [X] [Wikipedia - Web Standards](https://en.wikipedia.org/wiki/Web_standards)
-- [X] [What Are Web Standards?](https://www.elcom.com.au/resources/blog/web-standards)
-- [X] [A Comprehensive Explanation of Web Standards](https://robertnyman.com/2007/05/21/what-are-web-standards-a-comprehensive-explanation-of-what-is-comprised-in-the-term/)
-
-### Specifications
-
-- [X] [How to Read the ECMAScript Specification](https://timothygu.me/es-howto/)
-- [X] [How to Read W3C Specs](https://alistapart.com/article/readspec/)
-- [X] [Learning CSS by reading specs](https://www.chenhuijing.com/blog/learning-css-by-reading-specifications/)
-- [X] [Understanding the CSS Specifications](https://www.w3.org/Style/CSS/read.en.html)
-
-### Browser Engines
-
-- [X] [Medium - Browser Engines](https://medium.com/@jonbiro/browser-engines-chromium-v8-blink-gecko-webkit-98d6b0490968)
-- [X] [Wikipedia - Comparison](https://en.wikipedia.org/wiki/Comparison_of_browser_engines)
-- [X] [HTML5 Rocks - How Browsers Work](https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/)
-- [X] [Demystifying Browsers](https://textslashplain.com/2020/02/09/demystifying-browsers/)
-
-### HTTP
-
-- [X] [MDN - HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP)
-- [X] [MDN - HTTP Glossary](https://developer.mozilla.org/en-US/docs/Glossary/HTTP)
-- [X] [MDN - An overview of HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview)
-- [X] [Wikipedia - Hypertext Transfer Protocol](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol)
-
-### The Internet
-
-- [X] [MDN - How does the Internet work?](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work)
-- [X] [Youtube - How the Internet Works in 5 Minutes](https://www.youtube.com/watch?v=7_LPdttKXPc)
-- [X] [Explain That Stuff - Internet](https://www.explainthatstuff.com/internet.html)
-- [X] [Stanford - How Does the Internet Work?](https://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper.htm)
-- [X] [How the Internet Works](https://blog.hubspot.com/marketing/how-the-internet-works)
-
-### Polyfills
-
-- [X] [MDN - Polyfill](https://developer.mozilla.org/en-US/docs/Glossary/Polyfill)
-- [X] [Introduction To Polyfills & Their Usage](https://medium.com/beginners-guide-to-mobile-web-development/introduction-to-polyfills-their-usage-9cd6db4b1923)
-- [X] [W3C - Polyfills and the evolution of the Web](https://www.w3.org/2001/tag/doc/polyfills/)
-- [X] [Can I use](http://caniuse.com/)
-
-### Debugging
-
-- [X] [Google Devs - Inspect and Edit Pages and Styles](https://developers.google.com/web/tools/chrome-devtools/inspect-styles/)
-- [X] [MDN - Cross browser testing](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing)
-- [X] [5 things to remember for better debugging of your code](https://medium.com/dev-bits/5-things-to-remember-for-better-debugging-of-your-code-94b9bc3fb3df)
-
-### Developer console
-
-- [X] [MDN - Console](https://developer.mozilla.org/en-US/docs/Web/API/Console)
-- [X] [Google Devs - Console API Reference](https://developers.google.com/web/tools/chrome-devtools/console/api)
-- [X] [Google Devs - Get Started with Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools/javascript)
-- [X] [Google Devs - Console Utilities API Reference](https://developers.google.com/web/tools/chrome-devtools/console/utilities)
-- [X] [MDN - Debugging CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Debugging_CSS)
-- [X] [MDN - Debugging HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Debugging_HTML)
-- [X] [javascript.info - Debugging in Chrome](https://javascript.info/debugging-chrome)
-- [X] [14 JavaScript debugging tips](https://raygun.com/javascript-debugging-tips)
-- [X] [The definitive guide to debugging JavaScript](https://flaviocopes.com/javascript-debugging/)
-- [X] [Youtube - Chrome DevTools 101](https://www.youtube.com/watch?v=H0XScE08hy8)
-- [X] [Chrome Devs - Quickly monitor events](https://developers.google.com/web/updates/2015/05/quickly-monitor-events-from-the-console-panel)
-- [X] [Youtube - 14 Must Know Chrome Dev Tools Tricks](https://www.youtube.com/watch?v=xkzDaKwinA8)
-
-### @TODO: Accessibility
+### Accessibility
 
 #### The why
 
@@ -280,7 +100,7 @@
 - [ ] [WCAG 2.0 checklists](https://www.wuhcag.com/wcag-checklist/)
 - [ ] [How to Meet WCAG (Quick Reference)](https://www.w3.org/WAI/WCAG21/quickref/)
 
-## @TODO: Web Components
+## Web Components
 
 #### Custom Elements
 
@@ -350,7 +170,7 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [web.dev - More capable form controls](https://web.dev/more-capable-form-controls/)
 - [ ] [W3C - Creating a form-associated custom element](https://html.spec.whatwg.org/multipage/custom-elements.html#custom-elements-face-example)
 
-## @TODO: Progressive Webapps
+## Progressive Webapps
 
 #### Storage
 
@@ -430,7 +250,7 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [Google Devs - Touch Action Options](https://developers.google.com/web/updates/2016/10/touch-action)
 - [ ] [W3C - Pointer Events](https://www.w3.org/TR/pointerevents/)
 
-### @TODO: Loading Performance
+### Loading Performance
 
 ### App shell
 
@@ -1093,21 +913,7 @@ Get familiar with best practices when it comes to building Web Components.
 
 ### Version Control
 
-#### Git
-
-- [X] [Learn Git Branching](https://learngitbranching.js.org/)
-- [X] [Git Handbook](https://guides.github.com/introduction/git-handbook/)
-- [X] [Github Cheatsheet](https://github.github.com/training-kit/downloads/github-git-cheat-sheet/)
-- [X] [Visualizing Git](http://git-school.github.io/visualizing-git/)
-- [X] [Codecademy - Learn Gitthis](https://www.codecademy.com/learn/learn-git)
-
-#### Github
-
-- [X] [What is GitHub?](https://guides.github.com/activities/hello-world/)
-- [X] [GitHub Learning Lab](https://lab.github.com/)
-- [X] [Wikipedia - Github](https://en.wikipedia.org/wiki/Github)
-
-## @TODO: Management
+## Management
 
 ### Agile Development
 
@@ -1140,23 +946,7 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [TDD Changed My Life](https://medium.com/javascript-scene/tdd-changed-my-life-5af0ce099f80)
 - [ ] [dev.to - Test-driven development in JavaScript](https://dev.to/tomekbuszewski/test-driven-development-in-javascript-olg)
 
-## @TODO: (continue) Design & UX
-
-### Color Theory
-
-- [X] [All you need to know about colors in UI Design](https://uxdesign.cc/all-you-need-to-know-about-colors-in-ui-design-theory-practice-235179712522)
-- [X] [The Role of Color in UX](https://www.toptal.com/designers/ux/color-in-ux)
-- [X] [10 Questions of Color Theory](https://medium.muz.li/10-questions-of-color-theory-that-will-make-you-a-better-ux-designer-b5244c1341a6)
-- [X] [Wikipedia - Color Theory](https://en.wikipedia.org/wiki/Color_theory)
-- [X] [The Meaning of Color](https://www.smashingmagazine.com/2010/01/color-theory-for-designers-part-1-the-meaning-of-color/)
-- [X] [50 Gorgeous Color Schemes](https://visme.co/blog/website-color-schemes/)
-
-### Color Wheel
-
-- [ ] [Color Theory: Brief Guide For Designers](https://uxplanet.org/color-theory-brief-guide-for-designers-76e11c57eaa)
-- [ ] [Color theory and the color wheel](https://www.canva.com/colors/color-wheel/)
-- [ ] [The fundamentals of understanding color theory](https://99designs.dk/blog/tips/the-7-step-guide-to-understanding-color-theory/)
-- [ ] [Adobe - Color wheel](https://color.adobe.com/)
+## Design & UX
 
 ### Typography
 
@@ -1676,26 +1466,12 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [Network Information API Sample](https://googlechrome.github.io/samples/network-information/)
 - [ ] [What Web Can Do Today - Network Type & Speed](https://whatwebcando.today/network-type-speed.html)
 
-### @TODO: (continue) Data structures
-
-#### Arrays
-
-- [X] [javascript.info - Arrays](https://javascript.info/array)
-- [X] [Freecodecamp - Arrays, A Visual Introduction for Beginners](https://www.freecodecamp.org/news/data-structures-101-arrays-a-visual-introduction-for-beginners-7f013bcc355a/)
-- [X] [Wikipedia - Array data structure](https://en.wikipedia.org/wiki/Array_data_structure)
-- [X] [MDN - Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
-
-#### Queues & Stacks
-
-- [X] [Stacks and Queues](https://www.cs.cmu.edu/~adamchik/15-121/lectures/Stacks%20and%20Queues/Stacks%20and%20Queues.html)
-- [X] [Difference between Stack and Queue Data Structures](https://www.geeksforgeeks.org/difference-between-stack-and-queue-data-structures/)
-- [X] [Data Structures: Stacks & Queues](https://medium.com/@hitherejoe/data-structures-stacks-queues-a3b3591c8cb0)
-- [X] [Stacks vs. Queues In JavaScript](https://dev.to/emmawedekind/stacks-vs-queues-in-javascript-4d1o)
+### Data structures
 
 #### Trees
 
 - [ ] [Wikipedia - Tree (data structure)](https://en.wikipedia.org/wiki/Tree_(data_structure))
-- [-] [Freecodecamp - Everything you need to know about tree data structure](https://www.freecodecamp.org/news/all-you-need-to-know-about-tree-data-structures-bceacb85490c/)
+- [ ] [Freecodecamp - Everything you need to know about tree data structure](https://www.freecodecamp.org/news/all-you-need-to-know-about-tree-data-structures-bceacb85490c/)
 - [ ] [Data Structure and Algorithms - Tree](https://www.tutorialspoint.com/data_structures_algorithms/tree_data_structure.htm)
 
 #### Binary Indexed Tree
@@ -1762,17 +1538,9 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [Graphs and Graph Algorithms](https://runestone.academy/runestone/books/published/pythonds/Graphs/Objectives.html)
 - [ ] [The Javascript Developer’s Guide to Graphs](https://hackernoon.com/the-javascript-developers-guide-to-graphs-and-detecting-cycles-in-them-96f4f619d563)
 
-
-### @TODO: (continue) Analysis
+### Analysis
 
 #### Time complexity
-
-- [X] [Wikipedia - Time complexity](https://en.wikipedia.org/wiki/Time_complexity)
-- [X] [Time Complexity of Algorithms](https://www.studytonight.com/data-structures/time-complexity-of-algorithms)
-- [X] [Freecodecamp - An Introduction to Time Complexity](https://www.freecodecamp.org/news/time-complexity-of-algorithms/)
-- [X] [8 time complexities that every programmer should know](https://adrianmejia.com/most-popular-algorithms-time-complexity-every-programmer-should-know-free-online-tutorial-course/)
-- [X] [Time Complexity Analysis in JavaScript](https://www.jenniferbland.com/time-complexity-analysis-in-javascript/)
-- [X] [An intro to Algorithms](https://codeburst.io/algorithms-i-searching-and-sorting-algorithms-56497dbaef20)
 
 #### Cost model
 
@@ -1806,40 +1574,7 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [Wikipedia - Space complexity](https://en.wikipedia.org/wiki/Space_complexity)
 - [ ] [Space Complexity](http://exploreshaifali.github.io/2014/02/13/Space-Complexity/)
 
-
-### @TODO: (continue) Algorithms
-
-#### Sorting
-
-- [X] [A Guide To Sorting Algorithms in JavaScript](https://blog.bitsrc.io/a-guide-to-sorting-algorithms-in-javascript-5b32da4eae1e)
-- [X] [dev.to - Sorting Algorithms with Javascript](https://dev.to/wangonya/sorting-algorithms-with-javascript-part-1-4aca)
-- [X] [Introduction to Sorting](https://www.studytonight.com/data-structures/introduction-to-sorting)
-- [X] [Implementing Sorting Algorithms in JavaScript](https://medium.com/@rwillt/implementing-sorting-algorithms-in-javascript-b08504cdf4a9)
-- [X] [Algorithms – Sorting Algorithms in JavaScript](https://notlaura.com/day-6-algorithms-sorting-algorithms-in-javascript/)
-
-#### Insertion Sort
-
-- [X] [Wikipedia - Insertion sort](https://en.wikipedia.org/wiki/Insertion_sort)
-- [X] [Insertion Sort](https://www.geeksforgeeks.org/insertion-sort/)
-- [X] [Insertion Sort Algorithm](https://www.interviewbit.com/tutorial/insertion-sort-algorithm/)
-- [X] [Insertion Sorting for Beginners in JS](https://dev.to/ryan_dunton/insertion-sorting-for-beginners-in-js------fkg)
-- [X] [Algorithms: Insertion Sort in JavaScript](https://medium.com/dailyjs/insertion-sort-in-javascript-9c077844717a)
-
-#### Quicksort
-
-- [X] [Wikipedia - Quicksort](https://en.wikipedia.org/wiki/Quicksort)
-- [X] [A Quick Explanation of Quick Sort](https://medium.com/karuna-sehgal/a-quick-explanation-of-quick-sort-7d8e2563629b)
-- [X] [QuickSort](https://www.geeksforgeeks.org/quick-sort/)
-- [X] [Implementing Quicksort in JavaScript](https://medium.com/@Charles_Stover/implementing-quicksort-in-javascript-8044a8e2bf39)
-- [X] [Computer science in JavaScript: Quicksort](https://humanwhocodes.com/blog/2012/11/27/computer-science-in-javascript-quicksort/)
-
-#### Mergesort
-
-- [X] [Wikipedia - Merge sort](https://en.wikipedia.org/wiki/Merge_sort)
-- [X] [Merge Sort Algorithm in JavaScript](https://medium.com/javascript-in-plain-english/javascript-merge-sort-3205891ac060)
-- [X] [A Simplified Explanation of Merge Sort](https://medium.com/karuna-sehgal/a-simplified-explanation-of-merge-sort-77089fe03bb2)
-- [X] [Overview of merge sort](https://www.khanacademy.org/computing/computer-science/algorithms/merge-sort/a/overview-of-merge-sort)
-- [X] [Freecodecamp - The Merge Sort Algorithm Explained](https://www.freecodecamp.org/forum/t/the-merge-sort-algorithm-explained/16104)
+### Algorithms
 
 #### Heapsort
 
@@ -1848,23 +1583,6 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [Heap Sort Algorithm](https://www.studytonight.com/data-structures/heap-sort)
 - [ ] [Heapsort Algorithm](https://www.interviewcake.com/concept/java/heapsort)
 - [ ] [Heap Sort](https://brilliant.org/wiki/heap-sort/)
-
-#### Searching
-
-- [X] [Wikipedia - Search algorithm](https://en.wikipedia.org/wiki/Search_algorithm)
-- [X] [Search Algorithms with ES6](https://github.com/Crizstian/data-structure-and-algorithms-with-ES6/tree/master/13-chapter-Searching-Algorithms)
-- [X] [Introduction to Searching Algorithms](https://www.studytonight.com/data-structures/search-algorithms)
-- [X] [Implement linear and binary search algorithms with Javascript](https://medium.com/employbl/implement-linear-and-binary-search-algorithms-with-javascript-2149997588f0)
-- [X] [Searching Algorithms In Javascript](https://www.scriptonitejs.com/javascript-searching-algorithms/)
-
-#### Binary Search
-
-- [X] [Wikipedia - Binary search algorithm](https://en.wikipedia.org/wiki/Binary_search_algorithm)
-- [X] [How to implement a Binary search algorithm](https://reactgo.com/binary-search-algorithm-javascript/)
-- [X] [Binary Search](https://www.interviewbit.com/courses/programming/topics/binary-search/)
-- [X] [What Is Binary Search, A Detailed Step-By-Step](https://medium.com/@jeffrey.allen.lewis/javascript-algorithms-explained-binary-search-25064b896470)
-- [X] [Programming with JS: Binary Search](https://hackernoon.com/programming-with-js-binary-search-aaf86cef9cb3)
-- [X] [Binary Search In JavaScript](https://www.geeksforgeeks.org/binary-search-in-javascript/)
 
 #### Breadth First Search
 
@@ -1895,46 +1613,7 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [Boyer Moore String Search](https://ongspxm.github.io/blog/2017/05/boyer-moore-search/)
 - [ ] [Boyer–Moore string-search algorithm](https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_string-search_algorithm)
 
-#### Hashing
-
-- [X] [Wikipedia - Hash function](https://en.wikipedia.org/wiki/Hash_function)
-- [X] [How Encryption Works](https://computer.howstuffworks.com/encryption5.htm)
-- [X] [Cryptography for JavaScript: Hash Function](https://medium.com/@promentol/cryptography-for-javascript-node-js-developers-part-1-hash-function-86d119c7304)
-- [X] [Github - hash.js](https://gist.github.com/iperelivskiy/4110988)
-
-### @TODO: (continue) Databases
-
-#### Relational Databases
-
-- [X] [Wikipedia - Relational database](https://en.wikipedia.org/wiki/Relational_database)
-- [X] [Relational database](https://searchdatamanagement.techtarget.com/definition/relational-database)
-- [X] [Everything you need to know about (Relational) Databases](https://dev.to/lmolivera/everything-you-need-to-know-about-relational-databases-3ejl)
-- [X] [What are relational databases?](https://computer.howstuffworks.com/question599.htm)
-- [X] [What is a Relational Database Management System?](https://www.codecademy.com/articles/what-is-rdbms-sql)
-
-#### SQL
-
-- [X] [Learn SQL](https://www.codecademy.com/learn/learn-sql)
-- [X] [Wikipedia - SQL](https://en.wikipedia.org/wiki/SQL)
-- [X] [A beginners guide to SQL](https://learntocodewith.me/posts/sql-guide/)
-- [X] [The Last SQL Guide for Data Analysis You’ll Ever Need](https://medium.com/better-programming/the-last-sql-guide-for-data-analysis-youll-ever-need-17ae10fa4a6f)
-- [X] [SQL Tutorial](https://www.tutorialrepublic.com/sql-tutorial/)
-
-#### Non-relational Databases
-
-- [X] [What Is A Non Relational Database](https://www.mongodb.com/scale/what-is-a-non-relational-database)
-- [X] [Wikipedia - NoSQL](https://en.wikipedia.org/wiki/NoSQL)
-- [X] [dev.to - Relational SQL vs. Non-Relational NoSQL Databases](https://dev.to/trevoirwilliams/relational-sql-vs-non-relational-nosql-databases-hi5)
-- [X] [Non-relational data and NoSQL](https://docs.microsoft.com/en-us/azure/architecture/data-guide/big-data/non-relational-data)
-- [X] [Non-Relational Database](https://www.techopedia.com/definition/25218/non-relational-database)
-
-#### Data Modelling
-
-- [X] [Chapter 5 Data Modelling](https://opentextbc.ca/dbdesign01/chapter/chapter-5-data-modelling/)
-- [X] [Wikipedia - Database Model](https://en.wikipedia.org/wiki/Database_model)
-- [X] [Wikipedia - Database Modelling](https://en.wikipedia.org/wiki/Data_modeling)
-- [X] [What is Data Modelling?](https://www.guru99.com/data-modelling-conceptual-logical.html)
-- [X] [Data Modeling Definition](https://searchdatamanagement.techtarget.com/definition/data-modeling)
+### Databases
 
 #### ER Diagram
 
@@ -2050,84 +1729,3 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [Precedence Graph to check Conflict Serializable Schedule](https://ashutoshtripathi.com/2017/04/15/how-to-check-conflict-serializability-using-precedence-graph-algorithm/)
 - [ ] [Testing for conflict serializablity](http://www.exploredatabase.com/2017/11/testing-for-conflict-serializablity-using-precedence-graph.html)
 - [ ] [Precedence Graph, DBMS](https://www.includehelp.com/dbms/precedence-graph.aspx)
-
-### Servers
-
-#### Architectural Models
-
-- [X] [Server Architecture](https://www.techopedia.com/definition/30262/server-architecture)
-- [X] [Youtube - Architectural model](https://www.youtube.com/watch?v=SKtR7NVxYFA)
-- [X] [Architectural Model](https://www.sciencedirect.com/topics/computer-science/architectural-model)
-- [X] [Distributed Systems: Models and Design](http://www2.imm.dtu.dk/courses/02220/2018/L3/Models.pdf)
-
-#### Client-Server
-
-- [X] [Wikipedia - Client-server model](https://en.wikipedia.org/wiki/Client%E2%80%93server_model)
-- [X] [Client Server Architecture](https://cio-wiki.org/wiki/Client_Server_Architecture)
-- [X] [Understanding What Client Server Architecture Is All About](https://freefeast.info/general-it-articles/client-server-architecture/)
-- [X] [Wikipedia - Client-server](https://simple.wikipedia.org/wiki/Client-server)
-- [X] [Client-server model (client-server architecture)](https://searchnetworking.techtarget.com/definition/client-server)
-- [X] [Client-Server Model](https://www.techopedia.com/definition/18321/client-server-model)
-- [X] [Learn more about Client-Server Model](https://www.sciencedirect.com/topics/computer-science/client-server-model)
-
-#### Proxy Server
-
-- [X] [Wikipedia - Proxy Server](https://en.wikipedia.org/wiki/Proxy_server)
-- [X] [Youtube - What is a Proxy Server?](https://www.youtube.com/watch?v=5cPIukqXe5w)
-- [X] [What is a Proxy Server and How Does it Work?](https://www.varonis.com/blog/what-is-a-proxy-server/)
-- [X] [Proxy Server Definition](https://whatis.techtarget.com/definition/proxy-server)
-- [X] [What is a proxy server?](https://www.itpro.co.uk/server-storage/30246/what-is-a-proxy-server)
-
-#### Peer-To-Peer
-
-- [X] [Wikipedia - Peer-to-peer](https://en.wikipedia.org/wiki/Peer-to-peer)
-- [X] [Youtube - What is a Peer to Peer Network? ](https://www.youtube.com/watch?v=ie-qRQIQT4I)
-- [X] [What's a Peer-to-Peer (P2P) Network?](https://www.computerworld.com/article/2588287/networking-peer-to-peer-network.html)
-- [X] [Peer-to-peer (P2P)](https://searchnetworking.techtarget.com/definition/peer-to-peer)
-- [X] [Make a P2P connection in 10 minutes](https://dev.to/carloslfu/make-a-p2p-connection-in-10-minutes-4b32)
-
-#### Middleware
-
-- [X] [Wikipedia - Middleware](https://en.wikipedia.org/wiki/Middleware)
-- [X] [Middleware Definition](https://searchapparchitecture.techtarget.com/definition/middleware)
-- [X] [Quora - Why is Middleware important?](https://www.quora.com/Why-is-Middleware-important)
-- [X] [What is middleware?](https://www.redhat.com/en/topics/middleware/what-is-middleware)
-- [X] [What is Middleware? Technology’s Go-to Middleman](https://www.talend.com/resources/what-is-middleware/)
-
-#### UDP
-
-- [X] [UDP (User Datagram Protocol)](https://searchnetworking.techtarget.com/definition/UDP-User-Datagram-Protocol)
-- [X] [Wikipedia - User Datagram Protocol](https://en.wikipedia.org/wiki/User_Datagram_Protocol)
-- [X] [User Datagram Protocol (UDP)](https://www.techopedia.com/definition/13460/user-datagram-protocol-udp)
-- [X] [Youtube - Explained! UDP and TCP](https://www.youtube.com/watch?v=1LYqtkgtSPU)
-- [X] [User Datagram Protocol](https://www.geeksforgeeks.org/user-datagram-protocol-udp/)
-
-#### TCP
-
-- [X] [TCP (Transmission Control Protocol)](https://searchnetworking.techtarget.com/definition/TCP)
-- [X] [Wikipedia - Transmission Control Protocol](https://en.wikipedia.org/wiki/Transmission_Control_Protocol)
-- [X] [TCP/IP (Transmission Control Protocol/Internet Protocol)](https://searchnetworking.techtarget.com/definition/TCP-IP)
-- [X] [Services and Segment structure in TCP](https://www.geeksforgeeks.org/services-and-segment-structure-in-tcp/)
-- [X] [TCP and UDP in Transport Layer](https://www.geeksforgeeks.org/tcp-and-udp-in-transport-layer/)
-
-#### REST API
-
-- [X] [Wikipeia - Representational state transfer](https://en.wikipedia.org/wiki/Representational_state_transfer)
-- [X] [Learn REST: A RESTful Tutorial](https://www.restapitutorial.com/)
-- [X] [Youtube - REST API concepts and examples](https://www.youtube.com/watch?v=7YcW25PHnAA)
-- [X] [REST API Tutorial](https://restfulapi.net/)
-- [X] [What is a REST API?](https://www.mulesoft.com/resources/api/what-is-rest-api-design)
-
-#### CRUD
-
-- [X] [Codecademy - What is CRUD?](https://www.codecademy.com/articles/what-is-crud)
-- [X] [What is the Difference between REST and CRUD?](https://www.bmc.com/blogs/rest-vs-crud-whats-the-difference/)
-- [X] [Youtube - Introduction to CRUD Operations](https://www.youtube.com/watch?v=Lyi8SoVdkhM)
-- [X] [REST was NEVER about CRUD](https://tyk.io/rest-never-crud/)
-
-### SSH
-
-- [X] [Wikipedia - Secure Shell](https://en.wikipedia.org/wiki/Secure_Shell)
-- [X] [Secure Shell (SSH)](https://searchsecurity.techtarget.com/definition/Secure-Shell)
-- [X] [SSH command in Linux with Examples](https://www.geeksforgeeks.org/ssh-command-in-linux-with-examples/)
-- [X] [How to Establish a Connection Using SSH](https://help.ubnt.com/hc/en-us/articles/218850057-Intro-to-Networking-How-to-Establish-a-Connection-Using-SSH)
