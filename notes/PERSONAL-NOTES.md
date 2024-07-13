@@ -3,6 +3,7 @@
 - [Algorithms](#algorithms)
 - [Software Architecture](#software-architecture)
 - [Operating Systems](#operating-systems)
+- [Computers](#computers)
 - [Networking](#networking)
 - [Programming Languages](#programming-languages)
 - [Frameworks](#frameworks)
@@ -275,6 +276,22 @@
     - Mechanisms which allows data exchanges between threads of one or different processes.
 - Syscalls
     - Low-level interfaces provided by an operating system for accessing its services. They allow programs to interact with the underlying hardware resources, such as file systems, input/output operations, process management, etc. Syscalls are generally implemented through specific function invocations from the user space to the kernel space, and they provide a standardized way for programs to request system resources and services.
+
+## Computers
+
+### Fetch-Decode-Execute cycle
+
+1. Fetch
+    - The CPU fetches the next instruction from memory.
+    - The memory address of the instruction is stored in the Program Counter (PC).
+    - The fetched instruction is stored in the Instruction Register (IR).
+2. Decode
+    - The CPU decodes the instruction in the IR.
+    - Decoding determines what the instruction is asking the CPU to do.
+3. Execute
+    - The CPU performs the action required by the instruction.
+
+- After execution, the cycle repeats with the next instruction.
 
 ## Networking
 
