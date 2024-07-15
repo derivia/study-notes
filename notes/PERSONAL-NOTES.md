@@ -82,6 +82,23 @@
 
 ## Software Architecture
 
+### About PaaS and IaaS
+
+#### PaaS
+
+- Platform as a Service
+    - The client has access to the necessary execution environment for his applications.
+    - The infrastructure is managed by the provider.
+    - Example: Heroku.
+
+#### IaaS
+
+- Infrastructure as a Service
+    - The client can manage the virtual machines that have the necessary components to run the application.
+        - Data storage, operating systems, etc.
+    - The provider manages the hardware.
+    - Example: AWS EC2.
+
 ### "Evolution" of architectures
 
 1. Monolithic
