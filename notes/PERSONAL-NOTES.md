@@ -82,7 +82,11 @@
 
 ## Software Architecture
 
-### About PaaS and IaaS
+### Amazon Web Services
+
+- A simplification of the billions of things they have: [AWS in plain english](https://expeditedsecurity.com/aws-in-plain-english)
+
+### PaaS and IaaS
 
 #### PaaS
 
@@ -446,7 +450,7 @@
 
 ## Programming Languages
 
-### About compiling
+### Compilation
 
 - Lexing: transforms source code into tokens.
 - Parsing: parses tokens into an abstract syntax tree (ast).
