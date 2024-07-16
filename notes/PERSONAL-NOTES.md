@@ -43,7 +43,7 @@
     - A particular "alternative" could be resizing the hash table, based on its ratio of filled buckets.
         - Maybe, if ratio is bigger than 0.7 after insertion/deletion: grow to the next prime number at least twice as big than the current size.
         - And if ratio is lower than 0.7 after insertion/deletion: shrink to the next prime number at least twice as small than the current size.
-- [-] @TODO: (continue) Trees
+- [-] Trees
     - Non-linear data structure (doesn't have an logical start and end), hierarchically.
     - Trees consists of nodes, the first node is called root.
     - I saw somewhere that the nodes without children can be called leaves.
@@ -53,10 +53,6 @@
     - Binary tree
         - A binary tree is one that has at most two children nodes for each node.
         - The nodes are called left and right.
-        - @TODO: Make a binary tree in C.
-        - @TODO: Continue notes about trees.
-    - @TODO: Add notes about different tree and their uses.
-- [ ] Graphs
 
 ## Algorithms
 > Implementations: [Here](https://github.com/derivia/algorithms)
@@ -168,14 +164,16 @@
 
 ### Tests
 
-- Test Driven Development
-    - A approach to follow from the beginning of application development, as the name suggests, where the application is developed based on tests.
+- Test-Driven Development
+    - An approach where tests are written before the actual application code.
 - Unit Testing
-    - Conducted on small parts such as functions/methods, often using mock objects as parameters.
+    - Conducted on small parts such as functions/methods, isolated from other ones, often using mock objects as parameters.
     - Generally, when some code is hard to test, it's an sign that the code should be improved.
         - But even if the project has a high degree of decoupling (which means it's easy to unit test), it can still be a bad implemented one.
 - Integration Testing
     - Conducted on connections between different parts of the application.
+    - Focused on ensuring that various parts works well together.
+    - Tests generally occur on the connections (interfaces) between different modules written by different developers working on a bigger system.
 
 ### Caching
 
@@ -210,37 +208,6 @@
     - Acts as an intermediary between the model and the view.
     - Handles user input and updates the model or directs the view to change based on that input.
     - Receives requests and sends responses.
-
-### @TODO: GoF Patterns
-
-- Creational Design Patterns
-    - Abstract Factory
-    - Builder
-    - Factory Method
-    - Prototype
-    - Singleton
-- Structural Design Patterns
-    - Adapter
-    - Bridge
-    - Composite
-    - Decorator
-    - Facade
-    - Flyweight
-    - Proxy
-- Behavior Design Patterns
-    - Chain of Responsibility
-    - Command
-    - Interpreter
-    - Iterator
-    - Mediator
-    - Memento
-    - Observer
-    - State
-    - Strategy
-    - Template Method
-    - Visitor
-
-### @TODO: Code Review, Merge & CI/CD
 
 ## Operating Systems
 
