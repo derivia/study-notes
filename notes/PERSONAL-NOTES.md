@@ -587,9 +587,6 @@
 
 ### Json Web Token
 
-- A standard popular for user authentication.
-- Claims
-    - Statements about an entity, as example, a claim might assert the user's identity/permissions.
 - Divided in three parts:
     1. Header
         - Contains metadata, such as, token type (jwt) and signing algorithm.
@@ -598,6 +595,9 @@
     3. Signature
         - Crytographic signature used to authenticate that the token hasn't been tampered with.
         - Created by concatenating the encoded header and payload, then signing with a private key.
+
+- The token is generally sent in the Authorization header of HTTP requests secured by TLS.
+    - Also is usually used to maintain session and assert permissions based on the user identity.
 
 ### Password storing
 
