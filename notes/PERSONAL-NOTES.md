@@ -179,11 +179,15 @@
 
 ### Caching
 
-- Caching is a method to speed up responses by increasing the use of storage.
-- It can be done in various ways, typically categorized as server-side and client-side caching.
-- In client-side caching, it involves storing static resources that change infrequently and are frequently accessed. This reduces the demand on the web server, as the browser checks if the resource is stored in the cache before requesting it.
-- In server-side caching, a database technology is often used to accelerate queries made to a parent database.
-- It also plays a role in how parts of the DNS work; recently accessed websites are stored in the cache to avoid the need for repeated lookups.
+- Caching is a method to speed up responses by storing frequently/recently accessed resources generally in volatile-memory or closer to the requester.
+- Server-side caching
+    - Includes database query results, api responses, rendered pages, etc.
+    - Subsequent requests for the same data will be delivered faster.
+    - Memcached and/or Redis are commonly used.
+- Client-side caching
+    - Storing things like CSS and multimedia on the user device.
+    - The browser them checks if the content is on the cache before sending a request for it when the user requires some resource.
+    - Can be set by developers in HTTP headers like Cache-control and Expires.
 
 ### HATEOAS (Hypertext as the Engine of Application State)
 
