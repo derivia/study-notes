@@ -90,73 +90,75 @@
 - [X] [[Review] Big-O notation in 5 minutes](https://youtu.be/__vX2sjlpXU)
 
 ## Data Structures
+> @TODO: Reimplement data structures
 
 ### Arrays
-- [X] About Arrays:
+- [ ] About Arrays:
     - [Arrays CS50 Harvard University](https://www.youtube.com/watch?v=tI_tIZFyKBw&t=3009s)
     - [Arrays](https://www.coursera.org/lecture/data-structures/arrays-OsBSF)
     - [UC Berkeley CS61B - Linear and Multi-Dim Arrays](https://archive.org/details/ucberkeley_webcast_Wp8oiO_CZZE) (Start watching from 15m 32s)
     - [Dynamic Arrays](https://www.coursera.org/lecture/data-structures/dynamic-arrays-EwbnV)
     - [Jagged Arrays](https://www.youtube.com/watch?v=1jtrQqYpt7g)
 ### Linked Lists
-- [X] Description:
-    - [X] [Linked Lists CS50 Harvard University](https://www.youtube.com/watch?v=2T-A_GFuoTo&t=650s) - this builds the intuition.
-    - [X] [Singly Linked Lists](https://www.coursera.org/lecture/data-structures/singly-linked-lists-kHhgK)
-    - [X] [CS 61B - Linked Lists 1](https://archive.org/details/ucberkeley_webcast_htzJdKoEmO0)
-    - [X] [CS 61B - Linked Lists 2](https://archive.org/details/ucberkeley_webcast_-c4I3gFYe3w)
-    - [X] [[Review] Linked lists in 4 minutes](https://youtu.be/F8AbOfQwl1c)
-- [X] [C Code](https://www.youtube.com/watch?v=QN6FPiD0Gzo)
+- [ ] Description:
+    - [ ] [Linked Lists CS50 Harvard University](https://www.youtube.com/watch?v=2T-A_GFuoTo&t=650s) - this builds the intuition.
+    - [ ] [Singly Linked Lists](https://www.coursera.org/lecture/data-structures/singly-linked-lists-kHhgK)
+    - [ ] [CS 61B - Linked Lists 1](https://archive.org/details/ucberkeley_webcast_htzJdKoEmO0)
+    - [ ] [CS 61B - Linked Lists 2](https://archive.org/details/ucberkeley_webcast_-c4I3gFYe3w)
+    - [ ] [[Review] Linked lists in 4 minutes](https://youtu.be/F8AbOfQwl1c)
+- [ ] [C Code](https://www.youtube.com/watch?v=QN6FPiD0Gzo)
         - not the whole video, just portions about Node struct and memory allocation
-- [X] Linked List vs Arrays:
+- [ ] Linked List vs Arrays:
     - [Core Linked Lists Vs Arrays](https://www.coursera.org/lecture/data-structures-optimizing-performance/core-linked-lists-vs-arrays-rjBs9)
     - [In The Real World Linked Lists Vs Arrays](https://www.coursera.org/lecture/data-structures-optimizing-performance/in-the-real-world-lists-vs-arrays-QUaUd)
-- [X] [Why you should avoid linked lists](https://www.youtube.com/watch?v=YQs6IC-vgmo)
-- [X] Gotcha: you need pointer to pointer knowledge:
+- [ ] [Why you should avoid linked lists](https://www.youtube.com/watch?v=YQs6IC-vgmo)
+- [ ] Gotcha: you need pointer to pointer knowledge:
     (for when you pass a pointer to a function that may change the address where that pointer points)
     This page is just to get a grasp on ptr to ptr. I don't recommend this list traversal style. Readability and maintainability suffer due to cleverness.
     - [Pointers to Pointers](https://www.eskimo.com/~scs/cclass/int/sx8.html)
-- [X] Implement (I did with tail pointer & without):
-    - [X] size() - returns the number of data elements in the list
-    - [X] empty() - bool returns true if empty
-    - [X] value_at(index) - returns the value of the nth item (starting at 0 for first)
-    - [X] push_front(value) - adds an item to the front of the list
-    - [X] pop_front() - remove the front item and return its value
-    - [X] push_back(value) - adds an item at the end
-    - [X] pop_back() - removes end item and returns its value
-    - [X] front() - get the value of the front item
-    - [X] back() - get the value of the end item
-    - [X] insert(index, value) - insert value at index, so the current item at that index is pointed to by the new item at the index
-    - [X] erase(index) - removes node at given index
-    - [X] value_n_from_end(n) - returns the value of the node at the nth position from the end of the list
-    - [X] reverse() - reverses the list
-    - [X] remove_value(value) - removes the first item in the list with this value
+- [ ] Implement (I did with tail pointer & without):
+    - [ ] size() - returns the number of data elements in the list
+    - [ ] empty() - bool returns true if empty
+    - [ ] value_at(index) - returns the value of the nth item (starting at 0 for first)
+    - [ ] push_front(value) - adds an item to the front of the list
+    - [ ] pop_front() - remove the front item and return its value
+    - [ ] push_back(value) - adds an item at the end
+    - [ ] pop_back() - removes end item and returns its value
+    - [ ] front() - get the value of the front item
+    - [ ] back() - get the value of the end item
+    - [ ] insert(index, value) - insert value at index, so the current item at that index is pointed to by the new item at the index
+    - [ ] erase(index) - removes node at given index
+    - [ ] value_n_from_end(n) - returns the value of the node at the nth position from the end of the list
+    - [ ] reverse() - reverses the list
+    - [ ] remove_value(value) - removes the first item in the list with this value
 ### Stack
-- [X] [Stacks](https://www.coursera.org/lecture/data-structures/stacks-UdKzQ)
-- [X] [[Review] Stacks in 3 minutes](https://youtu.be/KcT3aVgrrpU)
+- [ ] [Stacks](https://www.coursera.org/lecture/data-structures/stacks-UdKzQ)
+- [ ] [[Review] Stacks in 3 minutes](https://youtu.be/KcT3aVgrrpU)
 ### Queue
-- [X] [Queue](https://www.coursera.org/lecture/data-structures/queues-EShpq)
-- [X] [Circular buffer/FIFO](https://en.wikipedia.org/wiki/Circular_buffer)
-- [X] [[Review] Queues in 3 minutes](https://youtu.be/D6gu-_tmEpQ)
-- [X] Implement using linked-list, with tail pointer:
+- [ ] [Queue](https://www.coursera.org/lecture/data-structures/queues-EShpq)
+- [ ] [Circular buffer/FIFO](https://en.wikipedia.org/wiki/Circular_buffer)
+- [ ] [[Review] Queues in 3 minutes](https://youtu.be/D6gu-_tmEpQ)
+- [ ] Implement using linked-list, with tail pointer:
     - enqueue(value) - adds value at a position at the tail
     - dequeue() - returns value and removes least recently added element (front)
     - empty()
-- [X] Implement using a fixed-sized array:
+- [ ] Implement using a fixed-sized array:
     - enqueue(value) - adds item at end of available storage
     - dequeue() - returns value and removes least recently added element
     - empty()
     - full()
-- [X] Cost:
+- [ ] Cost:
     - a bad implementation using a linked list where you enqueue at the head and dequeue at the tail would be O(n)
         because you'd need the next to last element, causing a full traversal of each dequeue
     - enqueue: O(1) (amortized, linked list and array [probing])
     - dequeue: O(1) (linked list and array)
     - empty: O(1) (linked list and array)
 ### Hash table
-- [X] Videos:
-    - [X] [Hashing with Chaining](https://www.youtube.com/watch?v=0M_kIqhwbFo&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=8)
-    - [X] [Table Doubling, Karp-Rabin](https://www.youtube.com/watch?v=BRO7mVIFt08&index=9&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
-    - [X] [[Review] Hash tables in 4 minutes](https://youtu.be/knV86FlSXJ8)
+- [ ] Videos:
+    - [ ] [Hashing with Chaining](https://www.youtube.com/watch?v=0M_kIqhwbFo&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=8)
+    - [ ] [Table Doubling, Karp-Rabin](https://www.youtube.com/watch?v=BRO7mVIFt08&index=9&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
+    - [ ] [[Review] Hash tables in 4 minutes](https://youtu.be/knV86FlSXJ8)
+
 ### Binary search
 - [X] [Binary Search](https://www.youtube.com/watch?v=D5SrAga1pno)
 - [X] [Binary Search](https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search)
@@ -166,7 +168,6 @@
 - [X] Implement:
     - binary search (on a sorted array of integers)
     - binary search using recursion
-
 ### Bitwise operations
 - [X] [Bits cheat sheet](https://github.com/jwasham/coding-interview-university/blob/main/extras/cheat%20sheets/bits-cheat-sheet.pdf)
     - you should know many of the powers of 2 from (2^1 to 2^16 and 2^32)
