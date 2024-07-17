@@ -531,7 +531,7 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [Google Devs - Inspect animations](https://developers.google.com/web/tools/chrome-devtools/inspect-styles/animations)
 - [ ] [Investigate animation performance with DevTools](https://calibreapp.com/blog/investigate-animation-performance-with-devtools/)
 
-## @TODO: Build tools
+## Build tools
 
 ### Package Managers
 
@@ -652,7 +652,7 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [Node.js - Guides](https://nodejs.org/en/docs/guides/)
 - [ ] [W3Schools - Node.js tutorial](https://www.w3schools.com/nodejs/)
 
-## @TODO: Testing
+## Testing
 
 ### Testing Methodologies
 
@@ -775,7 +775,7 @@ Get familiar with best practices when it comes to building Web Components.
 - [ ] [What are the best practices in software Testing?](https://www.quora.com/What-are-the-best-practices-in-software-Testing)
 - [ ] [7 Software Testing Best Practices](https://www.qasymphony.com/blog/7-software-testing-best-practices/)
 
-## @TODO: Architecture & paradigms
+## Architecture & paradigms
 
 ### Programming Paradigms
 

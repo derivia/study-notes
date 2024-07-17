@@ -46,7 +46,6 @@
 - [-] Trees
     - Non-linear data structure (doesn't have an logical start and end), hierarchically.
     - Trees consists of nodes, the first node is called root.
-    - I saw somewhere that the nodes without children can be called leaves.
     - The connections between nodes are called edges.
     - Height: the longest length between a leaf and its root.
     - Depth: the length between a specific node and its root.
