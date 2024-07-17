@@ -673,9 +673,10 @@
     - Always use hashing functions designed to store passwords: bcrypt, scrypt, argon2id.
         - These tend to be slower, which is good, slows down brute force attacks.
 - The dumb thing to do is just hashing, even with a strong password hashing function, a salt should be added.
-    - Salts should be big strings randomly generated (using CSPRNG(s), crypto-safe pseurandom number generator(s)), that are appended to the password before hashing.
+    - Salts should be big strings randomly generated (using crypto-safe pseurandom number generators [CSPRNG]), that are appended to the password before hashing.
         - Salts should be stored on the database besides the hashed password (the same that has hashed using the salt).
-        - The objective of salts is to avoid lookup tables attacks, where a giant collection of pre-hashed passwords are stored.
+        - The objective of salts is to avoid lookup/rainbow tables attacks, where a giant collection of pre-hashed passwords are stored.
+        - So the attacker needs to crack every password even if two or more users have the same password, because the salt used is different.
 
 ### Encryption
 
