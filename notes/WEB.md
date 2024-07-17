@@ -1,12 +1,5 @@
 ~ This file was cloned and adapted from the project [web-skills](https://github.com/andreasbm/web-skills/) which is licensed under [web-skills-license](../licenses/web-skills.andreasbm)
 
-- [Testing](#testing)
-- [Architecture & paradigms](#architecture-paradigms)
-- [Management](#management)
-- [Design & UX](#design-ux)
-
-## Testing
-
 ### Testing Methodologies
 
 - [ ] [Wikipedia - Software testing](https://en.wikipedia.org/wiki/Software_testing)
@@ -129,33 +122,6 @@
 - [ ] [7 Software Testing Best Practices](https://www.qasymphony.com/blog/7-software-testing-best-practices/)
 
 ## Architecture & paradigms
-
-### Programming Paradigms
-
-- [ ] [Wikipedia - Programming paradigm](https://en.wikipedia.org/wiki/Programming_paradigm)
-- [ ] [Introduction of Programming Paradigms](https://www.geeksforgeeks.org/introduction-of-programming-paradigms/)
-- [ ] [What Are JavaScript Programming Paradigms?](https://medium.com/javascript-in-plain-english/what-are-javascript-programming-paradigms-3ef0f576dfdb)
-
-### Object Oriented Programming
-
-- [ ] [MDN - Object-oriented JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS)
-- [ ] [Freecodecamp - An introduction to Object-Oriented Programming](https://www.freecodecamp.org/news/an-introduction-to-object-oriented-programming-in-javascript-8900124e316a/)
-- [ ] [Introduction to Object Oriented Programming in JavaScript](https://www.geeksforgeeks.org/introduction-object-oriented-programming-javascript/)
-
-#### S.O.L.I.D
-
-- [ ] [Wikipedia - SOLID](https://en.wikipedia.org/wiki/SOLID)
-- [ ] [S.O.L.I.D: The First 5 Principles of Object Oriented Design](https://scotch.io/bar-talk/s-o-l-i-d-the-first-five-principles-of-object-oriented-design)
-- [ ] [S.O.L.I.D The first 5 principles of Object Oriented Design with JavaScript](https://medium.com/@cramirez92/s-o-l-i-d-the-first-5-priciples-of-object-oriented-design-with-javascript-790f6ac9b9fa)
-
-### Functional programming
-
-- [ ] [An introduction to functional programming in JavaScript](https://opensource.com/article/17/6/functional-javascript)
-- [ ] [Functional Programming in JavaScript](https://codeburst.io/functional-programming-in-javascript-e57e7e28c0e5)
-- [ ] [The power of functional programming in Javascript](https://itnext.io/the-power-of-functional-programming-in-javascript-cc9797a42b60)
-- [ ] [An introduction to Functional Programming](https://flaviocopes.com/javascript-functional-programming/)
-- [ ] [dev.to - Basic Functional Programming Patterns in JavaScript](https://dev.to/nestedsoftware/basic-functional-programming-patterns-in-javascript-49p2)
-- [ ] [Functional-ish JavaScript](https://medium.com/@bluepnume/functional-ish-javascript-205c05d0ed08)
 
 #### Recursion
 

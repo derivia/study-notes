@@ -590,6 +590,19 @@
     app.use(cors(corsOptions));
     ```
 
+### Cookies Security
+
+- Cookies are set using the Set-Cookie header on an response to an client request.
+- Attributes
+    - Secure
+        - Makes the cookie only able to be sent on HTTPS communication.
+        - Doesn't mean it is fully secure.
+            - An man-in-the-middle attacker can still write the cookie before the client receives it, it is just encoded.
+    - HttpOnly
+        - Makes the cookie not accessible from JavaScript on the client-side.
+        - Still, it's vulnerable to Cookie Jar Overflow, by adding more cookies than the client limit accepts, which overwrites the older ones.
+            - Cookie Jar Overflow depends on Stored XSS.
+
 ### Authentication
 
 #### Basic authentication
@@ -713,18 +726,34 @@
 - Open Web Application Security Project (OWASP) is a an organization dedicated to web applications security.
     - They have a yearly report, which is OWASP TOP 10, that outlines the 10 most critical vulnerabilities.
 
+- CSRF
+    - Cross-site request forgery is when an attacker persuades/forces an user to execute unwanted actions on a web application where they are authenticated.
+    1. User is currently authenticated on some insecure website.
+    2. User is tricked into visiting the attacker website.
+    3. Code executed on the attacker's website sends requests to the insecure website where the user is authenticated.
 - XSS
     - Cross-site scripting is when an attacker injects malicious scripts to be executed by other browsers.
     - Reflected
         - Client-supplied data in HTTP is included on the HTML without validation.
+        1. User submits data via HTTP (forms, URL, etc).
+        2. Server includes the submitted in the HTML response without validation.
+        3. Malicious scripts can be executed on the user's browser.
     - Stored
         - Content stored on the website is not validated.
-        - e.g.: a user profile bio with an script tag that is executed when the page renders.
+        1. Attacker submits malicious content to the website (as example, a profile bio with script tag).
+        2. Content is stored on the database.
+        3. When another user views the affected resources (the profile bio from the attacker), the malicious content is executed.
     - DOM-Based
         - Data is taken from the URL and directly inserted into the DOM without validation.
+        1. User is given a URL with malicious script data.
+        2. User's browser processes the URL and inserts data into the DOM.
+        3. Malicious script executes in the user's browser.
     - Blind
         - Basically a stored XSS, but on the "server-side", things like staff contact, etc.
         - Any interface where the client is able to connect "more directly" with an authority of the website is prone to Blind XSS when not properly managed.
+        1. Attacker submits malicious content via an interface (as example, a contact form).
+        2. Content is stored on the server.
+        3. A privileged user (an admin/staff) views the content, the malicious script executes.
     - Mitigation
         - Encode HTML before rendering.
         - Implement a strict CSP (Content Security Policy), which means restrict the scripts execution sources.
@@ -732,5 +761,6 @@
 - SSRF
     - Server-side request forgery is when the attacker is able to make the server make requests to unintended locations, often internal locations like system/configuration files.
     - Mitigation
-        - Validate/sanitize input
-        - Restrict outbound connections
+        - Validate/sanitize input.
+        - Restrict outbound connections.
+        - Enforce URL schemas.
