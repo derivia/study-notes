@@ -555,6 +555,41 @@
 
 ## Security
 
+### HTTP Response headers
+
+- Content-Security-Policy
+    - A series of policy directives, describing policy for different resource types/areas, preventing the fetching of dangerous content.
+    - Common policies
+        - default-src (the fallback to others that aren't explicitly set)
+        - img-src (images)
+        - media-src (video & audio)
+        - script-src (javascript code)
+- Cross-Origin-Resource-Policy
+    - Helps prevent information leakage by ensuring resources are only accessible based on same-origin or same-site policy.
+- CORS
+    - Prevents web pages from making unauthorized requests to other domains.
+    - Browsers send pre-flight OPTIONS requests to check CORS policy
+    - Cross-origin requests have an Origin header that identifies the domain initiating the request.
+    - Access-Control-Allow-Origin
+        - Specifies which domains are allowed to read the response.
+    - Access-Control-Allow-Methods
+        - Specifies which HTTP methods are allowed.
+    - Access-Control-Allow-Headers
+        - Specifies which headers can be used.
+    - Cors configuration example in ExpressJS
+    ```javascript
+    const corsOptions = {
+      origin: 'https://frontend-domain.com',
+      methods: 'GET,POST',
+      allowedHeaders: 'Content-Type,Authorization',
+      credentials: true,
+      optionsSuccessStatus: 200,
+      maxAge: 86400,
+    };
+
+    app.use(cors(corsOptions));
+    ```
+
 ### Authentication
 
 #### Basic authentication
