@@ -8,11 +8,9 @@
     - [Stack](#stack)
     - [Queue](#queue)
     - [Hash table](#hash-table)
-- [More Knowledge](#more-knowledge)
     - [Binary search](#binary-search)
     - [Bitwise operations](#bitwise-operations)
-- [Trees](#trees)
-    - [Trees - Intro](#trees---intro)
+- [Trees](#trees--intro)
     - [Binary search trees: BSTs](#binary-search-trees-bsts)
     - [Heap / Priority Queue / Binary Heap](#heap--priority-queue--binary-heap)
     - [Balanced search trees](#balanced-search-trees)
@@ -34,16 +32,13 @@
 - [Endianness](#endianness)
 - [Networking](#networking)
 - [Final Review](#final-review)
-
-## Additional resources
-
 - [Additional Books](#additional-books)
 - [System Design, Scalability, Data Handling](#system-design-scalability-data-handling) (if you have 4+ years experience)
 - [Compilers](#compilers)
-- [Emacs and vi(m)](#emacs-and-vim)
-- [Unix command line tools](#unix-command-line-tools)
-- [Information theory](#information-theory-videos)
-- [Parity & Hamming Code](#parity--hamming-code-videos)
+
+## Additional Learning
+- [Information theory](#information-theory)
+- [Parity & Hamming Code](#parity-hamming-code)
 - [Entropy](#entropy)
 - [Cryptography](#cryptography)
 - [Compression](#compression)
@@ -77,25 +72,7 @@
 - [Computer Science Courses](#computer-science-courses)
 - [Papers](#papers)
 
-### Do Coding Interview Questions While You're Learning
-
-Once you've learned a topic, and feel somewhat comfortable with it, for example, linked lists:
-1. Open one of the [coding interview books](#interview-prep-books)
-2. Do 2 or 3 questions regarding linked lists.
-3. Move on to the next learning topic.
-4. Later, go back and do another 2 or 3 linked list problems.
-5. Do this with each new topic you learn.
-
-Why you need to practice doing programming problems:
-- Problem recognition, and where the right data structures and algorithms fit in
-- Gathering requirements for the problem
-- Talking your way through the problem like you will in the interview
-- Coding on a whiteboard or paper, not a computer
-- Coming up with time and space complexity for your solutions (see Big-O below)
-- Testing your solutions
-
-### Getting the Job
-
+### Getting the job
 - [Update Your Resume](#update-your-resume)
 - [Find a Job](#find-a-job)
 - [Interview Process & General Interview Prep](#interview-process--general-interview-prep)
@@ -788,25 +765,6 @@ Mock Interviews:
         - [Design a cache system](https://web.archive.org/web/20220217064329/https://adayinthelifeof.nl/2011/02/06/memcache-internals/)
 
 ## Additional Learning
-
-### Compilers
-- [How a Compiler Works in ~1 minute](https://www.youtube.com/watch?v=IhC7sdYe-Jg)
-- [Harvard CS50 - Compilers](https://www.youtube.com/watch?v=CSZLNYF4Klo)
-- [C++](https://www.youtube.com/watch?v=twodd1KFfGk)
-- [Understanding Compiler Optimization (C++)](https://www.youtube.com/watch?v=FnGCDLhaxKU)
-
-### Unix command line tools
-- bash
-- cat
-- grep
-- sed
-- awk
-- curl or wget
-- sort
-- tr
-- uniq
-- [strace](https://en.wikipedia.org/wiki/Strace)
-- [tcpdump](https://danielmiessler.com/study/tcpdump/)
 
 ### Information theory
 - [Khan Academy](https://www.khanacademy.org/computing/computer-science/informationtheory)
