@@ -7,7 +7,7 @@
 - [Networking](#networking)
 - [Programming Languages](#programming-languages)
 - [Databases](#databases)
-- [Math](#math)
+- [Design](#design)
 - [Security](#security)
 
 ## Data Structures
@@ -552,6 +552,25 @@
 
 - Reducing redundancy by dividing tables and establishing relationships between them.
 - Splitting up data to remove duplication and improve data integrity.
+
+## Design
+
+### Typography
+
+- Serif
+    - Small projection on the beginning or end of a stroke on a letter.
+    - Use on print media, formal/professional documents.
+- Sans-serif
+    - Doesn't have serifs.
+    - Modern and minimalist, use on digital media.
+- Monospace
+    - All characters with the same width.
+    - Use on grid-based designs, manuals and data tables.
+
+### Mobile-first
+
+- Design approach based on start sketching and prototyping the smallest screens first.
+- Working with smaller screens maybe makes the design more content-focused.
 
 ## Security
 
