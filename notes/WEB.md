@@ -1,11 +1,5 @@
 ~ This file was cloned and adapted from the project [web-skills](https://github.com/andreasbm/web-skills/) which is licensed under [web-skills-license](../licenses/web-skills.andreasbm)
 
-### Testing Methodologies
-
-- [ ] [Wikipedia - Software testing](https://en.wikipedia.org/wiki/Software_testing)
-- [ ] [Software Testing Methodologies](https://smartbear.com/learn/automated-testing/software-testing-methodologies/)
-- [ ] [Learn The Methods & Tools](https://www.inflectra.com/ideas/topic/testing-methodologies.aspx)
-
 #### Unit Testing
 
 - [ ] [Unit Testing Tutorial](https://www.guru99.com/unit-testing-guide.html)

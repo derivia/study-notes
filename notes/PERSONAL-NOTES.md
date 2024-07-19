@@ -152,14 +152,32 @@
 
 - Entities typically represent the structure of data in database (meaning they usually are 1:1 with database entities), while DTOs are used to pass information between functions on the backend, as example, if there is no need to have an user password (hashed or not) being passed around, them a user dto should be used, which should have only the necessary data.
 
-### Docker
+### Containers and Virtualization
 
-- What is docker
-    - Docker is a way to execute project development and deployment without worrying too much with the dependencies, since everything that runs in docker is isolated from the external environment on a Container, which should have every dependency the application needs, making it easier to produce the same results on different machines.
-- Images and Containers
-    - Images are like templates for creating containers, for example, you can have a Docker image that contains all the required components for running certain web server.
-    - Containers are instances of Docker images that run in memory, for example, you can isolate three different APIs, all managed by an Nginx web server, and they all share the same database. Each of these components can run in its own Docker container. To manage the configuration of these containers, docker compose can be used, which defines the relationships and configurations between containers in a single file.
-    - Also, i think docker is good for testing the application under "low-resource conditions", like setting up on docker compose that each API should have only 275mb of ram and 1 CPU.
+#### Containers
+
+- Docker
+    - Docker is a way to execute project development and deployment without worrying too much with the dependencies, since everything that runs in docker is isolated from the external environment on a Container, which should have every dependency the application needs, making it easier to reproduce the same results on different machines.
+    - Images and Containers
+        - Images are like templates for creating containers, for example, you can have a Docker image that contains all the required components for running certain web server.
+        - Containers are instances of Docker images that run in memory, for example, you can isolate three different APIs, all managed by an Nginx web server, and they all can share the same database. Each of these components can run in its own Docker container. 
+            - Docker compose can be used to manage the configuration of these containers, defining the relationships and configurations between containers in a single file.
+        - Docker is also good for testing the application under "low-resource conditions", like setting up on docker compose that each API should have only 275mb of RAM and 1 CPU.
+
+#### Virtualization
+
+- The operating system manages and concurrently executes the programs instructions by making use of its standard library of APIs (interfaces that the system calls can use in order to proper interaction and usage of the system hardware to achieve proper execution of instructions)
+- The instructions of the program running are (in conjunction with the data structures that the program works on top) allocated on the memory. Which is basically an array with addresses.
+    - When some instruction is called (by it address), if it writes/updates something on the memory, it should "receive" the address to write/update and the content itself.
+- A process, which is the conjunction of the instructions and data that an unique program that the operating system operates, has an unique PID.
+    - This PID can be useful to many purposes, like interfacing to the user access to a program by abstracting from it the memory address (and other things).
+    - A common use of a PID is a sigkill, which is an signal used in unix-like systems to terminate a process.
+- A unique process only sees it's own virtual memory, which the system allocates to prevent different processes from interfering with the memory of other processes, achieving stability.
+    - So two programs that allocate memory and prints the allocated memory address can have the same output, but in fact they have different memory addresses, the program is just printing what he sees, the virtual memory address from a bigger virtual memory that the system gave, from a bigger physical memory.
+- Inter-process Communication (IPC)
+    - Mechanisms which allows data exchanges between threads of one or different processes.
+- Syscalls
+    - Low-level interfaces provided by an operating system for accessing its services. They allow programs to interact with the underlying hardware resources, such as file systems, input/output operations, process management, etc. Syscalls are generally implemented through specific function invocations from the user space to the kernel space, and they provide a standardized way for programs to request system resources and services.
 
 ### Tests
 
@@ -172,7 +190,7 @@
 - Integration Testing
     - Conducted on connections between different parts of the application.
     - Focused on ensuring that various parts works well together.
-    - Tests generally occur on the connections (interfaces) between different modules written by different developers working on a bigger system.
+    - Generally occur on the connections (interfaces) between different modules written by different developers working on a bigger system.
 
 ### Caching
 
@@ -251,21 +269,6 @@
     - The kernel manages processes responsible for receiving packets and routing them.
 - Provides a system call API
     - Processes are able to communicate with the kernel to perform tasks using entry points called system calls.
-
-### Virtualization
-
-- It's the job of the operating system to manage and concurrently execute the programs instructions by making use of its standard library of APIs (interfaces that the system calls can use in order to proper interaction and usage of the system hardware to achieve proper execution of instructions)
-- The instructions of the program running are (in conjunction with the data structures that the program works on top) allocated on the memory. Which is basically an array with addresses.
-    - When some instruction is called (by it address), if it writes/updates something on the memory, it should "receive" the address to write/update and the content itself.
-- A process, which can be seen as the conjunction of the instructions and data that an unique program that the operating system operates (of course), has an unique PID.
-    - This PID can be useful to many purposes, like interfacing to the user access to a program by abstracting from it the memory address (and other things).
-    - A common use of a PID is a sigkill, which is an signal used in unix-like systems to terminate a process.
-- An unique process only sees itself on the system, it sees a virtual memory that the system allocates to it in order to prevent different processes from interfering with the memory of other processes, achieving a degree of stability.
-    - So two programs that allocate memory and prints the allocated memory address can have the same output, but in fact they have different memory addresses, the program is just printing what he sees, the virtual memory address from a bigger virtual memory that the system gave, from a bigger physical memory.
-- Inter-process Communication (IPC)
-    - Mechanisms which allows data exchanges between threads of one or different processes.
-- Syscalls
-    - Low-level interfaces provided by an operating system for accessing its services. They allow programs to interact with the underlying hardware resources, such as file systems, input/output operations, process management, etc. Syscalls are generally implemented through specific function invocations from the user space to the kernel space, and they provide a standardized way for programs to request system resources and services.
 
 ## Computers
 
@@ -547,6 +550,7 @@
 ### N + 1
 
 - A problem in which multiple queries are executed to retrieve data that could have been fetched in fewer queries.
+- Use joins to avoid this.
 
 ### Normalization
 
