@@ -209,22 +209,41 @@
     - The assertion library is used to test if something runs like the developer excepts, generally using some simple dialect.
         - Dialect like
         ```javascript
-        // tests using mocha and chai (javascript libraries)
-        const sum = require("../sum.js") // code to be tested
-        const expect = require("chai").expect
+        // add.js
+        function add(a, b) {
+          if (typeof a !== "number" || typeof b !== "number") {
+            throw new TypeError("add() expects number arguments.");
+          }
+          return a + b;
+        }
 
-        describe("#sum()", function() {
-            context("with number arguments", function() {
-                it("should return sum of arguments", function() {
-                    expect(sum(1, 2, 3, 4)).to.equal(10);
-                });
+        module.exports = add;
+
+        // tests/add.test.js
+        const { expect } = require("chai");
+        const add = require("../add");
+
+        describe("add", () => {
+          context("with number arguments", () => {
+            it("should add two numbers correctly", () => {
+              const result = add(2, 3);
+              expect(result).to.equal(5);
             });
 
-            context("with non-number arguments", function() {
-                it("should throw error", function() {
-                    expect(() => sum(1, "hi", 5)).to.throw(TypeError, "the sum() function expects only numbers.");
-                });
+            it("should return a number", () => {
+              const result = add(2, 3);
+              expect(result).to.be.a("number");
             });
+          });
+
+          context("with non-number arguments", () => {
+            it("should throw TypeError", () => {
+              expect(() => add(1, "hi")).to.throw(
+                TypeError,
+                "add() expects number arguments.",
+              );
+            });
+          });
         });
         ```
 
