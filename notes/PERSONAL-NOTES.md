@@ -98,6 +98,17 @@
     - The provider manages the hardware.
     - Example: AWS EC2.
 
+### CI/CD
+
+- Continuous Integration (CI) is a practice in which developers merge their changes frequently, each merge triggering automated code build and tests.
+- Continuous Delivery (CD) is a practice where releases (deployments to production) are automated, keeping the software updated regularly.
+- CI generally precedes CD.
+
+1. A server listening for code changes runs on the system where developers work.
+2. A developer saves their changes to the git branch where the server is listening for changes.
+3. The server builds and tests the application.
+4. If everything goes right, the changes can be released.
+
 ### "Evolution" of architectures
 
 1. Monolithic
@@ -156,11 +167,13 @@
 
 #### Containers
 
+- Containers share the host OS kernel, while Virtual Machines (VMs) includes a full operating system.
+
 - Docker
     - Docker is a way to execute project development and deployment without worrying too much with the dependencies, since everything that runs in docker is isolated from the external environment on a Container, which should have every dependency the application needs, making it easier to reproduce the same results on different machines.
     - Images and Containers
         - Images are like templates for creating containers, for example, you can have a Docker image that contains all the required components for running certain web server.
-        - Containers are instances of Docker images that run in memory, for example, you can isolate three different APIs, all managed by an Nginx web server, and they all can share the same database. Each of these components can run in its own Docker container. 
+        - Containers are instances of Docker images that run in memory, for example, you can isolate three different APIs, all managed by an Nginx web server, and they all can share the same database. Each of these components can run in its own Docker container.
             - Docker compose can be used to manage the configuration of these containers, defining the relationships and configurations between containers in a single file.
         - Docker is also good for testing the application under "low-resource conditions", like setting up on docker compose that each API should have only 275mb of RAM and 1 CPU.
 
@@ -174,7 +187,7 @@
     - A common use of a PID is a sigkill, which is an signal used in unix-like systems to terminate a process.
 - A unique process only sees it's own virtual memory, which the system allocates to prevent different processes from interfering with the memory of other processes, achieving stability.
     - So two programs that allocate memory and prints the allocated memory address can have the same output, but in fact they have different memory addresses, the program is just printing what he sees, the virtual memory address from a bigger virtual memory that the system gave, from a bigger physical memory.
-- Inter-process Communication (IPC)
+- Inter-Process Communication (IPC)
     - Mechanisms which allows data exchanges between threads of one or different processes.
 - Syscalls
     - Low-level interfaces provided by an operating system for accessing its services. They allow programs to interact with the underlying hardware resources, such as file systems, input/output operations, process management, etc. Syscalls are generally implemented through specific function invocations from the user space to the kernel space, and they provide a standardized way for programs to request system resources and services.
@@ -191,6 +204,29 @@
     - Conducted on connections between different parts of the application.
     - Focused on ensuring that various parts works well together.
     - Generally occur on the connections (interfaces) between different modules written by different developers working on a bigger system.
+- A mock library and an assertion library are generally used together.
+    - The mock library is used to avoid the necessity of two classes being used on the same test.
+    - The assertion library is used to test if something runs like the developer excepts, generally using some simple dialect.
+        - Dialect like
+        ```javascript
+        // tests using mocha and chai (javascript libraries)
+        const sum = require("../sum.js") // code to be tested
+        const expect = require("chai").expect
+
+        describe("#sum()", function() {
+            context("with number arguments", function() {
+                it("should return sum of arguments", function() {
+                    expect(sum(1, 2, 3, 4)).to.equal(10);
+                });
+            });
+
+            context("with non-number arguments", function() {
+                it("should throw error", function() {
+                    expect(() => sum(1, "hi", 5)).to.throw(TypeError, "the sum() function expects only numbers.");
+                });
+            });
+        });
+        ```
 
 ### Caching
 
