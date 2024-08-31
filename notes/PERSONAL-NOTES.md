@@ -291,6 +291,7 @@
     - Data section: Non-zero static data
     - BSS (Block Started by Symbol): Zero static data
     - Heap: Dynamically allocated data
+        - Data with unknown size at compile time must be stored on the heap.
     - Stack: Implicit variables created, function arguments, copies of pointers, etc.
     - The stack and the heap grows in opposite directions, the heap has a pointer called brk, which is the end of the heap, on the top.
     - As more memory is allocated for a process using something like new or malloc, the heap grows as brk goes up.
@@ -525,6 +526,25 @@
     - JPA is a specification which defines a set of interfaces that gives easier database operations when implemented.
     - Hibernate is a popular implementation of JPA interfaces for ORM.
     - Spring Data is itself another level of abstraction which simplifies even more, but still allows raw sql.
+
+### Rust Ownership System
+
+- An uncommon memory management approach.
+- The program doesn't compile if the ownership rules are broken.
+    - Different from C, which compiles even if there's no free().
+- Like every memory management approaches, ownership main purpose is to manage heap data.
+- Rules
+    - Each value has an owner.
+    - There can be only one owner to a value.
+    - When the owner goes out of scope, the memory is released.
+    ```rust
+    {                      // s is not yet declared
+        let s = "hello";   // s (a string literal, which size is not dynamic) is valid from this point forward
+    }                      // this scope is now over, and s is no longer valid
+    ```
+- Ownership, like garbage collection, is used on non-primitive types, which are stored on the heap.
+    - Primitive types have known size, so they are pushed and popped from the stack easily.
+
 
 ## Databases
 > Aside from the first note, databases here usually mean "relational databases".
