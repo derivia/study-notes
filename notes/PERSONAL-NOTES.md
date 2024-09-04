@@ -352,14 +352,34 @@
 > assuming binaries with absolute value
 
 - Addition
-    - Just like normal decimal addition
-    ```yaml
-      10101 # numbers aligned on the least significant bit
-    +  0101
-    = 11010 # when 1 + 1 occurs, 10 is the resulting number, so 0 stays and the 1 is carried over
-            # when 1 + 1 + 1 occurs, 11 is the result, so 1 stays and the other 1 is carried over
-    ```
+```yaml
+  10101 # numbers aligned on the least significant bit
++  0101
+= 11010 # when 1 + 1 occurs, 10 is the resulting number, so 0 stays and the 1 is carried over
+        # when 1 + 1 + 1 occurs, 11 is the result, so 1 stays and the other 1 is carried over
+
+# 0 + 0 = 0
+# 0 + 1 = 1
+# 1 + 0 = 1
+# 1 + 1 = 1 (1 goes to the left)
+```
+
 - Subtraction
+```yaml
+  10101 # numbers aligned on the least significant bit
+-  0101
+= 10000 # 21 - 5 = 16
+
+  10010
+-  0101
+# 01101 # 18 - 5 = 13
+
+# 0 - 0 = 0
+# 0 - 1 = 1 (-1 goes to the left)
+# 1 - 0 = 1
+# 1 - 1 = 0
+```
+
 - Multiplication
 - Division
 
