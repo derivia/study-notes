@@ -381,7 +381,14 @@
 ```
 
 - Multiplication
+```
+     10101 # multiply each digit of the bottom number by the entire top number, shifting left by position
+x     0101
+= 01101001
+```
+
 - Division
+    - I guess this is just repetitive (numerator - denominator) until the remainder is less than the denominator.
 
 ### Fetch-Decode-Execute cycle
 
