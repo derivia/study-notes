@@ -343,15 +343,22 @@
 - Examples
     - 10001 (binary) to decimal: 1 * 2^4 + 1 * 2^0 (the two bits that are one) -> 17 (decimal)
     - 183 (decimal) to hexadecimal:
-        ```sql
-        183/16 -> 11 (7) / 16 -> 0 (11)
-        # the result is B7 (11 is represented by B in hexadecimal)
-        ```
+    ```yaml
+    183/16 -> 11 (7) / 16 -> 0 (11)
+    # the result is B7 (11 is represented by B in hexadecimal)
+    ```
 
 - @TODO: add notes about -> Operations on binary
 > assuming binaries with absolute value
 
 - Addition
+    - Just like normal decimal addition
+    ```yaml
+      10101 # numbers aligned on the least significant bit
+    +  0101
+    = 11010 # when 1 + 1 occurs, 10 is the resulting number, so 0 stays and the 1 is carried over
+            # when 1 + 1 + 1 occurs, 11 is the result, so 1 stays and the other 1 is carried over
+    ```
 - Subtraction
 - Multiplication
 - Division
