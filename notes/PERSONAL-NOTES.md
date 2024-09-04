@@ -328,6 +328,34 @@
 
 ## Computers
 
+### Binary/Hexadecimal/Octal
+
+- Binary is represented using 0s and 1s.
+- Hexadecimal is represented using [0-F], where F represents 15.
+- Octal is represented using [0-7].
+
+#### Conversions
+> assuming binaries with absolute value
+
+- Base-to-Decimal: Multiply each digit by base^n (where n = position from right, starting at 0), then sum the results.
+- Decimal-to-Base: Repeatedly divide by the base, recording remainders. The result is the remainders read in reverse.
+
+- Examples
+    - 10001 (binary) to decimal: 1 * 2^4 + 1 * 2^0 (the two bits that are one) -> 17 (decimal)
+    - 183 (decimal) to hexadecimal:
+        ```sql
+        183/16 -> 11 (7) / 16 -> 0 (11)
+        # the result is B7 (11 is represented by B in hexadecimal)
+        ```
+
+- @TODO: add notes about -> Operations on binary
+> assuming binaries with absolute value
+
+- Addition
+- Subtraction
+- Multiplication
+- Division
+
 ### Fetch-Decode-Execute cycle
 
 1. Fetch
