@@ -606,7 +606,10 @@ x     0101
     ```
 - Ownership, like garbage collection, is used on non-primitive types, which are stored on the heap.
     - Primitive types have known size, so they are pushed and popped from the stack easily.
-
+- "let" creates immutable bindings.
+- "let mut" creates mutable bindings.
+- "let &" works with immutable references.
+- "let &mut" works with mutable references.
 
 ## Databases
 > Aside from the first note, databases here usually mean "relational databases".
