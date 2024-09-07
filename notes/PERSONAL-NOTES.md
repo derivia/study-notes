@@ -588,7 +588,9 @@ x     0101
     - Hibernate is a popular implementation of JPA interfaces for ORM.
     - Spring Data is itself another level of abstraction which simplifies even more, but still allows raw sql.
 
-### Rust Ownership System
+### Rust
+
+#### Ownership System
 
 - An uncommon memory management approach.
 - The program doesn't compile if the ownership rules are broken.
@@ -609,6 +611,26 @@ x     0101
 - "let mut" creates mutable bindings.
 - "let &" works with immutable references.
 - "let &mut" works with mutable references.
+
+#### Module System
+
+- Crates
+    - Compilation units, .rs files which are compiled with rustc.
+    - There are binary and library crates.
+        - A binary crate has a fn main(), a library not, it's job is to be a bunch of "pub" items that can be used from other crates.
+    - Each crate has its own Cargo.toml with metadata.
+    - Interchangeably used as "library".
+- Modules
+    - Organizes code within a crate.
+    - Managing related functions, structs, etc.
+    - Declared using the "mod" keyword.
+- Packages
+    - A bundle of crates.
+    - As many binary crates, at most one library crate.
+- Workspaces
+    - A set of packages that are meant to be developed together.
+- Cargo follows the convention of "src/main.rs" being the crate root of a binary crate.
+    - And "src/lib.rs" being the crate root of a library crate.
 
 ## Databases
 > Aside from the first note, databases here usually mean "relational databases".
