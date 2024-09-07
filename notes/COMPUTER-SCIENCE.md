@@ -90,7 +90,6 @@
 - [X] [[Review] Big-O notation in 5 minutes](https://youtu.be/__vX2sjlpXU)
 
 ## Data Structures
-> @TODO: Reimplement data structures
 
 ### Arrays
 - [ ] About Arrays:

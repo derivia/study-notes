@@ -348,7 +348,6 @@
     # the result is B7 (11 is represented by B in hexadecimal)
     ```
 
-- @TODO: add notes about -> Operations on binary
 > assuming binaries with absolute value
 
 - Addition
