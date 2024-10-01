@@ -483,22 +483,22 @@ Graphs can be used to represent many problems in computer science, so this secti
 - Pages 1048 - 1140 in CLRS if you have it.
 
 ### How computers process a program
-- [ ] [How CPU executes a program](https://www.youtube.com/watch?v=XM4lGflQFvA)
-- [ ] [How computers calculate - ALU](https://youtu.be/1I5ZMmrOfnA)
-- [ ] [Registers and RAM](https://youtu.be/fpnE6UAfbtU)
-- [ ] [The Central Processing Unit (CPU)](https://youtu.be/FZGugFqdr60)
-- [ ] [Instructions and Programs](https://youtu.be/zltgXvg6r3k)
+- [X] [How CPU executes a program](https://www.youtube.com/watch?v=XM4lGflQFvA)
+- [X] [How computers calculate - ALU](https://youtu.be/1I5ZMmrOfnA)
+- [X] [Registers and RAM](https://youtu.be/fpnE6UAfbtU)
+- [X] [The Central Processing Unit (CPU)](https://youtu.be/FZGugFqdr60)
+- [X] [Instructions and Programs](https://youtu.be/zltgXvg6r3k)
 
-### Caches
-- [ ] LRU cache:
-    - [ ] [The Magic of LRU Cache (100 Days of Google Dev)](https://www.youtube.com/watch?v=R5ON3iwx78M)
-    - [ ] [Implementing LRU](https://www.youtube.com/watch?v=bq6N7Ym81iI)
-    - [ ] [LeetCode - 146 LRU Cache (C++)](https://www.youtube.com/watch?v=8-FZRAjR7qU)
+### @TODO: Caches
+- [X] LRU cache:
+    - [X] [The Magic of LRU Cache (100 Days of Google Dev)](https://www.youtube.com/watch?v=R5ON3iwx78M)
+    - [X] [Implementing LRU](https://www.youtube.com/watch?v=bq6N7Ym81iI)
+    - [X] [LeetCode - 146 LRU Cache (C++)](https://www.youtube.com/watch?v=8-FZRAjR7qU)
 - [ ] CPU cache:
     - [ ] [MIT 6.004 L15: The Memory Hierarchy](https://www.youtube.com/watch?v=vjYF_fAZI5E&list=PLrRW1w6CGAcXbMtDFj205vALOGmiRc82-&index=24)
     - [ ] [MIT 6.004 L16: Cache Issues](https://www.youtube.com/watch?v=ajgC3-pyGlk&index=25&list=PLrRW1w6CGAcXbMtDFj205vALOGmiRc82-)
 
-### Processes and Threads
+### @TODO: Processes and Threads
 - [ ] Computer Science 162 - Operating Systems:
     - for processes and threads see videos 1-11
     - [Operating Systems and System Programming](https://archive.org/details/ucberkeley-webcast-PL-XXv-cvA_iBDyz-ba4yDskqMDY6A1w_c)
@@ -535,7 +535,7 @@ Graphs can be used to represent many problems in computer science, so this secti
     - [ ] [Keynote David Beazley - Topics of Interest (Python Asyncio)](https://www.youtube.com/watch?v=ZzfHjytDceU)
     - [ ] [Mutex in Python](https://www.youtube.com/watch?v=0zaPs8OtyKY)
 
-### Testing
+### @TODO: Testing
 - To cover:
     - how unit testing works
     - what are mock objects
@@ -581,7 +581,7 @@ Graphs can be used to represent many problems in computer science, so this secti
 ### Floating Point Numbers
 - [ ] simple 8-bit: [Representation of Floating Point Numbers - 1 (video - there is an error in calculations - see video description)](https://www.youtube.com/watch?v=ji3SfClm8TU)
 
-### Unicode
+### @TODO: Unicode
 - [ ] [The Absolute Minimum Every Software Developer Absolutely, Positively Must Know About Unicode and Character Sets]( http://www.joelonsoftware.com/articles/Unicode.html)
 - [ ] [What Every Programmer Absolutely, Positively Needs To Know About Encodings And Character Sets To Work With Text](http://kunststube.net/encoding/)
 
