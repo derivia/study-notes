@@ -11,7 +11,7 @@
 - [Security](#security)
 
 ## Data Structures
-> Implementations: [Here](https://github.com/derivia/algorithms)
+> Implementations: [Here](https://github.com/derivia/data-structures-algorithms)
 
 - [X] Bitwise Operations
     - A word is a unit of data of defined size in bits that is addressable and can be moved between the processor and storage (be it non-volatile or not).
@@ -19,7 +19,7 @@
         - And, obviously, it is typically a power of 2.
     - Left shifting by n is multiplying by 2 n times and right shifting by n is dividing by 2 n times.
 - [X] Arrays
-    - Fixed have a fixed size n, fixed type t with size s. The size of the array is basically n * s. Each element has a index. To get an element, go to the start of the array and multiply the index by s, some simple pointer arithmetic.
+    - Fixed size n, fixed type t with size s. The size of the array is basically n * s. Each element has a index. To get an element, go to the start of the array and multiply the index by s, some simple pointer arithmetic.
     - Constant access O(1).
 - [X] Linked Lists
     - Better insertion and removal compared to arrays. Just change/add pointers to other elements.
@@ -54,7 +54,7 @@
         - The nodes are called left and right.
 
 ## Algorithms
-> Implementations: [Here](https://github.com/derivia/algorithms)
+> Implementations: [Here](https://github.com/derivia/data-structures-algorithms)
 
 - [X] Complexity (Big-O)
     - To avoid the difference between CPUs runtimes in seconds/minutes, Big-O notation works based on the limit concept, as n grows towards infinity, how does the algorithm behaves.
