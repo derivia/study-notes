@@ -895,7 +895,7 @@ x     0101
         3. Malicious scripts can be executed on the user's browser.
     - Stored
         - Content stored on the website is not validated.
-        1. Attacker submits malicious content to the website (as example, a profile bio with script tag).
+        1. Attacker submits malicious content to the website (as an example, a profile bio with script tag).
         2. Content is stored on the database.
         3. When another user views the affected resources (the profile bio from the attacker), the malicious content is executed.
     - DOM-Based
@@ -906,7 +906,7 @@ x     0101
     - Blind
         - Basically a stored XSS, but on the "server-side", things like staff contact, etc.
         - Any interface where the client is able to connect "more directly" with an authority of the website is prone to Blind XSS when not properly managed.
-        1. Attacker submits malicious content via an interface (as example, a contact form).
+        1. Attacker submits malicious content via an interface (as an example, a contact form).
         2. Content is stored on the server.
         3. A privileged user (an admin/staff) views the content, the malicious script executes.
     - Mitigation
