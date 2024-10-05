@@ -501,6 +501,15 @@ x     0101
 
 ## Programming Languages
 
+### First-Class Citizens
+
+- Entities that share the same operations available to other entities.
+- A language that has, for example, "first-class functions" allows those functions to be:
+    1. Used as parameters of functions.
+    2. Returned as results of functions.
+    3. Used in assign statements.
+    4. Tested for equality.
+
 ### Compilation
 
 - Lexing: transforms source code into tokens.
