@@ -853,13 +853,12 @@ x     0101
     5. draw.io access Google Drive using Access Token in order to save diagrams.
 
 ```mermaid
-graph TD
-    A[Resource Owner (User)] --> B[Client (App)]
+graph LR
+    A[Resource Owner] -->|Consents to Access| B[Client]
     B -->|Request Authorization| C[Authorization Server]
     C -->|Redirects with Authorization Code| B
     B -->|Exchanges Code for Access Token| C
-    B -->|Uses Access Token| D[Resource Server (API)]
-    A -->|Consents to Access| C
+    B -->|Uses Access Token| D[Resource Server]
     D -->|Provides Access| B
 ```
 
