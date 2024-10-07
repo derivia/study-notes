@@ -844,8 +844,7 @@ x     0101
     5. The Client exchanges the Authorization Code for an Access Token with the Authorization Server, using its Client ID and Client Secret.
     6. The Client uses the Access Token to make requests to the Resource Server on behalf of the User.
 
-- Real world example:
-> Draw.io (future diagrams.net) and Google Drive.
+- Real world example (Draw.io (future diagrams.net) and Google Drive):
     1. draw.io requests access.
     2. User logs in and consents access to some drive folder.
     3. Authorization Code is issued by Google's Authorization Server.
