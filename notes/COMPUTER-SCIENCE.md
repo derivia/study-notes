@@ -1,4 +1,4 @@
-~ This file was cloned and adapted from the project [coding-interview-university](https://github.com/andreasbm/web-skills/) which is licensed under [coding-interview-university-license](../licenses/coding-interview-university.jwasham)
+~ This file was cloned and adapted from the project [coding-interview-university](https://github.com/jwasham/coding-interview-university) which is licensed under [coding-interview-university-license](../licenses/coding-interview-university.jwasham)
 
 ## Table of Contents
 - [Algorithmic complexity and Big-o](#algorithmic-complexity-and-big-o)
